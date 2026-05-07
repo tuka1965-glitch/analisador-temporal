@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Analisador Temporal SINESP VDE</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <h1>Analisador Temporal SINESP VDE</h1>
+        <p>Carregue um CSV exportado do Tableau para estudar tendencias por UF e indicador.</p>
+      </div>
+      <label class="file-button">
+        <input id="fileInput" type="file" accept=".csv,.txt,.twbx" />
+        Abrir arquivo
+      </label>
+    </header>
+
+    <main>
+      <section class="panel controls">
+        <label>
+          Data
+          <select id="dateField"></select>
+        </label>
+        <label>
+          Valor
+          <select id="valueField"></select>
+        </label>
+        <label>
+          Formato da data
+          <select id="dateFormat">
+            <option value="auto">Automatico</option>
+            <option value="dmy">Dia/Mes/Ano</option>
+            <option value="mdy">Mes/Dia/Ano</option>
+            <option value="ymd">Ano/Mes/Dia</option>
+            <option value="excel">Serial Excel</option>
+          </select>
+        </label>
+        <label>
+          Campo UF
+          <select id="ufField"></select>
+        </label>
+        <label>
+          Campo indicador
+          <select id="indicatorField"></select>
+        </label>
+        <label>
+          Filtro extra
+          <select id="groupField"></select>
+        </label>
+        <label>
+          Periodo
+          <select id="periodField">
+            <option value="month">Mensal</option>
+            <option value="quarter">Trimestral</option>
+            <option value="year">Anual</option>
+          </select>
+        </label>
+        <label>
+          Media movel
+          <input id="movingAverage" type="number" min="1" max="24" value="3" />
+        </label>
+        <button id="analyzeButton" type="button" disabled>Analisar</button>
+      </section>
+
+      <section class="metrics" aria-live="polite">
+        <article>
+          <span>Linhas</span>
+          <strong id="rowCount">0</strong>
+        </article>
+        <article>
+          <span>Total</span>
+          <strong id="totalValue">0</strong>
+        </article>
+        <article>
+          <span>Tendencia</span>
+          <strong id="trendValue">-</strong>
+        </article>
+        <article>
+          <span>Anomalias</span>
+          <strong id="anomalyCount">0</strong>
+        </article>
+        <article>
+          <span>Ignoradas</span>
+          <strong id="skippedRows">0</strong>
+        </article>
+      </section>
+
+      <section id="warningBox" class="warning" hidden></section>
+
+      <section class="workspace">
+        <div class="chart-wrap">
+          <div class="chart-title">
+            <h2>Serie temporal</h2>
+            <span id="chartSubtitle">Nenhum arquivo carregado</span>
+          </div>
+          <svg id="chart" role="img" aria-label="Grafico de tendencia temporal"></svg>
+        </div>
+
+        <aside class="panel">
+          <h2>Filtros</h2>
+          <div class="filter-block">
+            <div class="filter-heading">
+              <span>UF</span>
+              <button id="selectAllUfs" type="button" disabled>Todas</button>
+            </div>
+            <div id="ufFilters" class="filters"></div>
+          </div>
+          <div class="filter-block">
+            <div class="filter-heading">
+              <span>Indicador</span>
+              <button id="selectAllIndicators" type="button" disabled>Todos</button>
+            </div>
+            <div id="indicatorFilters" class="filters"></div>
+          </div>
+          <div class="filter-block">
+            <div class="filter-heading">
+              <span>Filtro extra</span>
+              <button id="selectAllGroups" type="button" disabled>Todos</button>
+            </div>
+            <div id="filters" class="filters"></div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="panel narrative-panel">
+        <div class="section-heading">
+          <h2>Analise automatica</h2>
+          <button id="copyAnalysis" type="button" disabled>Copiar</button>
+        </div>
+        <div id="analysisText" class="analysis-text">Carregue um CSV para gerar a leitura da serie historica.</div>
+      </section>
+
+      <section class="panel territorial-panel">
+        <div class="section-heading">
+          <h2>Generalizacao territorial</h2>
+          <button id="copyTerritorial" type="button" disabled>Copiar</button>
+        </div>
+        <div class="territorial-controls">
+          <label>
+            Pre inicio
+            <input id="preStart" type="number" min="1900" max="2100" value="2015" />
+          </label>
+          <label>
+            Pre fim
+            <input id="preEnd" type="number" min="1900" max="2100" value="2017" />
+          </label>
+          <label>
+            Pos inicio
+            <input id="postStart" type="number" min="1900" max="2100" value="2018" />
+          </label>
+          <label>
+            Pos fim
+            <input id="postEnd" type="number" min="1900" max="2100" value="2020" />
+          </label>
+          <label>
+            Limiar relevante
+            <input id="territorialThreshold" type="number" min="1" max="80" value="10" />
+          </label>
+        </div>
+        <div class="territorial-summary">
+          <article>
+            <span>UFs com queda</span>
+            <strong id="fallingUfCount">0</strong>
+          </article>
+          <article>
+            <span>UF mediana</span>
+            <strong id="medianUfChange">-</strong>
+          </article>
+          <article>
+            <span>Brasil agregado</span>
+            <strong id="nationalChange">-</strong>
+          </article>
+          <article>
+            <span>Diagnostico</span>
+            <strong id="generalizationLabel">-</strong>
+          </article>
+        </div>
+        <div id="territorialText" class="analysis-text">Carregue um CSV com coluna de UF para avaliar se a tendencia e generalizada ou concentrada.</div>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>UF</th>
+                <th>Pre</th>
+                <th>Pos</th>
+                <th>Variacao</th>
+                <th>Classe</th>
+              </tr>
+            </thead>
+            <tbody id="territorialBody">
+              <tr><td colspan="5">Sem dados territoriais ainda.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel table-panel">
+        <h2>Resumo por periodo</h2>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Periodo</th>
+                <th>Valor</th>
+                <th>Media movel</th>
+                <th>Variacao</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="summaryBody">
+              <tr><td colspan="5">Carregue um CSV para iniciar.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

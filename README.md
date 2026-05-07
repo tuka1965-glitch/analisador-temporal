@@ -50,6 +50,8 @@ Para testar a pergunta sobre homicidios depois de 2017:
 
 Depois selecione o indicador de homicidios no filtro **Indicador**. Se a queda nacional vier acompanhada de queda na mediana estadual e em grande parte das UFs, o app classifica como tendencia generalizada. Se o agregado nacional cair mas a mediana estadual nao cair, a leitura aponta concentracao em poucas UFs.
 
+A secao **Participacao dos estados** calcula quanto cada UF representa no total do indicador selecionado dentro do intervalo de anos escolhido. Ela mostra o ranking estadual, a participacao do maior estado, a soma dos top estados e um texto explicando se o indicador esta concentrado ou disperso territorialmente. Use essa leitura junto com a generalizacao territorial para saber se a tendencia nacional esta sendo puxada por estados de grande peso.
+
 Para o arquivo `grafico vitmas (3)_data.csv` baixado do Tableau Public, use:
 
 - Data: `Mês de Data Referencia`

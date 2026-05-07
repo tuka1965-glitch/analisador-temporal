@@ -197,6 +197,61 @@
         </div>
       </section>
 
+      <section class="panel share-panel">
+        <div class="section-heading">
+          <h2>Participacao dos estados</h2>
+          <button id="copyShare" type="button" disabled>Copiar</button>
+        </div>
+        <div class="territorial-controls">
+          <label>
+            Ano inicio
+            <input id="shareStart" type="number" min="1900" max="2100" value="2015" />
+          </label>
+          <label>
+            Ano fim
+            <input id="shareEnd" type="number" min="1900" max="2100" value="2026" />
+          </label>
+          <label>
+            Top UFs
+            <input id="shareTopN" type="number" min="3" max="27" value="5" />
+          </label>
+        </div>
+        <div class="territorial-summary">
+          <article>
+            <span>Maior participacao</span>
+            <strong id="topShareUf">-</strong>
+          </article>
+          <article>
+            <span>Top UFs</span>
+            <strong id="topShareTotal">-</strong>
+          </article>
+          <article>
+            <span>UF mediana</span>
+            <strong id="medianShare">-</strong>
+          </article>
+          <article>
+            <span>Concentracao</span>
+            <strong id="shareConcentration">-</strong>
+          </article>
+        </div>
+        <div id="shareText" class="analysis-text">Carregue um CSV com coluna de UF para calcular a participacao estadual por indicador.</div>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>UF</th>
+                <th>Total</th>
+                <th>Participacao</th>
+                <th>Ranking</th>
+              </tr>
+            </thead>
+            <tbody id="shareBody">
+              <tr><td colspan="4">Sem dados de participacao ainda.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
       <section class="panel table-panel">
         <h2>Resumo por periodo</h2>
         <div class="table-scroll">

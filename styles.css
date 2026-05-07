@@ -226,7 +226,8 @@ button:disabled {
 }
 
 .narrative-panel,
-.territorial-panel {
+.territorial-panel,
+.share-panel {
   margin-top: 16px;
   padding: 16px;
 }

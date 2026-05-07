@@ -45,6 +45,16 @@ const els = {
   territorialText: document.getElementById("territorialText"),
   territorialBody: document.getElementById("territorialBody"),
   copyTerritorial: document.getElementById("copyTerritorial"),
+  shareStart: document.getElementById("shareStart"),
+  shareEnd: document.getElementById("shareEnd"),
+  shareTopN: document.getElementById("shareTopN"),
+  topShareUf: document.getElementById("topShareUf"),
+  topShareTotal: document.getElementById("topShareTotal"),
+  medianShare: document.getElementById("medianShare"),
+  shareConcentration: document.getElementById("shareConcentration"),
+  shareText: document.getElementById("shareText"),
+  shareBody: document.getElementById("shareBody"),
+  copyShare: document.getElementById("copyShare"),
   chart: document.getElementById("chart"),
   chartSubtitle: document.getElementById("chartSubtitle"),
   ufFilters: document.getElementById("ufFilters"),
@@ -82,6 +92,9 @@ for (const element of [els.dateField, els.valueField, els.dateFormat, els.period
 for (const element of [els.preStart, els.preEnd, els.postStart, els.postEnd, els.territorialThreshold]) {
   element.addEventListener("change", analyze);
 }
+for (const element of [els.shareStart, els.shareEnd, els.shareTopN]) {
+  element.addEventListener("change", analyze);
+}
 els.ufField.addEventListener("change", () => resetDimensionFilter(state.filteredUfs, els.ufFilters, buildUfFilters));
 els.indicatorField.addEventListener("change", () =>
   resetDimensionFilter(state.filteredIndicators, els.indicatorFilters, buildIndicatorFilters),
@@ -107,6 +120,15 @@ els.copyTerritorial.addEventListener("click", async () => {
   els.copyTerritorial.textContent = "Copiado";
   setTimeout(() => {
     els.copyTerritorial.textContent = "Copiar";
+  }, 1200);
+});
+els.copyShare.addEventListener("click", async () => {
+  const text = els.shareText.innerText.trim();
+  if (!text) return;
+  await navigator.clipboard.writeText(text);
+  els.copyShare.textContent = "Copiado";
+  setTimeout(() => {
+    els.copyShare.textContent = "Copiar";
   }, 1200);
 });
 
@@ -367,6 +389,7 @@ function analyze() {
   renderTable(series);
   renderNarrative(series, { dateField, valueField, ufField, indicatorField, groupField, period });
   renderTerritorialGeneralization({ dateField, valueField, ufField, indicatorField, groupField });
+  renderStateShare({ dateField, valueField, ufField, indicatorField, groupField });
 }
 
 function parseDate(value, format = "auto") {
@@ -849,6 +872,133 @@ function renderTerritorialText(details) {
   ];
   els.territorialText.innerHTML = paragraphs.map((paragraph) => `<p>${paragraph}</p>`).join("");
   els.copyTerritorial.disabled = false;
+}
+
+function renderStateShare(context) {
+  if (!state.rows.length || !context.ufField || context.ufField === "(nenhum)") {
+    resetSharePanel("Carregue um CSV com coluna de UF para calcular a participacao estadual por indicador.");
+    return;
+  }
+
+  const startYear = Number(els.shareStart.value);
+  const endYear = Number(els.shareEnd.value);
+  const topN = Math.max(1, Number(els.shareTopN.value) || 5);
+  if (!startYear || !endYear || startYear > endYear) {
+    resetSharePanel("Defina um intervalo de anos valido para calcular a participacao dos estados.");
+    return;
+  }
+
+  const totals = new Map();
+  let grandTotal = 0;
+
+  for (const row of state.rows) {
+    const date = parseDate(row[context.dateField], els.dateFormat.value);
+    const value = parseNumber(row[context.valueField]);
+    if (!date || !Number.isFinite(value)) continue;
+    const year = date.getFullYear();
+    if (year < startYear || year > endYear) continue;
+
+    const uf = row[context.ufField] || "(vazio)";
+    const indicator =
+      context.indicatorField && context.indicatorField !== "(nenhum)" ? row[context.indicatorField] || "(vazio)" : "";
+    const group = context.groupField && context.groupField !== "(sem comparacao)" ? row[context.groupField] || "(vazio)" : "";
+    if (state.filteredUfs.has(uf)) continue;
+    if (indicator && state.filteredIndicators.has(indicator)) continue;
+    if (group && state.filteredGroups.has(group)) continue;
+
+    totals.set(uf, (totals.get(uf) || 0) + value);
+    grandTotal += value;
+  }
+
+  const shares = Array.from(totals.entries())
+    .map(([uf, total]) => ({
+      uf,
+      total,
+      share: grandTotal ? total / grandTotal : 0,
+    }))
+    .filter((item) => item.total > 0)
+    .sort((a, b) => b.share - a.share);
+
+  if (!shares.length || !grandTotal) {
+    resetSharePanel("Nao ha dados suficientes no intervalo escolhido para calcular a participacao estadual.");
+    return;
+  }
+
+  const top = shares.slice(0, Math.min(topN, shares.length));
+  const topShare = top.reduce((sum, item) => sum + item.share, 0);
+  const medianShareValue = median(shares.map((item) => item.share));
+  const concentration = shareConcentrationLabel(topShare, top.length);
+
+  els.topShareUf.textContent = `${shares[0].uf} (${formatPercent(shares[0].share)})`;
+  els.topShareTotal.textContent = formatPercent(topShare);
+  els.medianShare.textContent = formatPercent(medianShareValue);
+  els.shareConcentration.textContent = concentration.label;
+  els.shareConcentration.className = concentration.className;
+
+  renderShareTable(shares);
+  renderShareText({
+    shares,
+    top,
+    topShare,
+    medianShareValue,
+    concentration,
+    startYear,
+    endYear,
+    grandTotal,
+    context,
+  });
+}
+
+function resetSharePanel(message) {
+  els.topShareUf.textContent = "-";
+  els.topShareTotal.textContent = "-";
+  els.medianShare.textContent = "-";
+  els.shareConcentration.textContent = "-";
+  els.shareText.textContent = message;
+  els.shareBody.innerHTML = '<tr><td colspan="4">Sem dados de participacao ainda.</td></tr>';
+  els.copyShare.disabled = true;
+}
+
+function shareConcentrationLabel(topShare, topN) {
+  if (topShare >= 0.65) return { label: `alta no top ${topN}`, className: "up" };
+  if (topShare >= 0.45) return { label: `moderada no top ${topN}`, className: "flat" };
+  return { label: `dispersa no top ${topN}`, className: "down" };
+}
+
+function renderShareTable(shares) {
+  els.shareBody.innerHTML = "";
+  shares.forEach((item, index) => {
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td>${item.uf}</td>
+      <td>${formatNumber(item.total)}</td>
+      <td>${formatPercent(item.share)}</td>
+      <td>${index + 1}</td>
+    `;
+    els.shareBody.appendChild(tr);
+  });
+}
+
+function renderShareText(details) {
+  const { shares, top, topShare, medianShareValue, concentration, startYear, endYear, grandTotal, context } = details;
+  const selectedIndicators = selectedFilterLabel(context.indicatorField, state.filteredIndicators);
+  const scopeText = selectedIndicators ? ` para o indicador ${selectedIndicators}` : "";
+  const topText = top.map((item) => `${item.uf} (${formatPercent(item.share)})`).join(", ");
+  const bottom = shares
+    .slice()
+    .sort((a, b) => a.share - b.share)
+    .slice(0, Math.min(5, shares.length))
+    .map((item) => `${item.uf} (${formatPercent(item.share)})`)
+    .join(", ");
+
+  const paragraphs = [
+    `Entre ${startYear} e ${endYear}, a base soma ${formatNumber(grandTotal)} em ${context.valueField}${scopeText}. O estado com maior participacao e ${shares[0].uf}, com ${formatPercent(shares[0].share)} do total analisado. A participacao mediana das UFs e ${formatPercent(medianShareValue)}, o que ajuda a separar o peso tipico estadual dos estados que puxam o agregado nacional.`,
+    `As ${top.length} UFs de maior peso concentram ${formatPercent(topShare)} do total: ${topText}. A classificacao automatica e de concentracao ${concentration.label}. Quando poucos estados concentram grande parte dos casos, mudancas nesses estados podem alterar fortemente a tendencia nacional mesmo sem movimento semelhante na maioria das UFs.`,
+    `Na outra ponta, as menores participacoes no periodo sao ${bottom}. Para interpretar tendencias nacionais, compare esta tabela com o modulo de generalizacao territorial: se os estados com maior participacao tambem sao os que mais caem ou sobem, o agregado nacional pode estar refletindo sobretudo esses territorios.`,
+  ];
+
+  els.shareText.innerHTML = paragraphs.map((paragraph) => `<p>${paragraph}</p>`).join("");
+  els.copyShare.disabled = false;
 }
 
 function median(values) {

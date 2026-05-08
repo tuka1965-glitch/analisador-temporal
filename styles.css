@@ -240,6 +240,7 @@ button:disabled {
 .forecast-panel,
 .territorial-panel,
 .share-panel,
+.population-panel,
 .state-anomaly-panel {
   margin-top: 16px;
   padding: 16px;
@@ -281,6 +282,27 @@ button:disabled {
 
 .territorial-summary {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.population-controls {
+  grid-template-columns: repeat(3, minmax(120px, 1fr)) minmax(220px, 2fr);
+  align-items: end;
+}
+
+.population-file input {
+  min-height: 38px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 8px;
+  background: white;
+  color: var(--text);
+  font-size: 13px;
+}
+
+.population-status {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.35;
 }
 
 .territorial-summary article {
@@ -373,6 +395,7 @@ th {
   .metrics,
   .workspace,
   .territorial-controls,
+  .population-controls,
   .territorial-summary {
     grid-template-columns: 1fr;
   }

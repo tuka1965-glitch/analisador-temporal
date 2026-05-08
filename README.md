@@ -56,6 +56,8 @@ Depois selecione o indicador de homicidios no filtro **Indicador**. Se a queda n
 
 A secao **Participacao dos estados** calcula quanto cada UF representa no total do indicador selecionado dentro do intervalo de anos escolhido. Ela mostra o ranking estadual, a participacao do maior estado, a soma dos top estados e um texto explicando se o indicador esta concentrado ou disperso territorialmente. Use essa leitura junto com a generalizacao territorial para saber se a tendencia nacional esta sendo puxada por estados de grande peso.
 
+A secao **Taxas por 100 mil habitantes** cruza os casos filtrados com `data/populacao_uf_ano.csv` e calcula taxas estaduais ajustadas pelo tamanho da populacao. A base incluida usa a Projecao da Populacao do IBGE/SIDRA, tabela 7358, edicao 2018, sexo total e idade total, para UFs entre 2015 e 2026. No GitHub Pages o arquivo e carregado automaticamente; abrindo o HTML direto no computador, alguns navegadores bloqueiam esse carregamento e voce pode selecionar manualmente o CSV pelo controle da propria secao.
+
 A secao **Atipicidade por Estado** identifica o evento analisado pelo nome selecionado no filtro **Indicador** e calcula atipicidades dentro da serie historica de cada UF. O criterio padrao marca pontos com pelo menos 2 desvios-padrao em relacao a media mensal da propria UF. O texto diferencia picos atipicos e quedas atipicas, destacando os estados e meses mais extremos sem gerar grafico.
 
 A secao **Projecao linear** estima os proximos 3 periodos da serie filtrada usando regressao linear simples. A projecao e apenas uma extrapolacao de tendencia e nao substitui modelos sazonais ou revisao substantiva dos dados.

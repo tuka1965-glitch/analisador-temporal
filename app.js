@@ -4,6 +4,8 @@ const state = {
   filteredGroups: new Set(),
   filteredUfs: new Set(),
   filteredIndicators: new Set(),
+  populationRows: [],
+  populationByUfYear: new Map(),
 };
 
 const likelyFields = {
@@ -59,6 +61,17 @@ const els = {
   shareText: document.getElementById("shareText"),
   shareBody: document.getElementById("shareBody"),
   copyShare: document.getElementById("copyShare"),
+  populationInput: document.getElementById("populationInput"),
+  populationStart: document.getElementById("populationStart"),
+  populationEnd: document.getElementById("populationEnd"),
+  populationStatus: document.getElementById("populationStatus"),
+  topRateUf: document.getElementById("topRateUf"),
+  medianRate: document.getElementById("medianRate"),
+  populationYearsUsed: document.getElementById("populationYearsUsed"),
+  populationCoverage: document.getElementById("populationCoverage"),
+  populationText: document.getElementById("populationText"),
+  populationBody: document.getElementById("populationBody"),
+  copyPopulation: document.getElementById("copyPopulation"),
   stateAnomalyStart: document.getElementById("stateAnomalyStart"),
   stateAnomalyEnd: document.getElementById("stateAnomalyEnd"),
   stateAnomalyZ: document.getElementById("stateAnomalyZ"),
@@ -113,9 +126,19 @@ for (const element of [els.preStart, els.preEnd, els.postStart, els.postEnd, els
 for (const element of [els.shareStart, els.shareEnd, els.shareTopN]) {
   element.addEventListener("change", analyze);
 }
+for (const element of [els.populationStart, els.populationEnd]) {
+  element.addEventListener("change", analyze);
+}
 for (const element of [els.stateAnomalyStart, els.stateAnomalyEnd, els.stateAnomalyZ, els.stateAnomalyMinPeriods]) {
   element.addEventListener("change", analyze);
 }
+els.populationInput.addEventListener("change", async (event) => {
+  const file = event.target.files[0];
+  if (!file) return;
+  const text = await file.text();
+  loadPopulationCsv(text, file.name);
+  analyze();
+});
 els.ufField.addEventListener("change", () => resetDimensionFilter(state.filteredUfs, els.ufFilters, buildUfFilters));
 els.indicatorField.addEventListener("change", () =>
   resetDimensionFilter(state.filteredIndicators, els.indicatorFilters, buildIndicatorFilters),
@@ -169,6 +192,15 @@ els.copyShare.addEventListener("click", async () => {
     els.copyShare.textContent = "Copiar";
   }, 1200);
 });
+els.copyPopulation.addEventListener("click", async () => {
+  const text = els.populationText.innerText.trim();
+  if (!text) return;
+  await navigator.clipboard.writeText(text);
+  els.copyPopulation.textContent = "Copiado";
+  setTimeout(() => {
+    els.copyPopulation.textContent = "Copiar";
+  }, 1200);
+});
 els.copyStateAnomalies.addEventListener("click", async () => {
   const text = els.stateAnomalyText.innerText.trim();
   if (!text) return;
@@ -178,6 +210,8 @@ els.copyStateAnomalies.addEventListener("click", async () => {
     els.copyStateAnomalies.textContent = "Copiar";
   }, 1200);
 });
+
+loadDefaultPopulation();
 
 function parseCsv(text) {
   const delimiter = detectDelimiter(text);
@@ -461,6 +495,7 @@ function analyze() {
   renderForecast(series, { valueField, period });
   renderTerritorialGeneralization({ dateField, valueField, ufField, indicatorField, groupField });
   renderStateShare({ dateField, valueField, ufField, indicatorField, groupField });
+  renderPopulationRates({ dateField, valueField, ufField, indicatorField, groupField });
   renderStateAnomalies({ dateField, valueField, ufField, indicatorField, groupField });
 }
 
@@ -1174,6 +1209,265 @@ function renderShareText(details) {
 
   els.shareText.innerHTML = paragraphs.map((paragraph) => `<p>${paragraph}</p>`).join("");
   els.copyShare.disabled = false;
+}
+
+async function loadDefaultPopulation() {
+  try {
+    const response = await fetch("data/populacao_uf_ano.csv", { cache: "no-store" });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const text = await response.text();
+    loadPopulationCsv(text, "data/populacao_uf_ano.csv");
+    if (state.rows.length) analyze();
+  } catch (error) {
+    els.populationStatus.textContent =
+      "Base padrao nao carregada neste ambiente. No GitHub Pages ela carrega automaticamente; em arquivo local, use o seletor acima.";
+  }
+}
+
+function loadPopulationCsv(text, sourceName) {
+  const parsed = parseCsv(text);
+  const ufField = findHeader(parsed.headers, ["uf", "sigla", "sigla uf", "estado"]);
+  const yearField = findHeader(parsed.headers, ["ano", "year"]);
+  const populationField = findHeader(parsed.headers, ["populacao", "população", "population", "valor"]);
+  const sourceField = findHeader(parsed.headers, ["fonte", "source"]);
+
+  state.populationRows = [];
+  state.populationByUfYear.clear();
+
+  if (!ufField || !yearField || !populationField) {
+    els.populationStatus.textContent = "A base populacional precisa ter colunas UF, ano e populacao.";
+    resetPopulationRatePanel("Nao foi possivel ler a base populacional.");
+    return;
+  }
+
+  for (const row of parsed.rows) {
+    const uf = normalizeUf(row[ufField]);
+    const year = Number(row[yearField]);
+    const population = parseNumber(row[populationField]);
+    if (!uf || !Number.isInteger(year) || !Number.isFinite(population) || population <= 0) continue;
+    const item = {
+      uf,
+      year,
+      population,
+      source: sourceField ? row[sourceField] : sourceName,
+    };
+    state.populationRows.push(item);
+    state.populationByUfYear.set(`${uf}|${year}`, item);
+  }
+
+  const years = Array.from(new Set(state.populationRows.map((row) => row.year))).sort((a, b) => a - b);
+  els.populationStatus.textContent = state.populationRows.length
+    ? `Base populacional carregada: ${state.populationRows.length.toLocaleString("pt-BR")} UF-anos, ${years[0]}-${years[years.length - 1]}.`
+    : "Nenhuma linha valida encontrada na base populacional.";
+}
+
+function findHeader(headers, candidates) {
+  const normalized = new Map(headers.map((header) => [normalizeFieldName(header), header]));
+  for (const candidate of candidates) {
+    const match = normalized.get(normalizeFieldName(candidate));
+    if (match) return match;
+  }
+  return "";
+}
+
+function normalizeFieldName(value) {
+  return String(value || "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+}
+
+const ufNameToCode = {
+  acre: "AC",
+  alagoas: "AL",
+  amapa: "AP",
+  amazonas: "AM",
+  bahia: "BA",
+  ceara: "CE",
+  "distrito federal": "DF",
+  "espirito santo": "ES",
+  goias: "GO",
+  maranhao: "MA",
+  "mato grosso": "MT",
+  "mato grosso do sul": "MS",
+  "minas gerais": "MG",
+  para: "PA",
+  paraiba: "PB",
+  parana: "PR",
+  pernambuco: "PE",
+  piaui: "PI",
+  "rio de janeiro": "RJ",
+  "rio grande do norte": "RN",
+  "rio grande do sul": "RS",
+  rondonia: "RO",
+  roraima: "RR",
+  "santa catarina": "SC",
+  "sao paulo": "SP",
+  sergipe: "SE",
+  tocantins: "TO",
+};
+
+function normalizeUf(value) {
+  const raw = String(value || "").trim();
+  if (!raw) return "";
+  const upper = raw.toUpperCase();
+  if (/^[A-Z]{2}$/.test(upper)) return upper;
+  const normalized = raw
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+  return ufNameToCode[normalized] || upper;
+}
+
+function renderPopulationRates(context) {
+  if (!state.rows.length || !context.ufField || context.ufField === "(nenhum)") {
+    resetPopulationRatePanel("Carregue um CSV com coluna de UF para calcular taxas por 100 mil habitantes.");
+    return;
+  }
+
+  if (!state.populationByUfYear.size) {
+    resetPopulationRatePanel("Carregue a base de populacao para calcular taxas estaduais por 100 mil habitantes.");
+    return;
+  }
+
+  const startYear = Number(els.populationStart.value);
+  const endYear = Number(els.populationEnd.value);
+  if (!startYear || !endYear || startYear > endYear) {
+    resetPopulationRatePanel("Defina um intervalo de anos valido para calcular taxas por 100 mil habitantes.");
+    return;
+  }
+
+  const byUfYear = new Map();
+  for (const row of state.rows) {
+    const date = parseDate(row[context.dateField], els.dateFormat.value);
+    const value = parseNumber(row[context.valueField]);
+    if (!date || !Number.isFinite(value)) continue;
+
+    const year = date.getFullYear();
+    if (year < startYear || year > endYear) continue;
+
+    const uf = row[context.ufField] || "(vazio)";
+    const normalizedUf = normalizeUf(uf);
+    const indicator =
+      context.indicatorField && context.indicatorField !== "(nenhum)" ? row[context.indicatorField] || "(vazio)" : "";
+    const group = context.groupField && context.groupField !== "(sem comparacao)" ? row[context.groupField] || "(vazio)" : "";
+    if (state.filteredUfs.has(uf)) continue;
+    if (indicator && state.filteredIndicators.has(indicator)) continue;
+    if (group && state.filteredGroups.has(group)) continue;
+
+    const key = `${normalizedUf}|${year}`;
+    const current = byUfYear.get(key) || { uf: normalizedUf, year, cases: 0 };
+    current.cases += value;
+    byUfYear.set(key, current);
+  }
+
+  const byUf = new Map();
+  let matchedUfYears = 0;
+  let missingUfYears = 0;
+
+  for (const item of byUfYear.values()) {
+    const population = state.populationByUfYear.get(`${item.uf}|${item.year}`);
+    if (!population) {
+      missingUfYears += 1;
+      continue;
+    }
+    const current = byUf.get(item.uf) || { uf: item.uf, cases: 0, population: 0, years: new Set(), sources: new Set() };
+    current.cases += item.cases;
+    current.population += population.population;
+    current.years.add(item.year);
+    current.sources.add(population.source);
+    byUf.set(item.uf, current);
+    matchedUfYears += 1;
+  }
+
+  const rates = Array.from(byUf.values())
+    .map((item) => ({
+      ...item,
+      rate: item.population ? (item.cases / item.population) * 100000 : 0,
+    }))
+    .sort((a, b) => b.rate - a.rate);
+
+  if (!rates.length) {
+    resetPopulationRatePanel("Nao houve cruzamento entre os dados criminais filtrados e a base populacional carregada.");
+    return;
+  }
+
+  renderPopulationRateTable(rates);
+  renderPopulationRateText({
+    rates,
+    matchedUfYears,
+    missingUfYears,
+    startYear,
+    endYear,
+    context,
+  });
+}
+
+function resetPopulationRatePanel(message) {
+  els.topRateUf.textContent = "-";
+  els.medianRate.textContent = "-";
+  els.populationYearsUsed.textContent = "0";
+  els.populationCoverage.textContent = "-";
+  els.populationText.textContent = message;
+  els.populationBody.innerHTML = '<tr><td colspan="5">Sem taxas ainda.</td></tr>';
+  els.copyPopulation.disabled = true;
+}
+
+function renderPopulationRateTable(rates) {
+  els.populationBody.innerHTML = "";
+  for (const item of rates.slice(0, 80)) {
+    const tr = document.createElement("tr");
+    const years = Array.from(item.years).sort((a, b) => a - b);
+    tr.innerHTML = `
+      <td>${item.uf}</td>
+      <td>${formatNumber(item.cases)}</td>
+      <td>${formatNumber(item.population)}</td>
+      <td>${formatNumber(item.rate)}</td>
+      <td>${years[0]}-${years[years.length - 1]}</td>
+    `;
+    els.populationBody.appendChild(tr);
+  }
+}
+
+function renderPopulationRateText(details) {
+  const { rates, matchedUfYears, missingUfYears, startYear, endYear, context } = details;
+  const top = rates[0];
+  const rateValues = rates.map((item) => item.rate);
+  const medianRateValue = median(rateValues);
+  const totalCases = rates.reduce((sum, item) => sum + item.cases, 0);
+  const totalPopulation = rates.reduce((sum, item) => sum + item.population, 0);
+  const aggregateRate = totalPopulation ? (totalCases / totalPopulation) * 100000 : 0;
+  const coverage = matchedUfYears / Math.max(matchedUfYears + missingUfYears, 1);
+  const eventName = eventLabel(context);
+  const topByCount = rates.slice().sort((a, b) => b.cases - a.cases)[0];
+  const topRates = rates.slice(0, Math.min(5, rates.length)).map((item) => `${item.uf} (${formatNumber(item.rate)})`);
+
+  els.topRateUf.textContent = `${top.uf} (${formatNumber(top.rate)})`;
+  els.medianRate.textContent = formatNumber(medianRateValue);
+  els.populationYearsUsed.textContent = matchedUfYears.toLocaleString("pt-BR");
+  els.populationCoverage.textContent = formatPercent(coverage);
+
+  const missingText = missingUfYears
+    ? ` Houve ${missingUfYears.toLocaleString("pt-BR")} combinações UF-ano sem população correspondente e elas foram ignoradas.`
+    : "";
+  const comparisonText =
+    topByCount && topByCount.uf !== top.uf
+      ? `Em numeros absolutos, a UF com mais casos e ${topByCount.uf}; pela taxa populacional, a maior intensidade relativa aparece em ${top.uf}. Essa diferenca e importante porque estados populosos tendem a dominar totais nacionais mesmo quando o risco relativo nao e o maior.`
+      : `A UF com maior volume absoluto tambem aparece entre as maiores taxas, indicando que o peso populacional nao elimina sua relevancia relativa no indicador.`;
+
+  const paragraphs = [
+    `Entre ${startYear} e ${endYear}, para ${eventName}, a taxa agregada das UFs com populacao disponivel e ${formatNumber(aggregateRate)} casos por 100 mil habitantes. A taxa mediana estadual e ${formatNumber(medianRateValue)}, enquanto a maior taxa e ${top.uf}, com ${formatNumber(top.rate)} por 100 mil.${missingText}`,
+    `As maiores taxas estaduais no recorte sao ${topRates.join(", ")}. Essa leitura complementa a participacao percentual: a participacao mostra peso no total de casos, enquanto a taxa por 100 mil ajusta o indicador pelo tamanho da populacao exposta.`,
+    comparisonText,
+    "A base populacional incluida no pacote usa a Projecao da Populacao do IBGE/SIDRA, tabela 7358, edicao 2018, sexo total e idade total. Como sao projecoes oficiais, elas servem bem para padronizar taxas, mas podem diferir das estimativas populacionais anuais revisadas mais recentes.",
+  ];
+
+  els.populationText.innerHTML = paragraphs.map((paragraph) => `<p>${paragraph}</p>`).join("");
+  els.copyPopulation.disabled = false;
 }
 
 function renderStateAnomalies(context) {

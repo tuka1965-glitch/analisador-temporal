@@ -287,6 +287,63 @@
         </div>
       </section>
 
+      <section class="panel population-panel">
+        <div class="section-heading">
+          <h2>Taxas por 100 mil habitantes</h2>
+          <button id="copyPopulation" type="button" disabled>Copiar</button>
+        </div>
+        <div class="territorial-controls population-controls">
+          <label>
+            Ano inicio
+            <input id="populationStart" type="number" min="1900" max="2100" value="2015" />
+          </label>
+          <label>
+            Ano fim
+            <input id="populationEnd" type="number" min="1900" max="2100" value="2026" />
+          </label>
+          <label class="population-file">
+            Base populacional
+            <input id="populationInput" type="file" accept=".csv,.txt" />
+          </label>
+          <p id="populationStatus" class="population-status">Tentando carregar data/populacao_uf_ano.csv.</p>
+        </div>
+        <div class="territorial-summary">
+          <article>
+            <span>Maior taxa</span>
+            <strong id="topRateUf">-</strong>
+          </article>
+          <article>
+            <span>Taxa mediana</span>
+            <strong id="medianRate">-</strong>
+          </article>
+          <article>
+            <span>UF-anos usados</span>
+            <strong id="populationYearsUsed">0</strong>
+          </article>
+          <article>
+            <span>Cobertura</span>
+            <strong id="populationCoverage">-</strong>
+          </article>
+        </div>
+        <div id="populationText" class="analysis-text">Carregue a base de populacao para calcular taxas estaduais por 100 mil habitantes.</div>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>UF</th>
+                <th>Casos</th>
+                <th>Populacao acumulada</th>
+                <th>Taxa por 100 mil</th>
+                <th>Anos</th>
+              </tr>
+            </thead>
+            <tbody id="populationBody">
+              <tr><td colspan="5">Sem taxas ainda.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
       <section class="panel state-anomaly-panel">
         <div class="section-heading">
           <h2>Atipicidade por Estado</h2>

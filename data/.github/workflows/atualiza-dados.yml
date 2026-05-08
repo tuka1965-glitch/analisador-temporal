@@ -1,0 +1,33 @@
+name: Atualiza dados SINESP
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 9 5 * *"
+
+permissions:
+  contents: write
+
+jobs:
+  atualiza:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: "release"
+
+      - name: Rodar script de atualizacao
+        run: Rscript scripts/atualiza_dados.R
+
+      - name: Commit dos dados atualizados
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add data/
+          git diff --cached --quiet || git commit -m "Atualiza dados SINESP"
+          git push

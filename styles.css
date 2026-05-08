@@ -120,6 +120,12 @@ button:disabled {
   margin: 16px 0;
 }
 
+.report-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 0 16px;
+}
+
 .warning {
   margin: 0 0 16px;
   border: 1px solid #f2c94c;
@@ -210,6 +216,11 @@ button:disabled {
   font-size: 12px;
 }
 
+.filter-actions {
+  display: flex;
+  gap: 6px;
+}
+
 .filters label {
   display: flex;
   align-items: center;
@@ -226,10 +237,38 @@ button:disabled {
 }
 
 .narrative-panel,
+.forecast-panel,
 .territorial-panel,
-.share-panel {
+.share-panel,
+.state-anomaly-panel {
   margin-top: 16px;
   padding: 16px;
+}
+
+@media print {
+  .topbar,
+  .controls,
+  .report-actions,
+  .file-button,
+  button {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+  }
+
+  main {
+    max-width: none;
+    padding: 0;
+  }
+
+  .panel,
+  .chart-wrap,
+  .metrics article {
+    break-inside: avoid;
+    box-shadow: none;
+  }
 }
 
 .territorial-controls,

@@ -33,6 +33,10 @@ const els = {
   warningBox: document.getElementById("warningBox"),
   analysisText: document.getElementById("analysisText"),
   copyAnalysis: document.getElementById("copyAnalysis"),
+  exportPdf: document.getElementById("exportPdf"),
+  forecastText: document.getElementById("forecastText"),
+  forecastBody: document.getElementById("forecastBody"),
+  copyForecast: document.getElementById("copyForecast"),
   preStart: document.getElementById("preStart"),
   preEnd: document.getElementById("preEnd"),
   postStart: document.getElementById("postStart"),
@@ -55,6 +59,17 @@ const els = {
   shareText: document.getElementById("shareText"),
   shareBody: document.getElementById("shareBody"),
   copyShare: document.getElementById("copyShare"),
+  stateAnomalyStart: document.getElementById("stateAnomalyStart"),
+  stateAnomalyEnd: document.getElementById("stateAnomalyEnd"),
+  stateAnomalyZ: document.getElementById("stateAnomalyZ"),
+  stateAnomalyMinPeriods: document.getElementById("stateAnomalyMinPeriods"),
+  stateAnomalyEvent: document.getElementById("stateAnomalyEvent"),
+  stateAnomalyUfCount: document.getElementById("stateAnomalyUfCount"),
+  stateAnomalyPointCount: document.getElementById("stateAnomalyPointCount"),
+  stateAnomalyMax: document.getElementById("stateAnomalyMax"),
+  stateAnomalyText: document.getElementById("stateAnomalyText"),
+  stateAnomalyBody: document.getElementById("stateAnomalyBody"),
+  copyStateAnomalies: document.getElementById("copyStateAnomalies"),
   chart: document.getElementById("chart"),
   chartSubtitle: document.getElementById("chartSubtitle"),
   ufFilters: document.getElementById("ufFilters"),
@@ -63,6 +78,9 @@ const els = {
   selectAllUfs: document.getElementById("selectAllUfs"),
   selectAllIndicators: document.getElementById("selectAllIndicators"),
   selectAllGroups: document.getElementById("selectAllGroups"),
+  selectNoUfs: document.getElementById("selectNoUfs"),
+  selectNoIndicators: document.getElementById("selectNoIndicators"),
+  selectNoGroups: document.getElementById("selectNoGroups"),
   summaryBody: document.getElementById("summaryBody"),
 };
 
@@ -95,6 +113,9 @@ for (const element of [els.preStart, els.preEnd, els.postStart, els.postEnd, els
 for (const element of [els.shareStart, els.shareEnd, els.shareTopN]) {
   element.addEventListener("change", analyze);
 }
+for (const element of [els.stateAnomalyStart, els.stateAnomalyEnd, els.stateAnomalyZ, els.stateAnomalyMinPeriods]) {
+  element.addEventListener("change", analyze);
+}
 els.ufField.addEventListener("change", () => resetDimensionFilter(state.filteredUfs, els.ufFilters, buildUfFilters));
 els.indicatorField.addEventListener("change", () =>
   resetDimensionFilter(state.filteredIndicators, els.indicatorFilters, buildIndicatorFilters),
@@ -104,6 +125,11 @@ els.analyzeButton.addEventListener("click", analyze);
 els.selectAllUfs.addEventListener("click", () => clearFilterSet(state.filteredUfs, buildUfFilters));
 els.selectAllIndicators.addEventListener("click", () => clearFilterSet(state.filteredIndicators, buildIndicatorFilters));
 els.selectAllGroups.addEventListener("click", () => clearFilterSet(state.filteredGroups, buildGroupFilters));
+els.selectNoUfs.addEventListener("click", () => selectNoValues(els.ufField.value, state.filteredUfs, buildUfFilters));
+els.selectNoIndicators.addEventListener("click", () =>
+  selectNoValues(els.indicatorField.value, state.filteredIndicators, buildIndicatorFilters),
+);
+els.selectNoGroups.addEventListener("click", () => selectNoValues(els.groupField.value, state.filteredGroups, buildGroupFilters));
 els.copyAnalysis.addEventListener("click", async () => {
   const text = els.analysisText.innerText.trim();
   if (!text) return;
@@ -112,6 +138,18 @@ els.copyAnalysis.addEventListener("click", async () => {
   setTimeout(() => {
     els.copyAnalysis.textContent = "Copiar";
   }, 1200);
+});
+els.copyForecast.addEventListener("click", async () => {
+  const text = els.forecastText.innerText.trim();
+  if (!text) return;
+  await navigator.clipboard.writeText(text);
+  els.copyForecast.textContent = "Copiado";
+  setTimeout(() => {
+    els.copyForecast.textContent = "Copiar";
+  }, 1200);
+});
+els.exportPdf.addEventListener("click", () => {
+  window.print();
 });
 els.copyTerritorial.addEventListener("click", async () => {
   const text = els.territorialText.innerText.trim();
@@ -129,6 +167,15 @@ els.copyShare.addEventListener("click", async () => {
   els.copyShare.textContent = "Copiado";
   setTimeout(() => {
     els.copyShare.textContent = "Copiar";
+  }, 1200);
+});
+els.copyStateAnomalies.addEventListener("click", async () => {
+  const text = els.stateAnomalyText.innerText.trim();
+  if (!text) return;
+  await navigator.clipboard.writeText(text);
+  els.copyStateAnomalies.textContent = "Copiado";
+  setTimeout(() => {
+    els.copyStateAnomalies.textContent = "Copiar";
   }, 1200);
 });
 
@@ -267,6 +314,15 @@ function clearFilterSet(filterSet, builder) {
   analyze();
 }
 
+function selectNoValues(field, filterSet, builder) {
+  filterSet.clear();
+  for (const value of uniqueValues(field)) {
+    filterSet.add(value);
+  }
+  builder();
+  analyze();
+}
+
 function buildAllFilters() {
   buildUfFilters();
   buildIndicatorFilters();
@@ -279,6 +335,7 @@ function buildUfFilters() {
     container: els.ufFilters,
     filtered: state.filteredUfs,
     selectAllButton: els.selectAllUfs,
+    selectNoneButton: els.selectNoUfs,
     maxValues: 40,
   });
 }
@@ -289,6 +346,7 @@ function buildIndicatorFilters() {
     container: els.indicatorFilters,
     filtered: state.filteredIndicators,
     selectAllButton: els.selectAllIndicators,
+    selectNoneButton: els.selectNoIndicators,
     maxValues: 80,
   });
 }
@@ -299,14 +357,24 @@ function buildGroupFilters() {
     container: els.filters,
     filtered: state.filteredGroups,
     selectAllButton: els.selectAllGroups,
+    selectNoneButton: els.selectNoGroups,
     maxValues: 80,
     emptyValue: "(sem comparacao)",
   });
 }
 
-function buildDimensionFilter({ field, container, filtered, selectAllButton, maxValues, emptyValue = "(nenhum)" }) {
+function buildDimensionFilter({
+  field,
+  container,
+  filtered,
+  selectAllButton,
+  selectNoneButton,
+  maxValues,
+  emptyValue = "(nenhum)",
+}) {
   container.innerHTML = "";
   selectAllButton.disabled = true;
+  selectNoneButton.disabled = true;
   if (!field || field === emptyValue || field === "(nenhum)") return;
 
   const counts = new Map();
@@ -333,6 +401,7 @@ function buildDimensionFilter({ field, container, filtered, selectAllButton, max
     container.appendChild(label);
   }
   selectAllButton.disabled = values.length === 0;
+  selectNoneButton.disabled = values.length === 0;
 }
 
 function analyze() {
@@ -383,13 +452,16 @@ function analyze() {
 
   addMovingAverage(series, windowSize);
   addChangeAndAnomalies(series);
+  addYearOverYearChange(series, period);
   updateMetrics(series, usedRows, skippedRows);
   updateWarnings(series, skippedRows, badDateSamples, badValueSamples);
   drawChart(series);
   renderTable(series);
   renderNarrative(series, { dateField, valueField, ufField, indicatorField, groupField, period });
+  renderForecast(series, { valueField, period });
   renderTerritorialGeneralization({ dateField, valueField, ufField, indicatorField, groupField });
   renderStateShare({ dateField, valueField, ufField, indicatorField, groupField });
+  renderStateAnomalies({ dateField, valueField, ufField, indicatorField, groupField });
 }
 
 function parseDate(value, format = "auto") {
@@ -534,6 +606,29 @@ function addChangeAndAnomalies(series) {
   }
 }
 
+function addYearOverYearChange(series, period) {
+  const offset = period === "month" ? 12 : period === "quarter" ? 4 : 1;
+  for (let index = 0; index < series.length; index += 1) {
+    const previous = series[index - offset];
+    const expectedKey = previous ? comparablePriorKey(series[index].key, period) : "";
+    if (previous && previous.key === expectedKey && previous.value) {
+      series[index].yearOverYearChange = (series[index].value - previous.value) / previous.value;
+    } else {
+      series[index].yearOverYearChange = null;
+    }
+  }
+}
+
+function comparablePriorKey(key, period) {
+  if (period === "year") return String(Number(key) - 1);
+  if (period === "quarter") {
+    const [year, quarter] = key.split("-T");
+    return `${Number(year) - 1}-T${quarter}`;
+  }
+  const [year, month] = key.split("-");
+  return `${Number(year) - 1}-${month}`;
+}
+
 function updateMetrics(series, usedRows, skippedRows) {
   const total = series.reduce((sum, point) => sum + point.value, 0);
   const slope = linearSlope(series.map((point, index) => [index, point.value]));
@@ -621,11 +716,13 @@ function renderTable(series) {
   for (const point of series) {
     const tr = document.createElement("tr");
     const direction = point.change > 0 ? "up" : point.change < 0 ? "down" : "flat";
+    const yoyDirection = point.yearOverYearChange > 0 ? "up" : point.yearOverYearChange < 0 ? "down" : "flat";
     tr.innerHTML = `
       <td>${point.key}</td>
       <td>${formatNumber(point.value)}</td>
       <td>${formatNumber(point.movingAverage)}</td>
       <td class="${direction}">${formatPercent(point.change)}</td>
+      <td class="${yoyDirection}">${formatOptionalPercent(point.yearOverYearChange)}</td>
       <td>${point.anomaly ? "Anomalia" : "Normal"}</td>
     `;
     els.summaryBody.appendChild(tr);
@@ -650,6 +747,7 @@ function renderNarrative(series, context) {
   const volatility = coefficientOfVariation(series.map((point) => point.value));
   const abrupt = abruptChanges(series).slice(0, 4);
   const seasonal = seasonalitySummary(series, context.period);
+  const yoy = yearOverYearSummary(series);
   const anomalies = series.filter((point) => point.anomaly);
   const direction = slope > average * 0.01 ? "alta" : slope < -average * 0.01 ? "queda" : "estabilidade";
   const intensity =
@@ -668,12 +766,89 @@ function renderNarrative(series, context) {
     `A serie historica de ${context.valueField}${activeFilterSummary(context)} cobre ${series.length} periodos, de ${first.key} a ${last.key}, somando ${formatNumber(total)} no intervalo. O primeiro periodo registra ${formatNumber(first.value)} e o ultimo ${formatNumber(last.value)}, o que representa uma variacao acumulada de ${formatPercent(overallChange)}. Pela inclinacao estimada da reta de tendencia, a leitura geral e de ${direction} ${intensity}, com mudanca media aproximada de ${formatNumber(slope)} por periodo.`,
     `O maior valor observado ocorre em ${peak.key}, com ${formatNumber(peak.value)}, enquanto o menor aparece em ${trough.key}, com ${formatNumber(trough.value)}. A media da serie e ${formatNumber(average)} por periodo. A volatilidade relativa e ${formatPercent(volatility)}, ${volatility >= 0.25 ? "indicando oscilacao relevante em torno da media" : volatility >= 0.12 ? "sugerindo variacao moderada" : "sugerindo uma serie relativamente regular"}.`,
     seasonal,
+    yoy,
     abruptText,
     `Como leitura substantiva, vale tratar picos e quedas abruptas como pistas, nao como conclusoes finais. Em dados criminais, mudancas desse tipo podem refletir alteracao real da violencia, sazonalidade, revisao metodologica, atraso de registro, mudanca de cobertura territorial ou diferencas na forma de consolidacao do indicador. O proximo passo analitico recomendado e cruzar esses pontos com filtros por UF, municipio e tipo de evento, quando a base completa estiver disponivel.`,
   ];
 
   els.analysisText.innerHTML = paragraphs.map((paragraph) => `<p>${paragraph}</p>`).join("");
   els.copyAnalysis.disabled = false;
+}
+
+function renderForecast(series, context) {
+  if (series.length < 3) {
+    els.forecastText.textContent = "Sao necessarios pelo menos 3 periodos validos para calcular uma projecao linear.";
+    els.forecastBody.innerHTML = '<tr><td colspan="3">Sem projeção ainda.</td></tr>';
+    els.copyForecast.disabled = true;
+    return;
+  }
+
+  const points = series.map((point, index) => [index, point.value]);
+  const slope = linearSlope(points);
+  const intercept = linearIntercept(points, slope);
+  const forecast = [];
+  for (let step = 1; step <= 3; step += 1) {
+    const index = series.length - 1 + step;
+    forecast.push({
+      key: nextPeriodKey(series.at(-1).key, context.period, step),
+      value: Math.max(0, intercept + slope * index),
+    });
+  }
+
+  renderForecastTable(forecast);
+  const direction = slope > 0 ? "alta" : slope < 0 ? "queda" : "estabilidade";
+  const text = [
+    `A projecao linear para os proximos 3 periodos usa todos os pontos atualmente filtrados da serie ${context.valueField}. A inclinacao estimada e de ${formatNumber(slope)} por periodo, indicando continuidade de ${direction} caso o padrao medio recente da serie se mantenha.`,
+    `Os valores projetados sao ${forecast.map((point) => `${point.key}: ${formatNumber(point.value)}`).join(", ")}. Esta e uma extrapolacao simples de tendencia; ela nao incorpora sazonalidade, mudancas metodologicas, choques locais ou revisoes futuras da base.`,
+  ];
+  els.forecastText.innerHTML = text.map((paragraph) => `<p>${paragraph}</p>`).join("");
+  els.copyForecast.disabled = false;
+}
+
+function renderForecastTable(forecast) {
+  els.forecastBody.innerHTML = "";
+  for (const point of forecast) {
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td>${point.key}</td>
+      <td>${formatNumber(point.value)}</td>
+      <td>regressao linear</td>
+    `;
+    els.forecastBody.appendChild(tr);
+  }
+}
+
+function linearIntercept(points, slope) {
+  if (!points.length) return 0;
+  const meanX = points.reduce((sum, point) => sum + point[0], 0) / points.length;
+  const meanY = points.reduce((sum, point) => sum + point[1], 0) / points.length;
+  return meanY - slope * meanX;
+}
+
+function nextPeriodKey(key, period, step) {
+  if (period === "year") return String(Number(key) + step);
+  if (period === "quarter") {
+    const [yearText, quarterText] = key.split("-T");
+    const current = Number(yearText) * 4 + Number(quarterText) - 1 + step;
+    const year = Math.floor(current / 4);
+    const quarter = (current % 4) + 1;
+    return `${year}-T${quarter}`;
+  }
+  const [yearText, monthText] = key.split("-");
+  const date = new Date(Number(yearText), Number(monthText) - 1 + step, 1);
+  return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}`;
+}
+
+function yearOverYearSummary(series) {
+  const valid = series.filter((point) => Number.isFinite(point.yearOverYearChange));
+  if (!valid.length) {
+    return "Ainda nao ha pares suficientes para comparar cada periodo com o mesmo periodo do ano anterior.";
+  }
+  const latest = valid.at(-1);
+  const average = valid.reduce((sum, point) => sum + point.yearOverYearChange, 0) / valid.length;
+  const falls = valid.filter((point) => point.yearOverYearChange < 0).length;
+  const rises = valid.filter((point) => point.yearOverYearChange > 0).length;
+  return `Na comparacao com o mesmo periodo do ano anterior, a ultima variacao disponivel e ${formatPercent(latest.yearOverYearChange)} em ${latest.key}. Ao longo da serie, ${falls} periodos ficaram abaixo do mesmo periodo do ano anterior e ${rises} ficaram acima; a variacao media interanual e ${formatPercent(average)}. Essa medida ajuda a reduzir leituras enviesadas por sazonalidade.`;
 }
 
 function renderTerritorialGeneralization(context) {
@@ -1001,6 +1176,164 @@ function renderShareText(details) {
   els.copyShare.disabled = false;
 }
 
+function renderStateAnomalies(context) {
+  const eventName = eventLabel(context);
+  els.stateAnomalyEvent.textContent = eventName;
+
+  if (!state.rows.length || !context.ufField || context.ufField === "(nenhum)") {
+    resetStateAnomalyPanel("Carregue um CSV com coluna de UF para identificar atipicidades por estado.", eventName);
+    return;
+  }
+
+  const startYear = Number(els.stateAnomalyStart.value);
+  const endYear = Number(els.stateAnomalyEnd.value);
+  const zThreshold = Math.max(0.5, Number(els.stateAnomalyZ.value) || 2);
+  const minPeriods = Math.max(3, Number(els.stateAnomalyMinPeriods.value) || 12);
+  if (!startYear || !endYear || startYear > endYear) {
+    resetStateAnomalyPanel("Defina um intervalo de anos valido para analisar atipicidades por estado.", eventName);
+    return;
+  }
+
+  const byUf = new Map();
+  for (const row of state.rows) {
+    const date = parseDate(row[context.dateField], els.dateFormat.value);
+    const value = parseNumber(row[context.valueField]);
+    if (!date || !Number.isFinite(value)) continue;
+
+    const year = date.getFullYear();
+    if (year < startYear || year > endYear) continue;
+
+    const uf = row[context.ufField] || "(vazio)";
+    const indicator =
+      context.indicatorField && context.indicatorField !== "(nenhum)" ? row[context.indicatorField] || "(vazio)" : "";
+    const group = context.groupField && context.groupField !== "(sem comparacao)" ? row[context.groupField] || "(vazio)" : "";
+    if (state.filteredUfs.has(uf)) continue;
+    if (indicator && state.filteredIndicators.has(indicator)) continue;
+    if (group && state.filteredGroups.has(group)) continue;
+
+    const key = periodKey(date, "month");
+    const ufSeries = byUf.get(uf) || new Map();
+    ufSeries.set(key, (ufSeries.get(key) || 0) + value);
+    byUf.set(uf, ufSeries);
+  }
+
+  const anomalies = [];
+  const ufSummaries = [];
+  for (const [uf, seriesMap] of byUf.entries()) {
+    const points = Array.from(seriesMap.entries())
+      .sort(([a], [b]) => a.localeCompare(b))
+      .map(([key, value]) => ({ key, value }));
+    if (points.length < minPeriods) continue;
+
+    const values = points.map((point) => point.value);
+    const average = values.reduce((sum, value) => sum + value, 0) / values.length;
+    const variance = values.reduce((sum, value) => sum + (value - average) ** 2, 0) / values.length;
+    const sd = Math.sqrt(variance);
+    if (!sd) continue;
+
+    let ufAnomalyCount = 0;
+    for (const point of points) {
+      const z = (point.value - average) / sd;
+      if (Math.abs(z) >= zThreshold) {
+        ufAnomalyCount += 1;
+        anomalies.push({
+          uf,
+          key: point.key,
+          value: point.value,
+          average,
+          z,
+          type: z > 0 ? "pico atipico" : "queda atipica",
+        });
+      }
+    }
+    ufSummaries.push({ uf, periods: points.length, average, sd, anomalyCount: ufAnomalyCount });
+  }
+
+  anomalies.sort((a, b) => Math.abs(b.z) - Math.abs(a.z));
+  const ufsWithAnomalies = new Set(anomalies.map((item) => item.uf));
+  els.stateAnomalyUfCount.textContent = `${ufsWithAnomalies.size}/${ufSummaries.length}`;
+  els.stateAnomalyPointCount.textContent = anomalies.length.toLocaleString("pt-BR");
+  els.stateAnomalyMax.textContent = anomalies.length ? `${anomalies[0].uf} ${anomalies[0].key}` : "-";
+
+  if (!ufSummaries.length) {
+    resetStateAnomalyPanel("Nao ha UFs com periodos suficientes para avaliar atipicidade no intervalo selecionado.", eventName);
+    return;
+  }
+
+  renderStateAnomalyTable(anomalies.slice(0, 80));
+  renderStateAnomalyText({
+    anomalies,
+    ufSummaries,
+    ufsWithAnomalies,
+    eventName,
+    startYear,
+    endYear,
+    zThreshold,
+    minPeriods,
+  });
+}
+
+function resetStateAnomalyPanel(message, eventName = "-") {
+  els.stateAnomalyEvent.textContent = eventName;
+  els.stateAnomalyUfCount.textContent = "0";
+  els.stateAnomalyPointCount.textContent = "0";
+  els.stateAnomalyMax.textContent = "-";
+  els.stateAnomalyText.textContent = message;
+  els.stateAnomalyBody.innerHTML = '<tr><td colspan="6">Sem atipicidades estaduais ainda.</td></tr>';
+  els.copyStateAnomalies.disabled = true;
+}
+
+function renderStateAnomalyTable(anomalies) {
+  els.stateAnomalyBody.innerHTML = "";
+  if (!anomalies.length) {
+    els.stateAnomalyBody.innerHTML = '<tr><td colspan="6">Nenhum ponto ultrapassou o limiar configurado.</td></tr>';
+    return;
+  }
+  for (const item of anomalies) {
+    const direction = item.z > 0 ? "up" : "down";
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td>${item.uf}</td>
+      <td>${item.key}</td>
+      <td>${formatNumber(item.value)}</td>
+      <td>${formatNumber(item.average)}</td>
+      <td class="${direction}">${formatNumber(item.z)}</td>
+      <td>${item.type}</td>
+    `;
+    els.stateAnomalyBody.appendChild(tr);
+  }
+}
+
+function renderStateAnomalyText(details) {
+  const { anomalies, ufSummaries, ufsWithAnomalies, eventName, startYear, endYear, zThreshold, minPeriods } = details;
+  const share = ufSummaries.length ? ufsWithAnomalies.size / ufSummaries.length : 0;
+  const top = anomalies.slice(0, 8).map((item) => `${item.uf} em ${item.key} (${item.type}, desvio ${formatNumber(item.z)})`);
+  const byUfCounts = Array.from(
+    anomalies.reduce((map, item) => map.set(item.uf, (map.get(item.uf) || 0) + 1), new Map()).entries(),
+  )
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 6)
+    .map(([uf, count]) => `${uf} (${count})`);
+
+  const paragraphs = [
+    `A analise por estado considera o evento ${eventName}, entre ${startYear} e ${endYear}, com limiar de ${formatNumber(zThreshold)} desvios-padrao e minimo de ${minPeriods} periodos por UF. Entre as ${ufSummaries.length} UFs com dados suficientes, ${ufsWithAnomalies.size} apresentam pelo menos um ponto atipico, o equivalente a ${formatPercent(share)} das UFs analisadas.`,
+    anomalies.length
+      ? `Os pontos mais extremos sao ${top.join(", ")}. Esses pontos indicam meses em que a UF ficou muito acima ou abaixo do seu proprio padrao historico, nao necessariamente acima ou abaixo do Brasil.`
+      : "Nenhum estado apresentou ponto acima do limiar definido. Isso sugere ausencia de choques estaduais muito extremos segundo este criterio, embora ainda possam existir mudancas graduais de tendencia.",
+    byUfCounts.length
+      ? `As UFs com maior numero de pontos atipicos sao ${byUfCounts.join(", ")}. Quando uma mesma UF acumula muitos pontos atipicos, vale verificar mudancas de registro, revisoes de base, eventos locais ou rupturas reais no indicador.`
+      : "Nao ha concentracao de atipicidades em UFs especificas no intervalo selecionado.",
+  ];
+
+  els.stateAnomalyText.innerHTML = paragraphs.map((paragraph) => `<p>${paragraph}</p>`).join("");
+  els.copyStateAnomalies.disabled = false;
+}
+
+function eventLabel(context) {
+  if (!context.indicatorField || context.indicatorField === "(nenhum)") return "todos os eventos";
+  return selectedFilterLabel(context.indicatorField, state.filteredIndicators);
+}
+
 function median(values) {
   if (!values.length) return 0;
   const sorted = values.slice().sort((a, b) => a - b);
@@ -1110,4 +1443,8 @@ function formatNumber(value) {
 
 function formatPercent(value) {
   return Number(value).toLocaleString("pt-BR", { style: "percent", maximumFractionDigits: 1 });
+}
+
+function formatOptionalPercent(value) {
+  return value === null || value === undefined || !Number.isFinite(value) ? "-" : formatPercent(value);
 }

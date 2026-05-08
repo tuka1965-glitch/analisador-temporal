@@ -88,6 +88,10 @@
         </article>
       </section>
 
+      <section class="report-actions">
+        <button id="exportPdf" type="button">Salvar relatorio em PDF</button>
+      </section>
+
       <section id="warningBox" class="warning" hidden></section>
 
       <section class="workspace">
@@ -104,21 +108,30 @@
           <div class="filter-block">
             <div class="filter-heading">
               <span>UF</span>
-              <button id="selectAllUfs" type="button" disabled>Todas</button>
+              <div class="filter-actions">
+                <button id="selectAllUfs" type="button" disabled>Todas</button>
+                <button id="selectNoUfs" type="button" disabled>Nenhuma</button>
+              </div>
             </div>
             <div id="ufFilters" class="filters"></div>
           </div>
           <div class="filter-block">
             <div class="filter-heading">
               <span>Indicador</span>
-              <button id="selectAllIndicators" type="button" disabled>Todos</button>
+              <div class="filter-actions">
+                <button id="selectAllIndicators" type="button" disabled>Todos</button>
+                <button id="selectNoIndicators" type="button" disabled>Nenhum</button>
+              </div>
             </div>
             <div id="indicatorFilters" class="filters"></div>
           </div>
           <div class="filter-block">
             <div class="filter-heading">
               <span>Filtro extra</span>
-              <button id="selectAllGroups" type="button" disabled>Todos</button>
+              <div class="filter-actions">
+                <button id="selectAllGroups" type="button" disabled>Todos</button>
+                <button id="selectNoGroups" type="button" disabled>Nenhum</button>
+              </div>
             </div>
             <div id="filters" class="filters"></div>
           </div>
@@ -131,6 +144,28 @@
           <button id="copyAnalysis" type="button" disabled>Copiar</button>
         </div>
         <div id="analysisText" class="analysis-text">Carregue um CSV para gerar a leitura da serie historica.</div>
+      </section>
+
+      <section class="panel forecast-panel">
+        <div class="section-heading">
+          <h2>Projecao linear</h2>
+          <button id="copyForecast" type="button" disabled>Copiar</button>
+        </div>
+        <div id="forecastText" class="analysis-text">Carregue um CSV para projetar os proximos 3 periodos.</div>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Periodo projetado</th>
+                <th>Valor projetado</th>
+                <th>Base</th>
+              </tr>
+            </thead>
+            <tbody id="forecastBody">
+              <tr><td colspan="3">Sem projeção ainda.</td></tr>
+            </tbody>
+          </table>
+        </div>
       </section>
 
       <section class="panel territorial-panel">
@@ -252,6 +287,67 @@
         </div>
       </section>
 
+      <section class="panel state-anomaly-panel">
+        <div class="section-heading">
+          <h2>Atipicidade por Estado</h2>
+          <button id="copyStateAnomalies" type="button" disabled>Copiar</button>
+        </div>
+        <div class="territorial-controls">
+          <label>
+            Ano inicio
+            <input id="stateAnomalyStart" type="number" min="1900" max="2100" value="2015" />
+          </label>
+          <label>
+            Ano fim
+            <input id="stateAnomalyEnd" type="number" min="1900" max="2100" value="2026" />
+          </label>
+          <label>
+            Desvio minimo
+            <input id="stateAnomalyZ" type="number" min="1" max="5" step="0.1" value="2" />
+          </label>
+          <label>
+            Min. periodos UF
+            <input id="stateAnomalyMinPeriods" type="number" min="6" max="60" value="12" />
+          </label>
+        </div>
+        <div class="territorial-summary">
+          <article>
+            <span>Evento analisado</span>
+            <strong id="stateAnomalyEvent">-</strong>
+          </article>
+          <article>
+            <span>UFs com atipicos</span>
+            <strong id="stateAnomalyUfCount">0</strong>
+          </article>
+          <article>
+            <span>Pontos atipicos</span>
+            <strong id="stateAnomalyPointCount">0</strong>
+          </article>
+          <article>
+            <span>Maior desvio</span>
+            <strong id="stateAnomalyMax">-</strong>
+          </article>
+        </div>
+        <div id="stateAnomalyText" class="analysis-text">Carregue um CSV com coluna de UF para identificar atipicidades por estado.</div>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>UF</th>
+                <th>Periodo</th>
+                <th>Valor</th>
+                <th>Media UF</th>
+                <th>Desvio</th>
+                <th>Tipo</th>
+              </tr>
+            </thead>
+            <tbody id="stateAnomalyBody">
+              <tr><td colspan="6">Sem atipicidades estaduais ainda.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
       <section class="panel table-panel">
         <h2>Resumo por periodo</h2>
         <div class="table-scroll">
@@ -262,11 +358,12 @@
                 <th>Valor</th>
                 <th>Media movel</th>
                 <th>Variacao</th>
+                <th>Var. ano anterior</th>
                 <th>Status</th>
               </tr>
             </thead>
             <tbody id="summaryBody">
-              <tr><td colspan="5">Carregue um CSV para iniciar.</td></tr>
+              <tr><td colspan="6">Carregue um CSV para iniciar.</td></tr>
             </tbody>
           </table>
         </div>

@@ -36,7 +36,11 @@ O workbook aponta para uma base original chamada `BancoVDE 2015.xlsx` e contem u
 
 O painel mostra quantas linhas foram ignoradas. Se esse numero for alto, o problema quase sempre esta no formato da data ou em valores numericos exportados como texto.
 
+Os filtros de UF, indicador e filtro extra têm atalhos **Todos/Todas** e **Nenhum/Nenhuma** para facilitar combinações rápidas.
+
 A secao **Analise automatica** escreve alguns paragrafos sobre tendencia, volatilidade, sazonalidade mensal, quebras abruptas e pontos anômalos. Use o botao **Copiar** para levar o texto para um relatorio ou documento.
+
+Na tabela de resumo, a coluna **Var. ano anterior** compara cada periodo com o mesmo periodo do ano anterior, reduzindo distorcoes em series com sazonalidade.
 
 A secao **Generalizacao territorial** compara uma janela pre e uma janela pos por UF. Ela calcula a variacao de cada estado, a mediana estadual, a variacao nacional agregada e classifica o padrao como queda generalizada, queda ampla mas desigual, queda concentrada, estabilidade ampla, padrao divergente ou mudanca heterogenea.
 
@@ -51,6 +55,12 @@ Para testar a pergunta sobre homicidios depois de 2017:
 Depois selecione o indicador de homicidios no filtro **Indicador**. Se a queda nacional vier acompanhada de queda na mediana estadual e em grande parte das UFs, o app classifica como tendencia generalizada. Se o agregado nacional cair mas a mediana estadual nao cair, a leitura aponta concentracao em poucas UFs.
 
 A secao **Participacao dos estados** calcula quanto cada UF representa no total do indicador selecionado dentro do intervalo de anos escolhido. Ela mostra o ranking estadual, a participacao do maior estado, a soma dos top estados e um texto explicando se o indicador esta concentrado ou disperso territorialmente. Use essa leitura junto com a generalizacao territorial para saber se a tendencia nacional esta sendo puxada por estados de grande peso.
+
+A secao **Atipicidade por Estado** identifica o evento analisado pelo nome selecionado no filtro **Indicador** e calcula atipicidades dentro da serie historica de cada UF. O criterio padrao marca pontos com pelo menos 2 desvios-padrao em relacao a media mensal da propria UF. O texto diferencia picos atipicos e quedas atipicas, destacando os estados e meses mais extremos sem gerar grafico.
+
+A secao **Projecao linear** estima os proximos 3 periodos da serie filtrada usando regressao linear simples. A projecao e apenas uma extrapolacao de tendencia e nao substitui modelos sazonais ou revisao substantiva dos dados.
+
+Use o botao **Salvar relatorio em PDF** para abrir a impressao do navegador e escolher **Salvar como PDF**. O layout de impressao oculta controles e botoes para deixar o relatorio mais limpo.
 
 Para o arquivo `grafico vitmas (3)_data.csv` baixado do Tableau Public, use:
 

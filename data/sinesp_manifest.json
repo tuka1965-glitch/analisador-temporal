@@ -1,13 +1,79 @@
 {
   "source_page": "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/dados-nacionais-1/base-de-dados-e-notas-metodologicas-dos-gestores-estaduais-sinesp-vde-2022-e-2023",
-  "updated_at": "2026-05-12T16:13:42.724937+00:00",
-  "rows": 10044,
+  "updated_at": "2026-05-12T16:44:40.966638+00:00",
+  "rows": 112858,
   "files": [
+    {
+      "year": 2015,
+      "path": "data/sinesp_vde_2015.csv",
+      "rows": 9910,
+      "source": "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/download/dnsp-base-de-dados/bancovde-2015.xlsx/@@download/file"
+    },
+    {
+      "year": 2016,
+      "path": "data/sinesp_vde_2016.csv",
+      "rows": 10044,
+      "source": "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/download/dnsp-base-de-dados/bancovde-2016.xlsx/@@download/file"
+    },
+    {
+      "year": 2017,
+      "path": "data/sinesp_vde_2017.csv",
+      "rows": 10044,
+      "source": "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/download/dnsp-base-de-dados/bancovde-2017.xlsx/@@download/file"
+    },
+    {
+      "year": 2018,
+      "path": "data/sinesp_vde_2018.csv",
+      "rows": 10041,
+      "source": "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/download/dnsp-base-de-dados/bancovde-2018.xlsx/@@download/file"
+    },
+    {
+      "year": 2019,
+      "path": "data/sinesp_vde_2019.csv",
+      "rows": 10044,
+      "source": "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/download/dnsp-base-de-dados/bancovde-2019.xlsx/@@download/file"
+    },
+    {
+      "year": 2020,
+      "path": "data/sinesp_vde_2020.csv",
+      "rows": 10044,
+      "source": "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/download/dnsp-base-de-dados/bancovde-2020.xlsx/@@download/file"
+    },
+    {
+      "year": 2021,
+      "path": "data/sinesp_vde_2021.csv",
+      "rows": 10044,
+      "source": "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/download/dnsp-base-de-dados/bancovde-2021.xlsx/@@download/file"
+    },
+    {
+      "year": 2022,
+      "path": "data/sinesp_vde_2022.csv",
+      "rows": 10044,
+      "source": "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/download/dnsp-base-de-dados/bancovde-2022.xlsx/@@download/file"
+    },
+    {
+      "year": 2023,
+      "path": "data/sinesp_vde_2023.csv",
+      "rows": 10044,
+      "source": "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/download/dnsp-base-de-dados/bancovde-2023.xlsx/@@download/file"
+    },
+    {
+      "year": 2024,
+      "path": "data/sinesp_vde_2024.csv",
+      "rows": 10044,
+      "source": "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/download/dnsp-base-de-dados/bancovde-2024.xlsx/@@download/file"
+    },
     {
       "year": 2025,
       "path": "data/sinesp_vde_2025.csv",
       "rows": 10044,
       "source": "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/download/dnsp-base-de-dados/bancovde-2025.xlsx/@@download/file"
+    },
+    {
+      "year": 2026,
+      "path": "data/sinesp_vde_2026.csv",
+      "rows": 2511,
+      "source": "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/download/dnsp-base-de-dados/bancovde-2026.xlsx/@@download/file"
     }
   ]
 }

@@ -1,0 +1,38 @@
+name: Atualizar base SINESP VDE
+
+on:
+  workflow_dispatch:
+    inputs:
+      years:
+        description: "Anos para atualizar: all, 2026, 2025,2026 ou 2015-2026"
+        required: false
+        default: "all"
+  schedule:
+    - cron: "20 8 5 * *"
+
+permissions:
+  contents: write
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Instalar dependencias
+        run: python -m pip install --upgrade pandas openpyxl requests
+
+      - name: Atualizar CSVs oficiais
+        run: python scripts/atualiza_sinesp.py --years "${{ github.event.inputs.years || 'all' }}"
+
+      - name: Commitar alteracoes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Atualiza base SINESP VDE"
+          file_pattern: data/sinesp_vde*.csv data/sinesp_manifest.json

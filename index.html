@@ -169,6 +169,59 @@
         </div>
       </section>
 
+      <section class="panel highlights-panel">
+        <div class="section-heading">
+          <h2>Destaques</h2>
+          <button id="copyHighlights" type="button" disabled>Copiar</button>
+        </div>
+        <div class="territorial-controls">
+          <label>
+            Limiar aumento
+            <input id="highlightThreshold" type="number" min="1" max="300" value="10" />
+          </label>
+          <label>
+            Top destaques
+            <input id="highlightTopN" type="number" min="5" max="100" value="30" />
+          </label>
+        </div>
+        <div class="territorial-summary">
+          <article>
+            <span>Destaques</span>
+            <strong id="highlightCount">0</strong>
+          </article>
+          <article>
+            <span>Periodo recente</span>
+            <strong id="highlightPeriod">-</strong>
+          </article>
+          <article>
+            <span>Nivel territorial</span>
+            <strong id="highlightLocationLevel">-</strong>
+          </article>
+          <article>
+            <span>Maior aumento</span>
+            <strong id="highlightMax">-</strong>
+          </article>
+        </div>
+        <div id="highlightText" class="analysis-text">Carregue uma base com evento, data e UF ou municipio para listar pontos de atencao.</div>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Evento</th>
+                <th>Local</th>
+                <th>Ultimos 3 meses</th>
+                <th>Mesmo periodo anterior</th>
+                <th>Variacao</th>
+                <th>Periodo</th>
+              </tr>
+            </thead>
+            <tbody id="highlightBody">
+              <tr><td colspan="6">Sem destaques ainda.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
       <section class="panel territorial-panel">
         <div class="section-heading">
           <h2>Generalizacao territorial</h2>

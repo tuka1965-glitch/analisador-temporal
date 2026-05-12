@@ -40,6 +40,15 @@ const els = {
   forecastText: document.getElementById("forecastText"),
   forecastBody: document.getElementById("forecastBody"),
   copyForecast: document.getElementById("copyForecast"),
+  highlightThreshold: document.getElementById("highlightThreshold"),
+  highlightTopN: document.getElementById("highlightTopN"),
+  highlightCount: document.getElementById("highlightCount"),
+  highlightPeriod: document.getElementById("highlightPeriod"),
+  highlightLocationLevel: document.getElementById("highlightLocationLevel"),
+  highlightMax: document.getElementById("highlightMax"),
+  highlightText: document.getElementById("highlightText"),
+  highlightBody: document.getElementById("highlightBody"),
+  copyHighlights: document.getElementById("copyHighlights"),
   preStart: document.getElementById("preStart"),
   preEnd: document.getElementById("preEnd"),
   postStart: document.getElementById("postStart"),
@@ -119,6 +128,9 @@ for (const element of [els.preStart, els.preEnd, els.postStart, els.postEnd, els
 for (const element of [els.shareStart, els.shareEnd, els.shareTopN]) {
   element.addEventListener("change", analyze);
 }
+for (const element of [els.highlightThreshold, els.highlightTopN]) {
+  element.addEventListener("change", analyze);
+}
 for (const element of [els.populationStart, els.populationEnd]) {
   element.addEventListener("change", analyze);
 }
@@ -162,6 +174,15 @@ els.copyForecast.addEventListener("click", async () => {
   els.copyForecast.textContent = "Copiado";
   setTimeout(() => {
     els.copyForecast.textContent = "Copiar";
+  }, 1200);
+});
+els.copyHighlights.addEventListener("click", async () => {
+  const text = els.highlightText.innerText.trim();
+  if (!text) return;
+  await navigator.clipboard.writeText(text);
+  els.copyHighlights.textContent = "Copiado";
+  setTimeout(() => {
+    els.copyHighlights.textContent = "Copiar";
   }, 1200);
 });
 els.exportPdf.addEventListener("click", () => {
@@ -567,6 +588,7 @@ function analyze() {
   renderTable(series);
   renderNarrative(series, { dateField, valueField, ufField, indicatorField, groupField, period });
   renderForecast(series, { valueField, period });
+  renderHighlights({ dateField, valueField, ufField, indicatorField, groupField });
   renderTerritorialGeneralization({ dateField, valueField, ufField, indicatorField, groupField });
   renderStateShare({ dateField, valueField, ufField, indicatorField, groupField });
   renderPopulationRates({ dateField, valueField, ufField, indicatorField, groupField });
@@ -925,6 +947,159 @@ function renderForecastTable(forecast) {
     `;
     els.forecastBody.appendChild(tr);
   }
+}
+
+function renderHighlights(context) {
+  if (!state.rows.length || !context.indicatorField || context.indicatorField === "(nenhum)") {
+    resetHighlightsPanel("Carregue uma base com campo de evento para gerar os destaques.");
+    return;
+  }
+
+  const locationField = preferredHighlightLocationField(context);
+  if (!locationField) {
+    resetHighlightsPanel("Carregue uma base com coluna de municipio ou UF para localizar os destaques.");
+    return;
+  }
+
+  const latestMonths = latestAvailableMonths(context.dateField, context);
+  if (latestMonths.length < 3) {
+    resetHighlightsPanel("Sao necessarios pelo menos 3 meses recentes validos para calcular os destaques.");
+    return;
+  }
+
+  const priorMonths = latestMonths.map((month) => priorYearMonthKey(month));
+  const threshold = Math.max(0, Number(els.highlightThreshold.value) || 10) / 100;
+  const topN = Math.max(5, Number(els.highlightTopN.value) || 30);
+  const totals = new Map();
+
+  for (const row of state.rows) {
+    const date = parseDate(row[context.dateField], els.dateFormat.value);
+    const value = parseNumber(row[context.valueField]);
+    if (!date || !Number.isFinite(value)) continue;
+
+    const month = periodKey(date, "month");
+    const periodType = latestMonths.includes(month) ? "current" : priorMonths.includes(month) ? "prior" : "";
+    if (!periodType) continue;
+
+    const event = row[context.indicatorField] || "(vazio)";
+    const location = row[locationField] || "(vazio)";
+    const uf = context.ufField && context.ufField !== "(nenhum)" ? row[context.ufField] || "(vazio)" : "";
+    const group = context.groupField && context.groupField !== "(sem comparacao)" ? row[context.groupField] || "(vazio)" : "";
+    if (state.filteredIndicators.has(event)) continue;
+    if (uf && state.filteredUfs.has(uf)) continue;
+    if (group && state.filteredGroups.has(group)) continue;
+
+    const key = `${event}\u0001${location}`;
+    const item = totals.get(key) || { event, location, current: 0, prior: 0 };
+    item[periodType] += value;
+    totals.set(key, item);
+  }
+
+  const highlights = Array.from(totals.values())
+    .filter((item) => item.prior > 0 && (item.current - item.prior) / item.prior > threshold)
+    .map((item) => ({
+      ...item,
+      change: (item.current - item.prior) / item.prior,
+      delta: item.current - item.prior,
+    }))
+    .sort((a, b) => b.change - a.change || b.delta - a.delta);
+
+  renderHighlightsTable(highlights.slice(0, topN), `${latestMonths[0]} a ${latestMonths.at(-1)}`);
+  renderHighlightsText({
+    highlights,
+    locationField,
+    latestMonths,
+    priorMonths,
+    threshold,
+    topN,
+  });
+}
+
+function preferredHighlightLocationField(context) {
+  const municipality = findHeader(state.headers, ["municipio", "município", "cidade", "nome municipio"]);
+  if (municipality) return municipality;
+  if (context.ufField && context.ufField !== "(nenhum)") return context.ufField;
+  return findHeader(state.headers, ["uf", "estado", "sigla uf", "unidade federativa"]);
+}
+
+function latestAvailableMonths(dateField, context) {
+  const months = new Set();
+  for (const row of state.rows) {
+    const event = context.indicatorField && context.indicatorField !== "(nenhum)" ? row[context.indicatorField] || "(vazio)" : "";
+    const uf = context.ufField && context.ufField !== "(nenhum)" ? row[context.ufField] || "(vazio)" : "";
+    const group = context.groupField && context.groupField !== "(sem comparacao)" ? row[context.groupField] || "(vazio)" : "";
+    if (event && state.filteredIndicators.has(event)) continue;
+    if (uf && state.filteredUfs.has(uf)) continue;
+    if (group && state.filteredGroups.has(group)) continue;
+    const date = parseDate(row[dateField], els.dateFormat.value);
+    if (date) months.add(periodKey(date, "month"));
+  }
+  return Array.from(months).sort().slice(-3);
+}
+
+function priorYearMonthKey(monthKey) {
+  const [year, month] = monthKey.split("-");
+  return `${Number(year) - 1}-${month}`;
+}
+
+function renderHighlightsTable(highlights, periodLabel) {
+  els.highlightBody.innerHTML = "";
+  if (!highlights.length) {
+    els.highlightBody.innerHTML = '<tr><td colspan="6">Nenhum evento/local ultrapassou o limiar configurado.</td></tr>';
+    return;
+  }
+  for (const item of highlights) {
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td>${item.event}</td>
+      <td>${item.location}</td>
+      <td>${formatNumber(item.current)}</td>
+      <td>${formatNumber(item.prior)}</td>
+      <td class="up">${formatPercent(item.change)}</td>
+      <td>${periodLabel}</td>
+    `;
+    els.highlightBody.appendChild(tr);
+  }
+}
+
+function renderHighlightsText(details) {
+  const { highlights, locationField, latestMonths, priorMonths, threshold, topN } = details;
+  const periodLabel = `${latestMonths[0]} a ${latestMonths.at(-1)}`;
+  const priorLabel = `${priorMonths[0]} a ${priorMonths.at(-1)}`;
+  const top = highlights.slice(0, Math.min(topN, 6));
+  const locationLevel = normalizeHeaderForMatch(locationField).includes("municipio") ? "municipio" : "UF";
+
+  els.highlightCount.textContent = highlights.length.toLocaleString("pt-BR");
+  els.highlightPeriod.textContent = periodLabel;
+  els.highlightLocationLevel.textContent = locationLevel.toUpperCase();
+  els.highlightMax.textContent = highlights.length ? formatPercent(highlights[0].change) : "-";
+
+  if (!highlights.length) {
+    els.highlightText.innerHTML = `<p>No periodo ${periodLabel}, nenhum evento/local selecionado apresentou aumento superior a ${formatPercent(threshold)} em relacao ao mesmo periodo do ano anterior (${priorLabel}).</p>`;
+    els.copyHighlights.disabled = false;
+    return;
+  }
+
+  const topText = top
+    .map((item) => `${item.event} em ${item.location} (${formatPercent(item.change)}, de ${formatNumber(item.prior)} para ${formatNumber(item.current)})`)
+    .join("; ");
+  const paragraphs = [
+    `No periodo ${periodLabel}, comparado ao mesmo periodo do ano anterior (${priorLabel}), foram encontrados ${highlights.length.toLocaleString("pt-BR")} destaques com aumento superior a ${formatPercent(threshold)} no nivel de ${locationLevel}.`,
+    `Os principais pontos de atencao sao ${topText}. Esses casos combinam crescimento recente e localizacao territorial, ajudando a priorizar onde o poder publico deve olhar primeiro.`,
+    `A lista usa apenas os eventos atualmente selecionados no filtro Indicador e respeita os filtros de UF e filtro extra. Locais sem ocorrencias no periodo anterior nao entram no ranking percentual, para evitar aumentos infinitos causados por base zero.`,
+  ];
+  els.highlightText.innerHTML = paragraphs.map((paragraph) => `<p>${paragraph}</p>`).join("");
+  els.copyHighlights.disabled = false;
+}
+
+function resetHighlightsPanel(message) {
+  els.highlightCount.textContent = "0";
+  els.highlightPeriod.textContent = "-";
+  els.highlightLocationLevel.textContent = "-";
+  els.highlightMax.textContent = "-";
+  els.highlightText.textContent = message;
+  els.highlightBody.innerHTML = '<tr><td colspan="6">Sem destaques ainda.</td></tr>';
+  els.copyHighlights.disabled = true;
 }
 
 function linearIntercept(points, slope) {

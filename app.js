@@ -33,6 +33,7 @@ const els = {
   anomalyCount: document.getElementById("anomalyCount"),
   skippedRows: document.getElementById("skippedRows"),
   warningBox: document.getElementById("warningBox"),
+  dataStatus: document.getElementById("dataStatus"),
   analysisText: document.getElementById("analysisText"),
   copyAnalysis: document.getElementById("copyAnalysis"),
   exportPdf: document.getElementById("exportPdf"),
@@ -105,16 +106,8 @@ els.fileInput.addEventListener("change", async (event) => {
     return;
   }
   const text = await file.text();
-  const parsed = parseCsv(text);
-  state.headers = parsed.headers;
-  state.rows = parsed.rows;
-  state.filteredGroups.clear();
-  state.filteredUfs.clear();
-  state.filteredIndicators.clear();
-  populateControls();
-  buildAllFilters();
-  els.analyzeButton.disabled = false;
-  analyze();
+  loadDataset(parseCsv(text), file.name);
+  setDataStatus(`Base carregada do arquivo local ${file.name}: ${formatInteger(state.rows.length)} linhas.`, "ok");
 });
 
 for (const element of [els.dateField, els.valueField, els.dateFormat, els.periodField, els.movingAverage]) {
@@ -212,6 +205,7 @@ els.copyStateAnomalies.addEventListener("click", async () => {
 });
 
 loadDefaultPopulation();
+loadDefaultSinespData();
 
 function parseCsv(text) {
   const delimiter = detectDelimiter(text);
@@ -252,6 +246,86 @@ function parseCsv(text) {
     headers,
     rows: rows.map((row) => Object.fromEntries(headers.map((header, index) => [header, row[index] ?? ""]))),
   };
+}
+
+function loadDataset(parsed, sourceName) {
+  state.headers = parsed.headers;
+  state.rows = parsed.rows;
+  state.filteredGroups.clear();
+  state.filteredUfs.clear();
+  state.filteredIndicators.clear();
+  populateControls();
+  buildAllFilters();
+  els.analyzeButton.disabled = false;
+  els.warningBox.hidden = true;
+  els.chartSubtitle.textContent = sourceName;
+  analyze();
+}
+
+function mergeParsedCsvs(parsedFiles) {
+  const headers = [];
+  const seen = new Set();
+  const rows = [];
+  for (const parsed of parsedFiles) {
+    for (const header of parsed.headers) {
+      if (!seen.has(header)) {
+        seen.add(header);
+        headers.push(header);
+      }
+    }
+    rows.push(...parsed.rows);
+  }
+  return { headers, rows };
+}
+
+function setDataStatus(message, tone = "") {
+  if (!els.dataStatus) return;
+  els.dataStatus.textContent = message;
+  els.dataStatus.className = tone ? `status ${tone}` : "status";
+}
+
+async function loadDefaultSinespData() {
+  try {
+    setDataStatus("Carregando base oficial do repositorio...");
+    const manifestResponse = await fetch("data/sinesp_manifest.json", { cache: "no-store" });
+    if (manifestResponse.ok) {
+      const manifest = await manifestResponse.json();
+      const entries = Array.isArray(manifest.files) ? manifest.files : [];
+      const filePaths = entries.map((entry) => (typeof entry === "string" ? entry : entry.path)).filter(Boolean);
+      if (filePaths.length) {
+        const parsedFiles = await Promise.all(
+          filePaths.map(async (path) => {
+            const response = await fetch(resolveDataPath(path), { cache: "no-store" });
+            if (!response.ok) throw new Error(`Falha ao carregar ${path}`);
+            return parseCsv(await response.text());
+          }),
+        );
+        const parsed = mergeParsedCsvs(parsedFiles);
+        loadDataset(parsed, `base oficial SINESP VDE (${filePaths.length} arquivos)`);
+        setDataStatus(
+          `Base oficial carregada do repositorio: ${formatInteger(parsed.rows.length)} linhas em ${filePaths.length} arquivo(s).`,
+          "ok",
+        );
+        return;
+      }
+    }
+
+    const csvResponse = await fetch("data/sinesp_vde.csv", { cache: "no-store" });
+    if (!csvResponse.ok) throw new Error("data/sinesp_vde.csv nao encontrado");
+    const parsed = parseCsv(await csvResponse.text());
+    loadDataset(parsed, "data/sinesp_vde.csv");
+    setDataStatus(`Base oficial carregada do repositorio: ${formatInteger(parsed.rows.length)} linhas.`, "ok");
+  } catch (error) {
+    setDataStatus(
+      "A base oficial ainda nao foi encontrada em data/. Use Abrir CSV local ou rode o script de atualizacao no GitHub Actions.",
+      "error",
+    );
+  }
+}
+
+function resolveDataPath(path) {
+  if (/^https?:\/\//i.test(path)) return path;
+  return path.startsWith("data/") ? path : `data/${path}`;
 }
 
 function detectDelimiter(text) {
@@ -1733,6 +1807,10 @@ const monthLabels = [
 
 function formatNumber(value) {
   return Number(value).toLocaleString("pt-BR", { maximumFractionDigits: 2 });
+}
+
+function formatInteger(value) {
+  return Number(value).toLocaleString("pt-BR", { maximumFractionDigits: 0 });
 }
 
 function formatPercent(value) {

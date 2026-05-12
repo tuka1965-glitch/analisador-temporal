@@ -22,9 +22,9 @@ O workbook aponta para uma base original chamada `BancoVDE 2015.xlsx` e contem u
 
 ## Como usar
 
-1. Abra `index.html` no navegador.
-2. Clique em **Abrir CSV**.
-3. Selecione um CSV exportado do Tableau ou da fonte original.
+1. Publique o projeto no GitHub Pages ou abra `index.html` em um servidor local.
+2. O app tenta carregar automaticamente `data/sinesp_manifest.json` e os CSVs oficiais listados nele. Se o manifesto ainda nao existir, ele tenta `data/sinesp_vde.csv`.
+3. Se a base oficial ainda nao estiver no repositorio, use **Abrir CSV local** como alternativa.
 4. Confirme os campos:
    - Data: `data_referencia`
    - Valor: `total_vitima` ou `total`
@@ -35,6 +35,29 @@ O workbook aponta para uma base original chamada `BancoVDE 2015.xlsx` e contem u
 5. Clique em **Analisar**.
 
 O painel mostra quantas linhas foram ignoradas. Se esse numero for alto, o problema quase sempre esta no formato da data ou em valores numericos exportados como texto.
+
+## Atualizacao automatica da base oficial
+
+O repositorio agora inclui o script `scripts/atualiza_sinesp.py`, que acessa a pagina oficial do Ministerio da Justica e Seguranca Publica:
+
+`https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/dados-nacionais-1/base-de-dados-e-notas-metodologicas-dos-gestores-estaduais-sinesp-vde-2022-e-2023`
+
+O script baixa os arquivos anuais `bancovde-2015.xlsx` a `bancovde-2026.xlsx`, converte cada ano para `data/sinesp_vde_AAAA.csv`, gera tambem `data/sinesp_vde.csv` consolidado e escreve `data/sinesp_manifest.json`.
+
+Para rodar localmente:
+
+```bash
+python -m pip install pandas openpyxl requests
+python scripts/atualiza_sinesp.py --years all
+```
+
+Para reduzir tamanho e tempo de execucao durante testes:
+
+```bash
+python scripts/atualiza_sinesp.py --years 2024-2026
+```
+
+No GitHub, o workflow `.github/workflows/atualiza-sinesp.yml` pode ser executado manualmente em **Actions > Atualizar base SINESP VDE > Run workflow**. Ele tambem roda automaticamente todo dia 5 de cada mes e commita os CSVs atualizados em `data/`.
 
 Os filtros de UF, indicador e filtro extra têm atalhos **Todos/Todas** e **Nenhum/Nenhuma** para facilitar combinações rápidas.
 
@@ -88,7 +111,7 @@ No app, use:
 - Campo indicador: `evento`
 - Filtro extra: opcional, por exemplo `municipio`, `arma`, `agente` ou `faixa_etaria`
 
-O arquivo `.twbx` contem esses campos, mas as linhas estao dentro de um extrato `.hyper`. O navegador nao consegue ler esse formato diretamente sem a API do Tableau; por isso o fluxo operacional ainda e exportar a base/crosstab completa para CSV e carregar no app.
+O arquivo `.twbx` contem esses campos, mas as linhas estao dentro de um extrato `.hyper`. O fluxo preferencial agora e atualizar a base oficial pelo script acima e deixar o app carregar os CSVs de `data/` automaticamente.
 
 ## Como obter o CSV no Tableau Public
 

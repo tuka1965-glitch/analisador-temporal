@@ -10,11 +10,11 @@
     <header class="topbar">
       <div>
         <h1>Analisador Temporal SINESP VDE</h1>
-        <p>Carregue um CSV exportado do Tableau para estudar tendencias por UF e indicador.</p>
+        <p>Analise a base oficial SINESP VDE por UF, indicador e periodo.</p>
       </div>
       <label class="file-button">
         <input id="fileInput" type="file" accept=".csv,.txt,.twbx" />
-        Abrir arquivo
+        Abrir CSV local
       </label>
     </header>
 
@@ -93,6 +93,7 @@
       </section>
 
       <section id="warningBox" class="warning" hidden></section>
+      <section id="dataStatus" class="status" aria-live="polite">Carregando base oficial do repositorio...</section>
 
       <section class="workspace">
         <div class="chart-wrap">

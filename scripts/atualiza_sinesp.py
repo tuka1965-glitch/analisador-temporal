@@ -36,6 +36,7 @@ LIKELY_COLUMNS = {
 }
 DATE_COLUMNS = ["data_referencia", "mes_de_data_referencia", "mes_data_referencia", "data", "mes"]
 UF_COLUMNS = ["uf", "sigla_uf", "estado", "unidade_federativa"]
+MUNICIPALITY_COLUMNS = ["municipio", "nome_municipio", "cidade"]
 EVENT_COLUMNS = ["evento", "indicador", "natureza", "tipo_indicador", "crime"]
 VALUE_COLUMNS = ["total_vitima", "total", "feminino", "masculino", "nao_informado"]
 
@@ -121,6 +122,7 @@ def normalize_number_series(series: pd.Series) -> pd.Series:
 def make_analysis_table(df: pd.DataFrame) -> pd.DataFrame:
     date_field = first_existing(df.columns, DATE_COLUMNS)
     uf_field = first_existing(df.columns, UF_COLUMNS)
+    municipality_field = first_existing(df.columns, MUNICIPALITY_COLUMNS)
     event_field = first_existing(df.columns, EVENT_COLUMNS)
     value_fields = [column for column in VALUE_COLUMNS if column in df.columns]
 
@@ -143,6 +145,8 @@ def make_analysis_table(df: pd.DataFrame) -> pd.DataFrame:
             "evento": df[event_field].fillna("").astype(str).str.strip(),
         }
     )
+    if municipality_field:
+        result["municipio"] = df[municipality_field].fillna("").astype(str).str.strip()
     parsed_dates = pd.to_datetime(result["data_referencia"], errors="coerce", dayfirst=True)
     result["data_referencia"] = parsed_dates.dt.strftime("%Y-%m-%d").fillna(
         result["data_referencia"].fillna("").astype(str).str.strip()
@@ -152,10 +156,14 @@ def make_analysis_table(df: pd.DataFrame) -> pd.DataFrame:
         result[value_field] = normalize_number_series(df[value_field])
 
     result = result[(result["data_referencia"] != "") & (result["uf"] != "") & (result["evento"] != "")]
+    group_columns = ["data_referencia", "uf", "evento"]
+    if municipality_field:
+        group_columns.append("municipio")
+
     grouped = (
-        result.groupby(["data_referencia", "uf", "evento"], as_index=False)[value_fields]
+        result.groupby(group_columns, as_index=False)[value_fields]
         .sum()
-        .sort_values(["data_referencia", "uf", "evento"])
+        .sort_values(group_columns)
     )
     return grouped
 

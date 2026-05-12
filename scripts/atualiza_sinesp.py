@@ -34,6 +34,10 @@ LIKELY_COLUMNS = {
     "feminino",
     "masculino",
 }
+DATE_COLUMNS = ["data_referencia", "mes_de_data_referencia", "mes_data_referencia", "data", "mes"]
+UF_COLUMNS = ["uf", "sigla_uf", "estado", "unidade_federativa"]
+EVENT_COLUMNS = ["evento", "indicador", "natureza", "tipo_indicador", "crime"]
+VALUE_COLUMNS = ["total_vitima", "total", "feminino", "masculino", "nao_informado"]
 
 
 def normalize_column(value: object) -> str:
@@ -97,6 +101,63 @@ def header_score(columns: list[str], row_count: int) -> int:
     if "uf" in normalized or "estado" in normalized:
         score += 100
     return score + min(row_count, 1000)
+
+
+def first_existing(columns: pd.Index, candidates: list[str]) -> str:
+    for candidate in candidates:
+        if candidate in columns:
+            return candidate
+    return ""
+
+
+def normalize_number_series(series: pd.Series) -> pd.Series:
+    if pd.api.types.is_numeric_dtype(series):
+        return pd.to_numeric(series, errors="coerce").fillna(0)
+    text = series.fillna("").astype(str).str.strip()
+    text = text.str.replace(".", "", regex=False).str.replace(",", ".", regex=False)
+    return pd.to_numeric(text, errors="coerce").fillna(0)
+
+
+def make_analysis_table(df: pd.DataFrame) -> pd.DataFrame:
+    date_field = first_existing(df.columns, DATE_COLUMNS)
+    uf_field = first_existing(df.columns, UF_COLUMNS)
+    event_field = first_existing(df.columns, EVENT_COLUMNS)
+    value_fields = [column for column in VALUE_COLUMNS if column in df.columns]
+
+    if not date_field or not uf_field or not event_field or not value_fields:
+        missing = []
+        if not date_field:
+            missing.append("data")
+        if not uf_field:
+            missing.append("uf")
+        if not event_field:
+            missing.append("evento")
+        if not value_fields:
+            missing.append("valor")
+        raise ValueError(f"Colunas obrigatorias ausentes para agregacao: {', '.join(missing)}")
+
+    result = pd.DataFrame(
+        {
+            "data_referencia": df[date_field],
+            "uf": df[uf_field].fillna("").astype(str).str.strip(),
+            "evento": df[event_field].fillna("").astype(str).str.strip(),
+        }
+    )
+    parsed_dates = pd.to_datetime(result["data_referencia"], errors="coerce", dayfirst=True)
+    result["data_referencia"] = parsed_dates.dt.strftime("%Y-%m-%d").fillna(
+        result["data_referencia"].fillna("").astype(str).str.strip()
+    )
+
+    for value_field in value_fields:
+        result[value_field] = normalize_number_series(df[value_field])
+
+    result = result[(result["data_referencia"] != "") & (result["uf"] != "") & (result["evento"] != "")]
+    grouped = (
+        result.groupby(["data_referencia", "uf", "evento"], as_index=False)[value_fields]
+        .sum()
+        .sort_values(["data_referencia", "uf", "evento"])
+    )
+    return grouped
 
 
 def read_best_table(xlsx_path: Path) -> pd.DataFrame:
@@ -166,7 +227,8 @@ def update_data(output_dir: Path, years_arg: str | None, keep_xlsx: bool) -> Non
         response = get_with_retries(source_url, timeout=180)
         xlsx_path.write_bytes(response.content)
 
-        df = read_best_table(xlsx_path)
+        raw_df = read_best_table(xlsx_path)
+        df = make_analysis_table(raw_df)
         df.insert(0, "ano_arquivo", year)
         df.to_csv(csv_path, index=False, encoding="utf-8-sig")
         all_frames.append(df)

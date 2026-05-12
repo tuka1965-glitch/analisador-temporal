@@ -85,6 +85,8 @@ A secao **Atipicidade por Estado** identifica o evento analisado pelo nome selec
 
 A secao **Projecao linear** estima os proximos 3 periodos da serie filtrada usando regressao linear simples. A projecao e apenas uma extrapolacao de tendencia e nao substitui modelos sazonais ou revisao substantiva dos dados.
 
+O modulo **Destaques** compara os ultimos 3 meses existentes na base com o mesmo periodo do ano anterior, para cada evento selecionado e para cada local. Quando a coluna `municipio` existir, a lista usa municipios; caso contrario, usa UF. Entram na lista os evento-locais com aumento superior ao limiar configurado, por padrao 10%, ajudando a apontar onde a gestao de seguranca deve concentrar atencao.
+
 Use o botao **Salvar relatorio em PDF** para abrir a impressao do navegador e escolher **Salvar como PDF**. O layout de impressao oculta controles e botoes para deixar o relatorio mais limpo.
 
 Para o arquivo `grafico vitmas (3)_data.csv` baixado do Tableau Public, use:

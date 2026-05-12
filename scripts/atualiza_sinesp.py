@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import time
 import unicodedata
 from datetime import datetime, timezone
 from pathlib import Path
@@ -18,6 +19,11 @@ PAGE_URL = (
     "base-de-dados-e-notas-metodologicas-dos-gestores-estaduais-sinesp-vde-2022-e-2023"
 )
 DOWNLOAD_RE = re.compile(r'href="([^"]*bancovde-(\d{4})\.xlsx/@@download/file[^"]*)"', re.I)
+HTTP_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (compatible; analisador-temporal-sinesp/1.0; +https://github.com/tuka1965-glitch/analisador-temporal)",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,*/*;q=0.8",
+}
+RETRY_STATUS_CODES = {429, 500, 502, 503, 504}
 LIKELY_COLUMNS = {
     "uf",
     "municipio",
@@ -49,9 +55,33 @@ def unique_columns(columns: list[str]) -> list[str]:
     return result
 
 
+def get_with_retries(url: str, timeout: int, attempts: int = 6) -> requests.Response:
+    last_error: Exception | None = None
+    for attempt in range(1, attempts + 1):
+        try:
+            response = requests.get(url, headers=HTTP_HEADERS, timeout=timeout)
+            if response.status_code not in RETRY_STATUS_CODES:
+                response.raise_for_status()
+                return response
+            last_error = requests.HTTPError(
+                f"{response.status_code} Server Error for url: {url}",
+                response=response,
+            )
+        except requests.RequestException as error:
+            last_error = error
+
+        if attempt < attempts:
+            wait_seconds = min(90, 8 * attempt)
+            print(f"Tentativa {attempt}/{attempts} falhou para {url}. Nova tentativa em {wait_seconds}s.")
+            time.sleep(wait_seconds)
+
+    if isinstance(last_error, requests.HTTPError) and last_error.response is not None:
+        last_error.response.raise_for_status()
+    raise RuntimeError(f"Falha ao baixar {url}") from last_error
+
+
 def discover_downloads() -> dict[int, str]:
-    response = requests.get(PAGE_URL, timeout=60)
-    response.raise_for_status()
+    response = get_with_retries(PAGE_URL, timeout=60)
     downloads: dict[int, str] = {}
     for href, year_text in DOWNLOAD_RE.findall(response.text):
         year = int(year_text)
@@ -132,8 +162,8 @@ def update_data(output_dir: Path, years_arg: str | None, keep_xlsx: bool) -> Non
         xlsx_path = cache_dir / f"bancovde-{year}.xlsx"
         csv_path = output_dir / f"sinesp_vde_{year}.csv"
 
-        response = requests.get(source_url, timeout=120)
-        response.raise_for_status()
+        print(f"Baixando {year}: {source_url}")
+        response = get_with_retries(source_url, timeout=180)
         xlsx_path.write_bytes(response.content)
 
         df = read_best_table(xlsx_path)

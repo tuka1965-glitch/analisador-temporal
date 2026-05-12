@@ -317,7 +317,7 @@ async function loadDefaultSinespData() {
     setDataStatus(`Base oficial carregada do repositorio: ${formatInteger(parsed.rows.length)} linhas.`, "ok");
   } catch (error) {
     setDataStatus(
-      "A base oficial ainda nao foi encontrada em data/. Use Abrir CSV local ou rode o script de atualizacao no GitHub Actions.",
+      `Nao foi possivel carregar a base oficial em data/. Detalhe: ${error.message || error}.`,
       "error",
     );
   }

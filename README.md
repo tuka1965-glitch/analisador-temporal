@@ -42,7 +42,7 @@ O repositorio agora inclui o script `scripts/atualiza_sinesp.py`, que acessa a p
 
 `https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/dados-nacionais-1/base-de-dados-e-notas-metodologicas-dos-gestores-estaduais-sinesp-vde-2022-e-2023`
 
-O script baixa os arquivos anuais `bancovde-2015.xlsx` a `bancovde-2026.xlsx`, converte cada ano para `data/sinesp_vde_AAAA.csv`, gera tambem `data/sinesp_vde.csv` consolidado e escreve `data/sinesp_manifest.json`.
+O script baixa os arquivos anuais `bancovde-2015.xlsx` a `bancovde-2026.xlsx`, converte cada ano para `data/sinesp_vde_AAAA.csv`, gera tambem `data/sinesp_vde.csv` consolidado e escreve `data/sinesp_manifest.json`. Por padrao, a base e agregada por `data_referencia`, `uf` e `evento`, o que permite carregar todo o periodo disponivel no navegador sem trazer centenas de milhares de linhas municipais.
 
 Para rodar localmente:
 
@@ -55,6 +55,12 @@ Para reduzir tamanho e tempo de execucao durante testes:
 
 ```bash
 python scripts/atualiza_sinesp.py --years 2024-2026
+```
+
+Para gerar uma base municipal, use `--level municipio`, mas evite publicar essa versao como base padrao do GitHub Pages se ela ficar pesada:
+
+```bash
+python scripts/atualiza_sinesp.py --years 2026 --level municipio
 ```
 
 No GitHub, o workflow `.github/workflows/atualiza-sinesp.yml` pode ser executado manualmente em **Actions > Atualizar base SINESP VDE > Run workflow**. Ele tambem roda automaticamente todo dia 5 de cada mes e commita os CSVs atualizados em `data/`.

@@ -398,6 +398,55 @@
         </div>
       </section>
 
+      <section class="panel map-panel">
+        <div class="section-heading">
+          <h2>Mapas de taxas</h2>
+          <button id="copyMap" type="button" disabled>Copiar</button>
+        </div>
+        <div class="territorial-summary">
+          <article>
+            <span>Ano mapeado</span>
+            <strong id="mapYearUsed">-</strong>
+          </article>
+          <article>
+            <span>Maior taxa</span>
+            <strong id="mapMaxUf">-</strong>
+          </article>
+          <article>
+            <span>Taxa mediana</span>
+            <strong id="mapMedianRate">-</strong>
+          </article>
+          <article>
+            <span>Cobertura</span>
+            <strong id="mapCoverage">-</strong>
+          </article>
+        </div>
+        <div class="map-layout">
+          <div class="map-canvas">
+            <svg id="mapSvg" role="img" aria-label="Mapa coropletico de taxas por UF"></svg>
+            <div id="mapLegend" class="map-legend"></div>
+          </div>
+          <div>
+            <div id="mapText" class="analysis-text">Carregue dados criminais com UF e a base populacional para gerar o mapa de taxas do ultimo ano disponivel.</div>
+            <div class="table-scroll map-table-scroll">
+              <table>
+                <thead>
+                  <tr>
+                    <th>UF</th>
+                    <th>Casos</th>
+                    <th>Populacao</th>
+                    <th>Taxa anualizada</th>
+                  </tr>
+                </thead>
+                <tbody id="mapBody">
+                  <tr><td colspan="4">Sem mapa ainda.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="panel state-anomaly-panel">
         <div class="section-heading">
           <h2>Atipicidade por Estado</h2>

@@ -6,6 +6,8 @@ const state = {
   filteredIndicators: new Set(),
   populationRows: [],
   populationByUfYear: new Map(),
+  ufGeojson: null,
+  ufGeojsonPromise: null,
 };
 
 const likelyFields = {
@@ -82,6 +84,15 @@ const els = {
   populationText: document.getElementById("populationText"),
   populationBody: document.getElementById("populationBody"),
   copyPopulation: document.getElementById("copyPopulation"),
+  mapYearUsed: document.getElementById("mapYearUsed"),
+  mapMaxUf: document.getElementById("mapMaxUf"),
+  mapMedianRate: document.getElementById("mapMedianRate"),
+  mapCoverage: document.getElementById("mapCoverage"),
+  mapText: document.getElementById("mapText"),
+  mapSvg: document.getElementById("mapSvg"),
+  mapLegend: document.getElementById("mapLegend"),
+  mapBody: document.getElementById("mapBody"),
+  copyMap: document.getElementById("copyMap"),
   stateAnomalyStart: document.getElementById("stateAnomalyStart"),
   stateAnomalyEnd: document.getElementById("stateAnomalyEnd"),
   stateAnomalyZ: document.getElementById("stateAnomalyZ"),
@@ -215,6 +226,15 @@ els.copyPopulation.addEventListener("click", async () => {
     els.copyPopulation.textContent = "Copiar";
   }, 1200);
 });
+els.copyMap.addEventListener("click", async () => {
+  const text = els.mapText.innerText.trim();
+  if (!text) return;
+  await navigator.clipboard.writeText(text);
+  els.copyMap.textContent = "Copiado";
+  setTimeout(() => {
+    els.copyMap.textContent = "Copiar";
+  }, 1200);
+});
 els.copyStateAnomalies.addEventListener("click", async () => {
   const text = els.stateAnomalyText.innerText.trim();
   if (!text) return;
@@ -294,7 +314,9 @@ function mergeParsedCsvs(parsedFiles) {
         headers.push(header);
       }
     }
-    rows.push(...parsed.rows);
+    for (const row of parsed.rows) {
+      rows.push(row);
+    }
   }
   return { headers, rows };
 }
@@ -592,6 +614,7 @@ function analyze() {
   renderTerritorialGeneralization({ dateField, valueField, ufField, indicatorField, groupField });
   renderStateShare({ dateField, valueField, ufField, indicatorField, groupField });
   renderPopulationRates({ dateField, valueField, ufField, indicatorField, groupField });
+  renderRateMap({ dateField, valueField, ufField, indicatorField, groupField });
   renderStateAnomalies({ dateField, valueField, ufField, indicatorField, groupField });
 }
 
@@ -1558,6 +1581,39 @@ const ufNameToCode = {
   tocantins: "TO",
 };
 
+const ufToIbgeCode = {
+  RO: "11",
+  AC: "12",
+  AM: "13",
+  RR: "14",
+  PA: "15",
+  AP: "16",
+  TO: "17",
+  MA: "21",
+  PI: "22",
+  CE: "23",
+  RN: "24",
+  PB: "25",
+  PE: "26",
+  AL: "27",
+  SE: "28",
+  BA: "29",
+  MG: "31",
+  ES: "32",
+  RJ: "33",
+  SP: "35",
+  PR: "41",
+  SC: "42",
+  RS: "43",
+  MS: "50",
+  MT: "51",
+  GO: "52",
+  DF: "53",
+};
+
+const ibgeCodeToUf = Object.fromEntries(Object.entries(ufToIbgeCode).map(([uf, code]) => [code, uf]));
+const mapColors = ["#f7fbff", "#d8eef4", "#9bd0df", "#56a6c0", "#1d6f8a", "#083f5a"];
+
 function normalizeUf(value) {
   const raw = String(value || "").trim();
   if (!raw) return "";
@@ -1717,6 +1773,259 @@ function renderPopulationRateText(details) {
 
   els.populationText.innerHTML = paragraphs.map((paragraph) => `<p>${paragraph}</p>`).join("");
   els.copyPopulation.disabled = false;
+}
+
+function renderRateMap(context) {
+  if (!state.rows.length || !context.ufField || context.ufField === "(nenhum)") {
+    resetMapPanel("Carregue dados com coluna de UF para gerar o mapa coropletico.");
+    return;
+  }
+
+  if (!state.populationByUfYear.size) {
+    resetMapPanel("Carregue a base populacional para calcular taxas por 100 mil habitantes no mapa.");
+    return;
+  }
+
+  const latestYear = latestAvailableYearForMap(context);
+  if (!latestYear) {
+    resetMapPanel("Nao foi possivel identificar o ultimo ano disponivel para o mapa.");
+    return;
+  }
+
+  const byUf = new Map();
+  const monthsInLatestYear = new Set();
+  for (const row of state.rows) {
+    const date = parseDate(row[context.dateField], els.dateFormat.value);
+    const value = parseNumber(row[context.valueField]);
+    if (!date || date.getFullYear() !== latestYear || !Number.isFinite(value)) continue;
+
+    const uf = row[context.ufField] || "(vazio)";
+    const normalizedUf = normalizeUf(uf);
+    const indicator =
+      context.indicatorField && context.indicatorField !== "(nenhum)" ? row[context.indicatorField] || "(vazio)" : "";
+    const group = context.groupField && context.groupField !== "(sem comparacao)" ? row[context.groupField] || "(vazio)" : "";
+    if (state.filteredUfs.has(uf)) continue;
+    if (indicator && state.filteredIndicators.has(indicator)) continue;
+    if (group && state.filteredGroups.has(group)) continue;
+    monthsInLatestYear.add(periodKey(date, "month"));
+    byUf.set(normalizedUf, (byUf.get(normalizedUf) || 0) + value);
+  }
+
+  const observedMonths = Math.max(1, monthsInLatestYear.size);
+  const annualizationFactor = 12 / observedMonths;
+  const rates = Array.from(byUf.entries())
+    .map(([uf, cases]) => {
+      const population = state.populationByUfYear.get(`${uf}|${latestYear}`);
+      const annualizedCases = cases * annualizationFactor;
+      return {
+        uf,
+        cases,
+        annualizedCases,
+        population: population?.population || 0,
+        rate: population?.population ? (annualizedCases / population.population) * 100000 : null,
+      };
+    })
+    .filter((item) => Number.isFinite(item.rate))
+    .sort((a, b) => b.rate - a.rate);
+
+  if (!rates.length) {
+    resetMapPanel(`Nao houve cruzamento entre casos e populacao estadual em ${latestYear}.`);
+    return;
+  }
+
+  renderMapSummary(rates, latestYear, context, observedMonths);
+  renderMapTable(rates);
+  loadUfGeojson()
+    .then((geojson) => drawUfChoropleth(geojson, rates))
+    .catch(() => {
+      els.mapSvg.innerHTML = "";
+      els.mapLegend.textContent = "Nao foi possivel carregar a malha de UFs do IBGE para desenhar o mapa.";
+    });
+}
+
+function latestAvailableYearForMap(context) {
+  let latest = 0;
+  for (const row of state.rows) {
+    const indicator =
+      context.indicatorField && context.indicatorField !== "(nenhum)" ? row[context.indicatorField] || "(vazio)" : "";
+    const uf = context.ufField && context.ufField !== "(nenhum)" ? row[context.ufField] || "(vazio)" : "";
+    const group = context.groupField && context.groupField !== "(sem comparacao)" ? row[context.groupField] || "(vazio)" : "";
+    if (indicator && state.filteredIndicators.has(indicator)) continue;
+    if (uf && state.filteredUfs.has(uf)) continue;
+    if (group && state.filteredGroups.has(group)) continue;
+    const date = parseDate(row[context.dateField], els.dateFormat.value);
+    if (date) latest = Math.max(latest, date.getFullYear());
+  }
+  return latest;
+}
+
+function renderMapSummary(rates, year, context, observedMonths) {
+  const top = rates[0];
+  const medianRateValue = median(rates.map((item) => item.rate));
+  const coverage = rates.length / 27;
+  const eventName = eventLabel(context);
+  const topStates = rates.slice(0, Math.min(5, rates.length)).map((item) => `${item.uf} (${formatNumber(item.rate)})`);
+  const periodText = observedMonths === 12 ? "ano completo" : `${observedMonths} mes(es) anualizados`;
+
+  els.mapYearUsed.textContent = `${year} (${periodText})`;
+  els.mapMaxUf.textContent = `${top.uf} (${formatNumber(top.rate)})`;
+  els.mapMedianRate.textContent = formatNumber(medianRateValue);
+  els.mapCoverage.textContent = formatPercent(coverage);
+  els.mapText.innerHTML = [
+    `O mapa apresenta as taxas por 100 mil habitantes para ${eventName} no ultimo ano disponivel da base filtrada: ${year}. Como ha ${observedMonths} mes(es) com dados nesse ano, a taxa foi anualizada: casos observados multiplicados por ${formatNumber(12 / observedMonths)} antes da divisao pela populacao estadual.`,
+    `As maiores taxas anualizadas aparecem em ${topStates.join(", ")}. A mediana estadual e ${formatNumber(medianRateValue)} por 100 mil habitantes, o que serve como referencia para distinguir estados acima do padrao nacional do conjunto de UFs.`,
+    "Neste momento o mapa municipal depende de uma base populacional municipal anual. Sem esse denominador, o app evita mapear municipios para nao misturar volume absoluto com taxa populacional.",
+  ]
+    .map((paragraph) => `<p>${paragraph}</p>`)
+    .join("");
+  els.copyMap.disabled = false;
+}
+
+function renderMapTable(rates) {
+  els.mapBody.innerHTML = "";
+  for (const item of rates) {
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td>${item.uf}</td>
+      <td>${formatNumber(item.cases)}</td>
+      <td>${formatNumber(item.population)}</td>
+      <td>${formatNumber(item.rate)}</td>
+    `;
+    els.mapBody.appendChild(tr);
+  }
+}
+
+function resetMapPanel(message) {
+  els.mapYearUsed.textContent = "-";
+  els.mapMaxUf.textContent = "-";
+  els.mapMedianRate.textContent = "-";
+  els.mapCoverage.textContent = "-";
+  els.mapText.textContent = message;
+  els.mapSvg.innerHTML = "";
+  els.mapLegend.textContent = "";
+  els.mapBody.innerHTML = '<tr><td colspan="4">Sem mapa ainda.</td></tr>';
+  els.copyMap.disabled = true;
+}
+
+async function loadUfGeojson() {
+  if (state.ufGeojson) return state.ufGeojson;
+  if (!state.ufGeojsonPromise) {
+    const url =
+      "https://servicodados.ibge.gov.br/api/v3/malhas/paises/BR?formato=application/vnd.geo+json&qualidade=intermediaria&intrarregiao=UF";
+    state.ufGeojsonPromise = fetch(url, { cache: "force-cache" }).then((response) => {
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      return response.json();
+    });
+  }
+  state.ufGeojson = await state.ufGeojsonPromise;
+  return state.ufGeojson;
+}
+
+function drawUfChoropleth(geojson, rates) {
+  const width = 720;
+  const height = 520;
+  const pad = 16;
+  const rateByUf = new Map(rates.map((item) => [item.uf, item]));
+  const bounds = geoBounds(geojson);
+  const maxRate = Math.max(...rates.map((item) => item.rate));
+  const project = ([lon, lat]) => {
+    const x = pad + ((lon - bounds.minLon) / (bounds.maxLon - bounds.minLon)) * (width - pad * 2);
+    const y = pad + ((bounds.maxLat - lat) / (bounds.maxLat - bounds.minLat)) * (height - pad * 2);
+    return [x, y];
+  };
+
+  const paths = geojson.features
+    .map((feature) => {
+      const uf = featureUf(feature);
+      const item = rateByUf.get(uf);
+      const color = item ? colorForRate(item.rate, maxRate) : "#d6dcda";
+      const title = item
+        ? `${uf}: ${formatNumber(item.rate)} por 100 mil (${formatNumber(item.cases)} casos)`
+        : `${uf}: sem dados no recorte`;
+      return `<path class="map-state" d="${geometryPath(feature.geometry, project)}" fill="${color}"><title>${title}</title></path>`;
+    })
+    .join("");
+
+  els.mapSvg.setAttribute("viewBox", `0 0 ${width} ${height}`);
+  els.mapSvg.innerHTML = paths;
+  renderMapLegend(maxRate);
+}
+
+function featureUf(feature) {
+  const properties = feature.properties || {};
+  const code = String(properties.codarea || properties.CD_UF || properties.id || "").slice(0, 2);
+  if (ibgeCodeToUf[code]) return ibgeCodeToUf[code];
+  return normalizeUf(properties.sigla || properties.uf || properties.nome || "");
+}
+
+function geoBounds(geojson) {
+  const bounds = { minLon: Infinity, maxLon: -Infinity, minLat: Infinity, maxLat: -Infinity };
+  forEachCoordinate(geojson, ([lon, lat]) => {
+    bounds.minLon = Math.min(bounds.minLon, lon);
+    bounds.maxLon = Math.max(bounds.maxLon, lon);
+    bounds.minLat = Math.min(bounds.minLat, lat);
+    bounds.maxLat = Math.max(bounds.maxLat, lat);
+  });
+  return bounds;
+}
+
+function forEachCoordinate(geojson, callback) {
+  for (const feature of geojson.features || []) {
+    walkCoordinates(feature.geometry?.coordinates || [], callback);
+  }
+}
+
+function walkCoordinates(value, callback) {
+  if (!Array.isArray(value)) return;
+  if (typeof value[0] === "number" && typeof value[1] === "number") {
+    callback(value);
+    return;
+  }
+  for (const item of value) walkCoordinates(item, callback);
+}
+
+function geometryPath(geometry, project) {
+  if (!geometry) return "";
+  if (geometry.type === "Polygon") return polygonPath(geometry.coordinates, project);
+  if (geometry.type === "MultiPolygon") {
+    return geometry.coordinates.map((polygon) => polygonPath(polygon, project)).join(" ");
+  }
+  return "";
+}
+
+function polygonPath(rings, project) {
+  return rings
+    .map((ring) =>
+      ring
+        .map((point, index) => {
+          const [x, y] = project(point);
+          return `${index === 0 ? "M" : "L"}${x.toFixed(2)},${y.toFixed(2)}`;
+        })
+        .join(" ") + " Z",
+    )
+    .join(" ");
+}
+
+function colorForRate(rate, maxRate) {
+  if (!Number.isFinite(rate) || !maxRate) return "#d6dcda";
+  const index = Math.min(mapColors.length - 1, Math.max(0, Math.ceil((rate / maxRate) * (mapColors.length - 1))));
+  return mapColors[index];
+}
+
+function renderMapLegend(maxRate) {
+  if (!Number.isFinite(maxRate) || maxRate <= 0) {
+    els.mapLegend.textContent = "";
+    return;
+  }
+  const steps = mapColors.map((color, index) => {
+    if (index === 0) return { color, label: "0" };
+    const from = (maxRate * (index - 1)) / (mapColors.length - 1);
+    const to = (maxRate * index) / (mapColors.length - 1);
+    return { color, label: `${formatNumber(from)}-${formatNumber(to)}` };
+  });
+  els.mapLegend.innerHTML = steps
+    .map((step) => `<span><i class="map-swatch" style="background:${step.color}"></i>${step.label}</span>`)
+    .join("");
 }
 
 function renderStateAnomalies(context) {

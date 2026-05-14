@@ -6,7 +6,7 @@ on:
       years:
         description: "Anos para atualizar: all, 2026, 2025,2026 ou 2015-2026"
         required: false
-        default: "2026"
+        default: "all"
   schedule:
     - cron: "20 8 5 * *"
 
@@ -29,7 +29,7 @@ jobs:
         run: python -m pip install --upgrade pandas openpyxl requests
 
       - name: Atualizar CSVs oficiais
-        run: python scripts/atualiza_sinesp.py --years "${{ github.event.inputs.years || 'all' }}"
+        run: python scripts/atualiza_sinesp.py --years "${{ github.event.inputs.years || 'all' }}" --level uf
 
       - name: Commitar alteracoes
         uses: stefanzweifel/git-auto-commit-action@v5

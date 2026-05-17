@@ -119,7 +119,7 @@ def normalize_number_series(series: pd.Series) -> pd.Series:
     return pd.to_numeric(text, errors="coerce").fillna(0)
 
 
-def make_analysis_table(df: pd.DataFrame) -> pd.DataFrame:
+def make_analysis_table(df: pd.DataFrame, level: str) -> pd.DataFrame:
     date_field = first_existing(df.columns, DATE_COLUMNS)
     uf_field = first_existing(df.columns, UF_COLUMNS)
     municipality_field = first_existing(df.columns, MUNICIPALITY_COLUMNS)
@@ -145,7 +145,7 @@ def make_analysis_table(df: pd.DataFrame) -> pd.DataFrame:
             "evento": df[event_field].fillna("").astype(str).str.strip(),
         }
     )
-    if municipality_field:
+    if level == "municipio" and municipality_field:
         result["municipio"] = df[municipality_field].fillna("").astype(str).str.strip()
     parsed_dates = pd.to_datetime(result["data_referencia"], errors="coerce", dayfirst=True)
     result["data_referencia"] = parsed_dates.dt.strftime("%Y-%m-%d").fillna(
@@ -157,7 +157,7 @@ def make_analysis_table(df: pd.DataFrame) -> pd.DataFrame:
 
     result = result[(result["data_referencia"] != "") & (result["uf"] != "") & (result["evento"] != "")]
     group_columns = ["data_referencia", "uf", "evento"]
-    if municipality_field:
+    if level == "municipio" and municipality_field:
         group_columns.append("municipio")
 
     grouped = (
@@ -214,7 +214,7 @@ def parse_years(value: str | None, available: list[int]) -> list[int]:
     return [year for year in available if year in selected]
 
 
-def update_data(output_dir: Path, years_arg: str | None, keep_xlsx: bool) -> None:
+def update_data(output_dir: Path, years_arg: str | None, keep_xlsx: bool, level: str) -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
     cache_dir = output_dir / "_fonte_xlsx"
     cache_dir.mkdir(parents=True, exist_ok=True)
@@ -225,7 +225,7 @@ def update_data(output_dir: Path, years_arg: str | None, keep_xlsx: bool) -> Non
         raise ValueError("Nenhum ano selecionado entre os arquivos disponiveis.")
 
     manifest_files = []
-    all_frames = []
+    total_rows = 0
     for year in years:
         source_url = downloads[year]
         xlsx_path = cache_dir / f"bancovde-{year}.xlsx"
@@ -236,10 +236,10 @@ def update_data(output_dir: Path, years_arg: str | None, keep_xlsx: bool) -> Non
         xlsx_path.write_bytes(response.content)
 
         raw_df = read_best_table(xlsx_path)
-        df = make_analysis_table(raw_df)
+        df = make_analysis_table(raw_df, level)
         df.insert(0, "ano_arquivo", year)
         df.to_csv(csv_path, index=False, encoding="utf-8-sig")
-        all_frames.append(df)
+        total_rows += len(df)
         manifest_files.append(
             {
                 "year": year,
@@ -252,14 +252,11 @@ def update_data(output_dir: Path, years_arg: str | None, keep_xlsx: bool) -> Non
         if not keep_xlsx:
             xlsx_path.unlink(missing_ok=True)
 
-    combined = pd.concat(all_frames, ignore_index=True)
-    combined_path = output_dir / "sinesp_vde.csv"
-    combined.to_csv(combined_path, index=False, encoding="utf-8-sig")
-
     manifest = {
         "source_page": PAGE_URL,
         "updated_at": datetime.now(timezone.utc).isoformat(),
-        "rows": int(len(combined)),
+        "aggregation_level": level,
+        "rows": int(total_rows),
         "files": manifest_files,
     }
     (output_dir / "sinesp_manifest.json").write_text(
@@ -279,8 +276,14 @@ def main() -> None:
     parser.add_argument("--output-dir", default="data", type=Path)
     parser.add_argument("--years", default=None, help="Ex.: all, 2024,2025,2026 ou 2015-2026.")
     parser.add_argument("--keep-xlsx", action="store_true", help="Mantem os XLSX baixados em data/_fonte_xlsx.")
+    parser.add_argument(
+        "--level",
+        choices=["uf", "municipio"],
+        default="uf",
+        help="Nivel de agregacao. Use uf para carregar todo o periodo no navegador; municipio pode ficar grande.",
+    )
     args = parser.parse_args()
-    update_data(args.output_dir, args.years, args.keep_xlsx)
+    update_data(args.output_dir, args.years, args.keep_xlsx, args.level)
 
 
 if __name__ == "__main__":

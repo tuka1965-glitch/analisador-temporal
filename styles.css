@@ -253,6 +253,26 @@ button:disabled {
   text-transform: none;
 }
 
+.date-range-filter {
+  display: grid;
+  gap: 10px;
+  padding: 4px 2px 8px;
+}
+
+.date-range-title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.date-range-filter input[type="range"] {
+  width: 100%;
+}
+
 .table-panel {
   margin-top: 16px;
   padding: 16px;

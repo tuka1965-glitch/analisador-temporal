@@ -8,6 +8,7 @@ const state = {
   populationByUfYear: new Map(),
   ufGeojson: null,
   ufGeojsonPromise: null,
+  groupDateRange: null,
 };
 
 const likelyFields = {
@@ -160,7 +161,10 @@ els.indicatorField.addEventListener("change", () => {
   resetDimensionFilter(state.filteredIndicators, els.indicatorFilters, buildIndicatorFilters);
   updateAutoValueField();
 });
-els.groupField.addEventListener("change", () => resetDimensionFilter(state.filteredGroups, els.filters, buildGroupFilters));
+els.groupField.addEventListener("change", () => {
+  state.groupDateRange = null;
+  resetDimensionFilter(state.filteredGroups, els.filters, buildGroupFilters);
+});
 els.analyzeButton.addEventListener("click", analyze);
 els.selectAllUfs.addEventListener("click", () => clearFilterSet(state.filteredUfs, buildUfFilters));
 els.selectAllIndicators.addEventListener("click", () => clearFilterSet(state.filteredIndicators, buildIndicatorFilters));
@@ -498,10 +502,36 @@ function isVictimIndicator(value) {
     normalized.includes("homicidio") ||
     normalized.includes("latrocinio") ||
     normalized.includes("feminicidio") ||
+    normalized.includes("estupro") ||
+    normalized.includes("suicidio") ||
+    normalized.includes("desaparecid") ||
+    normalized.includes("localizad") ||
     normalized.includes("morte") ||
     normalized.includes("mortes") ||
+    normalized.includes("pessoa") ||
     normalized.includes("vitima")
   );
+}
+
+function rowValue(row, valueField, indicatorField = "") {
+  const direct = parseNumber(row[valueField]);
+  if (Number.isFinite(direct)) return direct;
+
+  const indicator = indicatorField && !indicatorField.startsWith("(") ? row[indicatorField] || "" : "";
+  if (isDrugIndicator(indicator)) {
+    const drugField = findDrugQuantityHeader();
+    const drugValue = drugField ? parseNumber(row[drugField]) : NaN;
+    if (Number.isFinite(drugValue)) return drugValue;
+  }
+  if (isVictimIndicator(indicator)) {
+    const victimField = findHeaderByNames(["total_vitima", "total vitima"]);
+    const victimValue = victimField ? parseNumber(row[victimField]) : NaN;
+    if (Number.isFinite(victimValue)) return victimValue;
+  }
+  const totalField = findHeaderByNames(["total"]);
+  const totalValue = totalField ? parseNumber(row[totalField]) : NaN;
+  if (Number.isFinite(totalValue)) return totalValue;
+  return NaN;
 }
 
 function updateAutoValueField() {
@@ -553,11 +583,18 @@ function resetDimensionFilter(filterSet, container, builder) {
 
 function clearFilterSet(filterSet, builder) {
   filterSet.clear();
+  if (builder === buildGroupFilters) state.groupDateRange = null;
   builder();
   analyze();
 }
 
 function selectNoValues(field, filterSet, builder) {
+  if (builder === buildGroupFilters && isDateLikeField(field)) {
+    state.groupDateRange = { field, values: [], start: 0, end: -1, none: true };
+    builder();
+    analyze();
+    return;
+  }
   filterSet.clear();
   for (const value of uniqueValues(field)) {
     filterSet.add(value);
@@ -595,6 +632,10 @@ function buildIndicatorFilters() {
 }
 
 function buildGroupFilters() {
+  if (isDateLikeField(els.groupField.value)) {
+    buildDateRangeFilter(els.groupField.value);
+    return;
+  }
   buildDimensionFilter({
     field: els.groupField.value,
     container: els.filters,
@@ -604,6 +645,116 @@ function buildGroupFilters() {
     maxValues: 80,
     emptyValue: "(sem comparacao)",
   });
+}
+
+function isDateLikeField(field) {
+  if (!field || field === "(sem comparacao)" || field === "(nenhum)") return false;
+  const normalized = normalizeHeaderForMatch(field);
+  if (normalized.includes("data") || normalized.includes("date") || normalized.includes("mes")) return true;
+  let parsed = 0;
+  for (const row of state.rows.slice(0, 80)) {
+    if (parseDate(row[field], els.dateFormat.value)) parsed += 1;
+  }
+  return parsed >= 20;
+}
+
+function buildDateRangeFilter(field) {
+  els.filters.innerHTML = "";
+  els.selectAllGroups.disabled = false;
+  els.selectNoGroups.disabled = false;
+
+  const values = Array.from(
+    new Set(
+      state.rows
+        .map((row) => parseDate(row[field], els.dateFormat.value))
+        .filter(Boolean)
+        .map((date) => date.toISOString().slice(0, 10)),
+    ),
+  ).sort();
+
+  if (!values.length) {
+    els.filters.textContent = "Nenhuma data valida encontrada neste campo.";
+    state.groupDateRange = null;
+    return;
+  }
+
+  const current =
+    state.groupDateRange && state.groupDateRange.field === field
+      ? state.groupDateRange
+      : { field, values, start: 0, end: values.length - 1 };
+  current.values = values;
+  if (current.none) {
+    current.start = 0;
+    current.end = -1;
+  } else {
+    current.start = Math.max(0, Math.min(current.start, values.length - 1));
+    current.end = Math.max(current.start, Math.min(current.end, values.length - 1));
+  }
+  state.groupDateRange = current;
+
+  const wrapper = document.createElement("div");
+  wrapper.className = "date-range-filter";
+  const title = document.createElement("div");
+  title.className = "date-range-title";
+  const startLabel = document.createElement("span");
+  const endLabel = document.createElement("span");
+  const startInput = document.createElement("input");
+  const endInput = document.createElement("input");
+
+  for (const input of [startInput, endInput]) {
+    input.type = "range";
+    input.min = "0";
+    input.max = String(values.length - 1);
+    input.step = "1";
+  }
+  startInput.value = String(current.start);
+  endInput.value = String(Math.max(0, current.end));
+
+  function syncLabels() {
+    if (current.none) {
+      startLabel.textContent = "Nenhum periodo selecionado";
+      endLabel.textContent = "";
+      return;
+    }
+    startLabel.textContent = `Inicio: ${values[current.start] || "-"}`;
+    endLabel.textContent = `Fim: ${values[current.end] || "-"}`;
+  }
+
+  function updateRange(changed) {
+    current.none = false;
+    current.start = Number(startInput.value);
+    current.end = Number(endInput.value);
+    if (current.start > current.end) {
+      if (changed === "start") current.end = current.start;
+      else current.start = current.end;
+      startInput.value = String(current.start);
+      endInput.value = String(current.end);
+    }
+    syncLabels();
+    analyze();
+  }
+
+  startInput.addEventListener("input", () => updateRange("start"));
+  endInput.addEventListener("input", () => updateRange("end"));
+  syncLabels();
+
+  title.append(startLabel, endLabel);
+  wrapper.append(title, startInput, endInput);
+  els.filters.appendChild(wrapper);
+}
+
+function rowPassesGroupFilter(row, groupField) {
+  if (!groupField || groupField === "(sem comparacao)") return true;
+  if (state.groupDateRange && state.groupDateRange.field === groupField) {
+    if (state.groupDateRange.none) return false;
+    const date = parseDate(row[groupField], els.dateFormat.value);
+    if (!date) return false;
+    const key = date.toISOString().slice(0, 10);
+    const index = state.groupDateRange.values.indexOf(key);
+    return index >= state.groupDateRange.start && index <= state.groupDateRange.end;
+  }
+  const group = row[groupField] || "(vazio)";
+  return !state.filteredGroups.has(group);
 }
 
 function buildDimensionFilter({
@@ -674,10 +825,10 @@ function analyze() {
     const group = groupField === "(sem comparacao)" ? "" : row[groupField] || "(vazio)";
     if (uf && state.filteredUfs.has(uf)) continue;
     if (indicator && state.filteredIndicators.has(indicator)) continue;
-    if (group && state.filteredGroups.has(group)) continue;
+    if (!rowPassesGroupFilter(row, groupField)) continue;
 
     const date = parseDate(row[dateField], els.dateFormat.value);
-    const value = parseNumber(row[valueField]);
+    const value = rowValue(row, valueField, indicatorField);
     if (!date || !Number.isFinite(value)) {
       skippedRows += 1;
       if (!date && badDateSamples.size < 3) badDateSamples.add(row[dateField]);
@@ -1090,7 +1241,7 @@ function renderHighlights(context) {
 
   for (const row of state.rows) {
     const date = parseDate(row[context.dateField], els.dateFormat.value);
-    const value = parseNumber(row[context.valueField]);
+    const value = rowValue(row, context.valueField, context.indicatorField);
     if (!date || !Number.isFinite(value)) continue;
 
     const month = periodKey(date, "month");
@@ -1103,7 +1254,7 @@ function renderHighlights(context) {
     const group = context.groupField && context.groupField !== "(sem comparacao)" ? row[context.groupField] || "(vazio)" : "";
     if (state.filteredIndicators.has(event)) continue;
     if (uf && state.filteredUfs.has(uf)) continue;
-    if (group && state.filteredGroups.has(group)) continue;
+    if (!rowPassesGroupFilter(row, context.groupField)) continue;
 
     const key = `${event}\u0001${location}`;
     const item = totals.get(key) || { event, location, current: 0, prior: 0 };
@@ -1146,7 +1297,7 @@ function latestAvailableMonths(dateField, context) {
     const group = context.groupField && context.groupField !== "(sem comparacao)" ? row[context.groupField] || "(vazio)" : "";
     if (event && state.filteredIndicators.has(event)) continue;
     if (uf && state.filteredUfs.has(uf)) continue;
-    if (group && state.filteredGroups.has(group)) continue;
+    if (!rowPassesGroupFilter(row, context.groupField)) continue;
     const date = parseDate(row[dateField], els.dateFormat.value);
     if (date) months.add(periodKey(date, "month"));
   }
@@ -1276,7 +1427,7 @@ function renderTerritorialGeneralization(context) {
 
   for (const row of state.rows) {
     const date = parseDate(row[context.dateField], els.dateFormat.value);
-    const value = parseNumber(row[context.valueField]);
+    const value = rowValue(row, context.valueField, context.indicatorField);
     if (!date || !Number.isFinite(value)) continue;
 
     const uf = row[context.ufField] || "(vazio)";
@@ -1285,7 +1436,7 @@ function renderTerritorialGeneralization(context) {
     const group = context.groupField && context.groupField !== "(sem comparacao)" ? row[context.groupField] || "(vazio)" : "";
     if (state.filteredUfs.has(uf)) continue;
     if (indicator && state.filteredIndicators.has(indicator)) continue;
-    if (group && state.filteredGroups.has(group)) continue;
+    if (!rowPassesGroupFilter(row, context.groupField)) continue;
 
     const year = date.getFullYear();
     const bucket = byUf.get(uf) || { uf, pre: 0, post: 0, prePeriods: new Set(), postPeriods: new Set() };
@@ -1468,7 +1619,7 @@ function renderStateShare(context) {
 
   for (const row of state.rows) {
     const date = parseDate(row[context.dateField], els.dateFormat.value);
-    const value = parseNumber(row[context.valueField]);
+    const value = rowValue(row, context.valueField, context.indicatorField);
     if (!date || !Number.isFinite(value)) continue;
     const year = date.getFullYear();
     if (year < startYear || year > endYear) continue;
@@ -1479,7 +1630,7 @@ function renderStateShare(context) {
     const group = context.groupField && context.groupField !== "(sem comparacao)" ? row[context.groupField] || "(vazio)" : "";
     if (state.filteredUfs.has(uf)) continue;
     if (indicator && state.filteredIndicators.has(indicator)) continue;
-    if (group && state.filteredGroups.has(group)) continue;
+    if (!rowPassesGroupFilter(row, context.groupField)) continue;
 
     totals.set(uf, (totals.get(uf) || 0) + value);
     grandTotal += value;
@@ -1742,7 +1893,7 @@ function renderPopulationRates(context) {
   const byUfYear = new Map();
   for (const row of state.rows) {
     const date = parseDate(row[context.dateField], els.dateFormat.value);
-    const value = parseNumber(row[context.valueField]);
+    const value = rowValue(row, context.valueField, context.indicatorField);
     if (!date || !Number.isFinite(value)) continue;
 
     const year = date.getFullYear();
@@ -1755,7 +1906,7 @@ function renderPopulationRates(context) {
     const group = context.groupField && context.groupField !== "(sem comparacao)" ? row[context.groupField] || "(vazio)" : "";
     if (state.filteredUfs.has(uf)) continue;
     if (indicator && state.filteredIndicators.has(indicator)) continue;
-    if (group && state.filteredGroups.has(group)) continue;
+    if (!rowPassesGroupFilter(row, context.groupField)) continue;
 
     const key = `${normalizedUf}|${year}`;
     const current = byUfYear.get(key) || { uf: normalizedUf, year, cases: 0 };
@@ -1889,7 +2040,7 @@ function renderRateMap(context) {
   const monthsInLatestYear = new Set();
   for (const row of state.rows) {
     const date = parseDate(row[context.dateField], els.dateFormat.value);
-    const value = parseNumber(row[context.valueField]);
+    const value = rowValue(row, context.valueField, context.indicatorField);
     if (!date || date.getFullYear() !== latestYear || !Number.isFinite(value)) continue;
 
     const uf = row[context.ufField] || "(vazio)";
@@ -1899,7 +2050,7 @@ function renderRateMap(context) {
     const group = context.groupField && context.groupField !== "(sem comparacao)" ? row[context.groupField] || "(vazio)" : "";
     if (state.filteredUfs.has(uf)) continue;
     if (indicator && state.filteredIndicators.has(indicator)) continue;
-    if (group && state.filteredGroups.has(group)) continue;
+    if (!rowPassesGroupFilter(row, context.groupField)) continue;
     monthsInLatestYear.add(periodKey(date, "month"));
     byUf.set(normalizedUf, (byUf.get(normalizedUf) || 0) + value);
   }
@@ -1945,7 +2096,7 @@ function latestAvailableYearForMap(context) {
     const group = context.groupField && context.groupField !== "(sem comparacao)" ? row[context.groupField] || "(vazio)" : "";
     if (indicator && state.filteredIndicators.has(indicator)) continue;
     if (uf && state.filteredUfs.has(uf)) continue;
-    if (group && state.filteredGroups.has(group)) continue;
+    if (!rowPassesGroupFilter(row, context.groupField)) continue;
     const date = parseDate(row[context.dateField], els.dateFormat.value);
     if (date) latest = Math.max(latest, date.getFullYear());
   }
@@ -2142,7 +2293,7 @@ function renderStateAnomalies(context) {
   const byUf = new Map();
   for (const row of state.rows) {
     const date = parseDate(row[context.dateField], els.dateFormat.value);
-    const value = parseNumber(row[context.valueField]);
+    const value = rowValue(row, context.valueField, context.indicatorField);
     if (!date || !Number.isFinite(value)) continue;
 
     const year = date.getFullYear();
@@ -2154,7 +2305,7 @@ function renderStateAnomalies(context) {
     const group = context.groupField && context.groupField !== "(sem comparacao)" ? row[context.groupField] || "(vazio)" : "";
     if (state.filteredUfs.has(uf)) continue;
     if (indicator && state.filteredIndicators.has(indicator)) continue;
-    if (group && state.filteredGroups.has(group)) continue;
+    if (!rowPassesGroupFilter(row, context.groupField)) continue;
 
     const key = periodKey(date, "month");
     const ufSeries = byUf.get(uf) || new Map();

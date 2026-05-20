@@ -150,10 +150,15 @@ def is_victim_event(event: object) -> bool:
         "homicidio",
         "latrocinio",
         "feminicidio",
+        "estupro",
+        "suicidio",
+        "desaparecid",
+        "localizad",
         "morte",
         "mortes",
         "lesao corporal seguida de morte",
         "vitima",
+        "pessoa",
     ]
     return any(term in normalized for term in victim_terms)
 

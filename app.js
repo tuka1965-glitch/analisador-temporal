@@ -12,7 +12,7 @@ const state = {
 
 const likelyFields = {
   date: ["data_referencia", "data referencia", "mes de data referencia", "mes data referencia", "date", "data"],
-  value: ["total_vitima", "total vitima", "total vitima", "total", "valor"],
+  value: ["valor_auto", "valor auto", "valor", "quantidade_kg", "qtd_kg", "peso_kg", "total_vitima", "total vitima", "total", "casos"],
   uf: ["uf", "estado", "sigla uf", "unidade federativa"],
   indicator: ["evento", "indicador", "tipo indicador", "crime", "natureza"],
   group: ["evento", "uf", "municipio"],
@@ -156,9 +156,10 @@ els.populationInput.addEventListener("change", async (event) => {
   analyze();
 });
 els.ufField.addEventListener("change", () => resetDimensionFilter(state.filteredUfs, els.ufFilters, buildUfFilters));
-els.indicatorField.addEventListener("change", () =>
-  resetDimensionFilter(state.filteredIndicators, els.indicatorFilters, buildIndicatorFilters),
-);
+els.indicatorField.addEventListener("change", () => {
+  resetDimensionFilter(state.filteredIndicators, els.indicatorFilters, buildIndicatorFilters);
+  updateAutoValueField();
+});
 els.groupField.addEventListener("change", () => resetDimensionFilter(state.filteredGroups, els.filters, buildGroupFilters));
 els.analyzeButton.addEventListener("click", analyze);
 els.selectAllUfs.addEventListener("click", () => clearFilterSet(state.filteredUfs, buildUfFilters));
@@ -394,6 +395,7 @@ function populateControls() {
   selectLikely(els.ufField, likelyFields.uf);
   selectLikely(els.indicatorField, likelyFields.indicator);
   selectLikely(els.groupField, likelyFields.group);
+  updateAutoValueField();
   if (els.groupField.value === els.indicatorField.value || els.groupField.value === els.ufField.value) {
     els.groupField.value = "(sem comparacao)";
   }
@@ -440,6 +442,96 @@ function normalizeHeaderForMatch(value) {
     .replace(/[_-]+/g, " ")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+function normalizeTextForMatch(value) {
+  return String(value || "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function findHeaderByNames(names) {
+  const wanted = names.map(normalizeHeaderForMatch);
+  return state.headers.find((header) => wanted.includes(normalizeHeaderForMatch(header))) || "";
+}
+
+function findDrugQuantityHeader() {
+  return (
+    state.headers.find((header) => {
+      const normalized = normalizeHeaderForMatch(header).replace(/\s/g, "_");
+      return (
+        normalized.includes("kg") ||
+        normalized.includes("quilo") ||
+        normalized.includes("quilograma") ||
+        normalized.includes("peso") ||
+        normalized.includes("quantidade_droga") ||
+        normalized.includes("quantidade_de_droga") ||
+        normalized.includes("qtd_droga")
+      );
+    }) || ""
+  );
+}
+
+function selectedValues(field, filtered) {
+  if (!field || field.startsWith("(")) return [];
+  const values = new Set();
+  for (const row of state.rows) {
+    const value = row[field] || "(vazio)";
+    if (!filtered.has(value)) values.add(value);
+    if (values.size > 40) break;
+  }
+  return Array.from(values);
+}
+
+function isDrugIndicator(value) {
+  const normalized = normalizeTextForMatch(value);
+  return normalized.includes("apreens") && (normalized.includes("cocaina") || normalized.includes("maconha"));
+}
+
+function isVictimIndicator(value) {
+  const normalized = normalizeTextForMatch(value);
+  return (
+    normalized.includes("homicidio") ||
+    normalized.includes("latrocinio") ||
+    normalized.includes("feminicidio") ||
+    normalized.includes("morte") ||
+    normalized.includes("mortes") ||
+    normalized.includes("vitima")
+  );
+}
+
+function updateAutoValueField() {
+  const autoField = findHeaderByNames(["valor_auto", "valor auto"]);
+  if (autoField) {
+    els.valueField.value = autoField;
+    return;
+  }
+
+  const activeIndicators = selectedValues(els.indicatorField.value, state.filteredIndicators);
+  if (activeIndicators.length && activeIndicators.every(isDrugIndicator)) {
+    const drugField = findDrugQuantityHeader();
+    if (drugField) {
+      els.valueField.value = drugField;
+      return;
+    }
+  }
+
+  if (activeIndicators.length && activeIndicators.every(isVictimIndicator)) {
+    const victimField = findHeaderByNames(["total_vitima", "total vitima"]);
+    if (victimField) {
+      els.valueField.value = victimField;
+      return;
+    }
+  }
+
+  const totalField = findHeaderByNames(["total"]);
+  if (totalField) {
+    els.valueField.value = totalField;
+  }
 }
 
 function showTwbxNotice(fileName) {
@@ -560,6 +652,7 @@ function analyze() {
   if (!els.ufFilters.children.length && els.ufField.value !== "(nenhum)") buildUfFilters();
   if (!els.indicatorFilters.children.length && els.indicatorField.value !== "(nenhum)") buildIndicatorFilters();
   if (!els.filters.children.length && els.groupField.value !== "(sem comparacao)") buildGroupFilters();
+  updateAutoValueField();
 
   const dateField = els.dateField.value;
   const valueField = els.valueField.value;

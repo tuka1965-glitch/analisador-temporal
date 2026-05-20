@@ -269,6 +269,16 @@ button:disabled {
   font-weight: 700;
 }
 
+.date-range-selects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.date-range-selects select {
+  min-width: 0;
+}
+
 .date-range-filter input[type="range"] {
   width: 100%;
 }

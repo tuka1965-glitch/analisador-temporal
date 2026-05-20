@@ -515,19 +515,18 @@ function isVictimIndicator(value) {
 
 function rowValue(row, valueField, indicatorField = "") {
   const direct = parseNumber(row[valueField]);
-  if (Number.isFinite(direct)) return direct;
-
   const indicator = indicatorField && !indicatorField.startsWith("(") ? row[indicatorField] || "" : "";
   if (isDrugIndicator(indicator)) {
     const drugField = findDrugQuantityHeader();
     const drugValue = drugField ? parseNumber(row[drugField]) : NaN;
-    if (Number.isFinite(drugValue)) return drugValue;
+    if (Number.isFinite(drugValue) && (drugValue !== 0 || !Number.isFinite(direct))) return drugValue;
   }
   if (isVictimIndicator(indicator)) {
     const victimField = findHeaderByNames(["total_vitima", "total vitima"]);
     const victimValue = victimField ? parseNumber(row[victimField]) : NaN;
-    if (Number.isFinite(victimValue)) return victimValue;
+    if (Number.isFinite(victimValue) && (victimValue !== 0 || !Number.isFinite(direct))) return victimValue;
   }
+  if (Number.isFinite(direct)) return direct;
   const totalField = findHeaderByNames(["total"]);
   const totalValue = totalField ? parseNumber(row[totalField]) : NaN;
   if (Number.isFinite(totalValue)) return totalValue;
@@ -700,6 +699,19 @@ function buildDateRangeFilter(field) {
   const endLabel = document.createElement("span");
   const startInput = document.createElement("input");
   const endInput = document.createElement("input");
+  const selects = document.createElement("div");
+  const startSelect = document.createElement("select");
+  const endSelect = document.createElement("select");
+  selects.className = "date-range-selects";
+
+  values.forEach((value, index) => {
+    const startOption = document.createElement("option");
+    startOption.value = String(index);
+    startOption.textContent = value;
+    const endOption = startOption.cloneNode(true);
+    startSelect.appendChild(startOption);
+    endSelect.appendChild(endOption);
+  });
 
   for (const input of [startInput, endInput]) {
     input.type = "range";
@@ -709,6 +721,8 @@ function buildDateRangeFilter(field) {
   }
   startInput.value = String(current.start);
   endInput.value = String(Math.max(0, current.end));
+  startSelect.value = String(current.start);
+  endSelect.value = String(Math.max(0, current.end));
 
   function syncLabels() {
     if (current.none) {
@@ -718,6 +732,8 @@ function buildDateRangeFilter(field) {
     }
     startLabel.textContent = `Inicio: ${values[current.start] || "-"}`;
     endLabel.textContent = `Fim: ${values[current.end] || "-"}`;
+    startSelect.value = String(current.start);
+    endSelect.value = String(current.end);
   }
 
   function updateRange(changed) {
@@ -736,10 +752,19 @@ function buildDateRangeFilter(field) {
 
   startInput.addEventListener("input", () => updateRange("start"));
   endInput.addEventListener("input", () => updateRange("end"));
+  startSelect.addEventListener("change", () => {
+    startInput.value = startSelect.value;
+    updateRange("start");
+  });
+  endSelect.addEventListener("change", () => {
+    endInput.value = endSelect.value;
+    updateRange("end");
+  });
   syncLabels();
 
   title.append(startLabel, endLabel);
-  wrapper.append(title, startInput, endInput);
+  selects.append(startSelect, endSelect);
+  wrapper.append(title, selects, startInput, endInput);
   els.filters.appendChild(wrapper);
 }
 

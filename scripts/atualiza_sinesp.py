@@ -39,6 +39,17 @@ UF_COLUMNS = ["uf", "sigla_uf", "estado", "unidade_federativa"]
 MUNICIPALITY_COLUMNS = ["municipio", "nome_municipio", "cidade"]
 EVENT_COLUMNS = ["evento", "indicador", "natureza", "tipo_indicador", "crime"]
 VALUE_COLUMNS = ["total_vitima", "total", "feminino", "masculino", "nao_informado"]
+DRUG_QUANTITY_HINTS = [
+    "kg",
+    "quilo",
+    "quilograma",
+    "peso",
+    "quantidade_droga",
+    "quantidade_de_droga",
+    "quantidade_de_drogas",
+    "qtd_droga",
+    "qtd_drogas",
+]
 
 
 def normalize_column(value: object) -> str:
@@ -48,6 +59,14 @@ def normalize_column(value: object) -> str:
     text = re.sub(r"[^a-z0-9]+", "_", text)
     text = re.sub(r"_+", "_", text).strip("_")
     return text or "coluna"
+
+
+def normalize_text(value: object) -> str:
+    text = "" if value is None else str(value)
+    text = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode("ascii")
+    text = text.strip().lower()
+    text = re.sub(r"[^a-z0-9]+", " ", text)
+    return re.sub(r"\s+", " ", text).strip()
 
 
 def unique_columns(columns: list[str]) -> list[str]:
@@ -111,6 +130,74 @@ def first_existing(columns: pd.Index, candidates: list[str]) -> str:
     return ""
 
 
+def drug_quantity_columns(columns: pd.Index) -> list[str]:
+    result: list[str] = []
+    for column in columns:
+        normalized = normalize_text(column).replace(" ", "_")
+        if any(hint in normalized for hint in DRUG_QUANTITY_HINTS):
+            result.append(column)
+    return result
+
+
+def is_drug_event(event: object) -> bool:
+    normalized = normalize_text(event)
+    return "apreens" in normalized and ("cocaina" in normalized or "maconha" in normalized)
+
+
+def is_victim_event(event: object) -> bool:
+    normalized = normalize_text(event)
+    victim_terms = [
+        "homicidio",
+        "latrocinio",
+        "feminicidio",
+        "morte",
+        "mortes",
+        "lesao corporal seguida de morte",
+        "vitima",
+    ]
+    return any(term in normalized for term in victim_terms)
+
+
+def preferred_drug_columns(event: object, candidates: list[str]) -> list[str]:
+    normalized_event = normalize_text(event)
+    preferred = []
+    fallback = []
+    for column in candidates:
+        normalized_column = normalize_text(column)
+        if "cocaina" in normalized_event and "cocaina" in normalized_column:
+            preferred.append(column)
+        elif "maconha" in normalized_event and "maconha" in normalized_column:
+            preferred.append(column)
+        else:
+            fallback.append(column)
+    return preferred + fallback
+
+
+def auto_value_for_row(row: pd.Series, value_fields: list[str], drug_fields: list[str]) -> float:
+    event = row.get("evento", "")
+    if is_drug_event(event) and drug_fields:
+        for field in preferred_drug_columns(event, drug_fields):
+            value = row.get(field, 0)
+            if pd.notna(value) and float(value) != 0:
+                return float(value)
+        return float(row.get(drug_fields[0], 0) or 0)
+    if is_victim_event(event) and "total_vitima" in value_fields:
+        return float(row.get("total_vitima", 0) or 0)
+    if "total" in value_fields:
+        return float(row.get("total", 0) or 0)
+    if "total_vitima" in value_fields:
+        return float(row.get("total_vitima", 0) or 0)
+    return float(row.get(value_fields[0], 0) or 0)
+
+
+def auto_unit_for_event(event: object) -> str:
+    if is_drug_event(event):
+        return "kg"
+    if is_victim_event(event):
+        return "vitimas"
+    return "ocorrencias"
+
+
 def normalize_number_series(series: pd.Series) -> pd.Series:
     if pd.api.types.is_numeric_dtype(series):
         return pd.to_numeric(series, errors="coerce").fillna(0)
@@ -125,8 +212,10 @@ def make_analysis_table(df: pd.DataFrame, level: str) -> pd.DataFrame:
     municipality_field = first_existing(df.columns, MUNICIPALITY_COLUMNS)
     event_field = first_existing(df.columns, EVENT_COLUMNS)
     value_fields = [column for column in VALUE_COLUMNS if column in df.columns]
+    drug_fields = [column for column in drug_quantity_columns(df.columns) if column not in value_fields]
+    numeric_fields = value_fields + drug_fields
 
-    if not date_field or not uf_field or not event_field or not value_fields:
+    if not date_field or not uf_field or not event_field or not numeric_fields:
         missing = []
         if not date_field:
             missing.append("data")
@@ -134,7 +223,7 @@ def make_analysis_table(df: pd.DataFrame, level: str) -> pd.DataFrame:
             missing.append("uf")
         if not event_field:
             missing.append("evento")
-        if not value_fields:
+        if not numeric_fields:
             missing.append("valor")
         raise ValueError(f"Colunas obrigatorias ausentes para agregacao: {', '.join(missing)}")
 
@@ -152,8 +241,9 @@ def make_analysis_table(df: pd.DataFrame, level: str) -> pd.DataFrame:
         result["data_referencia"].fillna("").astype(str).str.strip()
     )
 
-    for value_field in value_fields:
+    for value_field in numeric_fields:
         result[value_field] = normalize_number_series(df[value_field])
+    result["valor_auto"] = result.apply(lambda row: auto_value_for_row(row, value_fields, drug_fields), axis=1)
 
     result = result[(result["data_referencia"] != "") & (result["uf"] != "") & (result["evento"] != "")]
     group_columns = ["data_referencia", "uf", "evento"]
@@ -161,10 +251,11 @@ def make_analysis_table(df: pd.DataFrame, level: str) -> pd.DataFrame:
         group_columns.append("municipio")
 
     grouped = (
-        result.groupby(group_columns, as_index=False)[value_fields]
+        result.groupby(group_columns, as_index=False)[numeric_fields + ["valor_auto"]]
         .sum()
         .sort_values(group_columns)
     )
+    grouped["valor_unidade"] = grouped["evento"].map(auto_unit_for_event)
     return grouped
 
 

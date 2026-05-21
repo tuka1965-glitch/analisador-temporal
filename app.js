@@ -108,6 +108,7 @@ const els = {
   copyStateAnomalies: document.getElementById("copyStateAnomalies"),
   chart: document.getElementById("chart"),
   chartSubtitle: document.getElementById("chartSubtitle"),
+  descriptiveStatsBody: document.getElementById("descriptiveStatsBody"),
   ufFilters: document.getElementById("ufFilters"),
   indicatorFilters: document.getElementById("indicatorFilters"),
   dateFilters: document.getElementById("dateFilters"),
@@ -931,6 +932,7 @@ function analyze() {
   updateMetrics(series, usedRows, skippedRows);
   updateWarnings(series, skippedRows, badDateSamples, badValueSamples);
   drawChart(series);
+  renderDescriptiveStats(series);
   renderTable(series);
   renderNarrative(series, { dateField, valueField, ufField, indicatorField, groupField, period });
   renderForecast(series, { valueField, period });
@@ -1187,6 +1189,51 @@ function drawChart(series) {
     <text x="${pad.left}" y="${height - 14}" font-size="12" fill="#647075">${series[0]?.key || ""}</text>
     <text x="${width - pad.right}" y="${height - 14}" text-anchor="end" font-size="12" fill="#647075">${series.at(-1)?.key || ""}</text>
   `;
+}
+
+function renderDescriptiveStats(series) {
+  els.descriptiveStatsBody.innerHTML = "";
+  if (!series.length) {
+    const tr = document.createElement("tr");
+    tr.innerHTML = `<td colspan="3">Nao ha pontos validos para calcular as estatisticas.</td>`;
+    els.descriptiveStatsBody.appendChild(tr);
+    return;
+  }
+
+  const values = series.map((point) => point.value).filter(Number.isFinite);
+  const sorted = values.slice().sort((a, b) => a - b);
+  const total = values.reduce((sum, value) => sum + value, 0);
+  const mean = total / values.length;
+  const sampleVariance =
+    values.length > 1 ? values.reduce((sum, value) => sum + (value - mean) ** 2, 0) / (values.length - 1) : 0;
+  const sd = Math.sqrt(sampleVariance);
+  const min = minBy(series, (point) => point.value);
+  const max = maxBy(series, (point) => point.value);
+  const q1 = percentile(sorted, 0.25);
+  const median = percentile(sorted, 0.5);
+  const q3 = percentile(sorted, 0.75);
+  const cv = mean ? sd / mean : 0;
+  const amplitude = max.value - min.value;
+
+  const rows = [
+    ["Periodos validos", formatInteger(values.length), "Quantidade de pontos agregados no grafico"],
+    ["Total", formatNumber(total), "Soma dos valores no recorte filtrado"],
+    ["Media", formatNumber(mean), "Valor medio por periodo"],
+    ["Mediana", formatNumber(median), "Ponto central da distribuicao"],
+    ["Minimo", formatNumber(min.value), min.key],
+    ["Maximo", formatNumber(max.value), max.key],
+    ["Amplitude", formatNumber(amplitude), "Diferenca entre maximo e minimo"],
+    ["Desvio-padrao", formatNumber(sd), values.length > 1 ? "Amostral" : "Serie com apenas um ponto"],
+    ["Coeficiente de variacao", formatPercent(cv), "Desvio-padrao dividido pela media"],
+    ["1o quartil", formatNumber(q1), "25% dos periodos ficam abaixo deste valor"],
+    ["3o quartil", formatNumber(q3), "75% dos periodos ficam abaixo deste valor"],
+  ];
+
+  for (const row of rows) {
+    const tr = document.createElement("tr");
+    tr.innerHTML = `<td>${row[0]}</td><td>${row[1]}</td><td>${row[2]}</td>`;
+    els.descriptiveStatsBody.appendChild(tr);
+  }
 }
 
 function renderTable(series) {
@@ -2602,6 +2649,16 @@ function maxBy(values, iteratee) {
 
 function minBy(values, iteratee) {
   return values.reduce((best, item) => (iteratee(item) < iteratee(best) ? item : best), values[0]);
+}
+
+function percentile(sortedValues, ratio) {
+  if (!sortedValues.length) return 0;
+  if (sortedValues.length === 1) return sortedValues[0];
+  const position = (sortedValues.length - 1) * ratio;
+  const lower = Math.floor(position);
+  const upper = Math.ceil(position);
+  const weight = position - lower;
+  return sortedValues[lower] * (1 - weight) + sortedValues[upper] * weight;
 }
 
 const monthLabels = [

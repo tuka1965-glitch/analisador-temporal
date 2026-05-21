@@ -206,6 +206,22 @@ button:disabled {
   display: block;
 }
 
+.descriptive-stats {
+  margin-top: 16px;
+  border-top: 1px solid var(--line);
+  padding-top: 14px;
+}
+
+.descriptive-stats h3 {
+  margin: 0;
+  color: var(--text);
+  font-size: 15px;
+}
+
+.descriptive-stats .table-scroll {
+  max-height: 300px;
+}
+
 .filters {
   display: grid;
   gap: 10px;

@@ -8,6 +8,7 @@ const state = {
   populationByUfYear: new Map(),
   ufGeojson: null,
   ufGeojsonPromise: null,
+  dateRange: null,
   groupDateRange: null,
 };
 
@@ -109,12 +110,15 @@ const els = {
   chartSubtitle: document.getElementById("chartSubtitle"),
   ufFilters: document.getElementById("ufFilters"),
   indicatorFilters: document.getElementById("indicatorFilters"),
+  dateFilters: document.getElementById("dateFilters"),
   filters: document.getElementById("filters"),
   selectAllUfs: document.getElementById("selectAllUfs"),
   selectAllIndicators: document.getElementById("selectAllIndicators"),
+  selectAllDates: document.getElementById("selectAllDates"),
   selectAllGroups: document.getElementById("selectAllGroups"),
   selectNoUfs: document.getElementById("selectNoUfs"),
   selectNoIndicators: document.getElementById("selectNoIndicators"),
+  selectNoDates: document.getElementById("selectNoDates"),
   selectNoGroups: document.getElementById("selectNoGroups"),
   summaryBody: document.getElementById("summaryBody"),
 };
@@ -131,9 +135,19 @@ els.fileInput.addEventListener("change", async (event) => {
   setDataStatus(`Base carregada do arquivo local ${file.name}: ${formatInteger(state.rows.length)} linhas.`, "ok");
 });
 
-for (const element of [els.dateField, els.valueField, els.dateFormat, els.periodField, els.movingAverage]) {
+for (const element of [els.valueField, els.periodField, els.movingAverage]) {
   element.addEventListener("change", analyze);
 }
+els.dateField.addEventListener("change", () => {
+  state.dateRange = null;
+  buildDateFilters();
+  analyze();
+});
+els.dateFormat.addEventListener("change", () => {
+  state.dateRange = null;
+  buildDateFilters();
+  analyze();
+});
 for (const element of [els.preStart, els.preEnd, els.postStart, els.postEnd, els.territorialThreshold]) {
   element.addEventListener("change", analyze);
 }
@@ -168,11 +182,21 @@ els.groupField.addEventListener("change", () => {
 els.analyzeButton.addEventListener("click", analyze);
 els.selectAllUfs.addEventListener("click", () => clearFilterSet(state.filteredUfs, buildUfFilters));
 els.selectAllIndicators.addEventListener("click", () => clearFilterSet(state.filteredIndicators, buildIndicatorFilters));
+els.selectAllDates.addEventListener("click", () => {
+  state.dateRange = null;
+  buildDateFilters();
+  analyze();
+});
 els.selectAllGroups.addEventListener("click", () => clearFilterSet(state.filteredGroups, buildGroupFilters));
 els.selectNoUfs.addEventListener("click", () => selectNoValues(els.ufField.value, state.filteredUfs, buildUfFilters));
 els.selectNoIndicators.addEventListener("click", () =>
   selectNoValues(els.indicatorField.value, state.filteredIndicators, buildIndicatorFilters),
 );
+els.selectNoDates.addEventListener("click", () => {
+  state.dateRange = { field: els.dateField.value, values: [], start: 0, end: -1, none: true };
+  buildDateFilters();
+  analyze();
+});
 els.selectNoGroups.addEventListener("click", () => selectNoValues(els.groupField.value, state.filteredGroups, buildGroupFilters));
 els.copyAnalysis.addEventListener("click", async () => {
   const text = els.analysisText.innerText.trim();
@@ -300,6 +324,8 @@ function loadDataset(parsed, sourceName) {
   state.filteredGroups.clear();
   state.filteredUfs.clear();
   state.filteredIndicators.clear();
+  state.dateRange = null;
+  state.groupDateRange = null;
   populateControls();
   buildAllFilters();
   els.analyzeButton.disabled = false;
@@ -605,6 +631,7 @@ function selectNoValues(field, filterSet, builder) {
 function buildAllFilters() {
   buildUfFilters();
   buildIndicatorFilters();
+  buildDateFilters();
   buildGroupFilters();
 }
 
@@ -630,9 +657,27 @@ function buildIndicatorFilters() {
   });
 }
 
+function buildDateFilters() {
+  buildDateRangeFilter({
+    field: els.dateField.value,
+    container: els.dateFilters,
+    rangeKey: "dateRange",
+    selectAllButton: els.selectAllDates,
+    selectNoneButton: els.selectNoDates,
+    emptyMessage: "Nenhuma data valida encontrada no campo Data.",
+  });
+}
+
 function buildGroupFilters() {
   if (isDateLikeField(els.groupField.value)) {
-    buildDateRangeFilter(els.groupField.value);
+    buildDateRangeFilter({
+      field: els.groupField.value,
+      container: els.filters,
+      rangeKey: "groupDateRange",
+      selectAllButton: els.selectAllGroups,
+      selectNoneButton: els.selectNoGroups,
+      emptyMessage: "Nenhuma data valida encontrada neste campo.",
+    });
     return;
   }
   buildDimensionFilter({
@@ -657,10 +702,10 @@ function isDateLikeField(field) {
   return parsed >= 20;
 }
 
-function buildDateRangeFilter(field) {
-  els.filters.innerHTML = "";
-  els.selectAllGroups.disabled = false;
-  els.selectNoGroups.disabled = false;
+function buildDateRangeFilter({ field, container, rangeKey, selectAllButton, selectNoneButton, emptyMessage }) {
+  container.innerHTML = "";
+  selectAllButton.disabled = false;
+  selectNoneButton.disabled = false;
 
   const values = Array.from(
     new Set(
@@ -672,14 +717,14 @@ function buildDateRangeFilter(field) {
   ).sort();
 
   if (!values.length) {
-    els.filters.textContent = "Nenhuma data valida encontrada neste campo.";
-    state.groupDateRange = null;
+    container.textContent = emptyMessage;
+    state[rangeKey] = null;
     return;
   }
 
   const current =
-    state.groupDateRange && state.groupDateRange.field === field
-      ? state.groupDateRange
+    state[rangeKey] && state[rangeKey].field === field
+      ? state[rangeKey]
       : { field, values, start: 0, end: values.length - 1 };
   current.values = values;
   if (current.none) {
@@ -689,7 +734,7 @@ function buildDateRangeFilter(field) {
     current.start = Math.max(0, Math.min(current.start, values.length - 1));
     current.end = Math.max(current.start, Math.min(current.end, values.length - 1));
   }
-  state.groupDateRange = current;
+  state[rangeKey] = current;
 
   const wrapper = document.createElement("div");
   wrapper.className = "date-range-filter";
@@ -765,7 +810,16 @@ function buildDateRangeFilter(field) {
   title.append(startLabel, endLabel);
   selects.append(startSelect, endSelect);
   wrapper.append(title, selects, startInput, endInput);
-  els.filters.appendChild(wrapper);
+  container.appendChild(wrapper);
+}
+
+function datePassesDateRange(date, field) {
+  if (!state.dateRange || state.dateRange.field !== field) return true;
+  if (state.dateRange.none) return false;
+  if (!date) return false;
+  const key = date.toISOString().slice(0, 10);
+  const index = state.dateRange.values.indexOf(key);
+  return index >= state.dateRange.start && index <= state.dateRange.end;
 }
 
 function rowPassesGroupFilter(row, groupField) {
@@ -853,6 +907,7 @@ function analyze() {
     if (!rowPassesGroupFilter(row, groupField)) continue;
 
     const date = parseDate(row[dateField], els.dateFormat.value);
+    if (!datePassesDateRange(date, dateField)) continue;
     const value = rowValue(row, valueField, indicatorField);
     if (!date || !Number.isFinite(value)) {
       skippedRows += 1;
@@ -1266,6 +1321,7 @@ function renderHighlights(context) {
 
   for (const row of state.rows) {
     const date = parseDate(row[context.dateField], els.dateFormat.value);
+    if (!datePassesDateRange(date, context.dateField)) continue;
     const value = rowValue(row, context.valueField, context.indicatorField);
     if (!date || !Number.isFinite(value)) continue;
 
@@ -1324,7 +1380,7 @@ function latestAvailableMonths(dateField, context) {
     if (uf && state.filteredUfs.has(uf)) continue;
     if (!rowPassesGroupFilter(row, context.groupField)) continue;
     const date = parseDate(row[dateField], els.dateFormat.value);
-    if (date) months.add(periodKey(date, "month"));
+    if (date && datePassesDateRange(date, dateField)) months.add(periodKey(date, "month"));
   }
   return Array.from(months).sort().slice(-3);
 }
@@ -1452,6 +1508,7 @@ function renderTerritorialGeneralization(context) {
 
   for (const row of state.rows) {
     const date = parseDate(row[context.dateField], els.dateFormat.value);
+    if (!datePassesDateRange(date, context.dateField)) continue;
     const value = rowValue(row, context.valueField, context.indicatorField);
     if (!date || !Number.isFinite(value)) continue;
 
@@ -1644,6 +1701,7 @@ function renderStateShare(context) {
 
   for (const row of state.rows) {
     const date = parseDate(row[context.dateField], els.dateFormat.value);
+    if (!datePassesDateRange(date, context.dateField)) continue;
     const value = rowValue(row, context.valueField, context.indicatorField);
     if (!date || !Number.isFinite(value)) continue;
     const year = date.getFullYear();
@@ -1918,6 +1976,7 @@ function renderPopulationRates(context) {
   const byUfYear = new Map();
   for (const row of state.rows) {
     const date = parseDate(row[context.dateField], els.dateFormat.value);
+    if (!datePassesDateRange(date, context.dateField)) continue;
     const value = rowValue(row, context.valueField, context.indicatorField);
     if (!date || !Number.isFinite(value)) continue;
 
@@ -2065,6 +2124,7 @@ function renderRateMap(context) {
   const monthsInLatestYear = new Set();
   for (const row of state.rows) {
     const date = parseDate(row[context.dateField], els.dateFormat.value);
+    if (!datePassesDateRange(date, context.dateField)) continue;
     const value = rowValue(row, context.valueField, context.indicatorField);
     if (!date || date.getFullYear() !== latestYear || !Number.isFinite(value)) continue;
 
@@ -2123,7 +2183,7 @@ function latestAvailableYearForMap(context) {
     if (uf && state.filteredUfs.has(uf)) continue;
     if (!rowPassesGroupFilter(row, context.groupField)) continue;
     const date = parseDate(row[context.dateField], els.dateFormat.value);
-    if (date) latest = Math.max(latest, date.getFullYear());
+    if (date && datePassesDateRange(date, context.dateField)) latest = Math.max(latest, date.getFullYear());
   }
   return latest;
 }
@@ -2318,6 +2378,7 @@ function renderStateAnomalies(context) {
   const byUf = new Map();
   for (const row of state.rows) {
     const date = parseDate(row[context.dateField], els.dateFormat.value);
+    if (!datePassesDateRange(date, context.dateField)) continue;
     const value = rowValue(row, context.valueField, context.indicatorField);
     if (!date || !Number.isFinite(value)) continue;
 

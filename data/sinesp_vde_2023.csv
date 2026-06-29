@@ -564,8 +564,8 @@
 2023,2023-01-01,RJ,Busca e salvamento,0.0,10726.0,0.0,0.0,0.0,0.0,10726.0,ocorrencias
 2023,2023-01-01,RJ,Combate a incêndios,0.0,2742.0,0.0,0.0,0.0,0.0,2742.0,ocorrencias
 2023,2023-01-01,RJ,Emissão de Alvarás de licença,0.0,2880.0,0.0,0.0,0.0,0.0,2880.0,ocorrencias
-2023,2023-01-01,RJ,Estupro,496.0,0.0,437.0,46.0,13.0,0.0,496.0,vitimas
-2023,2023-01-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2023,2023-01-01,RJ,Estupro,162.0,0.0,150.0,8.0,4.0,0.0,162.0,vitimas
+2023,2023-01-01,RJ,Estupro de vulnerável,334.0,0.0,287.0,38.0,9.0,0.0,334.0,vitimas
 2023,2023-01-01,RJ,Feminicídio,9.0,0.0,9.0,0.0,0.0,0.0,9.0,vitimas
 2023,2023-01-01,RJ,Furto de veículo,0.0,1409.0,0.0,0.0,0.0,0.0,1409.0,ocorrencias
 2023,2023-01-01,RJ,Homicídio doloso,291.0,0.0,18.0,259.0,14.0,0.0,291.0,vitimas
@@ -585,8 +585,8 @@
 2023,2023-01-01,RJ,Roubo seguido de morte (latrocínio),7.0,0.0,0.0,6.0,1.0,0.0,7.0,vitimas
 2023,2023-01-01,RJ,Suicídio,84.0,0.0,28.0,55.0,1.0,0.0,84.0,vitimas
 2023,2023-01-01,RJ,Suicídio de Agente do Estado,1.0,0.0,0.0,1.0,0.0,0.0,1.0,vitimas
-2023,2023-01-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2023,2023-01-01,RJ,Tentativa de homicídio,314.0,0.0,60.0,243.0,11.0,0.0,314.0,vitimas
+2023,2023-01-01,RJ,Tentativa de feminicídio,28.0,0.0,28.0,0.0,0.0,0.0,28.0,vitimas
+2023,2023-01-01,RJ,Tentativa de homicídio,285.0,0.0,32.0,242.0,11.0,0.0,285.0,vitimas
 2023,2023-01-01,RJ,Tráfico de drogas,0.0,1650.0,0.0,0.0,0.0,0.0,1650.0,ocorrencias
 2023,2023-01-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,10783.0,10783.0,kg
 2023,2023-01-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,278903.0,278903.0,kg
@@ -595,8 +595,8 @@
 2023,2023-01-01,RN,Busca e salvamento,0.0,626.0,0.0,0.0,0.0,0.0,626.0,ocorrencias
 2023,2023-01-01,RN,Combate a incêndios,0.0,244.0,0.0,0.0,0.0,0.0,244.0,ocorrencias
 2023,2023-01-01,RN,Emissão de Alvarás de licença,0.0,159.0,0.0,0.0,0.0,0.0,159.0,ocorrencias
-2023,2023-01-01,RN,Estupro,28.0,0.0,24.0,4.0,0.0,0.0,28.0,vitimas
-2023,2023-01-01,RN,Estupro de vulnerável,108.0,0.0,90.0,17.0,1.0,0.0,108.0,vitimas
+2023,2023-01-01,RN,Estupro,22.0,0.0,20.0,2.0,0.0,0.0,22.0,vitimas
+2023,2023-01-01,RN,Estupro de vulnerável,113.0,0.0,95.0,17.0,1.0,0.0,113.0,vitimas
 2023,2023-01-01,RN,Feminicídio,1.0,0.0,1.0,0.0,0.0,0.0,1.0,vitimas
 2023,2023-01-01,RN,Furto de veículo,0.0,206.0,0.0,0.0,0.0,0.0,206.0,ocorrencias
 2023,2023-01-01,RN,Homicídio doloso,95.0,0.0,1.0,94.0,0.0,0.0,95.0,vitimas
@@ -652,7 +652,7 @@
 2023,2023-01-01,RO,Tráfico de drogas,0.0,119.0,0.0,0.0,0.0,0.0,119.0,ocorrencias
 2023,2023-01-01,RR,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,2279.0,2279.0,kg
 2023,2023-01-01,RR,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,75860.0,75860.0,kg
-2023,2023-01-01,RR,Arma de Fogo Apreendida,0.0,30.0,0.0,0.0,0.0,0.0,30.0,ocorrencias
+2023,2023-01-01,RR,Arma de Fogo Apreendida,0.0,36.0,0.0,0.0,0.0,0.0,36.0,ocorrencias
 2023,2023-01-01,RR,Atendimento pré-hospitalar,0.0,188.0,0.0,0.0,0.0,0.0,188.0,ocorrencias
 2023,2023-01-01,RR,Busca e salvamento,0.0,270.0,0.0,0.0,0.0,0.0,270.0,ocorrencias
 2023,2023-01-01,RR,Combate a incêndios,0.0,138.0,0.0,0.0,0.0,0.0,138.0,ocorrencias
@@ -1401,8 +1401,8 @@
 2023,2023-02-01,RJ,Busca e salvamento,0.0,11128.0,0.0,0.0,0.0,0.0,11128.0,ocorrencias
 2023,2023-02-01,RJ,Combate a incêndios,0.0,3120.0,0.0,0.0,0.0,0.0,3120.0,ocorrencias
 2023,2023-02-01,RJ,Emissão de Alvarás de licença,0.0,2762.0,0.0,0.0,0.0,0.0,2762.0,ocorrencias
-2023,2023-02-01,RJ,Estupro,410.0,0.0,356.0,49.0,5.0,0.0,410.0,vitimas
-2023,2023-02-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2023,2023-02-01,RJ,Estupro,144.0,0.0,129.0,12.0,3.0,0.0,144.0,vitimas
+2023,2023-02-01,RJ,Estupro de vulnerável,266.0,0.0,227.0,37.0,2.0,0.0,266.0,vitimas
 2023,2023-02-01,RJ,Feminicídio,7.0,0.0,7.0,0.0,0.0,0.0,7.0,vitimas
 2023,2023-02-01,RJ,Furto de veículo,0.0,1297.0,0.0,0.0,0.0,0.0,1297.0,ocorrencias
 2023,2023-02-01,RJ,Homicídio doloso,342.0,0.0,20.0,302.0,20.0,0.0,342.0,vitimas
@@ -1422,8 +1422,8 @@
 2023,2023-02-01,RJ,Roubo seguido de morte (latrocínio),4.0,0.0,1.0,3.0,0.0,0.0,4.0,vitimas
 2023,2023-02-01,RJ,Suicídio,79.0,0.0,21.0,58.0,0.0,0.0,79.0,vitimas
 2023,2023-02-01,RJ,Suicídio de Agente do Estado,2.0,0.0,0.0,2.0,0.0,0.0,2.0,vitimas
-2023,2023-02-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2023,2023-02-01,RJ,Tentativa de homicídio,296.0,0.0,52.0,229.0,15.0,0.0,296.0,vitimas
+2023,2023-02-01,RJ,Tentativa de feminicídio,23.0,0.0,23.0,0.0,0.0,0.0,23.0,vitimas
+2023,2023-02-01,RJ,Tentativa de homicídio,272.0,0.0,29.0,229.0,14.0,0.0,272.0,vitimas
 2023,2023-02-01,RJ,Tráfico de drogas,0.0,1459.0,0.0,0.0,0.0,0.0,1459.0,ocorrencias
 2023,2023-02-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,32004.0,32004.0,kg
 2023,2023-02-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,71830.0,71830.0,kg
@@ -1432,8 +1432,8 @@
 2023,2023-02-01,RN,Busca e salvamento,0.0,498.0,0.0,0.0,0.0,0.0,498.0,ocorrencias
 2023,2023-02-01,RN,Combate a incêndios,0.0,252.0,0.0,0.0,0.0,0.0,252.0,ocorrencias
 2023,2023-02-01,RN,Emissão de Alvarás de licença,0.0,441.0,0.0,0.0,0.0,0.0,441.0,ocorrencias
-2023,2023-02-01,RN,Estupro,24.0,0.0,24.0,0.0,0.0,0.0,24.0,vitimas
-2023,2023-02-01,RN,Estupro de vulnerável,78.0,0.0,63.0,11.0,4.0,0.0,78.0,vitimas
+2023,2023-02-01,RN,Estupro,17.0,0.0,17.0,0.0,0.0,0.0,17.0,vitimas
+2023,2023-02-01,RN,Estupro de vulnerável,77.0,0.0,62.0,11.0,4.0,0.0,77.0,vitimas
 2023,2023-02-01,RN,Feminicídio,5.0,0.0,5.0,0.0,0.0,0.0,5.0,vitimas
 2023,2023-02-01,RN,Furto de veículo,0.0,178.0,0.0,0.0,0.0,0.0,178.0,ocorrencias
 2023,2023-02-01,RN,Homicídio doloso,63.0,0.0,2.0,61.0,0.0,0.0,63.0,vitimas
@@ -1489,7 +1489,7 @@
 2023,2023-02-01,RO,Tráfico de drogas,0.0,123.0,0.0,0.0,0.0,0.0,123.0,ocorrencias
 2023,2023-02-01,RR,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,1342.0,1342.0,kg
 2023,2023-02-01,RR,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,21360.0,21360.0,kg
-2023,2023-02-01,RR,Arma de Fogo Apreendida,0.0,48.0,0.0,0.0,0.0,0.0,48.0,ocorrencias
+2023,2023-02-01,RR,Arma de Fogo Apreendida,0.0,50.0,0.0,0.0,0.0,0.0,50.0,ocorrencias
 2023,2023-02-01,RR,Atendimento pré-hospitalar,0.0,179.0,0.0,0.0,0.0,0.0,179.0,ocorrencias
 2023,2023-02-01,RR,Busca e salvamento,0.0,192.0,0.0,0.0,0.0,0.0,192.0,ocorrencias
 2023,2023-02-01,RR,Combate a incêndios,0.0,138.0,0.0,0.0,0.0,0.0,138.0,ocorrencias
@@ -1775,9 +1775,9 @@
 2023,2023-03-01,AP,Emissão de Alvarás de licença,0.0,527.0,0.0,0.0,0.0,0.0,527.0,ocorrencias
 2023,2023-03-01,AP,Estupro,15.0,0.0,15.0,0.0,0.0,0.0,15.0,vitimas
 2023,2023-03-01,AP,Estupro de vulnerável,42.0,0.0,40.0,0.0,2.0,0.0,42.0,vitimas
-2023,2023-03-01,AP,Feminicídio,1.0,0.0,1.0,0.0,0.0,0.0,1.0,vitimas
+2023,2023-03-01,AP,Feminicídio,2.0,0.0,2.0,0.0,0.0,0.0,2.0,vitimas
 2023,2023-03-01,AP,Furto de veículo,0.0,25.0,0.0,0.0,0.0,0.0,25.0,ocorrencias
-2023,2023-03-01,AP,Homicídio doloso,15.0,0.0,2.0,13.0,0.0,0.0,15.0,vitimas
+2023,2023-03-01,AP,Homicídio doloso,14.0,0.0,1.0,13.0,0.0,0.0,14.0,vitimas
 2023,2023-03-01,AP,Lesão corporal seguida de morte,4.0,0.0,2.0,2.0,0.0,0.0,4.0,vitimas
 2023,2023-03-01,AP,Mandado de prisão cumprido,0.0,147.0,0.0,0.0,0.0,0.0,147.0,ocorrencias
 2023,2023-03-01,AP,Morte de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
@@ -2238,8 +2238,8 @@
 2023,2023-03-01,RJ,Busca e salvamento,0.0,10768.0,0.0,0.0,0.0,0.0,10768.0,ocorrencias
 2023,2023-03-01,RJ,Combate a incêndios,0.0,3726.0,0.0,0.0,0.0,0.0,3726.0,ocorrencias
 2023,2023-03-01,RJ,Emissão de Alvarás de licença,0.0,3495.0,0.0,0.0,0.0,0.0,3495.0,ocorrencias
-2023,2023-03-01,RJ,Estupro,536.0,0.0,461.0,68.0,7.0,0.0,536.0,vitimas
-2023,2023-03-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2023,2023-03-01,RJ,Estupro,161.0,0.0,152.0,8.0,1.0,0.0,161.0,vitimas
+2023,2023-03-01,RJ,Estupro de vulnerável,375.0,0.0,309.0,60.0,6.0,0.0,375.0,vitimas
 2023,2023-03-01,RJ,Feminicídio,10.0,0.0,10.0,0.0,0.0,0.0,10.0,vitimas
 2023,2023-03-01,RJ,Furto de veículo,0.0,1648.0,0.0,0.0,0.0,0.0,1648.0,ocorrencias
 2023,2023-03-01,RJ,Homicídio doloso,377.0,0.0,26.0,332.0,19.0,0.0,377.0,vitimas
@@ -2259,8 +2259,8 @@
 2023,2023-03-01,RJ,Roubo seguido de morte (latrocínio),7.0,0.0,0.0,7.0,0.0,0.0,7.0,vitimas
 2023,2023-03-01,RJ,Suicídio,74.0,0.0,30.0,44.0,0.0,0.0,74.0,vitimas
 2023,2023-03-01,RJ,Suicídio de Agente do Estado,1.0,0.0,0.0,1.0,0.0,0.0,1.0,vitimas
-2023,2023-03-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2023,2023-03-01,RJ,Tentativa de homicídio,350.0,0.0,58.0,278.0,14.0,0.0,350.0,vitimas
+2023,2023-03-01,RJ,Tentativa de feminicídio,33.0,0.0,33.0,0.0,0.0,0.0,33.0,vitimas
+2023,2023-03-01,RJ,Tentativa de homicídio,315.0,0.0,25.0,276.0,14.0,0.0,315.0,vitimas
 2023,2023-03-01,RJ,Tráfico de drogas,0.0,1798.0,0.0,0.0,0.0,0.0,1798.0,ocorrencias
 2023,2023-03-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,73575.0,73575.0,kg
 2023,2023-03-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,312.0,312.0,kg
@@ -2269,8 +2269,8 @@
 2023,2023-03-01,RN,Busca e salvamento,0.0,394.0,0.0,0.0,0.0,0.0,394.0,ocorrencias
 2023,2023-03-01,RN,Combate a incêndios,0.0,348.0,0.0,0.0,0.0,0.0,348.0,ocorrencias
 2023,2023-03-01,RN,Emissão de Alvarás de licença,0.0,215.0,0.0,0.0,0.0,0.0,215.0,ocorrencias
-2023,2023-03-01,RN,Estupro,21.0,0.0,20.0,1.0,0.0,0.0,21.0,vitimas
-2023,2023-03-01,RN,Estupro de vulnerável,73.0,0.0,63.0,7.0,3.0,0.0,73.0,vitimas
+2023,2023-03-01,RN,Estupro,19.0,0.0,18.0,1.0,0.0,0.0,19.0,vitimas
+2023,2023-03-01,RN,Estupro de vulnerável,71.0,0.0,60.0,8.0,3.0,0.0,71.0,vitimas
 2023,2023-03-01,RN,Feminicídio,1.0,0.0,0.0,1.0,0.0,0.0,1.0,vitimas
 2023,2023-03-01,RN,Furto de veículo,0.0,163.0,0.0,0.0,0.0,0.0,163.0,ocorrencias
 2023,2023-03-01,RN,Homicídio doloso,72.0,0.0,3.0,69.0,0.0,0.0,72.0,vitimas
@@ -3075,8 +3075,8 @@
 2023,2023-04-01,RJ,Busca e salvamento,0.0,9300.0,0.0,0.0,0.0,0.0,9300.0,ocorrencias
 2023,2023-04-01,RJ,Combate a incêndios,0.0,2555.0,0.0,0.0,0.0,0.0,2555.0,ocorrencias
 2023,2023-04-01,RJ,Emissão de Alvarás de licença,0.0,3096.0,0.0,0.0,0.0,0.0,3096.0,ocorrencias
-2023,2023-04-01,RJ,Estupro,443.0,0.0,372.0,64.0,7.0,0.0,443.0,vitimas
-2023,2023-04-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2023,2023-04-01,RJ,Estupro,136.0,0.0,124.0,10.0,2.0,0.0,136.0,vitimas
+2023,2023-04-01,RJ,Estupro de vulnerável,307.0,0.0,248.0,54.0,5.0,0.0,307.0,vitimas
 2023,2023-04-01,RJ,Feminicídio,8.0,0.0,8.0,0.0,0.0,0.0,8.0,vitimas
 2023,2023-04-01,RJ,Furto de veículo,0.0,1445.0,0.0,0.0,0.0,0.0,1445.0,ocorrencias
 2023,2023-04-01,RJ,Homicídio doloso,297.0,0.0,26.0,257.0,14.0,0.0,297.0,vitimas
@@ -3096,8 +3096,8 @@
 2023,2023-04-01,RJ,Roubo seguido de morte (latrocínio),6.0,0.0,2.0,4.0,0.0,0.0,6.0,vitimas
 2023,2023-04-01,RJ,Suicídio,68.0,0.0,16.0,51.0,1.0,0.0,68.0,vitimas
 2023,2023-04-01,RJ,Suicídio de Agente do Estado,2.0,0.0,0.0,2.0,0.0,0.0,2.0,vitimas
-2023,2023-04-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2023,2023-04-01,RJ,Tentativa de homicídio,274.0,0.0,38.0,219.0,17.0,0.0,274.0,vitimas
+2023,2023-04-01,RJ,Tentativa de feminicídio,15.0,0.0,15.0,0.0,0.0,0.0,15.0,vitimas
+2023,2023-04-01,RJ,Tentativa de homicídio,257.0,0.0,23.0,218.0,16.0,0.0,257.0,vitimas
 2023,2023-04-01,RJ,Tráfico de drogas,0.0,1838.0,0.0,0.0,0.0,0.0,1838.0,ocorrencias
 2023,2023-04-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,27190.0,27190.0,kg
 2023,2023-04-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,877.0,877.0,kg
@@ -3106,7 +3106,7 @@
 2023,2023-04-01,RN,Busca e salvamento,0.0,580.0,0.0,0.0,0.0,0.0,580.0,ocorrencias
 2023,2023-04-01,RN,Combate a incêndios,0.0,122.0,0.0,0.0,0.0,0.0,122.0,ocorrencias
 2023,2023-04-01,RN,Emissão de Alvarás de licença,0.0,353.0,0.0,0.0,0.0,0.0,353.0,ocorrencias
-2023,2023-04-01,RN,Estupro,21.0,0.0,21.0,0.0,0.0,0.0,21.0,vitimas
+2023,2023-04-01,RN,Estupro,17.0,0.0,17.0,0.0,0.0,0.0,17.0,vitimas
 2023,2023-04-01,RN,Estupro de vulnerável,88.0,0.0,72.0,13.0,3.0,0.0,88.0,vitimas
 2023,2023-04-01,RN,Feminicídio,2.0,0.0,2.0,0.0,0.0,0.0,2.0,vitimas
 2023,2023-04-01,RN,Furto de veículo,0.0,222.0,0.0,0.0,0.0,0.0,222.0,ocorrencias
@@ -3163,7 +3163,7 @@
 2023,2023-04-01,RO,Tráfico de drogas,0.0,126.0,0.0,0.0,0.0,0.0,126.0,ocorrencias
 2023,2023-04-01,RR,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,1252.0,1252.0,kg
 2023,2023-04-01,RR,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,44703.0,44703.0,kg
-2023,2023-04-01,RR,Arma de Fogo Apreendida,0.0,37.0,0.0,0.0,0.0,0.0,37.0,ocorrencias
+2023,2023-04-01,RR,Arma de Fogo Apreendida,0.0,39.0,0.0,0.0,0.0,0.0,39.0,ocorrencias
 2023,2023-04-01,RR,Atendimento pré-hospitalar,0.0,222.0,0.0,0.0,0.0,0.0,222.0,ocorrencias
 2023,2023-04-01,RR,Busca e salvamento,0.0,181.0,0.0,0.0,0.0,0.0,181.0,ocorrencias
 2023,2023-04-01,RR,Combate a incêndios,0.0,187.0,0.0,0.0,0.0,0.0,187.0,ocorrencias
@@ -3912,8 +3912,8 @@
 2023,2023-05-01,RJ,Busca e salvamento,0.0,8886.0,0.0,0.0,0.0,0.0,8886.0,ocorrencias
 2023,2023-05-01,RJ,Combate a incêndios,0.0,2863.0,0.0,0.0,0.0,0.0,2863.0,ocorrencias
 2023,2023-05-01,RJ,Emissão de Alvarás de licença,0.0,3584.0,0.0,0.0,0.0,0.0,3584.0,ocorrencias
-2023,2023-05-01,RJ,Estupro,458.0,0.0,395.0,54.0,9.0,0.0,458.0,vitimas
-2023,2023-05-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2023,2023-05-01,RJ,Estupro,134.0,0.0,127.0,5.0,2.0,0.0,134.0,vitimas
+2023,2023-05-01,RJ,Estupro de vulnerável,324.0,0.0,268.0,49.0,7.0,0.0,324.0,vitimas
 2023,2023-05-01,RJ,Feminicídio,13.0,0.0,13.0,0.0,0.0,0.0,13.0,vitimas
 2023,2023-05-01,RJ,Furto de veículo,0.0,1451.0,0.0,0.0,0.0,0.0,1451.0,ocorrencias
 2023,2023-05-01,RJ,Homicídio doloso,312.0,0.0,23.0,273.0,16.0,0.0,312.0,vitimas
@@ -3933,8 +3933,8 @@
 2023,2023-05-01,RJ,Roubo seguido de morte (latrocínio),12.0,0.0,2.0,9.0,1.0,0.0,12.0,vitimas
 2023,2023-05-01,RJ,Suicídio,82.0,0.0,21.0,61.0,0.0,0.0,82.0,vitimas
 2023,2023-05-01,RJ,Suicídio de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2023,2023-05-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2023,2023-05-01,RJ,Tentativa de homicídio,331.0,0.0,44.0,267.0,20.0,0.0,331.0,vitimas
+2023,2023-05-01,RJ,Tentativa de feminicídio,15.0,0.0,15.0,0.0,0.0,0.0,15.0,vitimas
+2023,2023-05-01,RJ,Tentativa de homicídio,314.0,0.0,29.0,265.0,20.0,0.0,314.0,vitimas
 2023,2023-05-01,RJ,Tráfico de drogas,0.0,2077.0,0.0,0.0,0.0,0.0,2077.0,ocorrencias
 2023,2023-05-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,267317.0,267317.0,kg
 2023,2023-05-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,14570.0,14570.0,kg
@@ -3943,8 +3943,8 @@
 2023,2023-05-01,RN,Busca e salvamento,0.0,298.0,0.0,0.0,0.0,0.0,298.0,ocorrencias
 2023,2023-05-01,RN,Combate a incêndios,0.0,109.0,0.0,0.0,0.0,0.0,109.0,ocorrencias
 2023,2023-05-01,RN,Emissão de Alvarás de licença,0.0,177.0,0.0,0.0,0.0,0.0,177.0,ocorrencias
-2023,2023-05-01,RN,Estupro,24.0,0.0,23.0,1.0,0.0,0.0,24.0,vitimas
-2023,2023-05-01,RN,Estupro de vulnerável,92.0,0.0,74.0,16.0,2.0,0.0,92.0,vitimas
+2023,2023-05-01,RN,Estupro,22.0,0.0,21.0,1.0,0.0,0.0,22.0,vitimas
+2023,2023-05-01,RN,Estupro de vulnerável,89.0,0.0,71.0,16.0,2.0,0.0,89.0,vitimas
 2023,2023-05-01,RN,Feminicídio,3.0,0.0,3.0,0.0,0.0,0.0,3.0,vitimas
 2023,2023-05-01,RN,Furto de veículo,0.0,264.0,0.0,0.0,0.0,0.0,264.0,ocorrencias
 2023,2023-05-01,RN,Homicídio doloso,65.0,0.0,0.0,65.0,0.0,0.0,65.0,vitimas
@@ -4000,7 +4000,7 @@
 2023,2023-05-01,RO,Tráfico de drogas,0.0,153.0,0.0,0.0,0.0,0.0,153.0,ocorrencias
 2023,2023-05-01,RR,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,2164.0,2164.0,kg
 2023,2023-05-01,RR,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,2982.0,2982.0,kg
-2023,2023-05-01,RR,Arma de Fogo Apreendida,0.0,22.0,0.0,0.0,0.0,0.0,22.0,ocorrencias
+2023,2023-05-01,RR,Arma de Fogo Apreendida,0.0,31.0,0.0,0.0,0.0,0.0,31.0,ocorrencias
 2023,2023-05-01,RR,Atendimento pré-hospitalar,0.0,227.0,0.0,0.0,0.0,0.0,227.0,ocorrencias
 2023,2023-05-01,RR,Busca e salvamento,0.0,216.0,0.0,0.0,0.0,0.0,216.0,ocorrencias
 2023,2023-05-01,RR,Combate a incêndios,0.0,34.0,0.0,0.0,0.0,0.0,34.0,ocorrencias
@@ -4749,8 +4749,8 @@
 2023,2023-06-01,RJ,Busca e salvamento,0.0,8597.0,0.0,0.0,0.0,0.0,8597.0,ocorrencias
 2023,2023-06-01,RJ,Combate a incêndios,0.0,3467.0,0.0,0.0,0.0,0.0,3467.0,ocorrencias
 2023,2023-06-01,RJ,Emissão de Alvarás de licença,0.0,3915.0,0.0,0.0,0.0,0.0,3915.0,ocorrencias
-2023,2023-06-01,RJ,Estupro,462.0,0.0,382.0,77.0,3.0,0.0,462.0,vitimas
-2023,2023-06-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2023,2023-06-01,RJ,Estupro,124.0,0.0,112.0,11.0,1.0,0.0,124.0,vitimas
+2023,2023-06-01,RJ,Estupro de vulnerável,338.0,0.0,270.0,66.0,2.0,0.0,338.0,vitimas
 2023,2023-06-01,RJ,Feminicídio,7.0,0.0,6.0,0.0,1.0,0.0,7.0,vitimas
 2023,2023-06-01,RJ,Furto de veículo,0.0,1333.0,0.0,0.0,0.0,0.0,1333.0,ocorrencias
 2023,2023-06-01,RJ,Homicídio doloso,272.0,0.0,21.0,242.0,9.0,0.0,272.0,vitimas
@@ -4770,8 +4770,8 @@
 2023,2023-06-01,RJ,Roubo seguido de morte (latrocínio),2.0,0.0,1.0,1.0,0.0,0.0,2.0,vitimas
 2023,2023-06-01,RJ,Suicídio,71.0,0.0,18.0,52.0,1.0,0.0,71.0,vitimas
 2023,2023-06-01,RJ,Suicídio de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2023,2023-06-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2023,2023-06-01,RJ,Tentativa de homicídio,249.0,0.0,57.0,178.0,14.0,0.0,249.0,vitimas
+2023,2023-06-01,RJ,Tentativa de feminicídio,23.0,0.0,23.0,0.0,0.0,0.0,23.0,vitimas
+2023,2023-06-01,RJ,Tentativa de homicídio,225.0,0.0,34.0,177.0,14.0,0.0,225.0,vitimas
 2023,2023-06-01,RJ,Tráfico de drogas,0.0,1748.0,0.0,0.0,0.0,0.0,1748.0,ocorrencias
 2023,2023-06-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,11478.0,11478.0,kg
 2023,2023-06-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,22403.0,22403.0,kg
@@ -4780,8 +4780,8 @@
 2023,2023-06-01,RN,Busca e salvamento,0.0,526.0,0.0,0.0,0.0,0.0,526.0,ocorrencias
 2023,2023-06-01,RN,Combate a incêndios,0.0,150.0,0.0,0.0,0.0,0.0,150.0,ocorrencias
 2023,2023-06-01,RN,Emissão de Alvarás de licença,0.0,537.0,0.0,0.0,0.0,0.0,537.0,ocorrencias
-2023,2023-06-01,RN,Estupro,22.0,0.0,19.0,1.0,2.0,0.0,22.0,vitimas
-2023,2023-06-01,RN,Estupro de vulnerável,96.0,0.0,79.0,13.0,4.0,0.0,96.0,vitimas
+2023,2023-06-01,RN,Estupro,21.0,0.0,18.0,1.0,2.0,0.0,21.0,vitimas
+2023,2023-06-01,RN,Estupro de vulnerável,95.0,0.0,78.0,13.0,4.0,0.0,95.0,vitimas
 2023,2023-06-01,RN,Feminicídio,1.0,0.0,1.0,0.0,0.0,0.0,1.0,vitimas
 2023,2023-06-01,RN,Furto de veículo,0.0,225.0,0.0,0.0,0.0,0.0,225.0,ocorrencias
 2023,2023-06-01,RN,Homicídio doloso,74.0,0.0,3.0,71.0,0.0,0.0,74.0,vitimas
@@ -4837,7 +4837,7 @@
 2023,2023-06-01,RO,Tráfico de drogas,0.0,166.0,0.0,0.0,0.0,0.0,166.0,ocorrencias
 2023,2023-06-01,RR,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,1292.0,1292.0,kg
 2023,2023-06-01,RR,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,402043.0,402043.0,kg
-2023,2023-06-01,RR,Arma de Fogo Apreendida,0.0,25.0,0.0,0.0,0.0,0.0,25.0,ocorrencias
+2023,2023-06-01,RR,Arma de Fogo Apreendida,0.0,28.0,0.0,0.0,0.0,0.0,28.0,ocorrencias
 2023,2023-06-01,RR,Atendimento pré-hospitalar,0.0,206.0,0.0,0.0,0.0,0.0,206.0,ocorrencias
 2023,2023-06-01,RR,Busca e salvamento,0.0,172.0,0.0,0.0,0.0,0.0,172.0,ocorrencias
 2023,2023-06-01,RR,Combate a incêndios,0.0,17.0,0.0,0.0,0.0,0.0,17.0,ocorrencias
@@ -5586,15 +5586,15 @@
 2023,2023-07-01,RJ,Busca e salvamento,0.0,8913.0,0.0,0.0,0.0,0.0,8913.0,ocorrencias
 2023,2023-07-01,RJ,Combate a incêndios,0.0,4624.0,0.0,0.0,0.0,0.0,4624.0,ocorrencias
 2023,2023-07-01,RJ,Emissão de Alvarás de licença,0.0,3960.0,0.0,0.0,0.0,0.0,3960.0,ocorrencias
-2023,2023-07-01,RJ,Estupro,448.0,0.0,377.0,70.0,1.0,0.0,448.0,vitimas
-2023,2023-07-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2023,2023-07-01,RJ,Estupro,122.0,0.0,109.0,13.0,0.0,0.0,122.0,vitimas
+2023,2023-07-01,RJ,Estupro de vulnerável,326.0,0.0,268.0,57.0,1.0,0.0,326.0,vitimas
 2023,2023-07-01,RJ,Feminicídio,12.0,0.0,12.0,0.0,0.0,0.0,12.0,vitimas
 2023,2023-07-01,RJ,Furto de veículo,0.0,1198.0,0.0,0.0,0.0,0.0,1198.0,ocorrencias
-2023,2023-07-01,RJ,Homicídio doloso,220.0,0.0,16.0,194.0,10.0,0.0,220.0,vitimas
+2023,2023-07-01,RJ,Homicídio doloso,223.0,0.0,16.0,197.0,10.0,0.0,223.0,vitimas
 2023,2023-07-01,RJ,Lesão corporal seguida de morte,3.0,0.0,0.0,3.0,0.0,0.0,3.0,vitimas
 2023,2023-07-01,RJ,Mandado de prisão cumprido,0.0,1076.0,0.0,0.0,0.0,0.0,1076.0,ocorrencias
 2023,2023-07-01,RJ,Morte de Agente do Estado,3.0,0.0,0.0,2.0,1.0,0.0,3.0,vitimas
-2023,2023-07-01,RJ,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),169.0,0.0,44.0,124.0,1.0,0.0,169.0,vitimas
+2023,2023-07-01,RJ,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),182.0,0.0,49.0,131.0,2.0,0.0,182.0,vitimas
 2023,2023-07-01,RJ,Morte por intervenção de Agente do Estado,82.0,0.0,0.0,77.0,5.0,0.0,82.0,vitimas
 2023,2023-07-01,RJ,Mortes a esclarecer (sem indício de crime),169.0,0.0,39.0,125.0,5.0,0.0,169.0,vitimas
 2023,2023-07-01,RJ,Mortes no trânsito,35.0,0.0,9.0,26.0,0.0,0.0,35.0,vitimas
@@ -5607,8 +5607,8 @@
 2023,2023-07-01,RJ,Roubo seguido de morte (latrocínio),5.0,0.0,1.0,4.0,0.0,0.0,5.0,vitimas
 2023,2023-07-01,RJ,Suicídio,68.0,0.0,9.0,58.0,1.0,0.0,68.0,vitimas
 2023,2023-07-01,RJ,Suicídio de Agente do Estado,2.0,0.0,0.0,2.0,0.0,0.0,2.0,vitimas
-2023,2023-07-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2023,2023-07-01,RJ,Tentativa de homicídio,222.0,0.0,33.0,175.0,14.0,0.0,222.0,vitimas
+2023,2023-07-01,RJ,Tentativa de feminicídio,19.0,0.0,19.0,0.0,0.0,0.0,19.0,vitimas
+2023,2023-07-01,RJ,Tentativa de homicídio,203.0,0.0,14.0,175.0,14.0,0.0,203.0,vitimas
 2023,2023-07-01,RJ,Tráfico de drogas,0.0,1761.0,0.0,0.0,0.0,0.0,1761.0,ocorrencias
 2023,2023-07-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,65454.0,65454.0,kg
 2023,2023-07-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,283153.0,283153.0,kg
@@ -5617,8 +5617,8 @@
 2023,2023-07-01,RN,Busca e salvamento,0.0,518.0,0.0,0.0,0.0,0.0,518.0,ocorrencias
 2023,2023-07-01,RN,Combate a incêndios,0.0,184.0,0.0,0.0,0.0,0.0,184.0,ocorrencias
 2023,2023-07-01,RN,Emissão de Alvarás de licença,0.0,569.0,0.0,0.0,0.0,0.0,569.0,ocorrencias
-2023,2023-07-01,RN,Estupro,28.0,0.0,27.0,1.0,0.0,0.0,28.0,vitimas
-2023,2023-07-01,RN,Estupro de vulnerável,99.0,0.0,84.0,10.0,5.0,0.0,99.0,vitimas
+2023,2023-07-01,RN,Estupro,23.0,0.0,22.0,1.0,0.0,0.0,23.0,vitimas
+2023,2023-07-01,RN,Estupro de vulnerável,101.0,0.0,84.0,12.0,5.0,0.0,101.0,vitimas
 2023,2023-07-01,RN,Feminicídio,1.0,0.0,1.0,0.0,0.0,0.0,1.0,vitimas
 2023,2023-07-01,RN,Furto de veículo,0.0,171.0,0.0,0.0,0.0,0.0,171.0,ocorrencias
 2023,2023-07-01,RN,Homicídio doloso,61.0,0.0,3.0,58.0,0.0,0.0,61.0,vitimas
@@ -5674,7 +5674,7 @@
 2023,2023-07-01,RO,Tráfico de drogas,0.0,155.0,0.0,0.0,0.0,0.0,155.0,ocorrencias
 2023,2023-07-01,RR,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,1661.0,1661.0,kg
 2023,2023-07-01,RR,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,12935.0,12935.0,kg
-2023,2023-07-01,RR,Arma de Fogo Apreendida,0.0,39.0,0.0,0.0,0.0,0.0,39.0,ocorrencias
+2023,2023-07-01,RR,Arma de Fogo Apreendida,0.0,46.0,0.0,0.0,0.0,0.0,46.0,ocorrencias
 2023,2023-07-01,RR,Atendimento pré-hospitalar,0.0,265.0,0.0,0.0,0.0,0.0,265.0,ocorrencias
 2023,2023-07-01,RR,Busca e salvamento,0.0,224.0,0.0,0.0,0.0,0.0,224.0,ocorrencias
 2023,2023-07-01,RR,Combate a incêndios,0.0,42.0,0.0,0.0,0.0,0.0,42.0,ocorrencias
@@ -6423,8 +6423,8 @@
 2023,2023-08-01,RJ,Busca e salvamento,0.0,9425.0,0.0,0.0,0.0,0.0,9425.0,ocorrencias
 2023,2023-08-01,RJ,Combate a incêndios,0.0,3781.0,0.0,0.0,0.0,0.0,3781.0,ocorrencias
 2023,2023-08-01,RJ,Emissão de Alvarás de licença,0.0,3789.0,0.0,0.0,0.0,0.0,3789.0,ocorrencias
-2023,2023-08-01,RJ,Estupro,478.0,0.0,419.0,53.0,6.0,0.0,478.0,vitimas
-2023,2023-08-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2023,2023-08-01,RJ,Estupro,129.0,0.0,115.0,12.0,2.0,0.0,129.0,vitimas
+2023,2023-08-01,RJ,Estupro de vulnerável,349.0,0.0,304.0,41.0,4.0,0.0,349.0,vitimas
 2023,2023-08-01,RJ,Feminicídio,6.0,0.0,6.0,0.0,0.0,0.0,6.0,vitimas
 2023,2023-08-01,RJ,Furto de veículo,0.0,1312.0,0.0,0.0,0.0,0.0,1312.0,ocorrencias
 2023,2023-08-01,RJ,Homicídio doloso,275.0,0.0,23.0,233.0,19.0,0.0,275.0,vitimas
@@ -6444,8 +6444,8 @@
 2023,2023-08-01,RJ,Roubo seguido de morte (latrocínio),4.0,0.0,0.0,4.0,0.0,0.0,4.0,vitimas
 2023,2023-08-01,RJ,Suicídio,61.0,0.0,13.0,48.0,0.0,0.0,61.0,vitimas
 2023,2023-08-01,RJ,Suicídio de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2023,2023-08-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2023,2023-08-01,RJ,Tentativa de homicídio,212.0,0.0,40.0,168.0,4.0,0.0,212.0,vitimas
+2023,2023-08-01,RJ,Tentativa de feminicídio,26.0,0.0,26.0,0.0,0.0,0.0,26.0,vitimas
+2023,2023-08-01,RJ,Tentativa de homicídio,185.0,0.0,14.0,167.0,4.0,0.0,185.0,vitimas
 2023,2023-08-01,RJ,Tráfico de drogas,0.0,1650.0,0.0,0.0,0.0,0.0,1650.0,ocorrencias
 2023,2023-08-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,47.0,47.0,kg
 2023,2023-08-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,36156.0,36156.0,kg
@@ -6454,8 +6454,8 @@
 2023,2023-08-01,RN,Busca e salvamento,0.0,502.0,0.0,0.0,0.0,0.0,502.0,ocorrencias
 2023,2023-08-01,RN,Combate a incêndios,0.0,332.0,0.0,0.0,0.0,0.0,332.0,ocorrencias
 2023,2023-08-01,RN,Emissão de Alvarás de licença,0.0,609.0,0.0,0.0,0.0,0.0,609.0,ocorrencias
-2023,2023-08-01,RN,Estupro,34.0,0.0,33.0,1.0,0.0,0.0,34.0,vitimas
-2023,2023-08-01,RN,Estupro de vulnerável,101.0,0.0,82.0,17.0,2.0,0.0,101.0,vitimas
+2023,2023-08-01,RN,Estupro,29.0,0.0,28.0,1.0,0.0,0.0,29.0,vitimas
+2023,2023-08-01,RN,Estupro de vulnerável,99.0,0.0,80.0,17.0,2.0,0.0,99.0,vitimas
 2023,2023-08-01,RN,Feminicídio,4.0,0.0,4.0,0.0,0.0,0.0,4.0,vitimas
 2023,2023-08-01,RN,Furto de veículo,0.0,181.0,0.0,0.0,0.0,0.0,181.0,ocorrencias
 2023,2023-08-01,RN,Homicídio doloso,66.0,0.0,3.0,63.0,0.0,0.0,66.0,vitimas
@@ -6511,7 +6511,7 @@
 2023,2023-08-01,RO,Tráfico de drogas,0.0,139.0,0.0,0.0,0.0,0.0,139.0,ocorrencias
 2023,2023-08-01,RR,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,5491.0,5491.0,kg
 2023,2023-08-01,RR,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,212889.0,212889.0,kg
-2023,2023-08-01,RR,Arma de Fogo Apreendida,0.0,74.0,0.0,0.0,0.0,0.0,74.0,ocorrencias
+2023,2023-08-01,RR,Arma de Fogo Apreendida,0.0,85.0,0.0,0.0,0.0,0.0,85.0,ocorrencias
 2023,2023-08-01,RR,Atendimento pré-hospitalar,0.0,230.0,0.0,0.0,0.0,0.0,230.0,ocorrencias
 2023,2023-08-01,RR,Busca e salvamento,0.0,204.0,0.0,0.0,0.0,0.0,204.0,ocorrencias
 2023,2023-08-01,RR,Combate a incêndios,0.0,58.0,0.0,0.0,0.0,0.0,58.0,ocorrencias
@@ -7260,8 +7260,8 @@
 2023,2023-09-01,RJ,Busca e salvamento,0.0,9787.0,0.0,0.0,0.0,0.0,9787.0,ocorrencias
 2023,2023-09-01,RJ,Combate a incêndios,0.0,3829.0,0.0,0.0,0.0,0.0,3829.0,ocorrencias
 2023,2023-09-01,RJ,Emissão de Alvarás de licença,0.0,3650.0,0.0,0.0,0.0,0.0,3650.0,ocorrencias
-2023,2023-09-01,RJ,Estupro,451.0,0.0,400.0,44.0,7.0,0.0,451.0,vitimas
-2023,2023-09-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2023,2023-09-01,RJ,Estupro,118.0,0.0,113.0,4.0,1.0,0.0,118.0,vitimas
+2023,2023-09-01,RJ,Estupro de vulnerável,333.0,0.0,287.0,40.0,6.0,0.0,333.0,vitimas
 2023,2023-09-01,RJ,Feminicídio,9.0,0.0,9.0,0.0,0.0,0.0,9.0,vitimas
 2023,2023-09-01,RJ,Furto de veículo,0.0,1380.0,0.0,0.0,0.0,0.0,1380.0,ocorrencias
 2023,2023-09-01,RJ,Homicídio doloso,308.0,0.0,28.0,261.0,19.0,0.0,308.0,vitimas
@@ -7281,8 +7281,8 @@
 2023,2023-09-01,RJ,Roubo seguido de morte (latrocínio),5.0,0.0,0.0,5.0,0.0,0.0,5.0,vitimas
 2023,2023-09-01,RJ,Suicídio,71.0,0.0,15.0,55.0,1.0,0.0,71.0,vitimas
 2023,2023-09-01,RJ,Suicídio de Agente do Estado,1.0,0.0,0.0,1.0,0.0,0.0,1.0,vitimas
-2023,2023-09-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2023,2023-09-01,RJ,Tentativa de homicídio,273.0,0.0,55.0,212.0,6.0,0.0,273.0,vitimas
+2023,2023-09-01,RJ,Tentativa de feminicídio,29.0,0.0,29.0,0.0,0.0,0.0,29.0,vitimas
+2023,2023-09-01,RJ,Tentativa de homicídio,243.0,0.0,26.0,212.0,5.0,0.0,243.0,vitimas
 2023,2023-09-01,RJ,Tráfico de drogas,0.0,1625.0,0.0,0.0,0.0,0.0,1625.0,ocorrencias
 2023,2023-09-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,18541.0,18541.0,kg
 2023,2023-09-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,45.0,45.0,kg
@@ -7291,8 +7291,8 @@
 2023,2023-09-01,RN,Busca e salvamento,0.0,453.0,0.0,0.0,0.0,0.0,453.0,ocorrencias
 2023,2023-09-01,RN,Combate a incêndios,0.0,403.0,0.0,0.0,0.0,0.0,403.0,ocorrencias
 2023,2023-09-01,RN,Emissão de Alvarás de licença,0.0,508.0,0.0,0.0,0.0,0.0,508.0,ocorrencias
-2023,2023-09-01,RN,Estupro,29.0,0.0,29.0,0.0,0.0,0.0,29.0,vitimas
-2023,2023-09-01,RN,Estupro de vulnerável,82.0,0.0,70.0,10.0,2.0,0.0,82.0,vitimas
+2023,2023-09-01,RN,Estupro,24.0,0.0,24.0,0.0,0.0,0.0,24.0,vitimas
+2023,2023-09-01,RN,Estupro de vulnerável,79.0,0.0,67.0,10.0,2.0,0.0,79.0,vitimas
 2023,2023-09-01,RN,Feminicídio,1.0,0.0,1.0,0.0,0.0,0.0,1.0,vitimas
 2023,2023-09-01,RN,Furto de veículo,0.0,189.0,0.0,0.0,0.0,0.0,189.0,ocorrencias
 2023,2023-09-01,RN,Homicídio doloso,65.0,0.0,1.0,64.0,0.0,0.0,65.0,vitimas
@@ -7348,7 +7348,7 @@
 2023,2023-09-01,RO,Tráfico de drogas,0.0,129.0,0.0,0.0,0.0,0.0,129.0,ocorrencias
 2023,2023-09-01,RR,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,1770.0,1770.0,kg
 2023,2023-09-01,RR,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,5864.0,5864.0,kg
-2023,2023-09-01,RR,Arma de Fogo Apreendida,0.0,26.0,0.0,0.0,0.0,0.0,26.0,ocorrencias
+2023,2023-09-01,RR,Arma de Fogo Apreendida,0.0,29.0,0.0,0.0,0.0,0.0,29.0,ocorrencias
 2023,2023-09-01,RR,Atendimento pré-hospitalar,0.0,200.0,0.0,0.0,0.0,0.0,200.0,ocorrencias
 2023,2023-09-01,RR,Busca e salvamento,0.0,190.0,0.0,0.0,0.0,0.0,190.0,ocorrencias
 2023,2023-09-01,RR,Combate a incêndios,0.0,128.0,0.0,0.0,0.0,0.0,128.0,ocorrencias
@@ -8097,8 +8097,8 @@
 2023,2023-10-01,RJ,Busca e salvamento,0.0,10163.0,0.0,0.0,0.0,0.0,10163.0,ocorrencias
 2023,2023-10-01,RJ,Combate a incêndios,0.0,2519.0,0.0,0.0,0.0,0.0,2519.0,ocorrencias
 2023,2023-10-01,RJ,Emissão de Alvarás de licença,0.0,4015.0,0.0,0.0,0.0,0.0,4015.0,ocorrencias
-2023,2023-10-01,RJ,Estupro,431.0,0.0,367.0,58.0,6.0,0.0,431.0,vitimas
-2023,2023-10-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2023,2023-10-01,RJ,Estupro,127.0,0.0,118.0,7.0,2.0,0.0,127.0,vitimas
+2023,2023-10-01,RJ,Estupro de vulnerável,304.0,0.0,249.0,51.0,4.0,0.0,304.0,vitimas
 2023,2023-10-01,RJ,Feminicídio,5.0,0.0,5.0,0.0,0.0,0.0,5.0,vitimas
 2023,2023-10-01,RJ,Furto de veículo,0.0,1394.0,0.0,0.0,0.0,0.0,1394.0,ocorrencias
 2023,2023-10-01,RJ,Homicídio doloso,268.0,0.0,25.0,235.0,8.0,0.0,268.0,vitimas
@@ -8118,8 +8118,8 @@
 2023,2023-10-01,RJ,Roubo seguido de morte (latrocínio),3.0,0.0,1.0,2.0,0.0,0.0,3.0,vitimas
 2023,2023-10-01,RJ,Suicídio,78.0,0.0,27.0,51.0,0.0,0.0,78.0,vitimas
 2023,2023-10-01,RJ,Suicídio de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2023,2023-10-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2023,2023-10-01,RJ,Tentativa de homicídio,247.0,0.0,47.0,189.0,11.0,0.0,247.0,vitimas
+2023,2023-10-01,RJ,Tentativa de feminicídio,29.0,0.0,29.0,0.0,0.0,0.0,29.0,vitimas
+2023,2023-10-01,RJ,Tentativa de homicídio,217.0,0.0,18.0,188.0,11.0,0.0,217.0,vitimas
 2023,2023-10-01,RJ,Tráfico de drogas,0.0,1664.0,0.0,0.0,0.0,0.0,1664.0,ocorrencias
 2023,2023-10-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,2744.0,2744.0,kg
 2023,2023-10-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,107.0,107.0,kg
@@ -8128,8 +8128,8 @@
 2023,2023-10-01,RN,Busca e salvamento,0.0,577.0,0.0,0.0,0.0,0.0,577.0,ocorrencias
 2023,2023-10-01,RN,Combate a incêndios,0.0,662.0,0.0,0.0,0.0,0.0,662.0,ocorrencias
 2023,2023-10-01,RN,Emissão de Alvarás de licença,0.0,540.0,0.0,0.0,0.0,0.0,540.0,ocorrencias
-2023,2023-10-01,RN,Estupro,30.0,0.0,25.0,3.0,2.0,0.0,30.0,vitimas
-2023,2023-10-01,RN,Estupro de vulnerável,94.0,0.0,77.0,12.0,5.0,0.0,94.0,vitimas
+2023,2023-10-01,RN,Estupro,24.0,0.0,20.0,2.0,2.0,0.0,24.0,vitimas
+2023,2023-10-01,RN,Estupro de vulnerável,96.0,0.0,80.0,11.0,5.0,0.0,96.0,vitimas
 2023,2023-10-01,RN,Feminicídio,1.0,0.0,1.0,0.0,0.0,0.0,1.0,vitimas
 2023,2023-10-01,RN,Furto de veículo,0.0,193.0,0.0,0.0,0.0,0.0,193.0,ocorrencias
 2023,2023-10-01,RN,Homicídio doloso,75.0,0.0,5.0,70.0,0.0,0.0,75.0,vitimas
@@ -8185,7 +8185,7 @@
 2023,2023-10-01,RO,Tráfico de drogas,0.0,129.0,0.0,0.0,0.0,0.0,129.0,ocorrencias
 2023,2023-10-01,RR,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,8456.0,8456.0,kg
 2023,2023-10-01,RR,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,635303.0,635303.0,kg
-2023,2023-10-01,RR,Arma de Fogo Apreendida,0.0,44.0,0.0,0.0,0.0,0.0,44.0,ocorrencias
+2023,2023-10-01,RR,Arma de Fogo Apreendida,0.0,45.0,0.0,0.0,0.0,0.0,45.0,ocorrencias
 2023,2023-10-01,RR,Atendimento pré-hospitalar,0.0,132.0,0.0,0.0,0.0,0.0,132.0,ocorrencias
 2023,2023-10-01,RR,Busca e salvamento,0.0,192.0,0.0,0.0,0.0,0.0,192.0,ocorrencias
 2023,2023-10-01,RR,Combate a incêndios,0.0,141.0,0.0,0.0,0.0,0.0,141.0,ocorrencias
@@ -8934,8 +8934,8 @@
 2023,2023-11-01,RJ,Busca e salvamento,0.0,10918.0,0.0,0.0,0.0,0.0,10918.0,ocorrencias
 2023,2023-11-01,RJ,Combate a incêndios,0.0,3579.0,0.0,0.0,0.0,0.0,3579.0,ocorrencias
 2023,2023-11-01,RJ,Emissão de Alvarás de licença,0.0,3493.0,0.0,0.0,0.0,0.0,3493.0,ocorrencias
-2023,2023-11-01,RJ,Estupro,469.0,0.0,401.0,59.0,9.0,0.0,469.0,vitimas
-2023,2023-11-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2023,2023-11-01,RJ,Estupro,127.0,0.0,117.0,8.0,2.0,0.0,127.0,vitimas
+2023,2023-11-01,RJ,Estupro de vulnerável,342.0,0.0,284.0,51.0,7.0,0.0,342.0,vitimas
 2023,2023-11-01,RJ,Feminicídio,5.0,0.0,5.0,0.0,0.0,0.0,5.0,vitimas
 2023,2023-11-01,RJ,Furto de veículo,0.0,1364.0,0.0,0.0,0.0,0.0,1364.0,ocorrencias
 2023,2023-11-01,RJ,Homicídio doloso,307.0,0.0,31.0,259.0,17.0,0.0,307.0,vitimas
@@ -8955,8 +8955,8 @@
 2023,2023-11-01,RJ,Roubo seguido de morte (latrocínio),6.0,0.0,1.0,5.0,0.0,0.0,6.0,vitimas
 2023,2023-11-01,RJ,Suicídio,79.0,0.0,22.0,56.0,1.0,0.0,79.0,vitimas
 2023,2023-11-01,RJ,Suicídio de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2023,2023-11-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2023,2023-11-01,RJ,Tentativa de homicídio,267.0,0.0,49.0,205.0,13.0,0.0,267.0,vitimas
+2023,2023-11-01,RJ,Tentativa de feminicídio,22.0,0.0,22.0,0.0,0.0,0.0,22.0,vitimas
+2023,2023-11-01,RJ,Tentativa de homicídio,244.0,0.0,27.0,205.0,12.0,0.0,244.0,vitimas
 2023,2023-11-01,RJ,Tráfico de drogas,0.0,1676.0,0.0,0.0,0.0,0.0,1676.0,ocorrencias
 2023,2023-11-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,10035.0,10035.0,kg
 2023,2023-11-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,119065.0,119065.0,kg
@@ -8965,8 +8965,8 @@
 2023,2023-11-01,RN,Busca e salvamento,0.0,529.0,0.0,0.0,0.0,0.0,529.0,ocorrencias
 2023,2023-11-01,RN,Combate a incêndios,0.0,630.0,0.0,0.0,0.0,0.0,630.0,ocorrencias
 2023,2023-11-01,RN,Emissão de Alvarás de licença,0.0,500.0,0.0,0.0,0.0,0.0,500.0,ocorrencias
-2023,2023-11-01,RN,Estupro,15.0,0.0,15.0,0.0,0.0,0.0,15.0,vitimas
-2023,2023-11-01,RN,Estupro de vulnerável,86.0,0.0,64.0,20.0,2.0,0.0,86.0,vitimas
+2023,2023-11-01,RN,Estupro,11.0,0.0,11.0,0.0,0.0,0.0,11.0,vitimas
+2023,2023-11-01,RN,Estupro de vulnerável,87.0,0.0,71.0,15.0,1.0,0.0,87.0,vitimas
 2023,2023-11-01,RN,Feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
 2023,2023-11-01,RN,Furto de veículo,0.0,197.0,0.0,0.0,0.0,0.0,197.0,ocorrencias
 2023,2023-11-01,RN,Homicídio doloso,58.0,0.0,5.0,53.0,0.0,0.0,58.0,vitimas
@@ -9022,7 +9022,7 @@
 2023,2023-11-01,RO,Tráfico de drogas,0.0,150.0,0.0,0.0,0.0,0.0,150.0,ocorrencias
 2023,2023-11-01,RR,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,514.0,514.0,kg
 2023,2023-11-01,RR,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,9726.0,9726.0,kg
-2023,2023-11-01,RR,Arma de Fogo Apreendida,0.0,20.0,0.0,0.0,0.0,0.0,20.0,ocorrencias
+2023,2023-11-01,RR,Arma de Fogo Apreendida,0.0,21.0,0.0,0.0,0.0,0.0,21.0,ocorrencias
 2023,2023-11-01,RR,Atendimento pré-hospitalar,0.0,184.0,0.0,0.0,0.0,0.0,184.0,ocorrencias
 2023,2023-11-01,RR,Busca e salvamento,0.0,139.0,0.0,0.0,0.0,0.0,139.0,ocorrencias
 2023,2023-11-01,RR,Combate a incêndios,0.0,174.0,0.0,0.0,0.0,0.0,174.0,ocorrencias
@@ -9771,8 +9771,8 @@
 2023,2023-12-01,RJ,Busca e salvamento,0.0,11006.0,0.0,0.0,0.0,0.0,11006.0,ocorrencias
 2023,2023-12-01,RJ,Combate a incêndios,0.0,3923.0,0.0,0.0,0.0,0.0,3923.0,ocorrencias
 2023,2023-12-01,RJ,Emissão de Alvarás de licença,0.0,3423.0,0.0,0.0,0.0,0.0,3423.0,ocorrencias
-2023,2023-12-01,RJ,Estupro,446.0,0.0,392.0,49.0,5.0,0.0,446.0,vitimas
-2023,2023-12-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2023,2023-12-01,RJ,Estupro,114.0,0.0,107.0,6.0,1.0,0.0,114.0,vitimas
+2023,2023-12-01,RJ,Estupro de vulnerável,332.0,0.0,285.0,43.0,4.0,0.0,332.0,vitimas
 2023,2023-12-01,RJ,Feminicídio,8.0,0.0,8.0,0.0,0.0,0.0,8.0,vitimas
 2023,2023-12-01,RJ,Furto de veículo,0.0,1346.0,0.0,0.0,0.0,0.0,1346.0,ocorrencias
 2023,2023-12-01,RJ,Homicídio doloso,307.0,0.0,24.0,259.0,24.0,0.0,307.0,vitimas
@@ -9792,8 +9792,8 @@
 2023,2023-12-01,RJ,Roubo seguido de morte (latrocínio),4.0,0.0,0.0,4.0,0.0,0.0,4.0,vitimas
 2023,2023-12-01,RJ,Suicídio,84.0,0.0,26.0,58.0,0.0,0.0,84.0,vitimas
 2023,2023-12-01,RJ,Suicídio de Agente do Estado,2.0,0.0,0.0,2.0,0.0,0.0,2.0,vitimas
-2023,2023-12-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2023,2023-12-01,RJ,Tentativa de homicídio,221.0,0.0,47.0,166.0,8.0,0.0,221.0,vitimas
+2023,2023-12-01,RJ,Tentativa de feminicídio,33.0,0.0,33.0,0.0,0.0,0.0,33.0,vitimas
+2023,2023-12-01,RJ,Tentativa de homicídio,188.0,0.0,14.0,166.0,8.0,0.0,188.0,vitimas
 2023,2023-12-01,RJ,Tráfico de drogas,0.0,1639.0,0.0,0.0,0.0,0.0,1639.0,ocorrencias
 2023,2023-12-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,31336.0,31336.0,kg
 2023,2023-12-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,31246.0,31246.0,kg
@@ -9802,8 +9802,8 @@
 2023,2023-12-01,RN,Busca e salvamento,0.0,520.0,0.0,0.0,0.0,0.0,520.0,ocorrencias
 2023,2023-12-01,RN,Combate a incêndios,0.0,296.0,0.0,0.0,0.0,0.0,296.0,ocorrencias
 2023,2023-12-01,RN,Emissão de Alvarás de licença,0.0,492.0,0.0,0.0,0.0,0.0,492.0,ocorrencias
-2023,2023-12-01,RN,Estupro,22.0,0.0,20.0,2.0,0.0,0.0,22.0,vitimas
-2023,2023-12-01,RN,Estupro de vulnerável,73.0,0.0,59.0,11.0,3.0,0.0,73.0,vitimas
+2023,2023-12-01,RN,Estupro,20.0,0.0,18.0,2.0,0.0,0.0,20.0,vitimas
+2023,2023-12-01,RN,Estupro de vulnerável,75.0,0.0,60.0,12.0,3.0,0.0,75.0,vitimas
 2023,2023-12-01,RN,Feminicídio,4.0,0.0,4.0,0.0,0.0,0.0,4.0,vitimas
 2023,2023-12-01,RN,Furto de veículo,0.0,194.0,0.0,0.0,0.0,0.0,194.0,ocorrencias
 2023,2023-12-01,RN,Homicídio doloso,62.0,0.0,2.0,60.0,0.0,0.0,62.0,vitimas
@@ -9859,7 +9859,7 @@
 2023,2023-12-01,RO,Tráfico de drogas,0.0,98.0,0.0,0.0,0.0,0.0,98.0,ocorrencias
 2023,2023-12-01,RR,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,1774.0,1774.0,kg
 2023,2023-12-01,RR,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,1278487.0,1278487.0,kg
-2023,2023-12-01,RR,Arma de Fogo Apreendida,0.0,35.0,0.0,0.0,0.0,0.0,35.0,ocorrencias
+2023,2023-12-01,RR,Arma de Fogo Apreendida,0.0,38.0,0.0,0.0,0.0,0.0,38.0,ocorrencias
 2023,2023-12-01,RR,Atendimento pré-hospitalar,0.0,164.0,0.0,0.0,0.0,0.0,164.0,ocorrencias
 2023,2023-12-01,RR,Busca e salvamento,0.0,120.0,0.0,0.0,0.0,0.0,120.0,ocorrencias
 2023,2023-12-01,RR,Combate a incêndios,0.0,214.0,0.0,0.0,0.0,0.0,214.0,ocorrencias

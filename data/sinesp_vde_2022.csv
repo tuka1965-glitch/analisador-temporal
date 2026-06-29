@@ -564,8 +564,8 @@
 2022,2022-01-01,RJ,Busca e salvamento,0.0,9953.0,0.0,0.0,0.0,0.0,9953.0,ocorrencias
 2022,2022-01-01,RJ,Combate a incêndios,0.0,2745.0,0.0,0.0,0.0,0.0,2745.0,ocorrencias
 2022,2022-01-01,RJ,Emissão de Alvarás de licença,0.0,2115.0,0.0,0.0,0.0,0.0,2115.0,ocorrencias
-2022,2022-01-01,RJ,Estupro,433.0,0.0,383.0,44.0,6.0,0.0,433.0,vitimas
-2022,2022-01-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2022,2022-01-01,RJ,Estupro,117.0,0.0,108.0,7.0,2.0,0.0,117.0,vitimas
+2022,2022-01-01,RJ,Estupro de vulnerável,316.0,0.0,275.0,37.0,4.0,0.0,316.0,vitimas
 2022,2022-01-01,RJ,Feminicídio,11.0,0.0,10.0,0.0,1.0,0.0,11.0,vitimas
 2022,2022-01-01,RJ,Furto de veículo,0.0,1319.0,0.0,0.0,0.0,0.0,1319.0,ocorrencias
 2022,2022-01-01,RJ,Homicídio doloso,280.0,0.0,23.0,242.0,15.0,0.0,280.0,vitimas
@@ -585,8 +585,8 @@
 2022,2022-01-01,RJ,Roubo seguido de morte (latrocínio),5.0,0.0,0.0,5.0,0.0,0.0,5.0,vitimas
 2022,2022-01-01,RJ,Suicídio,85.0,0.0,18.0,66.0,1.0,0.0,85.0,vitimas
 2022,2022-01-01,RJ,Suicídio de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2022,2022-01-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2022,2022-01-01,RJ,Tentativa de homicídio,307.0,0.0,49.0,241.0,17.0,0.0,307.0,vitimas
+2022,2022-01-01,RJ,Tentativa de feminicídio,26.0,0.0,26.0,0.0,0.0,0.0,26.0,vitimas
+2022,2022-01-01,RJ,Tentativa de homicídio,278.0,0.0,23.0,241.0,14.0,0.0,278.0,vitimas
 2022,2022-01-01,RJ,Tráfico de drogas,0.0,1587.0,0.0,0.0,0.0,0.0,1587.0,ocorrencias
 2022,2022-01-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,0.0,0.0,kg
 2022,2022-01-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,0.0,0.0,kg
@@ -595,8 +595,8 @@
 2022,2022-01-01,RN,Busca e salvamento,0.0,425.0,0.0,0.0,0.0,0.0,425.0,ocorrencias
 2022,2022-01-01,RN,Combate a incêndios,0.0,187.0,0.0,0.0,0.0,0.0,187.0,ocorrencias
 2022,2022-01-01,RN,Emissão de Alvarás de licença,0.0,366.0,0.0,0.0,0.0,0.0,366.0,ocorrencias
-2022,2022-01-01,RN,Estupro,12.0,0.0,10.0,2.0,0.0,0.0,12.0,vitimas
-2022,2022-01-01,RN,Estupro de vulnerável,50.0,0.0,43.0,7.0,0.0,0.0,50.0,vitimas
+2022,2022-01-01,RN,Estupro,7.0,0.0,6.0,1.0,0.0,0.0,7.0,vitimas
+2022,2022-01-01,RN,Estupro de vulnerável,60.0,0.0,52.0,8.0,0.0,0.0,60.0,vitimas
 2022,2022-01-01,RN,Feminicídio,2.0,0.0,2.0,0.0,0.0,0.0,2.0,vitimas
 2022,2022-01-01,RN,Furto de veículo,0.0,110.0,0.0,0.0,0.0,0.0,110.0,ocorrencias
 2022,2022-01-01,RN,Homicídio doloso,79.0,0.0,4.0,75.0,0.0,0.0,79.0,vitimas
@@ -652,7 +652,7 @@
 2022,2022-01-01,RO,Tráfico de drogas,0.0,122.0,0.0,0.0,0.0,0.0,122.0,ocorrencias
 2022,2022-01-01,RR,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,3620.0,3620.0,kg
 2022,2022-01-01,RR,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,9836.0,9836.0,kg
-2022,2022-01-01,RR,Arma de Fogo Apreendida,0.0,33.0,0.0,0.0,0.0,0.0,33.0,ocorrencias
+2022,2022-01-01,RR,Arma de Fogo Apreendida,0.0,36.0,0.0,0.0,0.0,0.0,36.0,ocorrencias
 2022,2022-01-01,RR,Atendimento pré-hospitalar,0.0,177.0,0.0,0.0,0.0,0.0,177.0,ocorrencias
 2022,2022-01-01,RR,Busca e salvamento,0.0,188.0,0.0,0.0,0.0,0.0,188.0,ocorrencias
 2022,2022-01-01,RR,Combate a incêndios,0.0,124.0,0.0,0.0,0.0,0.0,124.0,ocorrencias
@@ -1401,8 +1401,8 @@
 2022,2022-02-01,RJ,Busca e salvamento,0.0,8650.0,0.0,0.0,0.0,0.0,8650.0,ocorrencias
 2022,2022-02-01,RJ,Combate a incêndios,0.0,1997.0,0.0,0.0,0.0,0.0,1997.0,ocorrencias
 2022,2022-02-01,RJ,Emissão de Alvarás de licença,0.0,2550.0,0.0,0.0,0.0,0.0,2550.0,ocorrencias
-2022,2022-02-01,RJ,Estupro,420.0,0.0,367.0,50.0,3.0,0.0,420.0,vitimas
-2022,2022-02-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2022,2022-02-01,RJ,Estupro,114.0,0.0,108.0,5.0,1.0,0.0,114.0,vitimas
+2022,2022-02-01,RJ,Estupro de vulnerável,306.0,0.0,259.0,45.0,2.0,0.0,306.0,vitimas
 2022,2022-02-01,RJ,Feminicídio,18.0,0.0,18.0,0.0,0.0,0.0,18.0,vitimas
 2022,2022-02-01,RJ,Furto de veículo,0.0,1298.0,0.0,0.0,0.0,0.0,1298.0,ocorrencias
 2022,2022-02-01,RJ,Homicídio doloso,254.0,0.0,15.0,222.0,17.0,0.0,254.0,vitimas
@@ -1422,8 +1422,8 @@
 2022,2022-02-01,RJ,Roubo seguido de morte (latrocínio),4.0,0.0,0.0,4.0,0.0,0.0,4.0,vitimas
 2022,2022-02-01,RJ,Suicídio,78.0,0.0,18.0,59.0,1.0,0.0,78.0,vitimas
 2022,2022-02-01,RJ,Suicídio de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2022,2022-02-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2022,2022-02-01,RJ,Tentativa de homicídio,293.0,0.0,52.0,230.0,11.0,0.0,293.0,vitimas
+2022,2022-02-01,RJ,Tentativa de feminicídio,24.0,0.0,24.0,0.0,0.0,0.0,24.0,vitimas
+2022,2022-02-01,RJ,Tentativa de homicídio,269.0,0.0,28.0,230.0,11.0,0.0,269.0,vitimas
 2022,2022-02-01,RJ,Tráfico de drogas,0.0,1577.0,0.0,0.0,0.0,0.0,1577.0,ocorrencias
 2022,2022-02-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,406772.0,406772.0,kg
 2022,2022-02-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,3.0,3.0,kg
@@ -1432,8 +1432,8 @@
 2022,2022-02-01,RN,Busca e salvamento,0.0,350.0,0.0,0.0,0.0,0.0,350.0,ocorrencias
 2022,2022-02-01,RN,Combate a incêndios,0.0,149.0,0.0,0.0,0.0,0.0,149.0,ocorrencias
 2022,2022-02-01,RN,Emissão de Alvarás de licença,0.0,382.0,0.0,0.0,0.0,0.0,382.0,ocorrencias
-2022,2022-02-01,RN,Estupro,17.0,0.0,15.0,2.0,0.0,0.0,17.0,vitimas
-2022,2022-02-01,RN,Estupro de vulnerável,43.0,0.0,39.0,4.0,0.0,0.0,43.0,vitimas
+2022,2022-02-01,RN,Estupro,13.0,0.0,11.0,2.0,0.0,0.0,13.0,vitimas
+2022,2022-02-01,RN,Estupro de vulnerável,46.0,0.0,42.0,4.0,0.0,0.0,46.0,vitimas
 2022,2022-02-01,RN,Feminicídio,4.0,0.0,4.0,0.0,0.0,0.0,4.0,vitimas
 2022,2022-02-01,RN,Furto de veículo,0.0,84.0,0.0,0.0,0.0,0.0,84.0,ocorrencias
 2022,2022-02-01,RN,Homicídio doloso,89.0,0.0,6.0,82.0,1.0,0.0,89.0,vitimas
@@ -1489,7 +1489,7 @@
 2022,2022-02-01,RO,Tráfico de drogas,0.0,118.0,0.0,0.0,0.0,0.0,118.0,ocorrencias
 2022,2022-02-01,RR,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,2847.0,2847.0,kg
 2022,2022-02-01,RR,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,1092.0,1092.0,kg
-2022,2022-02-01,RR,Arma de Fogo Apreendida,0.0,41.0,0.0,0.0,0.0,0.0,41.0,ocorrencias
+2022,2022-02-01,RR,Arma de Fogo Apreendida,0.0,44.0,0.0,0.0,0.0,0.0,44.0,ocorrencias
 2022,2022-02-01,RR,Atendimento pré-hospitalar,0.0,160.0,0.0,0.0,0.0,0.0,160.0,ocorrencias
 2022,2022-02-01,RR,Busca e salvamento,0.0,214.0,0.0,0.0,0.0,0.0,214.0,ocorrencias
 2022,2022-02-01,RR,Combate a incêndios,0.0,170.0,0.0,0.0,0.0,0.0,170.0,ocorrencias
@@ -2238,8 +2238,8 @@
 2022,2022-03-01,RJ,Busca e salvamento,0.0,9134.0,0.0,0.0,0.0,0.0,9134.0,ocorrencias
 2022,2022-03-01,RJ,Combate a incêndios,0.0,4613.0,0.0,0.0,0.0,0.0,4613.0,ocorrencias
 2022,2022-03-01,RJ,Emissão de Alvarás de licença,0.0,2815.0,0.0,0.0,0.0,0.0,2815.0,ocorrencias
-2022,2022-03-01,RJ,Estupro,531.0,0.0,456.0,68.0,7.0,0.0,531.0,vitimas
-2022,2022-03-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2022,2022-03-01,RJ,Estupro,134.0,0.0,125.0,7.0,2.0,0.0,134.0,vitimas
+2022,2022-03-01,RJ,Estupro de vulnerável,397.0,0.0,331.0,61.0,5.0,0.0,397.0,vitimas
 2022,2022-03-01,RJ,Feminicídio,9.0,0.0,9.0,0.0,0.0,0.0,9.0,vitimas
 2022,2022-03-01,RJ,Furto de veículo,0.0,1575.0,0.0,0.0,0.0,0.0,1575.0,ocorrencias
 2022,2022-03-01,RJ,Homicídio doloso,290.0,0.0,21.0,248.0,21.0,0.0,290.0,vitimas
@@ -2259,8 +2259,8 @@
 2022,2022-03-01,RJ,Roubo seguido de morte (latrocínio),5.0,0.0,0.0,5.0,0.0,0.0,5.0,vitimas
 2022,2022-03-01,RJ,Suicídio,109.0,0.0,25.0,83.0,1.0,0.0,109.0,vitimas
 2022,2022-03-01,RJ,Suicídio de Agente do Estado,1.0,0.0,0.0,1.0,0.0,0.0,1.0,vitimas
-2022,2022-03-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2022,2022-03-01,RJ,Tentativa de homicídio,335.0,0.0,54.0,266.0,15.0,0.0,335.0,vitimas
+2022,2022-03-01,RJ,Tentativa de feminicídio,35.0,0.0,35.0,0.0,0.0,0.0,35.0,vitimas
+2022,2022-03-01,RJ,Tentativa de homicídio,299.0,0.0,19.0,265.0,15.0,0.0,299.0,vitimas
 2022,2022-03-01,RJ,Tráfico de drogas,0.0,1721.0,0.0,0.0,0.0,0.0,1721.0,ocorrencias
 2022,2022-03-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,2137.0,2137.0,kg
 2022,2022-03-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,1.0,1.0,kg
@@ -2269,7 +2269,7 @@
 2022,2022-03-01,RN,Busca e salvamento,0.0,527.0,0.0,0.0,0.0,0.0,527.0,ocorrencias
 2022,2022-03-01,RN,Combate a incêndios,0.0,141.0,0.0,0.0,0.0,0.0,141.0,ocorrencias
 2022,2022-03-01,RN,Emissão de Alvarás de licença,0.0,321.0,0.0,0.0,0.0,0.0,321.0,ocorrencias
-2022,2022-03-01,RN,Estupro,28.0,0.0,25.0,2.0,1.0,0.0,28.0,vitimas
+2022,2022-03-01,RN,Estupro,24.0,0.0,21.0,2.0,1.0,0.0,24.0,vitimas
 2022,2022-03-01,RN,Estupro de vulnerável,74.0,0.0,64.0,10.0,0.0,0.0,74.0,vitimas
 2022,2022-03-01,RN,Feminicídio,3.0,0.0,3.0,0.0,0.0,0.0,3.0,vitimas
 2022,2022-03-01,RN,Furto de veículo,0.0,104.0,0.0,0.0,0.0,0.0,104.0,ocorrencias
@@ -2326,7 +2326,7 @@
 2022,2022-03-01,RO,Tráfico de drogas,0.0,169.0,0.0,0.0,0.0,0.0,169.0,ocorrencias
 2022,2022-03-01,RR,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,15791.0,15791.0,kg
 2022,2022-03-01,RR,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,16115.0,16115.0,kg
-2022,2022-03-01,RR,Arma de Fogo Apreendida,0.0,42.0,0.0,0.0,0.0,0.0,42.0,ocorrencias
+2022,2022-03-01,RR,Arma de Fogo Apreendida,0.0,46.0,0.0,0.0,0.0,0.0,46.0,ocorrencias
 2022,2022-03-01,RR,Atendimento pré-hospitalar,0.0,155.0,0.0,0.0,0.0,0.0,155.0,ocorrencias
 2022,2022-03-01,RR,Busca e salvamento,0.0,206.0,0.0,0.0,0.0,0.0,206.0,ocorrencias
 2022,2022-03-01,RR,Combate a incêndios,0.0,41.0,0.0,0.0,0.0,0.0,41.0,ocorrencias
@@ -3075,9 +3075,9 @@
 2022,2022-04-01,RJ,Busca e salvamento,0.0,9722.0,0.0,0.0,0.0,0.0,9722.0,ocorrencias
 2022,2022-04-01,RJ,Combate a incêndios,0.0,2546.0,0.0,0.0,0.0,0.0,2546.0,ocorrencias
 2022,2022-04-01,RJ,Emissão de Alvarás de licença,0.0,2577.0,0.0,0.0,0.0,0.0,2577.0,ocorrencias
-2022,2022-04-01,RJ,Estupro,409.0,0.0,360.0,43.0,6.0,0.0,409.0,vitimas
-2022,2022-04-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2022,2022-04-01,RJ,Feminicídio,10.0,0.0,9.0,0.0,1.0,0.0,10.0,vitimas
+2022,2022-04-01,RJ,Estupro,103.0,0.0,97.0,6.0,0.0,0.0,103.0,vitimas
+2022,2022-04-01,RJ,Estupro de vulnerável,306.0,0.0,263.0,37.0,6.0,0.0,306.0,vitimas
+2022,2022-04-01,RJ,Feminicídio,10.0,0.0,9.0,1.0,0.0,0.0,10.0,vitimas
 2022,2022-04-01,RJ,Furto de veículo,0.0,1442.0,0.0,0.0,0.0,0.0,1442.0,ocorrencias
 2022,2022-04-01,RJ,Homicídio doloso,295.0,0.0,28.0,251.0,16.0,0.0,295.0,vitimas
 2022,2022-04-01,RJ,Lesão corporal seguida de morte,2.0,0.0,0.0,2.0,0.0,0.0,2.0,vitimas
@@ -3096,8 +3096,8 @@
 2022,2022-04-01,RJ,Roubo seguido de morte (latrocínio),2.0,0.0,0.0,2.0,0.0,0.0,2.0,vitimas
 2022,2022-04-01,RJ,Suicídio,68.0,0.0,18.0,50.0,0.0,0.0,68.0,vitimas
 2022,2022-04-01,RJ,Suicídio de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2022,2022-04-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2022,2022-04-01,RJ,Tentativa de homicídio,266.0,0.0,36.0,220.0,10.0,0.0,266.0,vitimas
+2022,2022-04-01,RJ,Tentativa de feminicídio,19.0,0.0,19.0,0.0,0.0,0.0,19.0,vitimas
+2022,2022-04-01,RJ,Tentativa de homicídio,247.0,0.0,17.0,220.0,10.0,0.0,247.0,vitimas
 2022,2022-04-01,RJ,Tráfico de drogas,0.0,1654.0,0.0,0.0,0.0,0.0,1654.0,ocorrencias
 2022,2022-04-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,0.0,0.0,kg
 2022,2022-04-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,0.0,0.0,kg
@@ -3106,8 +3106,8 @@
 2022,2022-04-01,RN,Busca e salvamento,0.0,435.0,0.0,0.0,0.0,0.0,435.0,ocorrencias
 2022,2022-04-01,RN,Combate a incêndios,0.0,113.0,0.0,0.0,0.0,0.0,113.0,ocorrencias
 2022,2022-04-01,RN,Emissão de Alvarás de licença,0.0,290.0,0.0,0.0,0.0,0.0,290.0,ocorrencias
-2022,2022-04-01,RN,Estupro,21.0,0.0,20.0,1.0,0.0,0.0,21.0,vitimas
-2022,2022-04-01,RN,Estupro de vulnerável,50.0,0.0,41.0,8.0,1.0,0.0,50.0,vitimas
+2022,2022-04-01,RN,Estupro,20.0,0.0,19.0,1.0,0.0,0.0,20.0,vitimas
+2022,2022-04-01,RN,Estupro de vulnerável,51.0,0.0,42.0,8.0,1.0,0.0,51.0,vitimas
 2022,2022-04-01,RN,Feminicídio,1.0,0.0,1.0,0.0,0.0,0.0,1.0,vitimas
 2022,2022-04-01,RN,Furto de veículo,0.0,100.0,0.0,0.0,0.0,0.0,100.0,ocorrencias
 2022,2022-04-01,RN,Homicídio doloso,99.0,0.0,5.0,94.0,0.0,0.0,99.0,vitimas
@@ -3163,7 +3163,7 @@
 2022,2022-04-01,RO,Tráfico de drogas,0.0,138.0,0.0,0.0,0.0,0.0,138.0,ocorrencias
 2022,2022-04-01,RR,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,4758.0,4758.0,kg
 2022,2022-04-01,RR,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,60600.0,60600.0,kg
-2022,2022-04-01,RR,Arma de Fogo Apreendida,0.0,22.0,0.0,0.0,0.0,0.0,22.0,ocorrencias
+2022,2022-04-01,RR,Arma de Fogo Apreendida,0.0,23.0,0.0,0.0,0.0,0.0,23.0,ocorrencias
 2022,2022-04-01,RR,Atendimento pré-hospitalar,0.0,142.0,0.0,0.0,0.0,0.0,142.0,ocorrencias
 2022,2022-04-01,RR,Busca e salvamento,0.0,191.0,0.0,0.0,0.0,0.0,191.0,ocorrencias
 2022,2022-04-01,RR,Combate a incêndios,0.0,38.0,0.0,0.0,0.0,0.0,38.0,ocorrencias
@@ -3912,8 +3912,8 @@
 2022,2022-05-01,RJ,Busca e salvamento,0.0,8365.0,0.0,0.0,0.0,0.0,8365.0,ocorrencias
 2022,2022-05-01,RJ,Combate a incêndios,0.0,2648.0,0.0,0.0,0.0,0.0,2648.0,ocorrencias
 2022,2022-05-01,RJ,Emissão de Alvarás de licença,0.0,3155.0,0.0,0.0,0.0,0.0,3155.0,ocorrencias
-2022,2022-05-01,RJ,Estupro,509.0,0.0,442.0,62.0,5.0,0.0,509.0,vitimas
-2022,2022-05-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2022,2022-05-01,RJ,Estupro,123.0,0.0,110.0,10.0,3.0,0.0,123.0,vitimas
+2022,2022-05-01,RJ,Estupro de vulnerável,386.0,0.0,332.0,52.0,2.0,0.0,386.0,vitimas
 2022,2022-05-01,RJ,Feminicídio,3.0,0.0,3.0,0.0,0.0,0.0,3.0,vitimas
 2022,2022-05-01,RJ,Furto de veículo,0.0,1388.0,0.0,0.0,0.0,0.0,1388.0,ocorrencias
 2022,2022-05-01,RJ,Homicídio doloso,240.0,0.0,16.0,212.0,12.0,0.0,240.0,vitimas
@@ -3933,8 +3933,8 @@
 2022,2022-05-01,RJ,Roubo seguido de morte (latrocínio),4.0,0.0,0.0,4.0,0.0,0.0,4.0,vitimas
 2022,2022-05-01,RJ,Suicídio,74.0,0.0,15.0,59.0,0.0,0.0,74.0,vitimas
 2022,2022-05-01,RJ,Suicídio de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2022,2022-05-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2022,2022-05-01,RJ,Tentativa de homicídio,337.0,0.0,40.0,271.0,26.0,0.0,337.0,vitimas
+2022,2022-05-01,RJ,Tentativa de feminicídio,17.0,0.0,17.0,0.0,0.0,0.0,17.0,vitimas
+2022,2022-05-01,RJ,Tentativa de homicídio,317.0,0.0,23.0,269.0,25.0,0.0,317.0,vitimas
 2022,2022-05-01,RJ,Tráfico de drogas,0.0,1572.0,0.0,0.0,0.0,0.0,1572.0,ocorrencias
 2022,2022-05-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,114.0,114.0,kg
 2022,2022-05-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,12.0,12.0,kg
@@ -3943,8 +3943,8 @@
 2022,2022-05-01,RN,Busca e salvamento,0.0,501.0,0.0,0.0,0.0,0.0,501.0,ocorrencias
 2022,2022-05-01,RN,Combate a incêndios,0.0,143.0,0.0,0.0,0.0,0.0,143.0,ocorrencias
 2022,2022-05-01,RN,Emissão de Alvarás de licença,0.0,434.0,0.0,0.0,0.0,0.0,434.0,ocorrencias
-2022,2022-05-01,RN,Estupro,23.0,0.0,21.0,2.0,0.0,0.0,23.0,vitimas
-2022,2022-05-01,RN,Estupro de vulnerável,60.0,0.0,51.0,7.0,2.0,0.0,60.0,vitimas
+2022,2022-05-01,RN,Estupro,21.0,0.0,19.0,2.0,0.0,0.0,21.0,vitimas
+2022,2022-05-01,RN,Estupro de vulnerável,61.0,0.0,52.0,7.0,2.0,0.0,61.0,vitimas
 2022,2022-05-01,RN,Feminicídio,1.0,0.0,1.0,0.0,0.0,0.0,1.0,vitimas
 2022,2022-05-01,RN,Furto de veículo,0.0,145.0,0.0,0.0,0.0,0.0,145.0,ocorrencias
 2022,2022-05-01,RN,Homicídio doloso,81.0,0.0,1.0,80.0,0.0,0.0,81.0,vitimas
@@ -4000,7 +4000,7 @@
 2022,2022-05-01,RO,Tráfico de drogas,0.0,151.0,0.0,0.0,0.0,0.0,151.0,ocorrencias
 2022,2022-05-01,RR,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,9638.0,9638.0,kg
 2022,2022-05-01,RR,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,17656.0,17656.0,kg
-2022,2022-05-01,RR,Arma de Fogo Apreendida,0.0,14.0,0.0,0.0,0.0,0.0,14.0,ocorrencias
+2022,2022-05-01,RR,Arma de Fogo Apreendida,0.0,17.0,0.0,0.0,0.0,0.0,17.0,ocorrencias
 2022,2022-05-01,RR,Atendimento pré-hospitalar,0.0,203.0,0.0,0.0,0.0,0.0,203.0,ocorrencias
 2022,2022-05-01,RR,Busca e salvamento,0.0,279.0,0.0,0.0,0.0,0.0,279.0,ocorrencias
 2022,2022-05-01,RR,Combate a incêndios,0.0,28.0,0.0,0.0,0.0,0.0,28.0,ocorrencias
@@ -4749,8 +4749,8 @@
 2022,2022-06-01,RJ,Busca e salvamento,0.0,7489.0,0.0,0.0,0.0,0.0,7489.0,ocorrencias
 2022,2022-06-01,RJ,Combate a incêndios,0.0,2719.0,0.0,0.0,0.0,0.0,2719.0,ocorrencias
 2022,2022-06-01,RJ,Emissão de Alvarás de licença,0.0,3058.0,0.0,0.0,0.0,0.0,3058.0,ocorrencias
-2022,2022-06-01,RJ,Estupro,440.0,0.0,391.0,44.0,5.0,0.0,440.0,vitimas
-2022,2022-06-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2022,2022-06-01,RJ,Estupro,114.0,0.0,110.0,3.0,1.0,0.0,114.0,vitimas
+2022,2022-06-01,RJ,Estupro de vulnerável,326.0,0.0,281.0,41.0,4.0,0.0,326.0,vitimas
 2022,2022-06-01,RJ,Feminicídio,6.0,0.0,6.0,0.0,0.0,0.0,6.0,vitimas
 2022,2022-06-01,RJ,Furto de veículo,0.0,1371.0,0.0,0.0,0.0,0.0,1371.0,ocorrencias
 2022,2022-06-01,RJ,Homicídio doloso,258.0,0.0,23.0,217.0,18.0,0.0,258.0,vitimas
@@ -4770,8 +4770,8 @@
 2022,2022-06-01,RJ,Roubo seguido de morte (latrocínio),8.0,0.0,2.0,6.0,0.0,0.0,8.0,vitimas
 2022,2022-06-01,RJ,Suicídio,60.0,0.0,17.0,43.0,0.0,0.0,60.0,vitimas
 2022,2022-06-01,RJ,Suicídio de Agente do Estado,1.0,0.0,0.0,1.0,0.0,0.0,1.0,vitimas
-2022,2022-06-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2022,2022-06-01,RJ,Tentativa de homicídio,295.0,0.0,34.0,240.0,21.0,0.0,295.0,vitimas
+2022,2022-06-01,RJ,Tentativa de feminicídio,13.0,0.0,13.0,0.0,0.0,0.0,13.0,vitimas
+2022,2022-06-01,RJ,Tentativa de homicídio,280.0,0.0,21.0,238.0,21.0,0.0,280.0,vitimas
 2022,2022-06-01,RJ,Tráfico de drogas,0.0,1466.0,0.0,0.0,0.0,0.0,1466.0,ocorrencias
 2022,2022-06-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,4267.0,4267.0,kg
 2022,2022-06-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,91539.0,91539.0,kg
@@ -4780,8 +4780,8 @@
 2022,2022-06-01,RN,Busca e salvamento,0.0,337.0,0.0,0.0,0.0,0.0,337.0,ocorrencias
 2022,2022-06-01,RN,Combate a incêndios,0.0,96.0,0.0,0.0,0.0,0.0,96.0,ocorrencias
 2022,2022-06-01,RN,Emissão de Alvarás de licença,0.0,574.0,0.0,0.0,0.0,0.0,574.0,ocorrencias
-2022,2022-06-01,RN,Estupro,19.0,0.0,19.0,0.0,0.0,0.0,19.0,vitimas
-2022,2022-06-01,RN,Estupro de vulnerável,72.0,0.0,66.0,5.0,1.0,0.0,72.0,vitimas
+2022,2022-06-01,RN,Estupro,18.0,0.0,18.0,0.0,0.0,0.0,18.0,vitimas
+2022,2022-06-01,RN,Estupro de vulnerável,69.0,0.0,63.0,5.0,1.0,0.0,69.0,vitimas
 2022,2022-06-01,RN,Feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
 2022,2022-06-01,RN,Furto de veículo,0.0,150.0,0.0,0.0,0.0,0.0,150.0,ocorrencias
 2022,2022-06-01,RN,Homicídio doloso,63.0,0.0,3.0,60.0,0.0,0.0,63.0,vitimas
@@ -5586,9 +5586,9 @@
 2022,2022-07-01,RJ,Busca e salvamento,0.0,8247.0,0.0,0.0,0.0,0.0,8247.0,ocorrencias
 2022,2022-07-01,RJ,Combate a incêndios,0.0,4991.0,0.0,0.0,0.0,0.0,4991.0,ocorrencias
 2022,2022-07-01,RJ,Emissão de Alvarás de licença,0.0,3101.0,0.0,0.0,0.0,0.0,3101.0,ocorrencias
-2022,2022-07-01,RJ,Estupro,512.0,0.0,440.0,65.0,7.0,0.0,512.0,vitimas
-2022,2022-07-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2022,2022-07-01,RJ,Feminicídio,11.0,0.0,10.0,0.0,1.0,0.0,11.0,vitimas
+2022,2022-07-01,RJ,Estupro,121.0,0.0,115.0,5.0,1.0,0.0,121.0,vitimas
+2022,2022-07-01,RJ,Estupro de vulnerável,391.0,0.0,325.0,60.0,6.0,0.0,391.0,vitimas
+2022,2022-07-01,RJ,Feminicídio,11.0,0.0,10.0,1.0,0.0,0.0,11.0,vitimas
 2022,2022-07-01,RJ,Furto de veículo,0.0,1397.0,0.0,0.0,0.0,0.0,1397.0,ocorrencias
 2022,2022-07-01,RJ,Homicídio doloso,313.0,0.0,31.0,257.0,25.0,0.0,313.0,vitimas
 2022,2022-07-01,RJ,Lesão corporal seguida de morte,2.0,0.0,0.0,2.0,0.0,0.0,2.0,vitimas
@@ -5607,8 +5607,8 @@
 2022,2022-07-01,RJ,Roubo seguido de morte (latrocínio),5.0,0.0,1.0,4.0,0.0,0.0,5.0,vitimas
 2022,2022-07-01,RJ,Suicídio,62.0,0.0,17.0,44.0,1.0,0.0,62.0,vitimas
 2022,2022-07-01,RJ,Suicídio de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2022,2022-07-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2022,2022-07-01,RJ,Tentativa de homicídio,271.0,0.0,42.0,218.0,11.0,0.0,271.0,vitimas
+2022,2022-07-01,RJ,Tentativa de feminicídio,17.0,0.0,17.0,0.0,0.0,0.0,17.0,vitimas
+2022,2022-07-01,RJ,Tentativa de homicídio,253.0,0.0,25.0,217.0,11.0,0.0,253.0,vitimas
 2022,2022-07-01,RJ,Tráfico de drogas,0.0,1592.0,0.0,0.0,0.0,0.0,1592.0,ocorrencias
 2022,2022-07-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,515504.0,515504.0,kg
 2022,2022-07-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,10.0,10.0,kg
@@ -5617,8 +5617,8 @@
 2022,2022-07-01,RN,Busca e salvamento,0.0,582.0,0.0,0.0,0.0,0.0,582.0,ocorrencias
 2022,2022-07-01,RN,Combate a incêndios,0.0,141.0,0.0,0.0,0.0,0.0,141.0,ocorrencias
 2022,2022-07-01,RN,Emissão de Alvarás de licença,0.0,411.0,0.0,0.0,0.0,0.0,411.0,ocorrencias
-2022,2022-07-01,RN,Estupro,23.0,0.0,23.0,0.0,0.0,0.0,23.0,vitimas
-2022,2022-07-01,RN,Estupro de vulnerável,53.0,0.0,45.0,6.0,2.0,0.0,53.0,vitimas
+2022,2022-07-01,RN,Estupro,21.0,0.0,21.0,0.0,0.0,0.0,21.0,vitimas
+2022,2022-07-01,RN,Estupro de vulnerável,54.0,0.0,46.0,6.0,2.0,0.0,54.0,vitimas
 2022,2022-07-01,RN,Feminicídio,2.0,0.0,2.0,0.0,0.0,0.0,2.0,vitimas
 2022,2022-07-01,RN,Furto de veículo,0.0,158.0,0.0,0.0,0.0,0.0,158.0,ocorrencias
 2022,2022-07-01,RN,Homicídio doloso,93.0,0.0,3.0,90.0,0.0,0.0,93.0,vitimas
@@ -5674,7 +5674,7 @@
 2022,2022-07-01,RO,Tráfico de drogas,0.0,118.0,0.0,0.0,0.0,0.0,118.0,ocorrencias
 2022,2022-07-01,RR,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,9313.0,9313.0,kg
 2022,2022-07-01,RR,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,22321.0,22321.0,kg
-2022,2022-07-01,RR,Arma de Fogo Apreendida,0.0,33.0,0.0,0.0,0.0,0.0,33.0,ocorrencias
+2022,2022-07-01,RR,Arma de Fogo Apreendida,0.0,34.0,0.0,0.0,0.0,0.0,34.0,ocorrencias
 2022,2022-07-01,RR,Atendimento pré-hospitalar,0.0,188.0,0.0,0.0,0.0,0.0,188.0,ocorrencias
 2022,2022-07-01,RR,Busca e salvamento,0.0,194.0,0.0,0.0,0.0,0.0,194.0,ocorrencias
 2022,2022-07-01,RR,Combate a incêndios,0.0,21.0,0.0,0.0,0.0,0.0,21.0,ocorrencias
@@ -6423,8 +6423,8 @@
 2022,2022-08-01,RJ,Busca e salvamento,0.0,8182.0,0.0,0.0,0.0,0.0,8182.0,ocorrencias
 2022,2022-08-01,RJ,Combate a incêndios,0.0,4722.0,0.0,0.0,0.0,0.0,4722.0,ocorrencias
 2022,2022-08-01,RJ,Emissão de Alvarás de licença,0.0,3400.0,0.0,0.0,0.0,0.0,3400.0,ocorrencias
-2022,2022-08-01,RJ,Estupro,497.0,0.0,430.0,60.0,7.0,0.0,497.0,vitimas
-2022,2022-08-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2022,2022-08-01,RJ,Estupro,139.0,0.0,131.0,8.0,0.0,0.0,139.0,vitimas
+2022,2022-08-01,RJ,Estupro de vulnerável,358.0,0.0,299.0,52.0,7.0,0.0,358.0,vitimas
 2022,2022-08-01,RJ,Feminicídio,6.0,0.0,6.0,0.0,0.0,0.0,6.0,vitimas
 2022,2022-08-01,RJ,Furto de veículo,0.0,1392.0,0.0,0.0,0.0,0.0,1392.0,ocorrencias
 2022,2022-08-01,RJ,Homicídio doloso,257.0,0.0,24.0,216.0,17.0,0.0,257.0,vitimas
@@ -6444,8 +6444,8 @@
 2022,2022-08-01,RJ,Roubo seguido de morte (latrocínio),6.0,0.0,0.0,6.0,0.0,0.0,6.0,vitimas
 2022,2022-08-01,RJ,Suicídio,68.0,0.0,16.0,51.0,1.0,0.0,68.0,vitimas
 2022,2022-08-01,RJ,Suicídio de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2022,2022-08-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2022,2022-08-01,RJ,Tentativa de homicídio,327.0,0.0,41.0,272.0,14.0,0.0,327.0,vitimas
+2022,2022-08-01,RJ,Tentativa de feminicídio,22.0,0.0,22.0,0.0,0.0,0.0,22.0,vitimas
+2022,2022-08-01,RJ,Tentativa de homicídio,304.0,0.0,19.0,271.0,14.0,0.0,304.0,vitimas
 2022,2022-08-01,RJ,Tráfico de drogas,0.0,1572.0,0.0,0.0,0.0,0.0,1572.0,ocorrencias
 2022,2022-08-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,202.0,202.0,kg
 2022,2022-08-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,3086.0,3086.0,kg
@@ -6454,8 +6454,8 @@
 2022,2022-08-01,RN,Busca e salvamento,0.0,571.0,0.0,0.0,0.0,0.0,571.0,ocorrencias
 2022,2022-08-01,RN,Combate a incêndios,0.0,252.0,0.0,0.0,0.0,0.0,252.0,ocorrencias
 2022,2022-08-01,RN,Emissão de Alvarás de licença,0.0,472.0,0.0,0.0,0.0,0.0,472.0,ocorrencias
-2022,2022-08-01,RN,Estupro,24.0,0.0,24.0,0.0,0.0,0.0,24.0,vitimas
-2022,2022-08-01,RN,Estupro de vulnerável,66.0,0.0,51.0,15.0,0.0,0.0,66.0,vitimas
+2022,2022-08-01,RN,Estupro,20.0,0.0,20.0,0.0,0.0,0.0,20.0,vitimas
+2022,2022-08-01,RN,Estupro de vulnerável,66.0,0.0,50.0,16.0,0.0,0.0,66.0,vitimas
 2022,2022-08-01,RN,Feminicídio,1.0,0.0,1.0,0.0,0.0,0.0,1.0,vitimas
 2022,2022-08-01,RN,Furto de veículo,0.0,179.0,0.0,0.0,0.0,0.0,179.0,ocorrencias
 2022,2022-08-01,RN,Homicídio doloso,74.0,0.0,2.0,72.0,0.0,0.0,74.0,vitimas
@@ -6511,7 +6511,7 @@
 2022,2022-08-01,RO,Tráfico de drogas,0.0,140.0,0.0,0.0,0.0,0.0,140.0,ocorrencias
 2022,2022-08-01,RR,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,1389.0,1389.0,kg
 2022,2022-08-01,RR,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,9730.0,9730.0,kg
-2022,2022-08-01,RR,Arma de Fogo Apreendida,0.0,28.0,0.0,0.0,0.0,0.0,28.0,ocorrencias
+2022,2022-08-01,RR,Arma de Fogo Apreendida,0.0,29.0,0.0,0.0,0.0,0.0,29.0,ocorrencias
 2022,2022-08-01,RR,Atendimento pré-hospitalar,0.0,232.0,0.0,0.0,0.0,0.0,232.0,ocorrencias
 2022,2022-08-01,RR,Busca e salvamento,0.0,253.0,0.0,0.0,0.0,0.0,253.0,ocorrencias
 2022,2022-08-01,RR,Combate a incêndios,0.0,42.0,0.0,0.0,0.0,0.0,42.0,ocorrencias
@@ -7260,8 +7260,8 @@
 2022,2022-09-01,RJ,Busca e salvamento,0.0,8090.0,0.0,0.0,0.0,0.0,8090.0,ocorrencias
 2022,2022-09-01,RJ,Combate a incêndios,0.0,3802.0,0.0,0.0,0.0,0.0,3802.0,ocorrencias
 2022,2022-09-01,RJ,Emissão de Alvarás de licença,0.0,3401.0,0.0,0.0,0.0,0.0,3401.0,ocorrencias
-2022,2022-09-01,RJ,Estupro,473.0,0.0,420.0,48.0,5.0,0.0,473.0,vitimas
-2022,2022-09-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2022,2022-09-01,RJ,Estupro,147.0,0.0,130.0,15.0,2.0,0.0,147.0,vitimas
+2022,2022-09-01,RJ,Estupro de vulnerável,326.0,0.0,290.0,33.0,3.0,0.0,326.0,vitimas
 2022,2022-09-01,RJ,Feminicídio,9.0,0.0,9.0,0.0,0.0,0.0,9.0,vitimas
 2022,2022-09-01,RJ,Furto de veículo,0.0,1396.0,0.0,0.0,0.0,0.0,1396.0,ocorrencias
 2022,2022-09-01,RJ,Homicídio doloso,289.0,0.0,21.0,250.0,18.0,0.0,289.0,vitimas
@@ -7281,8 +7281,8 @@
 2022,2022-09-01,RJ,Roubo seguido de morte (latrocínio),2.0,0.0,0.0,2.0,0.0,0.0,2.0,vitimas
 2022,2022-09-01,RJ,Suicídio,71.0,0.0,26.0,45.0,0.0,0.0,71.0,vitimas
 2022,2022-09-01,RJ,Suicídio de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2022,2022-09-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2022,2022-09-01,RJ,Tentativa de homicídio,263.0,0.0,37.0,211.0,15.0,0.0,263.0,vitimas
+2022,2022-09-01,RJ,Tentativa de feminicídio,26.0,0.0,26.0,0.0,0.0,0.0,26.0,vitimas
+2022,2022-09-01,RJ,Tentativa de homicídio,237.0,0.0,11.0,211.0,15.0,0.0,237.0,vitimas
 2022,2022-09-01,RJ,Tráfico de drogas,0.0,1562.0,0.0,0.0,0.0,0.0,1562.0,ocorrencias
 2022,2022-09-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,12552.0,12552.0,kg
 2022,2022-09-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,608.0,608.0,kg
@@ -7291,8 +7291,8 @@
 2022,2022-09-01,RN,Busca e salvamento,0.0,629.0,0.0,0.0,0.0,0.0,629.0,ocorrencias
 2022,2022-09-01,RN,Combate a incêndios,0.0,389.0,0.0,0.0,0.0,0.0,389.0,ocorrencias
 2022,2022-09-01,RN,Emissão de Alvarás de licença,0.0,405.0,0.0,0.0,0.0,0.0,405.0,ocorrencias
-2022,2022-09-01,RN,Estupro,19.0,0.0,17.0,2.0,0.0,0.0,19.0,vitimas
-2022,2022-09-01,RN,Estupro de vulnerável,74.0,0.0,65.0,9.0,0.0,0.0,74.0,vitimas
+2022,2022-09-01,RN,Estupro,14.0,0.0,12.0,2.0,0.0,0.0,14.0,vitimas
+2022,2022-09-01,RN,Estupro de vulnerável,75.0,0.0,66.0,9.0,0.0,0.0,75.0,vitimas
 2022,2022-09-01,RN,Feminicídio,2.0,0.0,2.0,0.0,0.0,0.0,2.0,vitimas
 2022,2022-09-01,RN,Furto de veículo,0.0,176.0,0.0,0.0,0.0,0.0,176.0,ocorrencias
 2022,2022-09-01,RN,Homicídio doloso,88.0,0.0,5.0,83.0,0.0,0.0,88.0,vitimas
@@ -7348,7 +7348,7 @@
 2022,2022-09-01,RO,Tráfico de drogas,0.0,107.0,0.0,0.0,0.0,0.0,107.0,ocorrencias
 2022,2022-09-01,RR,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,2382.0,2382.0,kg
 2022,2022-09-01,RR,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,26080.0,26080.0,kg
-2022,2022-09-01,RR,Arma de Fogo Apreendida,0.0,29.0,0.0,0.0,0.0,0.0,29.0,ocorrencias
+2022,2022-09-01,RR,Arma de Fogo Apreendida,0.0,30.0,0.0,0.0,0.0,0.0,30.0,ocorrencias
 2022,2022-09-01,RR,Atendimento pré-hospitalar,0.0,221.0,0.0,0.0,0.0,0.0,221.0,ocorrencias
 2022,2022-09-01,RR,Busca e salvamento,0.0,374.0,0.0,0.0,0.0,0.0,374.0,ocorrencias
 2022,2022-09-01,RR,Combate a incêndios,0.0,47.0,0.0,0.0,0.0,0.0,47.0,ocorrencias
@@ -8097,8 +8097,8 @@
 2022,2022-10-01,RJ,Busca e salvamento,0.0,9447.0,0.0,0.0,0.0,0.0,9447.0,ocorrencias
 2022,2022-10-01,RJ,Combate a incêndios,0.0,2737.0,0.0,0.0,0.0,0.0,2737.0,ocorrencias
 2022,2022-10-01,RJ,Emissão de Alvarás de licença,0.0,2978.0,0.0,0.0,0.0,0.0,2978.0,ocorrencias
-2022,2022-10-01,RJ,Estupro,525.0,0.0,459.0,58.0,8.0,0.0,525.0,vitimas
-2022,2022-10-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2022,2022-10-01,RJ,Estupro,162.0,0.0,148.0,12.0,2.0,0.0,162.0,vitimas
+2022,2022-10-01,RJ,Estupro de vulnerável,363.0,0.0,311.0,46.0,6.0,0.0,363.0,vitimas
 2022,2022-10-01,RJ,Feminicídio,6.0,0.0,6.0,0.0,0.0,0.0,6.0,vitimas
 2022,2022-10-01,RJ,Furto de veículo,0.0,1408.0,0.0,0.0,0.0,0.0,1408.0,ocorrencias
 2022,2022-10-01,RJ,Homicídio doloso,327.0,0.0,19.0,288.0,20.0,0.0,327.0,vitimas
@@ -8118,8 +8118,8 @@
 2022,2022-10-01,RJ,Roubo seguido de morte (latrocínio),11.0,0.0,2.0,8.0,1.0,0.0,11.0,vitimas
 2022,2022-10-01,RJ,Suicídio,86.0,0.0,24.0,62.0,0.0,0.0,86.0,vitimas
 2022,2022-10-01,RJ,Suicídio de Agente do Estado,1.0,0.0,0.0,1.0,0.0,0.0,1.0,vitimas
-2022,2022-10-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2022,2022-10-01,RJ,Tentativa de homicídio,303.0,0.0,48.0,246.0,9.0,0.0,303.0,vitimas
+2022,2022-10-01,RJ,Tentativa de feminicídio,22.0,0.0,22.0,0.0,0.0,0.0,22.0,vitimas
+2022,2022-10-01,RJ,Tentativa de homicídio,279.0,0.0,26.0,244.0,9.0,0.0,279.0,vitimas
 2022,2022-10-01,RJ,Tráfico de drogas,0.0,1461.0,0.0,0.0,0.0,0.0,1461.0,ocorrencias
 2022,2022-10-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,739.0,739.0,kg
 2022,2022-10-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,1.0,1.0,kg
@@ -8128,8 +8128,8 @@
 2022,2022-10-01,RN,Busca e salvamento,0.0,511.0,0.0,0.0,0.0,0.0,511.0,ocorrencias
 2022,2022-10-01,RN,Combate a incêndios,0.0,449.0,0.0,0.0,0.0,0.0,449.0,ocorrencias
 2022,2022-10-01,RN,Emissão de Alvarás de licença,0.0,439.0,0.0,0.0,0.0,0.0,439.0,ocorrencias
-2022,2022-10-01,RN,Estupro,20.0,0.0,19.0,0.0,1.0,0.0,20.0,vitimas
-2022,2022-10-01,RN,Estupro de vulnerável,70.0,0.0,56.0,14.0,0.0,0.0,70.0,vitimas
+2022,2022-10-01,RN,Estupro,19.0,0.0,18.0,0.0,1.0,0.0,19.0,vitimas
+2022,2022-10-01,RN,Estupro de vulnerável,71.0,0.0,57.0,14.0,0.0,0.0,71.0,vitimas
 2022,2022-10-01,RN,Feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
 2022,2022-10-01,RN,Furto de veículo,0.0,158.0,0.0,0.0,0.0,0.0,158.0,ocorrencias
 2022,2022-10-01,RN,Homicídio doloso,82.0,0.0,2.0,80.0,0.0,0.0,82.0,vitimas
@@ -8185,7 +8185,7 @@
 2022,2022-10-01,RO,Tráfico de drogas,0.0,106.0,0.0,0.0,0.0,0.0,106.0,ocorrencias
 2022,2022-10-01,RR,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,9779.0,9779.0,kg
 2022,2022-10-01,RR,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,41620.0,41620.0,kg
-2022,2022-10-01,RR,Arma de Fogo Apreendida,0.0,19.0,0.0,0.0,0.0,0.0,19.0,ocorrencias
+2022,2022-10-01,RR,Arma de Fogo Apreendida,0.0,22.0,0.0,0.0,0.0,0.0,22.0,ocorrencias
 2022,2022-10-01,RR,Atendimento pré-hospitalar,0.0,214.0,0.0,0.0,0.0,0.0,214.0,ocorrencias
 2022,2022-10-01,RR,Busca e salvamento,0.0,226.0,0.0,0.0,0.0,0.0,226.0,ocorrencias
 2022,2022-10-01,RR,Combate a incêndios,0.0,63.0,0.0,0.0,0.0,0.0,63.0,ocorrencias
@@ -8934,8 +8934,8 @@
 2022,2022-11-01,RJ,Busca e salvamento,0.0,8597.0,0.0,0.0,0.0,0.0,8597.0,ocorrencias
 2022,2022-11-01,RJ,Combate a incêndios,0.0,2143.0,0.0,0.0,0.0,0.0,2143.0,ocorrencias
 2022,2022-11-01,RJ,Emissão de Alvarás de licença,0.0,3070.0,0.0,0.0,0.0,0.0,3070.0,ocorrencias
-2022,2022-11-01,RJ,Estupro,448.0,0.0,397.0,49.0,2.0,0.0,448.0,vitimas
-2022,2022-11-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2022,2022-11-01,RJ,Estupro,111.0,0.0,103.0,8.0,0.0,0.0,111.0,vitimas
+2022,2022-11-01,RJ,Estupro de vulnerável,337.0,0.0,294.0,41.0,2.0,0.0,337.0,vitimas
 2022,2022-11-01,RJ,Feminicídio,8.0,0.0,8.0,0.0,0.0,0.0,8.0,vitimas
 2022,2022-11-01,RJ,Furto de veículo,0.0,1465.0,0.0,0.0,0.0,0.0,1465.0,ocorrencias
 2022,2022-11-01,RJ,Homicídio doloso,276.0,0.0,17.0,249.0,10.0,0.0,276.0,vitimas
@@ -8955,8 +8955,8 @@
 2022,2022-11-01,RJ,Roubo seguido de morte (latrocínio),9.0,0.0,1.0,8.0,0.0,0.0,9.0,vitimas
 2022,2022-11-01,RJ,Suicídio,72.0,0.0,16.0,56.0,0.0,0.0,72.0,vitimas
 2022,2022-11-01,RJ,Suicídio de Agente do Estado,1.0,0.0,0.0,1.0,0.0,0.0,1.0,vitimas
-2022,2022-11-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2022,2022-11-01,RJ,Tentativa de homicídio,294.0,0.0,45.0,237.0,12.0,0.0,294.0,vitimas
+2022,2022-11-01,RJ,Tentativa de feminicídio,28.0,0.0,28.0,0.0,0.0,0.0,28.0,vitimas
+2022,2022-11-01,RJ,Tentativa de homicídio,263.0,0.0,17.0,235.0,11.0,0.0,263.0,vitimas
 2022,2022-11-01,RJ,Tráfico de drogas,0.0,1437.0,0.0,0.0,0.0,0.0,1437.0,ocorrencias
 2022,2022-11-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,1162.0,1162.0,kg
 2022,2022-11-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,20.0,20.0,kg
@@ -8965,8 +8965,8 @@
 2022,2022-11-01,RN,Busca e salvamento,0.0,414.0,0.0,0.0,0.0,0.0,414.0,ocorrencias
 2022,2022-11-01,RN,Combate a incêndios,0.0,310.0,0.0,0.0,0.0,0.0,310.0,ocorrencias
 2022,2022-11-01,RN,Emissão de Alvarás de licença,0.0,498.0,0.0,0.0,0.0,0.0,498.0,ocorrencias
-2022,2022-11-01,RN,Estupro,25.0,0.0,23.0,2.0,0.0,0.0,25.0,vitimas
-2022,2022-11-01,RN,Estupro de vulnerável,61.0,0.0,56.0,3.0,2.0,0.0,61.0,vitimas
+2022,2022-11-01,RN,Estupro,22.0,0.0,20.0,2.0,0.0,0.0,22.0,vitimas
+2022,2022-11-01,RN,Estupro de vulnerável,56.0,0.0,51.0,3.0,2.0,0.0,56.0,vitimas
 2022,2022-11-01,RN,Feminicídio,1.0,0.0,1.0,0.0,0.0,0.0,1.0,vitimas
 2022,2022-11-01,RN,Furto de veículo,0.0,186.0,0.0,0.0,0.0,0.0,186.0,ocorrencias
 2022,2022-11-01,RN,Homicídio doloso,88.0,0.0,6.0,82.0,0.0,0.0,88.0,vitimas
@@ -9022,7 +9022,7 @@
 2022,2022-11-01,RO,Tráfico de drogas,0.0,84.0,0.0,0.0,0.0,0.0,84.0,ocorrencias
 2022,2022-11-01,RR,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,2015.0,2015.0,kg
 2022,2022-11-01,RR,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,20416.0,20416.0,kg
-2022,2022-11-01,RR,Arma de Fogo Apreendida,0.0,35.0,0.0,0.0,0.0,0.0,35.0,ocorrencias
+2022,2022-11-01,RR,Arma de Fogo Apreendida,0.0,40.0,0.0,0.0,0.0,0.0,40.0,ocorrencias
 2022,2022-11-01,RR,Atendimento pré-hospitalar,0.0,196.0,0.0,0.0,0.0,0.0,196.0,ocorrencias
 2022,2022-11-01,RR,Busca e salvamento,0.0,202.0,0.0,0.0,0.0,0.0,202.0,ocorrencias
 2022,2022-11-01,RR,Combate a incêndios,0.0,48.0,0.0,0.0,0.0,0.0,48.0,ocorrencias
@@ -9771,8 +9771,8 @@
 2022,2022-12-01,RJ,Busca e salvamento,0.0,9666.0,0.0,0.0,0.0,0.0,9666.0,ocorrencias
 2022,2022-12-01,RJ,Combate a incêndios,0.0,2547.0,0.0,0.0,0.0,0.0,2547.0,ocorrencias
 2022,2022-12-01,RJ,Emissão de Alvarás de licença,0.0,2970.0,0.0,0.0,0.0,0.0,2970.0,ocorrencias
-2022,2022-12-01,RJ,Estupro,430.0,0.0,362.0,60.0,8.0,0.0,430.0,vitimas
-2022,2022-12-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2022,2022-12-01,RJ,Estupro,113.0,0.0,104.0,7.0,2.0,0.0,113.0,vitimas
+2022,2022-12-01,RJ,Estupro de vulnerável,317.0,0.0,258.0,53.0,6.0,0.0,317.0,vitimas
 2022,2022-12-01,RJ,Feminicídio,14.0,0.0,14.0,0.0,0.0,0.0,14.0,vitimas
 2022,2022-12-01,RJ,Furto de veículo,0.0,1413.0,0.0,0.0,0.0,0.0,1413.0,ocorrencias
 2022,2022-12-01,RJ,Homicídio doloso,265.0,0.0,15.0,232.0,18.0,0.0,265.0,vitimas
@@ -9792,8 +9792,8 @@
 2022,2022-12-01,RJ,Roubo seguido de morte (latrocínio),3.0,0.0,0.0,3.0,0.0,0.0,3.0,vitimas
 2022,2022-12-01,RJ,Suicídio,61.0,0.0,15.0,46.0,0.0,0.0,61.0,vitimas
 2022,2022-12-01,RJ,Suicídio de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2022,2022-12-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2022,2022-12-01,RJ,Tentativa de homicídio,280.0,0.0,41.0,228.0,11.0,0.0,280.0,vitimas
+2022,2022-12-01,RJ,Tentativa de feminicídio,27.0,0.0,27.0,0.0,0.0,0.0,27.0,vitimas
+2022,2022-12-01,RJ,Tentativa de homicídio,252.0,0.0,14.0,228.0,10.0,0.0,252.0,vitimas
 2022,2022-12-01,RJ,Tráfico de drogas,0.0,1719.0,0.0,0.0,0.0,0.0,1719.0,ocorrencias
 2022,2022-12-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,2.0,2.0,kg
 2022,2022-12-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,4074.0,4074.0,kg
@@ -9802,8 +9802,8 @@
 2022,2022-12-01,RN,Busca e salvamento,0.0,408.0,0.0,0.0,0.0,0.0,408.0,ocorrencias
 2022,2022-12-01,RN,Combate a incêndios,0.0,276.0,0.0,0.0,0.0,0.0,276.0,ocorrencias
 2022,2022-12-01,RN,Emissão de Alvarás de licença,0.0,498.0,0.0,0.0,0.0,0.0,498.0,ocorrencias
-2022,2022-12-01,RN,Estupro,23.0,0.0,21.0,2.0,0.0,0.0,23.0,vitimas
-2022,2022-12-01,RN,Estupro de vulnerável,77.0,0.0,67.0,10.0,0.0,0.0,77.0,vitimas
+2022,2022-12-01,RN,Estupro,20.0,0.0,19.0,1.0,0.0,0.0,20.0,vitimas
+2022,2022-12-01,RN,Estupro de vulnerável,80.0,0.0,70.0,10.0,0.0,0.0,80.0,vitimas
 2022,2022-12-01,RN,Feminicídio,1.0,0.0,1.0,0.0,0.0,0.0,1.0,vitimas
 2022,2022-12-01,RN,Furto de veículo,0.0,166.0,0.0,0.0,0.0,0.0,166.0,ocorrencias
 2022,2022-12-01,RN,Homicídio doloso,77.0,0.0,3.0,74.0,0.0,0.0,77.0,vitimas

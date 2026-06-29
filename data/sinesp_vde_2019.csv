@@ -564,8 +564,8 @@
 2019,2019-01-01,RJ,Busca e salvamento,0.0,15816.0,0.0,0.0,0.0,0.0,15816.0,ocorrencias
 2019,2019-01-01,RJ,Combate a incêndios,0.0,7410.0,0.0,0.0,0.0,0.0,7410.0,ocorrencias
 2019,2019-01-01,RJ,Emissão de Alvarás de licença,0.0,2435.0,0.0,0.0,0.0,0.0,2435.0,ocorrencias
-2019,2019-01-01,RJ,Estupro,459.0,0.0,398.0,57.0,4.0,0.0,459.0,vitimas
-2019,2019-01-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2019,2019-01-01,RJ,Estupro,133.0,0.0,120.0,12.0,1.0,0.0,133.0,vitimas
+2019,2019-01-01,RJ,Estupro de vulnerável,326.0,0.0,278.0,45.0,3.0,0.0,326.0,vitimas
 2019,2019-01-01,RJ,Feminicídio,5.0,0.0,5.0,0.0,0.0,0.0,5.0,vitimas
 2019,2019-01-01,RJ,Furto de veículo,0.0,1415.0,0.0,0.0,0.0,0.0,1415.0,ocorrencias
 2019,2019-01-01,RJ,Homicídio doloso,420.0,0.0,27.0,362.0,31.0,0.0,420.0,vitimas
@@ -585,8 +585,8 @@
 2019,2019-01-01,RJ,Roubo seguido de morte (latrocínio),15.0,0.0,2.0,13.0,0.0,0.0,15.0,vitimas
 2019,2019-01-01,RJ,Suicídio,61.0,0.0,14.0,47.0,0.0,0.0,61.0,vitimas
 2019,2019-01-01,RJ,Suicídio de Agente do Estado,2.0,0.0,0.0,2.0,0.0,0.0,2.0,vitimas
-2019,2019-01-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2019,2019-01-01,RJ,Tentativa de homicídio,577.0,0.0,72.0,480.0,25.0,0.0,577.0,vitimas
+2019,2019-01-01,RJ,Tentativa de feminicídio,30.0,0.0,30.0,0.0,0.0,0.0,30.0,vitimas
+2019,2019-01-01,RJ,Tentativa de homicídio,539.0,0.0,42.0,472.0,25.0,0.0,539.0,vitimas
 2019,2019-01-01,RJ,Tráfico de drogas,0.0,1874.0,0.0,0.0,0.0,0.0,1874.0,ocorrencias
 2019,2019-01-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,80123.0,80123.0,kg
 2019,2019-01-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,18015.0,18015.0,kg
@@ -1401,9 +1401,9 @@
 2019,2019-02-01,RJ,Busca e salvamento,0.0,15821.0,0.0,0.0,0.0,0.0,15821.0,ocorrencias
 2019,2019-02-01,RJ,Combate a incêndios,0.0,3881.0,0.0,0.0,0.0,0.0,3881.0,ocorrencias
 2019,2019-02-01,RJ,Emissão de Alvarás de licença,0.0,2766.0,0.0,0.0,0.0,0.0,2766.0,ocorrencias
-2019,2019-02-01,RJ,Estupro,440.0,0.0,392.0,44.0,4.0,0.0,440.0,vitimas
-2019,2019-02-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2019,2019-02-01,RJ,Feminicídio,3.0,0.0,2.0,0.0,1.0,0.0,3.0,vitimas
+2019,2019-02-01,RJ,Estupro,157.0,0.0,149.0,7.0,1.0,0.0,157.0,vitimas
+2019,2019-02-01,RJ,Estupro de vulnerável,283.0,0.0,243.0,37.0,3.0,0.0,283.0,vitimas
+2019,2019-02-01,RJ,Feminicídio,3.0,0.0,2.0,1.0,0.0,0.0,3.0,vitimas
 2019,2019-02-01,RJ,Furto de veículo,0.0,1344.0,0.0,0.0,0.0,0.0,1344.0,ocorrencias
 2019,2019-02-01,RJ,Homicídio doloso,367.0,0.0,34.0,313.0,20.0,0.0,367.0,vitimas
 2019,2019-02-01,RJ,Lesão corporal seguida de morte,5.0,0.0,0.0,4.0,1.0,0.0,5.0,vitimas
@@ -1422,8 +1422,8 @@
 2019,2019-02-01,RJ,Roubo seguido de morte (latrocínio),8.0,0.0,1.0,7.0,0.0,0.0,8.0,vitimas
 2019,2019-02-01,RJ,Suicídio,54.0,0.0,12.0,39.0,3.0,0.0,54.0,vitimas
 2019,2019-02-01,RJ,Suicídio de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2019,2019-02-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2019,2019-02-01,RJ,Tentativa de homicídio,450.0,0.0,43.0,390.0,17.0,0.0,450.0,vitimas
+2019,2019-02-01,RJ,Tentativa de feminicídio,21.0,0.0,21.0,0.0,0.0,0.0,21.0,vitimas
+2019,2019-02-01,RJ,Tentativa de homicídio,425.0,0.0,22.0,386.0,17.0,0.0,425.0,vitimas
 2019,2019-02-01,RJ,Tráfico de drogas,0.0,1945.0,0.0,0.0,0.0,0.0,1945.0,ocorrencias
 2019,2019-02-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,333213.0,333213.0,kg
 2019,2019-02-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,665.0,665.0,kg
@@ -2238,9 +2238,9 @@
 2019,2019-03-01,RJ,Busca e salvamento,0.0,14506.0,0.0,0.0,0.0,0.0,14506.0,ocorrencias
 2019,2019-03-01,RJ,Combate a incêndios,0.0,3142.0,0.0,0.0,0.0,0.0,3142.0,ocorrencias
 2019,2019-03-01,RJ,Emissão de Alvarás de licença,0.0,2681.0,0.0,0.0,0.0,0.0,2681.0,ocorrencias
-2019,2019-03-01,RJ,Estupro,469.0,0.0,398.0,53.0,18.0,0.0,469.0,vitimas
-2019,2019-03-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2019,2019-03-01,RJ,Feminicídio,9.0,0.0,8.0,0.0,1.0,0.0,9.0,vitimas
+2019,2019-03-01,RJ,Estupro,145.0,0.0,138.0,7.0,0.0,0.0,145.0,vitimas
+2019,2019-03-01,RJ,Estupro de vulnerável,324.0,0.0,260.0,46.0,18.0,0.0,324.0,vitimas
+2019,2019-03-01,RJ,Feminicídio,9.0,0.0,8.0,1.0,0.0,0.0,9.0,vitimas
 2019,2019-03-01,RJ,Furto de veículo,0.0,1364.0,0.0,0.0,0.0,0.0,1364.0,ocorrencias
 2019,2019-03-01,RJ,Homicídio doloso,373.0,0.0,29.0,324.0,20.0,0.0,373.0,vitimas
 2019,2019-03-01,RJ,Lesão corporal seguida de morte,5.0,0.0,1.0,4.0,0.0,0.0,5.0,vitimas
@@ -2259,8 +2259,8 @@
 2019,2019-03-01,RJ,Roubo seguido de morte (latrocínio),11.0,0.0,3.0,8.0,0.0,0.0,11.0,vitimas
 2019,2019-03-01,RJ,Suicídio,59.0,0.0,17.0,42.0,0.0,0.0,59.0,vitimas
 2019,2019-03-01,RJ,Suicídio de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2019,2019-03-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2019,2019-03-01,RJ,Tentativa de homicídio,590.0,0.0,72.0,490.0,28.0,0.0,590.0,vitimas
+2019,2019-03-01,RJ,Tentativa de feminicídio,39.0,0.0,39.0,0.0,0.0,0.0,39.0,vitimas
+2019,2019-03-01,RJ,Tentativa de homicídio,548.0,0.0,33.0,488.0,27.0,0.0,548.0,vitimas
 2019,2019-03-01,RJ,Tráfico de drogas,0.0,1791.0,0.0,0.0,0.0,0.0,1791.0,ocorrencias
 2019,2019-03-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,52.0,52.0,kg
 2019,2019-03-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,8.0,8.0,kg
@@ -2326,7 +2326,7 @@
 2019,2019-03-01,RO,Tráfico de drogas,0.0,139.0,0.0,0.0,0.0,0.0,139.0,ocorrencias
 2019,2019-03-01,RR,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,12318.0,12318.0,kg
 2019,2019-03-01,RR,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,80.0,80.0,kg
-2019,2019-03-01,RR,Arma de Fogo Apreendida,0.0,8.0,0.0,0.0,0.0,0.0,8.0,ocorrencias
+2019,2019-03-01,RR,Arma de Fogo Apreendida,0.0,9.0,0.0,0.0,0.0,0.0,9.0,ocorrencias
 2019,2019-03-01,RR,Atendimento pré-hospitalar,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
 2019,2019-03-01,RR,Busca e salvamento,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
 2019,2019-03-01,RR,Combate a incêndios,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
@@ -3075,9 +3075,9 @@
 2019,2019-04-01,RJ,Busca e salvamento,0.0,13103.0,0.0,0.0,0.0,0.0,13103.0,ocorrencias
 2019,2019-04-01,RJ,Combate a incêndios,0.0,2972.0,0.0,0.0,0.0,0.0,2972.0,ocorrencias
 2019,2019-04-01,RJ,Emissão de Alvarás de licença,0.0,2810.0,0.0,0.0,0.0,0.0,2810.0,ocorrencias
-2019,2019-04-01,RJ,Estupro,483.0,0.0,423.0,57.0,3.0,0.0,483.0,vitimas
-2019,2019-04-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2019,2019-04-01,RJ,Feminicídio,9.0,0.0,8.0,0.0,1.0,0.0,9.0,vitimas
+2019,2019-04-01,RJ,Estupro,162.0,0.0,151.0,10.0,1.0,0.0,162.0,vitimas
+2019,2019-04-01,RJ,Estupro de vulnerável,321.0,0.0,272.0,47.0,2.0,0.0,321.0,vitimas
+2019,2019-04-01,RJ,Feminicídio,9.0,0.0,8.0,1.0,0.0,0.0,9.0,vitimas
 2019,2019-04-01,RJ,Furto de veículo,0.0,1244.0,0.0,0.0,0.0,0.0,1244.0,ocorrencias
 2019,2019-04-01,RJ,Homicídio doloso,423.0,0.0,52.0,334.0,37.0,0.0,423.0,vitimas
 2019,2019-04-01,RJ,Lesão corporal seguida de morte,1.0,0.0,1.0,0.0,0.0,0.0,1.0,vitimas
@@ -3096,8 +3096,8 @@
 2019,2019-04-01,RJ,Roubo seguido de morte (latrocínio),11.0,0.0,0.0,11.0,0.0,0.0,11.0,vitimas
 2019,2019-04-01,RJ,Suicídio,60.0,0.0,18.0,42.0,0.0,0.0,60.0,vitimas
 2019,2019-04-01,RJ,Suicídio de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2019,2019-04-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2019,2019-04-01,RJ,Tentativa de homicídio,466.0,0.0,33.0,409.0,24.0,0.0,466.0,vitimas
+2019,2019-04-01,RJ,Tentativa de feminicídio,13.0,0.0,13.0,0.0,0.0,0.0,13.0,vitimas
+2019,2019-04-01,RJ,Tentativa de homicídio,452.0,0.0,20.0,409.0,23.0,0.0,452.0,vitimas
 2019,2019-04-01,RJ,Tráfico de drogas,0.0,1750.0,0.0,0.0,0.0,0.0,1750.0,ocorrencias
 2019,2019-04-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,0.0,0.0,kg
 2019,2019-04-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,0.0,0.0,kg
@@ -3163,7 +3163,7 @@
 2019,2019-04-01,RO,Tráfico de drogas,0.0,135.0,0.0,0.0,0.0,0.0,135.0,ocorrencias
 2019,2019-04-01,RR,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,4388.0,4388.0,kg
 2019,2019-04-01,RR,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,8897.0,8897.0,kg
-2019,2019-04-01,RR,Arma de Fogo Apreendida,0.0,13.0,0.0,0.0,0.0,0.0,13.0,ocorrencias
+2019,2019-04-01,RR,Arma de Fogo Apreendida,0.0,16.0,0.0,0.0,0.0,0.0,16.0,ocorrencias
 2019,2019-04-01,RR,Atendimento pré-hospitalar,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
 2019,2019-04-01,RR,Busca e salvamento,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
 2019,2019-04-01,RR,Combate a incêndios,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
@@ -3912,8 +3912,8 @@
 2019,2019-05-01,RJ,Busca e salvamento,0.0,11758.0,0.0,0.0,0.0,0.0,11758.0,ocorrencias
 2019,2019-05-01,RJ,Combate a incêndios,0.0,2523.0,0.0,0.0,0.0,0.0,2523.0,ocorrencias
 2019,2019-05-01,RJ,Emissão de Alvarás de licença,0.0,3113.0,0.0,0.0,0.0,0.0,3113.0,ocorrencias
-2019,2019-05-01,RJ,Estupro,465.0,0.0,395.0,65.0,5.0,0.0,465.0,vitimas
-2019,2019-05-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2019,2019-05-01,RJ,Estupro,122.0,0.0,113.0,8.0,1.0,0.0,122.0,vitimas
+2019,2019-05-01,RJ,Estupro de vulnerável,343.0,0.0,282.0,57.0,4.0,0.0,343.0,vitimas
 2019,2019-05-01,RJ,Feminicídio,7.0,0.0,7.0,0.0,0.0,0.0,7.0,vitimas
 2019,2019-05-01,RJ,Furto de veículo,0.0,1480.0,0.0,0.0,0.0,0.0,1480.0,ocorrencias
 2019,2019-05-01,RJ,Homicídio doloso,370.0,0.0,25.0,322.0,23.0,0.0,370.0,vitimas
@@ -3933,8 +3933,8 @@
 2019,2019-05-01,RJ,Roubo seguido de morte (latrocínio),15.0,0.0,1.0,14.0,0.0,0.0,15.0,vitimas
 2019,2019-05-01,RJ,Suicídio,65.0,0.0,22.0,42.0,1.0,0.0,65.0,vitimas
 2019,2019-05-01,RJ,Suicídio de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2019,2019-05-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2019,2019-05-01,RJ,Tentativa de homicídio,478.0,0.0,43.0,413.0,22.0,0.0,478.0,vitimas
+2019,2019-05-01,RJ,Tentativa de feminicídio,19.0,0.0,19.0,0.0,0.0,0.0,19.0,vitimas
+2019,2019-05-01,RJ,Tentativa de homicídio,458.0,0.0,24.0,412.0,22.0,0.0,458.0,vitimas
 2019,2019-05-01,RJ,Tráfico de drogas,0.0,1905.0,0.0,0.0,0.0,0.0,1905.0,ocorrencias
 2019,2019-05-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,103875.0,103875.0,kg
 2019,2019-05-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,0.0,0.0,kg
@@ -4000,7 +4000,7 @@
 2019,2019-05-01,RO,Tráfico de drogas,0.0,130.0,0.0,0.0,0.0,0.0,130.0,ocorrencias
 2019,2019-05-01,RR,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,966.0,966.0,kg
 2019,2019-05-01,RR,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,6607.0,6607.0,kg
-2019,2019-05-01,RR,Arma de Fogo Apreendida,0.0,18.0,0.0,0.0,0.0,0.0,18.0,ocorrencias
+2019,2019-05-01,RR,Arma de Fogo Apreendida,0.0,19.0,0.0,0.0,0.0,0.0,19.0,ocorrencias
 2019,2019-05-01,RR,Atendimento pré-hospitalar,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
 2019,2019-05-01,RR,Busca e salvamento,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
 2019,2019-05-01,RR,Combate a incêndios,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
@@ -4749,8 +4749,8 @@
 2019,2019-06-01,RJ,Busca e salvamento,0.0,11118.0,0.0,0.0,0.0,0.0,11118.0,ocorrencias
 2019,2019-06-01,RJ,Combate a incêndios,0.0,3207.0,0.0,0.0,0.0,0.0,3207.0,ocorrencias
 2019,2019-06-01,RJ,Emissão de Alvarás de licença,0.0,2892.0,0.0,0.0,0.0,0.0,2892.0,ocorrencias
-2019,2019-06-01,RJ,Estupro,414.0,0.0,354.0,55.0,5.0,0.0,414.0,vitimas
-2019,2019-06-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2019,2019-06-01,RJ,Estupro,145.0,0.0,138.0,7.0,0.0,0.0,145.0,vitimas
+2019,2019-06-01,RJ,Estupro de vulnerável,269.0,0.0,216.0,48.0,5.0,0.0,269.0,vitimas
 2019,2019-06-01,RJ,Feminicídio,5.0,0.0,5.0,0.0,0.0,0.0,5.0,vitimas
 2019,2019-06-01,RJ,Furto de veículo,0.0,1251.0,0.0,0.0,0.0,0.0,1251.0,ocorrencias
 2019,2019-06-01,RJ,Homicídio doloso,367.0,0.0,26.0,319.0,22.0,0.0,367.0,vitimas
@@ -4770,8 +4770,8 @@
 2019,2019-06-01,RJ,Roubo seguido de morte (latrocínio),8.0,0.0,2.0,6.0,0.0,0.0,8.0,vitimas
 2019,2019-06-01,RJ,Suicídio,46.0,0.0,11.0,35.0,0.0,0.0,46.0,vitimas
 2019,2019-06-01,RJ,Suicídio de Agente do Estado,1.0,0.0,0.0,1.0,0.0,0.0,1.0,vitimas
-2019,2019-06-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2019,2019-06-01,RJ,Tentativa de homicídio,436.0,0.0,52.0,366.0,18.0,0.0,436.0,vitimas
+2019,2019-06-01,RJ,Tentativa de feminicídio,22.0,0.0,22.0,0.0,0.0,0.0,22.0,vitimas
+2019,2019-06-01,RJ,Tentativa de homicídio,412.0,0.0,30.0,364.0,18.0,0.0,412.0,vitimas
 2019,2019-06-01,RJ,Tráfico de drogas,0.0,1736.0,0.0,0.0,0.0,0.0,1736.0,ocorrencias
 2019,2019-06-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,6.0,6.0,kg
 2019,2019-06-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,0.0,0.0,kg
@@ -4837,7 +4837,7 @@
 2019,2019-06-01,RO,Tráfico de drogas,0.0,125.0,0.0,0.0,0.0,0.0,125.0,ocorrencias
 2019,2019-06-01,RR,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,31941.0,31941.0,kg
 2019,2019-06-01,RR,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,5298.0,5298.0,kg
-2019,2019-06-01,RR,Arma de Fogo Apreendida,0.0,7.0,0.0,0.0,0.0,0.0,7.0,ocorrencias
+2019,2019-06-01,RR,Arma de Fogo Apreendida,0.0,9.0,0.0,0.0,0.0,0.0,9.0,ocorrencias
 2019,2019-06-01,RR,Atendimento pré-hospitalar,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
 2019,2019-06-01,RR,Busca e salvamento,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
 2019,2019-06-01,RR,Combate a incêndios,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
@@ -5586,8 +5586,8 @@
 2019,2019-07-01,RJ,Busca e salvamento,0.0,10666.0,0.0,0.0,0.0,0.0,10666.0,ocorrencias
 2019,2019-07-01,RJ,Combate a incêndios,0.0,4902.0,0.0,0.0,0.0,0.0,4902.0,ocorrencias
 2019,2019-07-01,RJ,Emissão de Alvarás de licença,0.0,3597.0,0.0,0.0,0.0,0.0,3597.0,ocorrencias
-2019,2019-07-01,RJ,Estupro,402.0,0.0,336.0,65.0,1.0,0.0,402.0,vitimas
-2019,2019-07-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2019,2019-07-01,RJ,Estupro,99.0,0.0,89.0,9.0,1.0,0.0,99.0,vitimas
+2019,2019-07-01,RJ,Estupro de vulnerável,303.0,0.0,247.0,56.0,0.0,0.0,303.0,vitimas
 2019,2019-07-01,RJ,Feminicídio,5.0,0.0,5.0,0.0,0.0,0.0,5.0,vitimas
 2019,2019-07-01,RJ,Furto de veículo,0.0,1353.0,0.0,0.0,0.0,0.0,1353.0,ocorrencias
 2019,2019-07-01,RJ,Homicídio doloso,353.0,0.0,22.0,287.0,44.0,0.0,353.0,vitimas
@@ -5607,8 +5607,8 @@
 2019,2019-07-01,RJ,Roubo seguido de morte (latrocínio),13.0,0.0,4.0,9.0,0.0,0.0,13.0,vitimas
 2019,2019-07-01,RJ,Suicídio,59.0,0.0,12.0,47.0,0.0,0.0,59.0,vitimas
 2019,2019-07-01,RJ,Suicídio de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2019,2019-07-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2019,2019-07-01,RJ,Tentativa de homicídio,396.0,0.0,50.0,327.0,19.0,0.0,396.0,vitimas
+2019,2019-07-01,RJ,Tentativa de feminicídio,19.0,0.0,19.0,0.0,0.0,0.0,19.0,vitimas
+2019,2019-07-01,RJ,Tentativa de homicídio,375.0,0.0,31.0,326.0,18.0,0.0,375.0,vitimas
 2019,2019-07-01,RJ,Tráfico de drogas,0.0,1706.0,0.0,0.0,0.0,0.0,1706.0,ocorrencias
 2019,2019-07-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,2371.0,2371.0,kg
 2019,2019-07-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,342938.0,342938.0,kg
@@ -5674,7 +5674,7 @@
 2019,2019-07-01,RO,Tráfico de drogas,0.0,127.0,0.0,0.0,0.0,0.0,127.0,ocorrencias
 2019,2019-07-01,RR,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,47071.0,47071.0,kg
 2019,2019-07-01,RR,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,11538.0,11538.0,kg
-2019,2019-07-01,RR,Arma de Fogo Apreendida,0.0,8.0,0.0,0.0,0.0,0.0,8.0,ocorrencias
+2019,2019-07-01,RR,Arma de Fogo Apreendida,0.0,10.0,0.0,0.0,0.0,0.0,10.0,ocorrencias
 2019,2019-07-01,RR,Atendimento pré-hospitalar,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
 2019,2019-07-01,RR,Busca e salvamento,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
 2019,2019-07-01,RR,Combate a incêndios,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
@@ -6423,8 +6423,8 @@
 2019,2019-08-01,RJ,Busca e salvamento,0.0,10872.0,0.0,0.0,0.0,0.0,10872.0,ocorrencias
 2019,2019-08-01,RJ,Combate a incêndios,0.0,4194.0,0.0,0.0,0.0,0.0,4194.0,ocorrencias
 2019,2019-08-01,RJ,Emissão de Alvarás de licença,0.0,3075.0,0.0,0.0,0.0,0.0,3075.0,ocorrencias
-2019,2019-08-01,RJ,Estupro,460.0,0.0,387.0,70.0,3.0,0.0,460.0,vitimas
-2019,2019-08-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2019,2019-08-01,RJ,Estupro,124.0,0.0,113.0,10.0,1.0,0.0,124.0,vitimas
+2019,2019-08-01,RJ,Estupro de vulnerável,336.0,0.0,274.0,60.0,2.0,0.0,336.0,vitimas
 2019,2019-08-01,RJ,Feminicídio,6.0,0.0,6.0,0.0,0.0,0.0,6.0,vitimas
 2019,2019-08-01,RJ,Furto de veículo,0.0,1361.0,0.0,0.0,0.0,0.0,1361.0,ocorrencias
 2019,2019-08-01,RJ,Homicídio doloso,358.0,0.0,22.0,301.0,35.0,0.0,358.0,vitimas
@@ -6444,8 +6444,8 @@
 2019,2019-08-01,RJ,Roubo seguido de morte (latrocínio),6.0,0.0,0.0,6.0,0.0,0.0,6.0,vitimas
 2019,2019-08-01,RJ,Suicídio,58.0,0.0,20.0,38.0,0.0,0.0,58.0,vitimas
 2019,2019-08-01,RJ,Suicídio de Agente do Estado,1.0,0.0,0.0,1.0,0.0,0.0,1.0,vitimas
-2019,2019-08-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2019,2019-08-01,RJ,Tentativa de homicídio,455.0,0.0,64.0,363.0,28.0,0.0,455.0,vitimas
+2019,2019-08-01,RJ,Tentativa de feminicídio,30.0,0.0,30.0,0.0,0.0,0.0,30.0,vitimas
+2019,2019-08-01,RJ,Tentativa de homicídio,421.0,0.0,34.0,359.0,28.0,0.0,421.0,vitimas
 2019,2019-08-01,RJ,Tráfico de drogas,0.0,1724.0,0.0,0.0,0.0,0.0,1724.0,ocorrencias
 2019,2019-08-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,508.0,508.0,kg
 2019,2019-08-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,39.0,39.0,kg
@@ -6511,7 +6511,7 @@
 2019,2019-08-01,RO,Tráfico de drogas,0.0,105.0,0.0,0.0,0.0,0.0,105.0,ocorrencias
 2019,2019-08-01,RR,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,7119.0,7119.0,kg
 2019,2019-08-01,RR,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,112.0,112.0,kg
-2019,2019-08-01,RR,Arma de Fogo Apreendida,0.0,17.0,0.0,0.0,0.0,0.0,17.0,ocorrencias
+2019,2019-08-01,RR,Arma de Fogo Apreendida,0.0,18.0,0.0,0.0,0.0,0.0,18.0,ocorrencias
 2019,2019-08-01,RR,Atendimento pré-hospitalar,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
 2019,2019-08-01,RR,Busca e salvamento,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
 2019,2019-08-01,RR,Combate a incêndios,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
@@ -7260,8 +7260,8 @@
 2019,2019-09-01,RJ,Busca e salvamento,0.0,11087.0,0.0,0.0,0.0,0.0,11087.0,ocorrencias
 2019,2019-09-01,RJ,Combate a incêndios,0.0,3576.0,0.0,0.0,0.0,0.0,3576.0,ocorrencias
 2019,2019-09-01,RJ,Emissão de Alvarás de licença,0.0,3332.0,0.0,0.0,0.0,0.0,3332.0,ocorrencias
-2019,2019-09-01,RJ,Estupro,482.0,0.0,413.0,62.0,7.0,0.0,482.0,vitimas
-2019,2019-09-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2019,2019-09-01,RJ,Estupro,141.0,0.0,129.0,10.0,2.0,0.0,141.0,vitimas
+2019,2019-09-01,RJ,Estupro de vulnerável,341.0,0.0,284.0,52.0,5.0,0.0,341.0,vitimas
 2019,2019-09-01,RJ,Feminicídio,7.0,0.0,7.0,0.0,0.0,0.0,7.0,vitimas
 2019,2019-09-01,RJ,Furto de veículo,0.0,1194.0,0.0,0.0,0.0,0.0,1194.0,ocorrencias
 2019,2019-09-01,RJ,Homicídio doloso,343.0,0.0,21.0,292.0,30.0,0.0,343.0,vitimas
@@ -7281,8 +7281,8 @@
 2019,2019-09-01,RJ,Roubo seguido de morte (latrocínio),7.0,0.0,0.0,7.0,0.0,0.0,7.0,vitimas
 2019,2019-09-01,RJ,Suicídio,77.0,0.0,25.0,52.0,0.0,0.0,77.0,vitimas
 2019,2019-09-01,RJ,Suicídio de Agente do Estado,2.0,0.0,1.0,1.0,0.0,0.0,2.0,vitimas
-2019,2019-09-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2019,2019-09-01,RJ,Tentativa de homicídio,344.0,0.0,54.0,271.0,19.0,0.0,344.0,vitimas
+2019,2019-09-01,RJ,Tentativa de feminicídio,21.0,0.0,21.0,0.0,0.0,0.0,21.0,vitimas
+2019,2019-09-01,RJ,Tentativa de homicídio,322.0,0.0,33.0,270.0,19.0,0.0,322.0,vitimas
 2019,2019-09-01,RJ,Tráfico de drogas,0.0,1639.0,0.0,0.0,0.0,0.0,1639.0,ocorrencias
 2019,2019-09-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,842.0,842.0,kg
 2019,2019-09-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,117.0,117.0,kg
@@ -7348,7 +7348,7 @@
 2019,2019-09-01,RO,Tráfico de drogas,0.0,144.0,0.0,0.0,0.0,0.0,144.0,ocorrencias
 2019,2019-09-01,RR,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,23471.0,23471.0,kg
 2019,2019-09-01,RR,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,1022.0,1022.0,kg
-2019,2019-09-01,RR,Arma de Fogo Apreendida,0.0,7.0,0.0,0.0,0.0,0.0,7.0,ocorrencias
+2019,2019-09-01,RR,Arma de Fogo Apreendida,0.0,8.0,0.0,0.0,0.0,0.0,8.0,ocorrencias
 2019,2019-09-01,RR,Atendimento pré-hospitalar,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
 2019,2019-09-01,RR,Busca e salvamento,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
 2019,2019-09-01,RR,Combate a incêndios,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
@@ -7373,7 +7373,7 @@
 2019,2019-09-01,RR,Roubo de veículo,0.0,24.0,0.0,0.0,0.0,0.0,24.0,ocorrencias
 2019,2019-09-01,RR,Roubo seguido de morte (latrocínio),1.0,0.0,0.0,1.0,0.0,0.0,1.0,vitimas
 2019,2019-09-01,RR,Suicídio,4.0,0.0,1.0,3.0,0.0,0.0,4.0,vitimas
-2019,2019-09-01,RR,Suicídio de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2019,2019-09-01,RR,Suicídio de Agente do Estado,1.0,0.0,0.0,1.0,0.0,0.0,1.0,vitimas
 2019,2019-09-01,RR,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
 2019,2019-09-01,RR,Tentativa de homicídio,4.0,0.0,0.0,4.0,0.0,0.0,4.0,vitimas
 2019,2019-09-01,RR,Tráfico de drogas,0.0,38.0,0.0,0.0,0.0,0.0,38.0,ocorrencias
@@ -8097,8 +8097,8 @@
 2019,2019-10-01,RJ,Busca e salvamento,0.0,11147.0,0.0,0.0,0.0,0.0,11147.0,ocorrencias
 2019,2019-10-01,RJ,Combate a incêndios,0.0,3019.0,0.0,0.0,0.0,0.0,3019.0,ocorrencias
 2019,2019-10-01,RJ,Emissão de Alvarás de licença,0.0,3551.0,0.0,0.0,0.0,0.0,3551.0,ocorrencias
-2019,2019-10-01,RJ,Estupro,532.0,0.0,453.0,72.0,7.0,0.0,532.0,vitimas
-2019,2019-10-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2019,2019-10-01,RJ,Estupro,174.0,0.0,168.0,5.0,1.0,0.0,174.0,vitimas
+2019,2019-10-01,RJ,Estupro de vulnerável,358.0,0.0,285.0,67.0,6.0,0.0,358.0,vitimas
 2019,2019-10-01,RJ,Feminicídio,9.0,0.0,9.0,0.0,0.0,0.0,9.0,vitimas
 2019,2019-10-01,RJ,Furto de veículo,0.0,1198.0,0.0,0.0,0.0,0.0,1198.0,ocorrencias
 2019,2019-10-01,RJ,Homicídio doloso,342.0,0.0,24.0,296.0,22.0,0.0,342.0,vitimas
@@ -8118,8 +8118,8 @@
 2019,2019-10-01,RJ,Roubo seguido de morte (latrocínio),4.0,0.0,0.0,4.0,0.0,0.0,4.0,vitimas
 2019,2019-10-01,RJ,Suicídio,66.0,0.0,13.0,53.0,0.0,0.0,66.0,vitimas
 2019,2019-10-01,RJ,Suicídio de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2019,2019-10-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2019,2019-10-01,RJ,Tentativa de homicídio,427.0,0.0,66.0,346.0,15.0,0.0,427.0,vitimas
+2019,2019-10-01,RJ,Tentativa de feminicídio,27.0,0.0,27.0,0.0,0.0,0.0,27.0,vitimas
+2019,2019-10-01,RJ,Tentativa de homicídio,399.0,0.0,39.0,345.0,15.0,0.0,399.0,vitimas
 2019,2019-10-01,RJ,Tráfico de drogas,0.0,1773.0,0.0,0.0,0.0,0.0,1773.0,ocorrencias
 2019,2019-10-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,7.0,7.0,kg
 2019,2019-10-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,47.0,47.0,kg
@@ -8934,8 +8934,8 @@
 2019,2019-11-01,RJ,Busca e salvamento,0.0,10362.0,0.0,0.0,0.0,0.0,10362.0,ocorrencias
 2019,2019-11-01,RJ,Combate a incêndios,0.0,2541.0,0.0,0.0,0.0,0.0,2541.0,ocorrencias
 2019,2019-11-01,RJ,Emissão de Alvarás de licença,0.0,2919.0,0.0,0.0,0.0,0.0,2919.0,ocorrencias
-2019,2019-11-01,RJ,Estupro,423.0,0.0,373.0,44.0,6.0,0.0,423.0,vitimas
-2019,2019-11-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2019,2019-11-01,RJ,Estupro,116.0,0.0,105.0,9.0,2.0,0.0,116.0,vitimas
+2019,2019-11-01,RJ,Estupro de vulnerável,307.0,0.0,268.0,35.0,4.0,0.0,307.0,vitimas
 2019,2019-11-01,RJ,Feminicídio,13.0,0.0,13.0,0.0,0.0,0.0,13.0,vitimas
 2019,2019-11-01,RJ,Furto de veículo,0.0,1161.0,0.0,0.0,0.0,0.0,1161.0,ocorrencias
 2019,2019-11-01,RJ,Homicídio doloso,330.0,0.0,20.0,282.0,28.0,0.0,330.0,vitimas
@@ -8955,8 +8955,8 @@
 2019,2019-11-01,RJ,Roubo seguido de morte (latrocínio),14.0,0.0,2.0,12.0,0.0,0.0,14.0,vitimas
 2019,2019-11-01,RJ,Suicídio,70.0,0.0,12.0,56.0,2.0,0.0,70.0,vitimas
 2019,2019-11-01,RJ,Suicídio de Agente do Estado,1.0,0.0,0.0,1.0,0.0,0.0,1.0,vitimas
-2019,2019-11-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2019,2019-11-01,RJ,Tentativa de homicídio,380.0,0.0,55.0,311.0,14.0,0.0,380.0,vitimas
+2019,2019-11-01,RJ,Tentativa de feminicídio,25.0,0.0,25.0,0.0,0.0,0.0,25.0,vitimas
+2019,2019-11-01,RJ,Tentativa de homicídio,351.0,0.0,30.0,307.0,14.0,0.0,351.0,vitimas
 2019,2019-11-01,RJ,Tráfico de drogas,0.0,1618.0,0.0,0.0,0.0,0.0,1618.0,ocorrencias
 2019,2019-11-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,68.0,68.0,kg
 2019,2019-11-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,105.0,105.0,kg
@@ -9022,7 +9022,7 @@
 2019,2019-11-01,RO,Tráfico de drogas,0.0,123.0,0.0,0.0,0.0,0.0,123.0,ocorrencias
 2019,2019-11-01,RR,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,704.0,704.0,kg
 2019,2019-11-01,RR,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,16350.0,16350.0,kg
-2019,2019-11-01,RR,Arma de Fogo Apreendida,0.0,9.0,0.0,0.0,0.0,0.0,9.0,ocorrencias
+2019,2019-11-01,RR,Arma de Fogo Apreendida,0.0,13.0,0.0,0.0,0.0,0.0,13.0,ocorrencias
 2019,2019-11-01,RR,Atendimento pré-hospitalar,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
 2019,2019-11-01,RR,Busca e salvamento,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
 2019,2019-11-01,RR,Combate a incêndios,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
@@ -9771,8 +9771,8 @@
 2019,2019-12-01,RJ,Busca e salvamento,0.0,11282.0,0.0,0.0,0.0,0.0,11282.0,ocorrencias
 2019,2019-12-01,RJ,Combate a incêndios,0.0,2737.0,0.0,0.0,0.0,0.0,2737.0,ocorrencias
 2019,2019-12-01,RJ,Emissão de Alvarás de licença,0.0,2729.0,0.0,0.0,0.0,0.0,2729.0,ocorrencias
-2019,2019-12-01,RJ,Estupro,421.0,0.0,365.0,52.0,4.0,0.0,421.0,vitimas
-2019,2019-12-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2019,2019-12-01,RJ,Estupro,110.0,0.0,102.0,7.0,1.0,0.0,110.0,vitimas
+2019,2019-12-01,RJ,Estupro de vulnerável,311.0,0.0,263.0,45.0,3.0,0.0,311.0,vitimas
 2019,2019-12-01,RJ,Feminicídio,7.0,0.0,7.0,0.0,0.0,0.0,7.0,vitimas
 2019,2019-12-01,RJ,Furto de veículo,0.0,1230.0,0.0,0.0,0.0,0.0,1230.0,ocorrencias
 2019,2019-12-01,RJ,Homicídio doloso,357.0,0.0,15.0,318.0,24.0,0.0,357.0,vitimas
@@ -9792,8 +9792,8 @@
 2019,2019-12-01,RJ,Roubo seguido de morte (latrocínio),5.0,0.0,2.0,3.0,0.0,0.0,5.0,vitimas
 2019,2019-12-01,RJ,Suicídio,72.0,0.0,18.0,53.0,1.0,0.0,72.0,vitimas
 2019,2019-12-01,RJ,Suicídio de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2019,2019-12-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2019,2019-12-01,RJ,Tentativa de homicídio,410.0,0.0,69.0,325.0,16.0,0.0,410.0,vitimas
+2019,2019-12-01,RJ,Tentativa de feminicídio,33.0,0.0,33.0,0.0,0.0,0.0,33.0,vitimas
+2019,2019-12-01,RJ,Tentativa de homicídio,373.0,0.0,36.0,321.0,16.0,0.0,373.0,vitimas
 2019,2019-12-01,RJ,Tráfico de drogas,0.0,1635.0,0.0,0.0,0.0,0.0,1635.0,ocorrencias
 2019,2019-12-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,129558.0,129558.0,kg
 2019,2019-12-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,139.0,139.0,kg
@@ -9859,7 +9859,7 @@
 2019,2019-12-01,RO,Tráfico de drogas,0.0,108.0,0.0,0.0,0.0,0.0,108.0,ocorrencias
 2019,2019-12-01,RR,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,2794.0,2794.0,kg
 2019,2019-12-01,RR,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,1115.0,1115.0,kg
-2019,2019-12-01,RR,Arma de Fogo Apreendida,0.0,23.0,0.0,0.0,0.0,0.0,23.0,ocorrencias
+2019,2019-12-01,RR,Arma de Fogo Apreendida,0.0,26.0,0.0,0.0,0.0,0.0,26.0,ocorrencias
 2019,2019-12-01,RR,Atendimento pré-hospitalar,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
 2019,2019-12-01,RR,Busca e salvamento,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
 2019,2019-12-01,RR,Combate a incêndios,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias

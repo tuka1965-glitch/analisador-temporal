@@ -564,8 +564,8 @@
 2021,2021-01-01,RJ,Busca e salvamento,0.0,8830.0,0.0,0.0,0.0,0.0,8830.0,ocorrencias
 2021,2021-01-01,RJ,Combate a incêndios,0.0,4404.0,0.0,0.0,0.0,0.0,4404.0,ocorrencias
 2021,2021-01-01,RJ,Emissão de Alvarás de licença,0.0,1956.0,0.0,0.0,0.0,0.0,1956.0,ocorrencias
-2021,2021-01-01,RJ,Estupro,469.0,0.0,421.0,47.0,1.0,0.0,469.0,vitimas
-2021,2021-01-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2021,2021-01-01,RJ,Estupro,142.0,0.0,133.0,9.0,0.0,0.0,142.0,vitimas
+2021,2021-01-01,RJ,Estupro de vulnerável,327.0,0.0,288.0,38.0,1.0,0.0,327.0,vitimas
 2021,2021-01-01,RJ,Feminicídio,9.0,0.0,9.0,0.0,0.0,0.0,9.0,vitimas
 2021,2021-01-01,RJ,Furto de veículo,0.0,1183.0,0.0,0.0,0.0,0.0,1183.0,ocorrencias
 2021,2021-01-01,RJ,Homicídio doloso,394.0,0.0,24.0,328.0,42.0,0.0,394.0,vitimas
@@ -585,8 +585,8 @@
 2021,2021-01-01,RJ,Roubo seguido de morte (latrocínio),12.0,0.0,2.0,10.0,0.0,0.0,12.0,vitimas
 2021,2021-01-01,RJ,Suicídio,84.0,0.0,23.0,60.0,1.0,0.0,84.0,vitimas
 2021,2021-01-01,RJ,Suicídio de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2021,2021-01-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2021,2021-01-01,RJ,Tentativa de homicídio,477.0,0.0,43.0,411.0,23.0,0.0,477.0,vitimas
+2021,2021-01-01,RJ,Tentativa de feminicídio,21.0,0.0,21.0,0.0,0.0,0.0,21.0,vitimas
+2021,2021-01-01,RJ,Tentativa de homicídio,453.0,0.0,22.0,408.0,23.0,0.0,453.0,vitimas
 2021,2021-01-01,RJ,Tráfico de drogas,0.0,1677.0,0.0,0.0,0.0,0.0,1677.0,ocorrencias
 2021,2021-01-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,1.0,1.0,kg
 2021,2021-01-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,801.0,801.0,kg
@@ -596,7 +596,7 @@
 2021,2021-01-01,RN,Combate a incêndios,0.0,342.0,0.0,0.0,0.0,0.0,342.0,ocorrencias
 2021,2021-01-01,RN,Emissão de Alvarás de licença,0.0,416.0,0.0,0.0,0.0,0.0,416.0,ocorrencias
 2021,2021-01-01,RN,Estupro,15.0,0.0,15.0,0.0,0.0,0.0,15.0,vitimas
-2021,2021-01-01,RN,Estupro de vulnerável,53.0,0.0,46.0,7.0,0.0,0.0,53.0,vitimas
+2021,2021-01-01,RN,Estupro de vulnerável,59.0,0.0,51.0,8.0,0.0,0.0,59.0,vitimas
 2021,2021-01-01,RN,Feminicídio,2.0,0.0,2.0,0.0,0.0,0.0,2.0,vitimas
 2021,2021-01-01,RN,Furto de veículo,0.0,110.0,0.0,0.0,0.0,0.0,110.0,ocorrencias
 2021,2021-01-01,RN,Homicídio doloso,97.0,0.0,3.0,94.0,0.0,0.0,97.0,vitimas
@@ -652,7 +652,7 @@
 2021,2021-01-01,RO,Tráfico de drogas,0.0,152.0,0.0,0.0,0.0,0.0,152.0,ocorrencias
 2021,2021-01-01,RR,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,1302.0,1302.0,kg
 2021,2021-01-01,RR,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,4401.0,4401.0,kg
-2021,2021-01-01,RR,Arma de Fogo Apreendida,0.0,19.0,0.0,0.0,0.0,0.0,19.0,ocorrencias
+2021,2021-01-01,RR,Arma de Fogo Apreendida,0.0,21.0,0.0,0.0,0.0,0.0,21.0,ocorrencias
 2021,2021-01-01,RR,Atendimento pré-hospitalar,0.0,159.0,0.0,0.0,0.0,0.0,159.0,ocorrencias
 2021,2021-01-01,RR,Busca e salvamento,0.0,164.0,0.0,0.0,0.0,0.0,164.0,ocorrencias
 2021,2021-01-01,RR,Combate a incêndios,0.0,43.0,0.0,0.0,0.0,0.0,43.0,ocorrencias
@@ -697,7 +697,7 @@
 2021,2021-01-01,RS,Mandado de prisão cumprido,0.0,402.0,0.0,0.0,0.0,0.0,402.0,ocorrencias
 2021,2021-01-01,RS,Morte de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
 2021,2021-01-01,RS,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),110.0,0.0,25.0,85.0,0.0,0.0,110.0,vitimas
-2021,2021-01-01,RS,Morte por intervenção de Agente do Estado,10.0,0.0,0.0,10.0,0.0,0.0,10.0,vitimas
+2021,2021-01-01,RS,Morte por intervenção de Agente do Estado,11.0,0.0,0.0,11.0,0.0,0.0,11.0,vitimas
 2021,2021-01-01,RS,Mortes a esclarecer (sem indício de crime),2.0,0.0,0.0,2.0,0.0,0.0,2.0,vitimas
 2021,2021-01-01,RS,Mortes no trânsito,39.0,0.0,7.0,32.0,0.0,0.0,39.0,vitimas
 2021,2021-01-01,RS,Pessoa Desaparecida,588.0,0.0,246.0,342.0,0.0,0.0,588.0,vitimas
@@ -1401,8 +1401,8 @@
 2021,2021-02-01,RJ,Busca e salvamento,0.0,7707.0,0.0,0.0,0.0,0.0,7707.0,ocorrencias
 2021,2021-02-01,RJ,Combate a incêndios,0.0,2955.0,0.0,0.0,0.0,0.0,2955.0,ocorrencias
 2021,2021-02-01,RJ,Emissão de Alvarás de licença,0.0,2095.0,0.0,0.0,0.0,0.0,2095.0,ocorrencias
-2021,2021-02-01,RJ,Estupro,413.0,0.0,362.0,48.0,3.0,0.0,413.0,vitimas
-2021,2021-02-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2021,2021-02-01,RJ,Estupro,101.0,0.0,93.0,7.0,1.0,0.0,101.0,vitimas
+2021,2021-02-01,RJ,Estupro de vulnerável,312.0,0.0,269.0,41.0,2.0,0.0,312.0,vitimas
 2021,2021-02-01,RJ,Feminicídio,5.0,0.0,5.0,0.0,0.0,0.0,5.0,vitimas
 2021,2021-02-01,RJ,Furto de veículo,0.0,1158.0,0.0,0.0,0.0,0.0,1158.0,ocorrencias
 2021,2021-02-01,RJ,Homicídio doloso,272.0,0.0,16.0,235.0,21.0,0.0,272.0,vitimas
@@ -1422,8 +1422,8 @@
 2021,2021-02-01,RJ,Roubo seguido de morte (latrocínio),12.0,0.0,0.0,12.0,0.0,0.0,12.0,vitimas
 2021,2021-02-01,RJ,Suicídio,58.0,0.0,14.0,44.0,0.0,0.0,58.0,vitimas
 2021,2021-02-01,RJ,Suicídio de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2021,2021-02-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2021,2021-02-01,RJ,Tentativa de homicídio,333.0,0.0,45.0,260.0,28.0,0.0,333.0,vitimas
+2021,2021-02-01,RJ,Tentativa de feminicídio,25.0,0.0,25.0,0.0,0.0,0.0,25.0,vitimas
+2021,2021-02-01,RJ,Tentativa de homicídio,307.0,0.0,20.0,260.0,27.0,0.0,307.0,vitimas
 2021,2021-02-01,RJ,Tráfico de drogas,0.0,1541.0,0.0,0.0,0.0,0.0,1541.0,ocorrencias
 2021,2021-02-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,438.0,438.0,kg
 2021,2021-02-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,5666.0,5666.0,kg
@@ -1433,7 +1433,7 @@
 2021,2021-02-01,RN,Combate a incêndios,0.0,289.0,0.0,0.0,0.0,0.0,289.0,ocorrencias
 2021,2021-02-01,RN,Emissão de Alvarás de licença,0.0,297.0,0.0,0.0,0.0,0.0,297.0,ocorrencias
 2021,2021-02-01,RN,Estupro,12.0,0.0,12.0,0.0,0.0,0.0,12.0,vitimas
-2021,2021-02-01,RN,Estupro de vulnerável,28.0,0.0,23.0,5.0,0.0,0.0,28.0,vitimas
+2021,2021-02-01,RN,Estupro de vulnerável,29.0,0.0,24.0,5.0,0.0,0.0,29.0,vitimas
 2021,2021-02-01,RN,Feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
 2021,2021-02-01,RN,Furto de veículo,0.0,121.0,0.0,0.0,0.0,0.0,121.0,ocorrencias
 2021,2021-02-01,RN,Homicídio doloso,78.0,0.0,4.0,74.0,0.0,0.0,78.0,vitimas
@@ -2238,8 +2238,8 @@
 2021,2021-03-01,RJ,Busca e salvamento,0.0,8667.0,0.0,0.0,0.0,0.0,8667.0,ocorrencias
 2021,2021-03-01,RJ,Combate a incêndios,0.0,3384.0,0.0,0.0,0.0,0.0,3384.0,ocorrencias
 2021,2021-03-01,RJ,Emissão de Alvarás de licença,0.0,2673.0,0.0,0.0,0.0,0.0,2673.0,ocorrencias
-2021,2021-03-01,RJ,Estupro,430.0,0.0,377.0,50.0,3.0,0.0,430.0,vitimas
-2021,2021-03-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2021,2021-03-01,RJ,Estupro,107.0,0.0,103.0,4.0,0.0,0.0,107.0,vitimas
+2021,2021-03-01,RJ,Estupro de vulnerável,323.0,0.0,274.0,46.0,3.0,0.0,323.0,vitimas
 2021,2021-03-01,RJ,Feminicídio,10.0,0.0,10.0,0.0,0.0,0.0,10.0,vitimas
 2021,2021-03-01,RJ,Furto de veículo,0.0,1141.0,0.0,0.0,0.0,0.0,1141.0,ocorrencias
 2021,2021-03-01,RJ,Homicídio doloso,327.0,0.0,20.0,297.0,10.0,0.0,327.0,vitimas
@@ -2259,8 +2259,8 @@
 2021,2021-03-01,RJ,Roubo seguido de morte (latrocínio),8.0,0.0,0.0,8.0,0.0,0.0,8.0,vitimas
 2021,2021-03-01,RJ,Suicídio,76.0,0.0,29.0,47.0,0.0,0.0,76.0,vitimas
 2021,2021-03-01,RJ,Suicídio de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2021,2021-03-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2021,2021-03-01,RJ,Tentativa de homicídio,412.0,0.0,44.0,346.0,22.0,0.0,412.0,vitimas
+2021,2021-03-01,RJ,Tentativa de feminicídio,18.0,0.0,18.0,0.0,0.0,0.0,18.0,vitimas
+2021,2021-03-01,RJ,Tentativa de homicídio,389.0,0.0,26.0,342.0,21.0,0.0,389.0,vitimas
 2021,2021-03-01,RJ,Tráfico de drogas,0.0,1759.0,0.0,0.0,0.0,0.0,1759.0,ocorrencias
 2021,2021-03-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,0.0,0.0,kg
 2021,2021-03-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,1460.0,1460.0,kg
@@ -2269,8 +2269,8 @@
 2021,2021-03-01,RN,Busca e salvamento,0.0,515.0,0.0,0.0,0.0,0.0,515.0,ocorrencias
 2021,2021-03-01,RN,Combate a incêndios,0.0,160.0,0.0,0.0,0.0,0.0,160.0,ocorrencias
 2021,2021-03-01,RN,Emissão de Alvarás de licença,0.0,93.0,0.0,0.0,0.0,0.0,93.0,ocorrencias
-2021,2021-03-01,RN,Estupro,15.0,0.0,13.0,1.0,1.0,0.0,15.0,vitimas
-2021,2021-03-01,RN,Estupro de vulnerável,41.0,0.0,34.0,5.0,2.0,0.0,41.0,vitimas
+2021,2021-03-01,RN,Estupro,13.0,0.0,11.0,1.0,1.0,0.0,13.0,vitimas
+2021,2021-03-01,RN,Estupro de vulnerável,40.0,0.0,34.0,4.0,2.0,0.0,40.0,vitimas
 2021,2021-03-01,RN,Feminicídio,1.0,0.0,1.0,0.0,0.0,0.0,1.0,vitimas
 2021,2021-03-01,RN,Furto de veículo,0.0,65.0,0.0,0.0,0.0,0.0,65.0,ocorrencias
 2021,2021-03-01,RN,Homicídio doloso,119.0,0.0,8.0,111.0,0.0,0.0,119.0,vitimas
@@ -2326,7 +2326,7 @@
 2021,2021-03-01,RO,Tráfico de drogas,0.0,128.0,0.0,0.0,0.0,0.0,128.0,ocorrencias
 2021,2021-03-01,RR,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,655.0,655.0,kg
 2021,2021-03-01,RR,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,2050.0,2050.0,kg
-2021,2021-03-01,RR,Arma de Fogo Apreendida,0.0,20.0,0.0,0.0,0.0,0.0,20.0,ocorrencias
+2021,2021-03-01,RR,Arma de Fogo Apreendida,0.0,21.0,0.0,0.0,0.0,0.0,21.0,ocorrencias
 2021,2021-03-01,RR,Atendimento pré-hospitalar,0.0,125.0,0.0,0.0,0.0,0.0,125.0,ocorrencias
 2021,2021-03-01,RR,Busca e salvamento,0.0,171.0,0.0,0.0,0.0,0.0,171.0,ocorrencias
 2021,2021-03-01,RR,Combate a incêndios,0.0,103.0,0.0,0.0,0.0,0.0,103.0,ocorrencias
@@ -2371,7 +2371,7 @@
 2021,2021-03-01,RS,Mandado de prisão cumprido,0.0,495.0,0.0,0.0,0.0,0.0,495.0,ocorrencias
 2021,2021-03-01,RS,Morte de Agente do Estado,1.0,0.0,0.0,1.0,0.0,0.0,1.0,vitimas
 2021,2021-03-01,RS,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),75.0,0.0,16.0,59.0,0.0,0.0,75.0,vitimas
-2021,2021-03-01,RS,Morte por intervenção de Agente do Estado,9.0,0.0,0.0,9.0,0.0,0.0,9.0,vitimas
+2021,2021-03-01,RS,Morte por intervenção de Agente do Estado,11.0,0.0,0.0,11.0,0.0,0.0,11.0,vitimas
 2021,2021-03-01,RS,Mortes a esclarecer (sem indício de crime),3.0,0.0,1.0,2.0,0.0,0.0,3.0,vitimas
 2021,2021-03-01,RS,Mortes no trânsito,10.0,0.0,2.0,8.0,0.0,0.0,10.0,vitimas
 2021,2021-03-01,RS,Pessoa Desaparecida,488.0,0.0,203.0,285.0,0.0,0.0,488.0,vitimas
@@ -3075,8 +3075,8 @@
 2021,2021-04-01,RJ,Busca e salvamento,0.0,7196.0,0.0,0.0,0.0,0.0,7196.0,ocorrencias
 2021,2021-04-01,RJ,Combate a incêndios,0.0,2536.0,0.0,0.0,0.0,0.0,2536.0,ocorrencias
 2021,2021-04-01,RJ,Emissão de Alvarás de licença,0.0,2064.0,0.0,0.0,0.0,0.0,2064.0,ocorrencias
-2021,2021-04-01,RJ,Estupro,412.0,0.0,355.0,52.0,5.0,0.0,412.0,vitimas
-2021,2021-04-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2021,2021-04-01,RJ,Estupro,109.0,0.0,99.0,7.0,3.0,0.0,109.0,vitimas
+2021,2021-04-01,RJ,Estupro de vulnerável,303.0,0.0,256.0,45.0,2.0,0.0,303.0,vitimas
 2021,2021-04-01,RJ,Feminicídio,6.0,0.0,6.0,0.0,0.0,0.0,6.0,vitimas
 2021,2021-04-01,RJ,Furto de veículo,0.0,1141.0,0.0,0.0,0.0,0.0,1141.0,ocorrencias
 2021,2021-04-01,RJ,Homicídio doloso,327.0,0.0,24.0,282.0,21.0,0.0,327.0,vitimas
@@ -3096,8 +3096,8 @@
 2021,2021-04-01,RJ,Roubo seguido de morte (latrocínio),7.0,0.0,2.0,5.0,0.0,0.0,7.0,vitimas
 2021,2021-04-01,RJ,Suicídio,68.0,0.0,17.0,51.0,0.0,0.0,68.0,vitimas
 2021,2021-04-01,RJ,Suicídio de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2021,2021-04-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2021,2021-04-01,RJ,Tentativa de homicídio,336.0,0.0,33.0,288.0,15.0,0.0,336.0,vitimas
+2021,2021-04-01,RJ,Tentativa de feminicídio,12.0,0.0,12.0,0.0,0.0,0.0,12.0,vitimas
+2021,2021-04-01,RJ,Tentativa de homicídio,323.0,0.0,21.0,288.0,14.0,0.0,323.0,vitimas
 2021,2021-04-01,RJ,Tráfico de drogas,0.0,1687.0,0.0,0.0,0.0,0.0,1687.0,ocorrencias
 2021,2021-04-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,2.0,2.0,kg
 2021,2021-04-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,1036.0,1036.0,kg
@@ -3106,8 +3106,8 @@
 2021,2021-04-01,RN,Busca e salvamento,0.0,647.0,0.0,0.0,0.0,0.0,647.0,ocorrencias
 2021,2021-04-01,RN,Combate a incêndios,0.0,79.0,0.0,0.0,0.0,0.0,79.0,ocorrencias
 2021,2021-04-01,RN,Emissão de Alvarás de licença,0.0,158.0,0.0,0.0,0.0,0.0,158.0,ocorrencias
-2021,2021-04-01,RN,Estupro,15.0,0.0,12.0,2.0,1.0,0.0,15.0,vitimas
-2021,2021-04-01,RN,Estupro de vulnerável,52.0,0.0,38.0,12.0,2.0,0.0,52.0,vitimas
+2021,2021-04-01,RN,Estupro,12.0,0.0,9.0,2.0,1.0,0.0,12.0,vitimas
+2021,2021-04-01,RN,Estupro de vulnerável,49.0,0.0,37.0,12.0,0.0,0.0,49.0,vitimas
 2021,2021-04-01,RN,Feminicídio,1.0,0.0,1.0,0.0,0.0,0.0,1.0,vitimas
 2021,2021-04-01,RN,Furto de veículo,0.0,88.0,0.0,0.0,0.0,0.0,88.0,ocorrencias
 2021,2021-04-01,RN,Homicídio doloso,112.0,0.0,3.0,109.0,0.0,0.0,112.0,vitimas
@@ -3163,7 +3163,7 @@
 2021,2021-04-01,RO,Tráfico de drogas,0.0,120.0,0.0,0.0,0.0,0.0,120.0,ocorrencias
 2021,2021-04-01,RR,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,4588.0,4588.0,kg
 2021,2021-04-01,RR,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,14669.0,14669.0,kg
-2021,2021-04-01,RR,Arma de Fogo Apreendida,0.0,21.0,0.0,0.0,0.0,0.0,21.0,ocorrencias
+2021,2021-04-01,RR,Arma de Fogo Apreendida,0.0,22.0,0.0,0.0,0.0,0.0,22.0,ocorrencias
 2021,2021-04-01,RR,Atendimento pré-hospitalar,0.0,110.0,0.0,0.0,0.0,0.0,110.0,ocorrencias
 2021,2021-04-01,RR,Busca e salvamento,0.0,171.0,0.0,0.0,0.0,0.0,171.0,ocorrencias
 2021,2021-04-01,RR,Combate a incêndios,0.0,27.0,0.0,0.0,0.0,0.0,27.0,ocorrencias
@@ -3208,7 +3208,7 @@
 2021,2021-04-01,RS,Mandado de prisão cumprido,0.0,503.0,0.0,0.0,0.0,0.0,503.0,ocorrencias
 2021,2021-04-01,RS,Morte de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
 2021,2021-04-01,RS,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),110.0,0.0,18.0,92.0,0.0,0.0,110.0,vitimas
-2021,2021-04-01,RS,Morte por intervenção de Agente do Estado,14.0,0.0,0.0,14.0,0.0,0.0,14.0,vitimas
+2021,2021-04-01,RS,Morte por intervenção de Agente do Estado,11.0,0.0,0.0,11.0,0.0,0.0,11.0,vitimas
 2021,2021-04-01,RS,Mortes a esclarecer (sem indício de crime),5.0,0.0,1.0,4.0,0.0,0.0,5.0,vitimas
 2021,2021-04-01,RS,Mortes no trânsito,33.0,0.0,5.0,28.0,0.0,0.0,33.0,vitimas
 2021,2021-04-01,RS,Pessoa Desaparecida,526.0,0.0,189.0,337.0,0.0,0.0,526.0,vitimas
@@ -3912,8 +3912,8 @@
 2021,2021-05-01,RJ,Busca e salvamento,0.0,7781.0,0.0,0.0,0.0,0.0,7781.0,ocorrencias
 2021,2021-05-01,RJ,Combate a incêndios,0.0,2631.0,0.0,0.0,0.0,0.0,2631.0,ocorrencias
 2021,2021-05-01,RJ,Emissão de Alvarás de licença,0.0,2283.0,0.0,0.0,0.0,0.0,2283.0,ocorrencias
-2021,2021-05-01,RJ,Estupro,431.0,0.0,370.0,56.0,5.0,0.0,431.0,vitimas
-2021,2021-05-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2021,2021-05-01,RJ,Estupro,113.0,0.0,104.0,8.0,1.0,0.0,113.0,vitimas
+2021,2021-05-01,RJ,Estupro de vulnerável,318.0,0.0,266.0,48.0,4.0,0.0,318.0,vitimas
 2021,2021-05-01,RJ,Feminicídio,12.0,0.0,12.0,0.0,0.0,0.0,12.0,vitimas
 2021,2021-05-01,RJ,Furto de veículo,0.0,1186.0,0.0,0.0,0.0,0.0,1186.0,ocorrencias
 2021,2021-05-01,RJ,Homicídio doloso,285.0,0.0,13.0,257.0,15.0,0.0,285.0,vitimas
@@ -3933,8 +3933,8 @@
 2021,2021-05-01,RJ,Roubo seguido de morte (latrocínio),7.0,0.0,0.0,7.0,0.0,0.0,7.0,vitimas
 2021,2021-05-01,RJ,Suicídio,75.0,0.0,13.0,61.0,1.0,0.0,75.0,vitimas
 2021,2021-05-01,RJ,Suicídio de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2021,2021-05-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2021,2021-05-01,RJ,Tentativa de homicídio,339.0,0.0,36.0,290.0,13.0,0.0,339.0,vitimas
+2021,2021-05-01,RJ,Tentativa de feminicídio,12.0,0.0,12.0,0.0,0.0,0.0,12.0,vitimas
+2021,2021-05-01,RJ,Tentativa de homicídio,327.0,0.0,24.0,290.0,13.0,0.0,327.0,vitimas
 2021,2021-05-01,RJ,Tráfico de drogas,0.0,1762.0,0.0,0.0,0.0,0.0,1762.0,ocorrencias
 2021,2021-05-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,3.0,3.0,kg
 2021,2021-05-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,0.0,0.0,kg
@@ -3943,8 +3943,8 @@
 2021,2021-05-01,RN,Busca e salvamento,0.0,608.0,0.0,0.0,0.0,0.0,608.0,ocorrencias
 2021,2021-05-01,RN,Combate a incêndios,0.0,112.0,0.0,0.0,0.0,0.0,112.0,ocorrencias
 2021,2021-05-01,RN,Emissão de Alvarás de licença,0.0,373.0,0.0,0.0,0.0,0.0,373.0,ocorrencias
-2021,2021-05-01,RN,Estupro,21.0,0.0,19.0,2.0,0.0,0.0,21.0,vitimas
-2021,2021-05-01,RN,Estupro de vulnerável,52.0,0.0,40.0,10.0,2.0,0.0,52.0,vitimas
+2021,2021-05-01,RN,Estupro,18.0,0.0,16.0,2.0,0.0,0.0,18.0,vitimas
+2021,2021-05-01,RN,Estupro de vulnerável,53.0,0.0,39.0,12.0,2.0,0.0,53.0,vitimas
 2021,2021-05-01,RN,Feminicídio,1.0,0.0,1.0,0.0,0.0,0.0,1.0,vitimas
 2021,2021-05-01,RN,Furto de veículo,0.0,76.0,0.0,0.0,0.0,0.0,76.0,ocorrencias
 2021,2021-05-01,RN,Homicídio doloso,87.0,0.0,4.0,83.0,0.0,0.0,87.0,vitimas
@@ -4000,7 +4000,7 @@
 2021,2021-05-01,RO,Tráfico de drogas,0.0,101.0,0.0,0.0,0.0,0.0,101.0,ocorrencias
 2021,2021-05-01,RR,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,3061.0,3061.0,kg
 2021,2021-05-01,RR,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,14850.0,14850.0,kg
-2021,2021-05-01,RR,Arma de Fogo Apreendida,0.0,26.0,0.0,0.0,0.0,0.0,26.0,ocorrencias
+2021,2021-05-01,RR,Arma de Fogo Apreendida,0.0,29.0,0.0,0.0,0.0,0.0,29.0,ocorrencias
 2021,2021-05-01,RR,Atendimento pré-hospitalar,0.0,164.0,0.0,0.0,0.0,0.0,164.0,ocorrencias
 2021,2021-05-01,RR,Busca e salvamento,0.0,191.0,0.0,0.0,0.0,0.0,191.0,ocorrencias
 2021,2021-05-01,RR,Combate a incêndios,0.0,15.0,0.0,0.0,0.0,0.0,15.0,ocorrencias
@@ -4749,8 +4749,8 @@
 2021,2021-06-01,RJ,Busca e salvamento,0.0,7224.0,0.0,0.0,0.0,0.0,7224.0,ocorrencias
 2021,2021-06-01,RJ,Combate a incêndios,0.0,2360.0,0.0,0.0,0.0,0.0,2360.0,ocorrencias
 2021,2021-06-01,RJ,Emissão de Alvarás de licença,0.0,2507.0,0.0,0.0,0.0,0.0,2507.0,ocorrencias
-2021,2021-06-01,RJ,Estupro,351.0,0.0,300.0,49.0,2.0,0.0,351.0,vitimas
-2021,2021-06-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2021,2021-06-01,RJ,Estupro,94.0,0.0,86.0,7.0,1.0,0.0,94.0,vitimas
+2021,2021-06-01,RJ,Estupro de vulnerável,257.0,0.0,214.0,42.0,1.0,0.0,257.0,vitimas
 2021,2021-06-01,RJ,Feminicídio,6.0,0.0,5.0,0.0,1.0,0.0,6.0,vitimas
 2021,2021-06-01,RJ,Furto de veículo,0.0,1124.0,0.0,0.0,0.0,0.0,1124.0,ocorrencias
 2021,2021-06-01,RJ,Homicídio doloso,261.0,0.0,22.0,227.0,12.0,0.0,261.0,vitimas
@@ -4770,8 +4770,8 @@
 2021,2021-06-01,RJ,Roubo seguido de morte (latrocínio),2.0,0.0,0.0,2.0,0.0,0.0,2.0,vitimas
 2021,2021-06-01,RJ,Suicídio,59.0,0.0,12.0,47.0,0.0,0.0,59.0,vitimas
 2021,2021-06-01,RJ,Suicídio de Agente do Estado,2.0,0.0,1.0,1.0,0.0,0.0,2.0,vitimas
-2021,2021-06-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2021,2021-06-01,RJ,Tentativa de homicídio,334.0,0.0,47.0,277.0,10.0,0.0,334.0,vitimas
+2021,2021-06-01,RJ,Tentativa de feminicídio,28.0,0.0,28.0,0.0,0.0,0.0,28.0,vitimas
+2021,2021-06-01,RJ,Tentativa de homicídio,304.0,0.0,19.0,275.0,10.0,0.0,304.0,vitimas
 2021,2021-06-01,RJ,Tráfico de drogas,0.0,1713.0,0.0,0.0,0.0,0.0,1713.0,ocorrencias
 2021,2021-06-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,1013.0,1013.0,kg
 2021,2021-06-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,60659.0,60659.0,kg
@@ -4837,7 +4837,7 @@
 2021,2021-06-01,RO,Tráfico de drogas,0.0,94.0,0.0,0.0,0.0,0.0,94.0,ocorrencias
 2021,2021-06-01,RR,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,6519.0,6519.0,kg
 2021,2021-06-01,RR,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,7857.0,7857.0,kg
-2021,2021-06-01,RR,Arma de Fogo Apreendida,0.0,21.0,0.0,0.0,0.0,0.0,21.0,ocorrencias
+2021,2021-06-01,RR,Arma de Fogo Apreendida,0.0,23.0,0.0,0.0,0.0,0.0,23.0,ocorrencias
 2021,2021-06-01,RR,Atendimento pré-hospitalar,0.0,158.0,0.0,0.0,0.0,0.0,158.0,ocorrencias
 2021,2021-06-01,RR,Busca e salvamento,0.0,182.0,0.0,0.0,0.0,0.0,182.0,ocorrencias
 2021,2021-06-01,RR,Combate a incêndios,0.0,19.0,0.0,0.0,0.0,0.0,19.0,ocorrencias
@@ -4882,7 +4882,7 @@
 2021,2021-06-01,RS,Mandado de prisão cumprido,0.0,576.0,0.0,0.0,0.0,0.0,576.0,ocorrencias
 2021,2021-06-01,RS,Morte de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
 2021,2021-06-01,RS,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),93.0,0.0,19.0,74.0,0.0,0.0,93.0,vitimas
-2021,2021-06-01,RS,Morte por intervenção de Agente do Estado,7.0,0.0,1.0,6.0,0.0,0.0,7.0,vitimas
+2021,2021-06-01,RS,Morte por intervenção de Agente do Estado,8.0,0.0,1.0,7.0,0.0,0.0,8.0,vitimas
 2021,2021-06-01,RS,Mortes a esclarecer (sem indício de crime),3.0,0.0,1.0,2.0,0.0,0.0,3.0,vitimas
 2021,2021-06-01,RS,Mortes no trânsito,23.0,0.0,5.0,18.0,0.0,0.0,23.0,vitimas
 2021,2021-06-01,RS,Pessoa Desaparecida,488.0,0.0,177.0,311.0,0.0,0.0,488.0,vitimas
@@ -5586,8 +5586,8 @@
 2021,2021-07-01,RJ,Busca e salvamento,0.0,7362.0,0.0,0.0,0.0,0.0,7362.0,ocorrencias
 2021,2021-07-01,RJ,Combate a incêndios,0.0,4601.0,0.0,0.0,0.0,0.0,4601.0,ocorrencias
 2021,2021-07-01,RJ,Emissão de Alvarás de licença,0.0,2685.0,0.0,0.0,0.0,0.0,2685.0,ocorrencias
-2021,2021-07-01,RJ,Estupro,412.0,0.0,351.0,57.0,4.0,0.0,412.0,vitimas
-2021,2021-07-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2021,2021-07-01,RJ,Estupro,112.0,0.0,105.0,6.0,1.0,0.0,112.0,vitimas
+2021,2021-07-01,RJ,Estupro de vulnerável,300.0,0.0,246.0,51.0,3.0,0.0,300.0,vitimas
 2021,2021-07-01,RJ,Feminicídio,4.0,0.0,4.0,0.0,0.0,0.0,4.0,vitimas
 2021,2021-07-01,RJ,Furto de veículo,0.0,1219.0,0.0,0.0,0.0,0.0,1219.0,ocorrencias
 2021,2021-07-01,RJ,Homicídio doloso,266.0,0.0,15.0,237.0,14.0,0.0,266.0,vitimas
@@ -5607,8 +5607,8 @@
 2021,2021-07-01,RJ,Roubo seguido de morte (latrocínio),6.0,0.0,0.0,6.0,0.0,0.0,6.0,vitimas
 2021,2021-07-01,RJ,Suicídio,71.0,0.0,28.0,43.0,0.0,0.0,71.0,vitimas
 2021,2021-07-01,RJ,Suicídio de Agente do Estado,1.0,0.0,1.0,0.0,0.0,0.0,1.0,vitimas
-2021,2021-07-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2021,2021-07-01,RJ,Tentativa de homicídio,314.0,0.0,44.0,254.0,16.0,0.0,314.0,vitimas
+2021,2021-07-01,RJ,Tentativa de feminicídio,21.0,0.0,21.0,0.0,0.0,0.0,21.0,vitimas
+2021,2021-07-01,RJ,Tentativa de homicídio,293.0,0.0,23.0,254.0,16.0,0.0,293.0,vitimas
 2021,2021-07-01,RJ,Tráfico de drogas,0.0,1542.0,0.0,0.0,0.0,0.0,1542.0,ocorrencias
 2021,2021-07-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,553655.0,553655.0,kg
 2021,2021-07-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,153.0,153.0,kg
@@ -5617,8 +5617,8 @@
 2021,2021-07-01,RN,Busca e salvamento,0.0,487.0,0.0,0.0,0.0,0.0,487.0,ocorrencias
 2021,2021-07-01,RN,Combate a incêndios,0.0,163.0,0.0,0.0,0.0,0.0,163.0,ocorrencias
 2021,2021-07-01,RN,Emissão de Alvarás de licença,0.0,397.0,0.0,0.0,0.0,0.0,397.0,ocorrencias
-2021,2021-07-01,RN,Estupro,14.0,0.0,13.0,1.0,0.0,0.0,14.0,vitimas
-2021,2021-07-01,RN,Estupro de vulnerável,50.0,0.0,46.0,4.0,0.0,0.0,50.0,vitimas
+2021,2021-07-01,RN,Estupro,13.0,0.0,12.0,1.0,0.0,0.0,13.0,vitimas
+2021,2021-07-01,RN,Estupro de vulnerável,49.0,0.0,45.0,4.0,0.0,0.0,49.0,vitimas
 2021,2021-07-01,RN,Feminicídio,1.0,0.0,1.0,0.0,0.0,0.0,1.0,vitimas
 2021,2021-07-01,RN,Furto de veículo,0.0,78.0,0.0,0.0,0.0,0.0,78.0,ocorrencias
 2021,2021-07-01,RN,Homicídio doloso,91.0,0.0,4.0,87.0,0.0,0.0,91.0,vitimas
@@ -6423,8 +6423,8 @@
 2021,2021-08-01,RJ,Busca e salvamento,0.0,7396.0,0.0,0.0,0.0,0.0,7396.0,ocorrencias
 2021,2021-08-01,RJ,Combate a incêndios,0.0,5024.0,0.0,0.0,0.0,0.0,5024.0,ocorrencias
 2021,2021-08-01,RJ,Emissão de Alvarás de licença,0.0,2772.0,0.0,0.0,0.0,0.0,2772.0,ocorrencias
-2021,2021-08-01,RJ,Estupro,427.0,0.0,368.0,52.0,7.0,0.0,427.0,vitimas
-2021,2021-08-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2021,2021-08-01,RJ,Estupro,113.0,0.0,106.0,5.0,2.0,0.0,113.0,vitimas
+2021,2021-08-01,RJ,Estupro de vulnerável,314.0,0.0,262.0,47.0,5.0,0.0,314.0,vitimas
 2021,2021-08-01,RJ,Feminicídio,9.0,0.0,9.0,0.0,0.0,0.0,9.0,vitimas
 2021,2021-08-01,RJ,Furto de veículo,0.0,1252.0,0.0,0.0,0.0,0.0,1252.0,ocorrencias
 2021,2021-08-01,RJ,Homicídio doloso,279.0,0.0,22.0,242.0,15.0,0.0,279.0,vitimas
@@ -6444,8 +6444,8 @@
 2021,2021-08-01,RJ,Roubo seguido de morte (latrocínio),12.0,0.0,1.0,11.0,0.0,0.0,12.0,vitimas
 2021,2021-08-01,RJ,Suicídio,65.0,0.0,13.0,52.0,0.0,0.0,65.0,vitimas
 2021,2021-08-01,RJ,Suicídio de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2021,2021-08-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2021,2021-08-01,RJ,Tentativa de homicídio,321.0,0.0,37.0,264.0,20.0,0.0,321.0,vitimas
+2021,2021-08-01,RJ,Tentativa de feminicídio,21.0,0.0,21.0,0.0,0.0,0.0,21.0,vitimas
+2021,2021-08-01,RJ,Tentativa de homicídio,297.0,0.0,16.0,262.0,19.0,0.0,297.0,vitimas
 2021,2021-08-01,RJ,Tráfico de drogas,0.0,1673.0,0.0,0.0,0.0,0.0,1673.0,ocorrencias
 2021,2021-08-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,0.0,0.0,kg
 2021,2021-08-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,2.0,2.0,kg
@@ -6454,8 +6454,8 @@
 2021,2021-08-01,RN,Busca e salvamento,0.0,501.0,0.0,0.0,0.0,0.0,501.0,ocorrencias
 2021,2021-08-01,RN,Combate a incêndios,0.0,273.0,0.0,0.0,0.0,0.0,273.0,ocorrencias
 2021,2021-08-01,RN,Emissão de Alvarás de licença,0.0,441.0,0.0,0.0,0.0,0.0,441.0,ocorrencias
-2021,2021-08-01,RN,Estupro,14.0,0.0,13.0,1.0,0.0,0.0,14.0,vitimas
-2021,2021-08-01,RN,Estupro de vulnerável,41.0,0.0,36.0,4.0,1.0,0.0,41.0,vitimas
+2021,2021-08-01,RN,Estupro,8.0,0.0,7.0,1.0,0.0,0.0,8.0,vitimas
+2021,2021-08-01,RN,Estupro de vulnerável,41.0,0.0,37.0,4.0,0.0,0.0,41.0,vitimas
 2021,2021-08-01,RN,Feminicídio,3.0,0.0,3.0,0.0,0.0,0.0,3.0,vitimas
 2021,2021-08-01,RN,Furto de veículo,0.0,106.0,0.0,0.0,0.0,0.0,106.0,ocorrencias
 2021,2021-08-01,RN,Homicídio doloso,87.0,0.0,4.0,83.0,0.0,0.0,87.0,vitimas
@@ -6511,7 +6511,7 @@
 2021,2021-08-01,RO,Tráfico de drogas,0.0,79.0,0.0,0.0,0.0,0.0,79.0,ocorrencias
 2021,2021-08-01,RR,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,17083.0,17083.0,kg
 2021,2021-08-01,RR,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,1505.0,1505.0,kg
-2021,2021-08-01,RR,Arma de Fogo Apreendida,0.0,21.0,0.0,0.0,0.0,0.0,21.0,ocorrencias
+2021,2021-08-01,RR,Arma de Fogo Apreendida,0.0,23.0,0.0,0.0,0.0,0.0,23.0,ocorrencias
 2021,2021-08-01,RR,Atendimento pré-hospitalar,0.0,168.0,0.0,0.0,0.0,0.0,168.0,ocorrencias
 2021,2021-08-01,RR,Busca e salvamento,0.0,191.0,0.0,0.0,0.0,0.0,191.0,ocorrencias
 2021,2021-08-01,RR,Combate a incêndios,0.0,30.0,0.0,0.0,0.0,0.0,30.0,ocorrencias
@@ -7260,8 +7260,8 @@
 2021,2021-09-01,RJ,Busca e salvamento,0.0,8363.0,0.0,0.0,0.0,0.0,8363.0,ocorrencias
 2021,2021-09-01,RJ,Combate a incêndios,0.0,3370.0,0.0,0.0,0.0,0.0,3370.0,ocorrencias
 2021,2021-09-01,RJ,Emissão de Alvarás de licença,0.0,2577.0,0.0,0.0,0.0,0.0,2577.0,ocorrencias
-2021,2021-09-01,RJ,Estupro,444.0,0.0,381.0,57.0,6.0,0.0,444.0,vitimas
-2021,2021-09-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2021,2021-09-01,RJ,Estupro,129.0,0.0,112.0,15.0,2.0,0.0,129.0,vitimas
+2021,2021-09-01,RJ,Estupro de vulnerável,315.0,0.0,269.0,42.0,4.0,0.0,315.0,vitimas
 2021,2021-09-01,RJ,Feminicídio,4.0,0.0,3.0,1.0,0.0,0.0,4.0,vitimas
 2021,2021-09-01,RJ,Furto de veículo,0.0,1181.0,0.0,0.0,0.0,0.0,1181.0,ocorrencias
 2021,2021-09-01,RJ,Homicídio doloso,277.0,0.0,19.0,248.0,10.0,0.0,277.0,vitimas
@@ -7281,8 +7281,8 @@
 2021,2021-09-01,RJ,Roubo seguido de morte (latrocínio),12.0,0.0,0.0,11.0,1.0,0.0,12.0,vitimas
 2021,2021-09-01,RJ,Suicídio,74.0,0.0,22.0,52.0,0.0,0.0,74.0,vitimas
 2021,2021-09-01,RJ,Suicídio de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2021,2021-09-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2021,2021-09-01,RJ,Tentativa de homicídio,275.0,0.0,34.0,229.0,12.0,0.0,275.0,vitimas
+2021,2021-09-01,RJ,Tentativa de feminicídio,19.0,0.0,19.0,0.0,0.0,0.0,19.0,vitimas
+2021,2021-09-01,RJ,Tentativa de homicídio,255.0,0.0,15.0,228.0,12.0,0.0,255.0,vitimas
 2021,2021-09-01,RJ,Tráfico de drogas,0.0,1722.0,0.0,0.0,0.0,0.0,1722.0,ocorrencias
 2021,2021-09-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,0.0,0.0,kg
 2021,2021-09-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,632656.0,632656.0,kg
@@ -7291,8 +7291,8 @@
 2021,2021-09-01,RN,Busca e salvamento,0.0,491.0,0.0,0.0,0.0,0.0,491.0,ocorrencias
 2021,2021-09-01,RN,Combate a incêndios,0.0,419.0,0.0,0.0,0.0,0.0,419.0,ocorrencias
 2021,2021-09-01,RN,Emissão de Alvarás de licença,0.0,437.0,0.0,0.0,0.0,0.0,437.0,ocorrencias
-2021,2021-09-01,RN,Estupro,18.0,0.0,14.0,3.0,1.0,0.0,18.0,vitimas
-2021,2021-09-01,RN,Estupro de vulnerável,45.0,0.0,41.0,3.0,1.0,0.0,45.0,vitimas
+2021,2021-09-01,RN,Estupro,14.0,0.0,11.0,3.0,0.0,0.0,14.0,vitimas
+2021,2021-09-01,RN,Estupro de vulnerável,47.0,0.0,42.0,4.0,1.0,0.0,47.0,vitimas
 2021,2021-09-01,RN,Feminicídio,2.0,0.0,2.0,0.0,0.0,0.0,2.0,vitimas
 2021,2021-09-01,RN,Furto de veículo,0.0,91.0,0.0,0.0,0.0,0.0,91.0,ocorrencias
 2021,2021-09-01,RN,Homicídio doloso,79.0,0.0,8.0,70.0,1.0,0.0,79.0,vitimas
@@ -7393,7 +7393,7 @@
 2021,2021-09-01,RS,Mandado de prisão cumprido,0.0,618.0,0.0,0.0,0.0,0.0,618.0,ocorrencias
 2021,2021-09-01,RS,Morte de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
 2021,2021-09-01,RS,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),111.0,0.0,27.0,84.0,0.0,0.0,111.0,vitimas
-2021,2021-09-01,RS,Morte por intervenção de Agente do Estado,18.0,0.0,0.0,18.0,0.0,0.0,18.0,vitimas
+2021,2021-09-01,RS,Morte por intervenção de Agente do Estado,19.0,0.0,0.0,19.0,0.0,0.0,19.0,vitimas
 2021,2021-09-01,RS,Mortes a esclarecer (sem indício de crime),0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
 2021,2021-09-01,RS,Mortes no trânsito,22.0,0.0,2.0,20.0,0.0,0.0,22.0,vitimas
 2021,2021-09-01,RS,Pessoa Desaparecida,587.0,0.0,216.0,371.0,0.0,0.0,587.0,vitimas
@@ -8097,8 +8097,8 @@
 2021,2021-10-01,RJ,Busca e salvamento,0.0,8724.0,0.0,0.0,0.0,0.0,8724.0,ocorrencias
 2021,2021-10-01,RJ,Combate a incêndios,0.0,2106.0,0.0,0.0,0.0,0.0,2106.0,ocorrencias
 2021,2021-10-01,RJ,Emissão de Alvarás de licença,0.0,2544.0,0.0,0.0,0.0,0.0,2544.0,ocorrencias
-2021,2021-10-01,RJ,Estupro,459.0,0.0,405.0,48.0,6.0,0.0,459.0,vitimas
-2021,2021-10-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2021,2021-10-01,RJ,Estupro,113.0,0.0,111.0,2.0,0.0,0.0,113.0,vitimas
+2021,2021-10-01,RJ,Estupro de vulnerável,346.0,0.0,294.0,46.0,6.0,0.0,346.0,vitimas
 2021,2021-10-01,RJ,Feminicídio,6.0,0.0,6.0,0.0,0.0,0.0,6.0,vitimas
 2021,2021-10-01,RJ,Furto de veículo,0.0,1206.0,0.0,0.0,0.0,0.0,1206.0,ocorrencias
 2021,2021-10-01,RJ,Homicídio doloso,297.0,0.0,19.0,256.0,22.0,0.0,297.0,vitimas
@@ -8118,8 +8118,8 @@
 2021,2021-10-01,RJ,Roubo seguido de morte (latrocínio),11.0,0.0,0.0,11.0,0.0,0.0,11.0,vitimas
 2021,2021-10-01,RJ,Suicídio,89.0,0.0,22.0,67.0,0.0,0.0,89.0,vitimas
 2021,2021-10-01,RJ,Suicídio de Agente do Estado,6.0,0.0,1.0,5.0,0.0,0.0,6.0,vitimas
-2021,2021-10-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2021,2021-10-01,RJ,Tentativa de homicídio,316.0,0.0,43.0,262.0,11.0,0.0,316.0,vitimas
+2021,2021-10-01,RJ,Tentativa de feminicídio,28.0,0.0,28.0,0.0,0.0,0.0,28.0,vitimas
+2021,2021-10-01,RJ,Tentativa de homicídio,287.0,0.0,15.0,261.0,11.0,0.0,287.0,vitimas
 2021,2021-10-01,RJ,Tráfico de drogas,0.0,1720.0,0.0,0.0,0.0,0.0,1720.0,ocorrencias
 2021,2021-10-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,345.0,345.0,kg
 2021,2021-10-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,37639.0,37639.0,kg
@@ -8128,8 +8128,8 @@
 2021,2021-10-01,RN,Busca e salvamento,0.0,461.0,0.0,0.0,0.0,0.0,461.0,ocorrencias
 2021,2021-10-01,RN,Combate a incêndios,0.0,464.0,0.0,0.0,0.0,0.0,464.0,ocorrencias
 2021,2021-10-01,RN,Emissão de Alvarás de licença,0.0,455.0,0.0,0.0,0.0,0.0,455.0,ocorrencias
-2021,2021-10-01,RN,Estupro,16.0,0.0,16.0,0.0,0.0,0.0,16.0,vitimas
-2021,2021-10-01,RN,Estupro de vulnerável,68.0,0.0,58.0,10.0,0.0,0.0,68.0,vitimas
+2021,2021-10-01,RN,Estupro,14.0,0.0,14.0,0.0,0.0,0.0,14.0,vitimas
+2021,2021-10-01,RN,Estupro de vulnerável,68.0,0.0,61.0,7.0,0.0,0.0,68.0,vitimas
 2021,2021-10-01,RN,Feminicídio,3.0,0.0,3.0,0.0,0.0,0.0,3.0,vitimas
 2021,2021-10-01,RN,Furto de veículo,0.0,89.0,0.0,0.0,0.0,0.0,89.0,ocorrencias
 2021,2021-10-01,RN,Homicídio doloso,69.0,0.0,2.0,67.0,0.0,0.0,69.0,vitimas
@@ -8185,7 +8185,7 @@
 2021,2021-10-01,RO,Tráfico de drogas,0.0,100.0,0.0,0.0,0.0,0.0,100.0,ocorrencias
 2021,2021-10-01,RR,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,2046.0,2046.0,kg
 2021,2021-10-01,RR,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,16606.0,16606.0,kg
-2021,2021-10-01,RR,Arma de Fogo Apreendida,0.0,22.0,0.0,0.0,0.0,0.0,22.0,ocorrencias
+2021,2021-10-01,RR,Arma de Fogo Apreendida,0.0,25.0,0.0,0.0,0.0,0.0,25.0,ocorrencias
 2021,2021-10-01,RR,Atendimento pré-hospitalar,0.0,184.0,0.0,0.0,0.0,0.0,184.0,ocorrencias
 2021,2021-10-01,RR,Busca e salvamento,0.0,177.0,0.0,0.0,0.0,0.0,177.0,ocorrencias
 2021,2021-10-01,RR,Combate a incêndios,0.0,45.0,0.0,0.0,0.0,0.0,45.0,ocorrencias
@@ -8934,8 +8934,8 @@
 2021,2021-11-01,RJ,Busca e salvamento,0.0,8235.0,0.0,0.0,0.0,0.0,8235.0,ocorrencias
 2021,2021-11-01,RJ,Combate a incêndios,0.0,2042.0,0.0,0.0,0.0,0.0,2042.0,ocorrencias
 2021,2021-11-01,RJ,Emissão de Alvarás de licença,0.0,2649.0,0.0,0.0,0.0,0.0,2649.0,ocorrencias
-2021,2021-11-01,RJ,Estupro,465.0,0.0,390.0,67.0,8.0,0.0,465.0,vitimas
-2021,2021-11-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2021,2021-11-01,RJ,Estupro,119.0,0.0,110.0,9.0,0.0,0.0,119.0,vitimas
+2021,2021-11-01,RJ,Estupro de vulnerável,346.0,0.0,280.0,58.0,8.0,0.0,346.0,vitimas
 2021,2021-11-01,RJ,Feminicídio,10.0,0.0,10.0,0.0,0.0,0.0,10.0,vitimas
 2021,2021-11-01,RJ,Furto de veículo,0.0,1328.0,0.0,0.0,0.0,0.0,1328.0,ocorrencias
 2021,2021-11-01,RJ,Homicídio doloso,254.0,0.0,26.0,203.0,25.0,0.0,254.0,vitimas
@@ -8955,8 +8955,8 @@
 2021,2021-11-01,RJ,Roubo seguido de morte (latrocínio),15.0,0.0,1.0,13.0,1.0,0.0,15.0,vitimas
 2021,2021-11-01,RJ,Suicídio,71.0,0.0,26.0,45.0,0.0,0.0,71.0,vitimas
 2021,2021-11-01,RJ,Suicídio de Agente do Estado,1.0,0.0,0.0,1.0,0.0,0.0,1.0,vitimas
-2021,2021-11-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2021,2021-11-01,RJ,Tentativa de homicídio,240.0,0.0,40.0,179.0,21.0,0.0,240.0,vitimas
+2021,2021-11-01,RJ,Tentativa de feminicídio,24.0,0.0,24.0,0.0,0.0,0.0,24.0,vitimas
+2021,2021-11-01,RJ,Tentativa de homicídio,215.0,0.0,16.0,178.0,21.0,0.0,215.0,vitimas
 2021,2021-11-01,RJ,Tráfico de drogas,0.0,1620.0,0.0,0.0,0.0,0.0,1620.0,ocorrencias
 2021,2021-11-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,190758.0,190758.0,kg
 2021,2021-11-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,432.0,432.0,kg
@@ -8965,7 +8965,7 @@
 2021,2021-11-01,RN,Busca e salvamento,0.0,454.0,0.0,0.0,0.0,0.0,454.0,ocorrencias
 2021,2021-11-01,RN,Combate a incêndios,0.0,378.0,0.0,0.0,0.0,0.0,378.0,ocorrencias
 2021,2021-11-01,RN,Emissão de Alvarás de licença,0.0,468.0,0.0,0.0,0.0,0.0,468.0,ocorrencias
-2021,2021-11-01,RN,Estupro,19.0,0.0,18.0,1.0,0.0,0.0,19.0,vitimas
+2021,2021-11-01,RN,Estupro,13.0,0.0,12.0,1.0,0.0,0.0,13.0,vitimas
 2021,2021-11-01,RN,Estupro de vulnerável,50.0,0.0,43.0,7.0,0.0,0.0,50.0,vitimas
 2021,2021-11-01,RN,Feminicídio,2.0,0.0,2.0,0.0,0.0,0.0,2.0,vitimas
 2021,2021-11-01,RN,Furto de veículo,0.0,114.0,0.0,0.0,0.0,0.0,114.0,ocorrencias
@@ -9022,7 +9022,7 @@
 2021,2021-11-01,RO,Tráfico de drogas,0.0,87.0,0.0,0.0,0.0,0.0,87.0,ocorrencias
 2021,2021-11-01,RR,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,3721.0,3721.0,kg
 2021,2021-11-01,RR,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,12281.0,12281.0,kg
-2021,2021-11-01,RR,Arma de Fogo Apreendida,0.0,25.0,0.0,0.0,0.0,0.0,25.0,ocorrencias
+2021,2021-11-01,RR,Arma de Fogo Apreendida,0.0,31.0,0.0,0.0,0.0,0.0,31.0,ocorrencias
 2021,2021-11-01,RR,Atendimento pré-hospitalar,0.0,206.0,0.0,0.0,0.0,0.0,206.0,ocorrencias
 2021,2021-11-01,RR,Busca e salvamento,0.0,178.0,0.0,0.0,0.0,0.0,178.0,ocorrencias
 2021,2021-11-01,RR,Combate a incêndios,0.0,44.0,0.0,0.0,0.0,0.0,44.0,ocorrencias
@@ -9067,7 +9067,7 @@
 2021,2021-11-01,RS,Mandado de prisão cumprido,0.0,531.0,0.0,0.0,0.0,0.0,531.0,ocorrencias
 2021,2021-11-01,RS,Morte de Agente do Estado,1.0,0.0,0.0,1.0,0.0,0.0,1.0,vitimas
 2021,2021-11-01,RS,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),107.0,0.0,20.0,87.0,0.0,0.0,107.0,vitimas
-2021,2021-11-01,RS,Morte por intervenção de Agente do Estado,10.0,0.0,0.0,10.0,0.0,0.0,10.0,vitimas
+2021,2021-11-01,RS,Morte por intervenção de Agente do Estado,12.0,0.0,0.0,12.0,0.0,0.0,12.0,vitimas
 2021,2021-11-01,RS,Mortes a esclarecer (sem indício de crime),2.0,0.0,1.0,1.0,0.0,0.0,2.0,vitimas
 2021,2021-11-01,RS,Mortes no trânsito,18.0,0.0,5.0,13.0,0.0,0.0,18.0,vitimas
 2021,2021-11-01,RS,Pessoa Desaparecida,563.0,0.0,203.0,360.0,0.0,0.0,563.0,vitimas
@@ -9771,8 +9771,8 @@
 2021,2021-12-01,RJ,Busca e salvamento,0.0,10016.0,0.0,0.0,0.0,0.0,10016.0,ocorrencias
 2021,2021-12-01,RJ,Combate a incêndios,0.0,2188.0,0.0,0.0,0.0,0.0,2188.0,ocorrencias
 2021,2021-12-01,RJ,Emissão de Alvarás de licença,0.0,2697.0,0.0,0.0,0.0,0.0,2697.0,ocorrencias
-2021,2021-12-01,RJ,Estupro,397.0,0.0,349.0,44.0,4.0,0.0,397.0,vitimas
-2021,2021-12-01,RJ,Estupro de vulnerável,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2021,2021-12-01,RJ,Estupro,105.0,0.0,97.0,8.0,0.0,0.0,105.0,vitimas
+2021,2021-12-01,RJ,Estupro de vulnerável,292.0,0.0,252.0,36.0,4.0,0.0,292.0,vitimas
 2021,2021-12-01,RJ,Feminicídio,4.0,0.0,4.0,0.0,0.0,0.0,4.0,vitimas
 2021,2021-12-01,RJ,Furto de veículo,0.0,1309.0,0.0,0.0,0.0,0.0,1309.0,ocorrencias
 2021,2021-12-01,RJ,Homicídio doloso,267.0,0.0,9.0,236.0,22.0,0.0,267.0,vitimas
@@ -9792,8 +9792,8 @@
 2021,2021-12-01,RJ,Roubo seguido de morte (latrocínio),6.0,0.0,1.0,5.0,0.0,0.0,6.0,vitimas
 2021,2021-12-01,RJ,Suicídio,81.0,0.0,19.0,62.0,0.0,0.0,81.0,vitimas
 2021,2021-12-01,RJ,Suicídio de Agente do Estado,1.0,0.0,0.0,1.0,0.0,0.0,1.0,vitimas
-2021,2021-12-01,RJ,Tentativa de feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2021,2021-12-01,RJ,Tentativa de homicídio,282.0,0.0,37.0,232.0,13.0,0.0,282.0,vitimas
+2021,2021-12-01,RJ,Tentativa de feminicídio,16.0,0.0,16.0,0.0,0.0,0.0,16.0,vitimas
+2021,2021-12-01,RJ,Tentativa de homicídio,265.0,0.0,21.0,232.0,12.0,0.0,265.0,vitimas
 2021,2021-12-01,RJ,Tráfico de drogas,0.0,1440.0,0.0,0.0,0.0,0.0,1440.0,ocorrencias
 2021,2021-12-01,RN,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,3.0,3.0,kg
 2021,2021-12-01,RN,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,215.0,215.0,kg
@@ -9802,8 +9802,8 @@
 2021,2021-12-01,RN,Busca e salvamento,0.0,365.0,0.0,0.0,0.0,0.0,365.0,ocorrencias
 2021,2021-12-01,RN,Combate a incêndios,0.0,274.0,0.0,0.0,0.0,0.0,274.0,ocorrencias
 2021,2021-12-01,RN,Emissão de Alvarás de licença,0.0,477.0,0.0,0.0,0.0,0.0,477.0,ocorrencias
-2021,2021-12-01,RN,Estupro,16.0,0.0,16.0,0.0,0.0,0.0,16.0,vitimas
-2021,2021-12-01,RN,Estupro de vulnerável,50.0,0.0,38.0,12.0,0.0,0.0,50.0,vitimas
+2021,2021-12-01,RN,Estupro,14.0,0.0,14.0,0.0,0.0,0.0,14.0,vitimas
+2021,2021-12-01,RN,Estupro de vulnerável,52.0,0.0,39.0,13.0,0.0,0.0,52.0,vitimas
 2021,2021-12-01,RN,Feminicídio,1.0,0.0,1.0,0.0,0.0,0.0,1.0,vitimas
 2021,2021-12-01,RN,Furto de veículo,0.0,123.0,0.0,0.0,0.0,0.0,123.0,ocorrencias
 2021,2021-12-01,RN,Homicídio doloso,67.0,0.0,4.0,63.0,0.0,0.0,67.0,vitimas
@@ -9859,7 +9859,7 @@
 2021,2021-12-01,RO,Tráfico de drogas,0.0,113.0,0.0,0.0,0.0,0.0,113.0,ocorrencias
 2021,2021-12-01,RR,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,6548.0,6548.0,kg
 2021,2021-12-01,RR,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,5929.0,5929.0,kg
-2021,2021-12-01,RR,Arma de Fogo Apreendida,0.0,26.0,0.0,0.0,0.0,0.0,26.0,ocorrencias
+2021,2021-12-01,RR,Arma de Fogo Apreendida,0.0,27.0,0.0,0.0,0.0,0.0,27.0,ocorrencias
 2021,2021-12-01,RR,Atendimento pré-hospitalar,0.0,218.0,0.0,0.0,0.0,0.0,218.0,ocorrencias
 2021,2021-12-01,RR,Busca e salvamento,0.0,160.0,0.0,0.0,0.0,0.0,160.0,ocorrencias
 2021,2021-12-01,RR,Combate a incêndios,0.0,32.0,0.0,0.0,0.0,0.0,32.0,ocorrencias

@@ -18,6 +18,10 @@ PAGE_URL = (
     "estatistica/dados-nacionais-1/"
     "base-de-dados-e-notas-metodologicas-dos-gestores-estaduais-sinesp-vde-2022-e-2023"
 )
+DOWNLOAD_URL_TEMPLATE = (
+    "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/"
+    "estatistica/download/dnsp-base-de-dados/bancovde-{year}.xlsx/@@download/file"
+)
 DOWNLOAD_RE = re.compile(r'href="([^"]*bancovde-(\d{4})\.xlsx/@@download/file[^"]*)"', re.I)
 HTTP_HEADERS = {
     "User-Agent": "Mozilla/5.0 (compatible; analisador-temporal-sinesp/1.0; +https://github.com/tuka1965-glitch/analisador-temporal)",
@@ -104,8 +108,34 @@ def get_with_retries(url: str, timeout: int, attempts: int = 6) -> requests.Resp
     raise RuntimeError(f"Falha ao baixar {url}") from last_error
 
 
-def discover_downloads() -> dict[int, str]:
-    response = get_with_retries(PAGE_URL, timeout=60)
+def build_fallback_downloads(manifest_path: Path) -> dict[int, str]:
+    if not manifest_path.exists():
+        return {}
+    try:
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+
+    fallback: dict[int, str] = {}
+    for item in manifest.get("files", []):
+        year = item.get("year")
+        if isinstance(year, int):
+            fallback[year] = DOWNLOAD_URL_TEMPLATE.format(year=year)
+    return dict(sorted(fallback.items()))
+
+
+def discover_downloads(existing_manifest_path: Path) -> dict[int, str]:
+    try:
+        response = get_with_retries(PAGE_URL, timeout=60)
+    except RuntimeError:
+        fallback = build_fallback_downloads(existing_manifest_path)
+        if fallback:
+            print(
+                "Nao foi possivel ler a pagina de downloads; usando os anos ja publicados no manifesto local."
+            )
+            return fallback
+        raise
+
     downloads: dict[int, str] = {}
     for href, year_text in DOWNLOAD_RE.findall(response.text):
         year = int(year_text)
@@ -299,6 +329,9 @@ def read_best_table(xlsx_path: Path) -> pd.DataFrame:
 def parse_years(value: str | None, available: list[int]) -> list[int]:
     if not value or value.lower() == "all":
         return available
+    if value.lower() == "current":
+        current_year = datetime.now(timezone.utc).year
+        return [year for year in available if year == current_year]
     selected: set[int] = set()
     for part in value.split(","):
         part = part.strip()
@@ -310,31 +343,78 @@ def parse_years(value: str | None, available: list[int]) -> list[int]:
     return [year for year in available if year in selected]
 
 
+def load_existing_manifest_sources(manifest_path: Path) -> dict[int, str]:
+    if not manifest_path.exists():
+        return {}
+    try:
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+
+    sources: dict[int, str] = {}
+    for item in manifest.get("files", []):
+        year = item.get("year")
+        source = item.get("source")
+        if isinstance(year, int) and isinstance(source, str) and source:
+            sources[year] = source
+    return sources
+
+
+def load_existing_year_frame(csv_path: Path, year: int) -> pd.DataFrame:
+    df = pd.read_csv(csv_path, dtype=object, encoding="utf-8-sig")
+    if "ano_arquivo" not in df.columns:
+        df.insert(0, "ano_arquivo", year)
+    return df
+
+
 def update_data(output_dir: Path, years_arg: str | None, keep_xlsx: bool, level: str) -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
     cache_dir = output_dir / "_fonte_xlsx"
     cache_dir.mkdir(parents=True, exist_ok=True)
 
-    downloads = discover_downloads()
-    years = parse_years(years_arg, list(downloads))
-    if not years:
+    manifest_path = output_dir / "sinesp_manifest.json"
+    downloads = discover_downloads(manifest_path)
+    years_to_update = parse_years(years_arg, list(downloads))
+    if not years_to_update:
         raise ValueError("Nenhum ano selecionado entre os arquivos disponiveis.")
+    years_to_update_set = set(years_to_update)
+    existing_sources = load_existing_manifest_sources(manifest_path)
+
+    existing_years = []
+    for path in output_dir.glob("sinesp_vde_*.csv"):
+        if path.name == "sinesp_vde.csv":
+            continue
+        match = re.search(r"(\d{4})", path.stem)
+        if match:
+            existing_years.append(int(match.group(1)))
+    final_years = sorted(set(existing_years) | years_to_update_set)
 
     manifest_files = []
     total_rows = 0
-    for year in years:
-        source_url = downloads[year]
-        xlsx_path = cache_dir / f"bancovde-{year}.xlsx"
+    combined_frames: list[pd.DataFrame] = []
+    for year in final_years:
         csv_path = output_dir / f"sinesp_vde_{year}.csv"
+        source_url = downloads.get(year) or existing_sources.get(year) or DOWNLOAD_URL_TEMPLATE.format(year=year)
 
-        print(f"Baixando {year}: {source_url}")
-        response = get_with_retries(source_url, timeout=180)
-        xlsx_path.write_bytes(response.content)
+        if year in years_to_update_set:
+            xlsx_path = cache_dir / f"bancovde-{year}.xlsx"
+            print(f"Baixando {year}: {source_url}")
+            response = get_with_retries(source_url, timeout=180)
+            xlsx_path.write_bytes(response.content)
 
-        raw_df = read_best_table(xlsx_path)
-        df = make_analysis_table(raw_df, level)
-        df.insert(0, "ano_arquivo", year)
-        df.to_csv(csv_path, index=False, encoding="utf-8-sig")
+            raw_df = read_best_table(xlsx_path)
+            df = make_analysis_table(raw_df, level)
+            df.insert(0, "ano_arquivo", year)
+            df.to_csv(csv_path, index=False, encoding="utf-8-sig")
+
+            if not keep_xlsx:
+                xlsx_path.unlink(missing_ok=True)
+        else:
+            if not csv_path.exists():
+                raise FileNotFoundError(f"Arquivo historico ausente para {year}: {csv_path}")
+            df = load_existing_year_frame(csv_path, year)
+
+        combined_frames.append(df)
         total_rows += len(df)
         manifest_files.append(
             {
@@ -345,8 +425,11 @@ def update_data(output_dir: Path, years_arg: str | None, keep_xlsx: bool, level:
             }
         )
 
-        if not keep_xlsx:
-            xlsx_path.unlink(missing_ok=True)
+    if combined_frames:
+        combined_df = pd.concat(combined_frames, ignore_index=True).sort_values(
+            ["ano_arquivo", "data_referencia", "uf", "evento"]
+        )
+        combined_df.to_csv(output_dir / "sinesp_vde.csv", index=False, encoding="utf-8-sig")
 
     manifest = {
         "source_page": PAGE_URL,

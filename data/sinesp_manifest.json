@@ -1,8 +1,8 @@
 {
   "source_page": "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/dados-nacionais-1/base-de-dados-e-notas-metodologicas-dos-gestores-estaduais-sinesp-vde-2022-e-2023",
-  "updated_at": "2026-09-28T16:50:35.331434+00:00",
+  "updated_at": "2026-10-05T17:14:27.622296+00:00",
   "aggregation_level": "uf",
-  "rows": 117016,
+  "rows": 117043,
   "files": [
     {
       "year": 2015,
@@ -73,7 +73,7 @@
     {
       "year": 2026,
       "path": "data/sinesp_vde_2026.csv",
-      "rows": 6669,
+      "rows": 6696,
       "source": "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/download/dnsp-base-de-dados/bancovde-2026.xlsx/@@download/file"
     }
   ]

@@ -606,7 +606,7 @@
 2026,2026-01-01,RN,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),48.0,0.0,10.0,37.0,1.0,0.0,48.0,vitimas
 2026,2026-01-01,RN,Morte por intervenção de Agente do Estado,20.0,0.0,1.0,19.0,0.0,0.0,20.0,vitimas
 2026,2026-01-01,RN,Mortes a esclarecer (sem indício de crime),41.0,0.0,18.0,21.0,2.0,0.0,41.0,vitimas
-2026,2026-01-01,RN,Mortes no trânsito,10.0,0.0,1.0,9.0,0.0,0.0,10.0,vitimas
+2026,2026-01-01,RN,Mortes no trânsito,11.0,0.0,1.0,10.0,0.0,0.0,11.0,vitimas
 2026,2026-01-01,RN,Pessoa Desaparecida,64.0,0.0,14.0,50.0,0.0,0.0,64.0,vitimas
 2026,2026-01-01,RN,Pessoa Localizada,40.0,0.0,7.0,33.0,0.0,0.0,40.0,vitimas
 2026,2026-01-01,RN,Realização de vistorias,0.0,523.0,0.0,0.0,0.0,0.0,523.0,ocorrencias
@@ -1009,7 +1009,7 @@
 2026,2026-02-01,CE,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),110.0,0.0,13.0,96.0,1.0,0.0,110.0,vitimas
 2026,2026-02-01,CE,Morte por intervenção de Agente do Estado,32.0,0.0,0.0,32.0,0.0,0.0,32.0,vitimas
 2026,2026-02-01,CE,Mortes a esclarecer (sem indício de crime),35.0,0.0,10.0,25.0,0.0,0.0,35.0,vitimas
-2026,2026-02-01,CE,Mortes no trânsito,7.0,0.0,1.0,6.0,0.0,0.0,7.0,vitimas
+2026,2026-02-01,CE,Mortes no trânsito,5.0,0.0,1.0,4.0,0.0,0.0,5.0,vitimas
 2026,2026-02-01,CE,Pessoa Desaparecida,167.0,0.0,44.0,123.0,0.0,0.0,167.0,vitimas
 2026,2026-02-01,CE,Pessoa Localizada,112.0,0.0,33.0,79.0,0.0,0.0,112.0,vitimas
 2026,2026-02-01,CE,Realização de vistorias,0.0,4003.0,0.0,0.0,0.0,0.0,4003.0,ocorrencias
@@ -2094,7 +2094,7 @@
 2026,2026-03-01,PA,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),94.0,0.0,17.0,75.0,2.0,0.0,94.0,vitimas
 2026,2026-03-01,PA,Morte por intervenção de Agente do Estado,44.0,0.0,0.0,44.0,0.0,0.0,44.0,vitimas
 2026,2026-03-01,PA,Mortes a esclarecer (sem indício de crime),37.0,0.0,5.0,26.0,6.0,0.0,37.0,vitimas
-2026,2026-03-01,PA,Mortes no trânsito,15.0,0.0,2.0,13.0,0.0,0.0,15.0,vitimas
+2026,2026-03-01,PA,Mortes no trânsito,16.0,0.0,2.0,14.0,0.0,0.0,16.0,vitimas
 2026,2026-03-01,PA,Pessoa Desaparecida,172.0,0.0,61.0,110.0,1.0,0.0,172.0,vitimas
 2026,2026-03-01,PA,Pessoa Localizada,75.0,0.0,27.0,48.0,0.0,0.0,75.0,vitimas
 2026,2026-03-01,PA,Realização de vistorias,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
@@ -2528,7 +2528,7 @@
 2026,2026-04-01,AC,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),2.0,0.0,0.0,2.0,0.0,0.0,2.0,vitimas
 2026,2026-04-01,AC,Morte por intervenção de Agente do Estado,2.0,0.0,0.0,2.0,0.0,0.0,2.0,vitimas
 2026,2026-04-01,AC,Mortes a esclarecer (sem indício de crime),7.0,0.0,1.0,6.0,0.0,0.0,7.0,vitimas
-2026,2026-04-01,AC,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-04-01,AC,Mortes no trânsito,1.0,0.0,0.0,1.0,0.0,0.0,1.0,vitimas
 2026,2026-04-01,AC,Pessoa Desaparecida,48.0,0.0,14.0,31.0,3.0,0.0,48.0,vitimas
 2026,2026-04-01,AC,Pessoa Localizada,35.0,0.0,10.0,22.0,3.0,0.0,35.0,vitimas
 2026,2026-04-01,AC,Realização de vistorias,0.0,801.0,0.0,0.0,0.0,0.0,801.0,ocorrencias
@@ -2559,7 +2559,7 @@
 2026,2026-04-01,AL,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),21.0,0.0,2.0,18.0,1.0,0.0,21.0,vitimas
 2026,2026-04-01,AL,Morte por intervenção de Agente do Estado,15.0,0.0,0.0,15.0,0.0,0.0,15.0,vitimas
 2026,2026-04-01,AL,Mortes a esclarecer (sem indício de crime),71.0,0.0,17.0,46.0,8.0,0.0,71.0,vitimas
-2026,2026-04-01,AL,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-04-01,AL,Mortes no trânsito,6.0,0.0,0.0,6.0,0.0,0.0,6.0,vitimas
 2026,2026-04-01,AL,Pessoa Desaparecida,92.0,0.0,30.0,62.0,0.0,0.0,92.0,vitimas
 2026,2026-04-01,AL,Pessoa Localizada,74.0,0.0,26.0,48.0,0.0,0.0,74.0,vitimas
 2026,2026-04-01,AL,Realização de vistorias,0.0,1040.0,0.0,0.0,0.0,0.0,1040.0,ocorrencias
@@ -2590,7 +2590,7 @@
 2026,2026-04-01,AM,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),24.0,0.0,10.0,14.0,0.0,0.0,24.0,vitimas
 2026,2026-04-01,AM,Morte por intervenção de Agente do Estado,5.0,0.0,0.0,5.0,0.0,0.0,5.0,vitimas
 2026,2026-04-01,AM,Mortes a esclarecer (sem indício de crime),0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2026,2026-04-01,AM,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-04-01,AM,Mortes no trânsito,3.0,0.0,0.0,3.0,0.0,0.0,3.0,vitimas
 2026,2026-04-01,AM,Pessoa Desaparecida,82.0,0.0,38.0,44.0,0.0,0.0,82.0,vitimas
 2026,2026-04-01,AM,Pessoa Localizada,65.0,0.0,33.0,32.0,0.0,0.0,65.0,vitimas
 2026,2026-04-01,AM,Realização de vistorias,0.0,473.0,0.0,0.0,0.0,0.0,473.0,ocorrencias
@@ -2603,8 +2603,8 @@
 2026,2026-04-01,AM,Tentativa de feminicídio,10.0,0.0,10.0,0.0,0.0,0.0,10.0,vitimas
 2026,2026-04-01,AM,Tentativa de homicídio,70.0,0.0,18.0,50.0,2.0,0.0,70.0,vitimas
 2026,2026-04-01,AM,Tráfico de drogas,0.0,327.0,0.0,0.0,0.0,0.0,327.0,ocorrencias
-2026,2026-04-01,AP,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,233.0,233.0,kg
-2026,2026-04-01,AP,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,1277.0,1277.0,kg
+2026,2026-04-01,AP,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,243.0,243.0,kg
+2026,2026-04-01,AP,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,1278.0,1278.0,kg
 2026,2026-04-01,AP,Arma de Fogo Apreendida,0.0,19.0,0.0,0.0,0.0,0.0,19.0,ocorrencias
 2026,2026-04-01,AP,Atendimento pré-hospitalar,0.0,868.0,0.0,0.0,0.0,0.0,868.0,ocorrencias
 2026,2026-04-01,AP,Busca e salvamento,0.0,279.0,0.0,0.0,0.0,0.0,279.0,ocorrencias
@@ -2621,7 +2621,7 @@
 2026,2026-04-01,AP,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),10.0,0.0,3.0,7.0,0.0,0.0,10.0,vitimas
 2026,2026-04-01,AP,Morte por intervenção de Agente do Estado,4.0,0.0,0.0,4.0,0.0,0.0,4.0,vitimas
 2026,2026-04-01,AP,Mortes a esclarecer (sem indício de crime),0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2026,2026-04-01,AP,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-04-01,AP,Mortes no trânsito,1.0,0.0,0.0,1.0,0.0,0.0,1.0,vitimas
 2026,2026-04-01,AP,Pessoa Desaparecida,50.0,0.0,23.0,27.0,0.0,0.0,50.0,vitimas
 2026,2026-04-01,AP,Pessoa Localizada,44.0,0.0,21.0,23.0,0.0,0.0,44.0,vitimas
 2026,2026-04-01,AP,Realização de vistorias,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
@@ -2652,7 +2652,7 @@
 2026,2026-04-01,BA,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),66.0,0.0,17.0,47.0,2.0,0.0,66.0,vitimas
 2026,2026-04-01,BA,Morte por intervenção de Agente do Estado,118.0,0.0,0.0,118.0,0.0,0.0,118.0,vitimas
 2026,2026-04-01,BA,Mortes a esclarecer (sem indício de crime),98.0,0.0,28.0,61.0,9.0,0.0,98.0,vitimas
-2026,2026-04-01,BA,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-04-01,BA,Mortes no trânsito,53.0,0.0,8.0,45.0,0.0,0.0,53.0,vitimas
 2026,2026-04-01,BA,Pessoa Desaparecida,340.0,0.0,111.0,225.0,4.0,0.0,340.0,vitimas
 2026,2026-04-01,BA,Pessoa Localizada,79.0,0.0,29.0,48.0,2.0,0.0,79.0,vitimas
 2026,2026-04-01,BA,Realização de vistorias,0.0,1100.0,0.0,0.0,0.0,0.0,1100.0,ocorrencias
@@ -2683,7 +2683,7 @@
 2026,2026-04-01,CE,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),118.0,0.0,22.0,96.0,0.0,0.0,118.0,vitimas
 2026,2026-04-01,CE,Morte por intervenção de Agente do Estado,9.0,0.0,0.0,9.0,0.0,0.0,9.0,vitimas
 2026,2026-04-01,CE,Mortes a esclarecer (sem indício de crime),26.0,0.0,4.0,22.0,0.0,0.0,26.0,vitimas
-2026,2026-04-01,CE,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-04-01,CE,Mortes no trânsito,14.0,0.0,3.0,11.0,0.0,0.0,14.0,vitimas
 2026,2026-04-01,CE,Pessoa Desaparecida,208.0,0.0,51.0,156.0,1.0,0.0,208.0,vitimas
 2026,2026-04-01,CE,Pessoa Localizada,134.0,0.0,33.0,100.0,1.0,0.0,134.0,vitimas
 2026,2026-04-01,CE,Realização de vistorias,0.0,6266.0,0.0,0.0,0.0,0.0,6266.0,ocorrencias
@@ -2714,7 +2714,7 @@
 2026,2026-04-01,DF,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),22.0,0.0,5.0,17.0,0.0,0.0,22.0,vitimas
 2026,2026-04-01,DF,Morte por intervenção de Agente do Estado,1.0,0.0,0.0,1.0,0.0,0.0,1.0,vitimas
 2026,2026-04-01,DF,Mortes a esclarecer (sem indício de crime),0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2026,2026-04-01,DF,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-04-01,DF,Mortes no trânsito,6.0,0.0,0.0,6.0,0.0,0.0,6.0,vitimas
 2026,2026-04-01,DF,Pessoa Desaparecida,188.0,0.0,76.0,111.0,1.0,0.0,188.0,vitimas
 2026,2026-04-01,DF,Pessoa Localizada,185.0,0.0,76.0,108.0,1.0,0.0,185.0,vitimas
 2026,2026-04-01,DF,Realização de vistorias,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
@@ -2745,7 +2745,7 @@
 2026,2026-04-01,ES,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),95.0,0.0,19.0,74.0,2.0,0.0,95.0,vitimas
 2026,2026-04-01,ES,Morte por intervenção de Agente do Estado,10.0,0.0,0.0,10.0,0.0,0.0,10.0,vitimas
 2026,2026-04-01,ES,Mortes a esclarecer (sem indício de crime),4.0,0.0,1.0,3.0,0.0,0.0,4.0,vitimas
-2026,2026-04-01,ES,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-04-01,ES,Mortes no trânsito,15.0,0.0,3.0,12.0,0.0,0.0,15.0,vitimas
 2026,2026-04-01,ES,Pessoa Desaparecida,244.0,0.0,91.0,143.0,10.0,0.0,244.0,vitimas
 2026,2026-04-01,ES,Pessoa Localizada,41.0,0.0,17.0,23.0,1.0,0.0,41.0,vitimas
 2026,2026-04-01,ES,Realização de vistorias,0.0,3838.0,0.0,0.0,0.0,0.0,3838.0,ocorrencias
@@ -2776,7 +2776,7 @@
 2026,2026-04-01,GO,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),64.0,0.0,9.0,52.0,3.0,0.0,64.0,vitimas
 2026,2026-04-01,GO,Morte por intervenção de Agente do Estado,22.0,0.0,0.0,15.0,7.0,0.0,22.0,vitimas
 2026,2026-04-01,GO,Mortes a esclarecer (sem indício de crime),46.0,0.0,6.0,34.0,6.0,0.0,46.0,vitimas
-2026,2026-04-01,GO,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-04-01,GO,Mortes no trânsito,32.0,0.0,6.0,26.0,0.0,0.0,32.0,vitimas
 2026,2026-04-01,GO,Pessoa Desaparecida,305.0,0.0,123.0,176.0,6.0,0.0,305.0,vitimas
 2026,2026-04-01,GO,Pessoa Localizada,142.0,0.0,50.0,92.0,0.0,0.0,142.0,vitimas
 2026,2026-04-01,GO,Realização de vistorias,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
@@ -2807,7 +2807,7 @@
 2026,2026-04-01,MA,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),85.0,0.0,15.0,70.0,0.0,0.0,85.0,vitimas
 2026,2026-04-01,MA,Morte por intervenção de Agente do Estado,13.0,0.0,0.0,13.0,0.0,0.0,13.0,vitimas
 2026,2026-04-01,MA,Mortes a esclarecer (sem indício de crime),12.0,0.0,4.0,8.0,0.0,0.0,12.0,vitimas
-2026,2026-04-01,MA,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-04-01,MA,Mortes no trânsito,19.0,0.0,3.0,16.0,0.0,0.0,19.0,vitimas
 2026,2026-04-01,MA,Pessoa Desaparecida,101.0,0.0,23.0,68.0,10.0,0.0,101.0,vitimas
 2026,2026-04-01,MA,Pessoa Localizada,20.0,0.0,4.0,14.0,2.0,0.0,20.0,vitimas
 2026,2026-04-01,MA,Realização de vistorias,0.0,521.0,0.0,0.0,0.0,0.0,521.0,ocorrencias
@@ -2838,7 +2838,7 @@
 2026,2026-04-01,MG,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),228.0,0.0,50.0,178.0,0.0,0.0,228.0,vitimas
 2026,2026-04-01,MG,Morte por intervenção de Agente do Estado,13.0,0.0,0.0,13.0,0.0,0.0,13.0,vitimas
 2026,2026-04-01,MG,Mortes a esclarecer (sem indício de crime),0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2026,2026-04-01,MG,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-04-01,MG,Mortes no trânsito,84.0,0.0,15.0,69.0,0.0,0.0,84.0,vitimas
 2026,2026-04-01,MG,Pessoa Desaparecida,822.0,0.0,306.0,516.0,0.0,0.0,822.0,vitimas
 2026,2026-04-01,MG,Pessoa Localizada,481.0,0.0,198.0,282.0,1.0,0.0,481.0,vitimas
 2026,2026-04-01,MG,Realização de vistorias,0.0,2736.0,0.0,0.0,0.0,0.0,2736.0,ocorrencias
@@ -2869,7 +2869,7 @@
 2026,2026-04-01,MS,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),32.0,0.0,6.0,26.0,0.0,0.0,32.0,vitimas
 2026,2026-04-01,MS,Morte por intervenção de Agente do Estado,9.0,0.0,0.0,9.0,0.0,0.0,9.0,vitimas
 2026,2026-04-01,MS,Mortes a esclarecer (sem indício de crime),11.0,0.0,1.0,9.0,1.0,0.0,11.0,vitimas
-2026,2026-04-01,MS,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-04-01,MS,Mortes no trânsito,13.0,0.0,4.0,9.0,0.0,0.0,13.0,vitimas
 2026,2026-04-01,MS,Pessoa Desaparecida,82.0,0.0,35.0,47.0,0.0,0.0,82.0,vitimas
 2026,2026-04-01,MS,Pessoa Localizada,80.0,0.0,34.0,46.0,0.0,0.0,80.0,vitimas
 2026,2026-04-01,MS,Realização de vistorias,0.0,4727.0,0.0,0.0,0.0,0.0,4727.0,ocorrencias
@@ -2900,7 +2900,7 @@
 2026,2026-04-01,MT,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),86.0,0.0,17.0,69.0,0.0,0.0,86.0,vitimas
 2026,2026-04-01,MT,Morte por intervenção de Agente do Estado,7.0,0.0,0.0,7.0,0.0,0.0,7.0,vitimas
 2026,2026-04-01,MT,Mortes a esclarecer (sem indício de crime),40.0,0.0,12.0,28.0,0.0,0.0,40.0,vitimas
-2026,2026-04-01,MT,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-04-01,MT,Mortes no trânsito,16.0,0.0,4.0,12.0,0.0,0.0,16.0,vitimas
 2026,2026-04-01,MT,Pessoa Desaparecida,196.0,0.0,76.0,120.0,0.0,0.0,196.0,vitimas
 2026,2026-04-01,MT,Pessoa Localizada,101.0,0.0,37.0,64.0,0.0,0.0,101.0,vitimas
 2026,2026-04-01,MT,Realização de vistorias,0.0,2875.0,0.0,0.0,0.0,0.0,2875.0,ocorrencias
@@ -2931,7 +2931,7 @@
 2026,2026-04-01,PA,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),79.0,0.0,18.0,60.0,1.0,0.0,79.0,vitimas
 2026,2026-04-01,PA,Morte por intervenção de Agente do Estado,38.0,0.0,0.0,38.0,0.0,0.0,38.0,vitimas
 2026,2026-04-01,PA,Mortes a esclarecer (sem indício de crime),39.0,0.0,8.0,31.0,0.0,0.0,39.0,vitimas
-2026,2026-04-01,PA,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-04-01,PA,Mortes no trânsito,10.0,0.0,1.0,9.0,0.0,0.0,10.0,vitimas
 2026,2026-04-01,PA,Pessoa Desaparecida,146.0,0.0,53.0,93.0,0.0,0.0,146.0,vitimas
 2026,2026-04-01,PA,Pessoa Localizada,53.0,0.0,27.0,26.0,0.0,0.0,53.0,vitimas
 2026,2026-04-01,PA,Realização de vistorias,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
@@ -2962,7 +2962,7 @@
 2026,2026-04-01,PB,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),57.0,0.0,10.0,47.0,0.0,0.0,57.0,vitimas
 2026,2026-04-01,PB,Morte por intervenção de Agente do Estado,6.0,0.0,0.0,6.0,0.0,0.0,6.0,vitimas
 2026,2026-04-01,PB,Mortes a esclarecer (sem indício de crime),8.0,0.0,1.0,7.0,0.0,0.0,8.0,vitimas
-2026,2026-04-01,PB,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-04-01,PB,Mortes no trânsito,7.0,0.0,2.0,5.0,0.0,0.0,7.0,vitimas
 2026,2026-04-01,PB,Pessoa Desaparecida,74.0,0.0,24.0,50.0,0.0,0.0,74.0,vitimas
 2026,2026-04-01,PB,Pessoa Localizada,48.0,0.0,16.0,32.0,0.0,0.0,48.0,vitimas
 2026,2026-04-01,PB,Realização de vistorias,0.0,1125.0,0.0,0.0,0.0,0.0,1125.0,ocorrencias
@@ -2993,7 +2993,7 @@
 2026,2026-04-01,PE,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),143.0,0.0,19.0,124.0,0.0,0.0,143.0,vitimas
 2026,2026-04-01,PE,Morte por intervenção de Agente do Estado,13.0,0.0,1.0,12.0,0.0,0.0,13.0,vitimas
 2026,2026-04-01,PE,Mortes a esclarecer (sem indício de crime),179.0,0.0,50.0,126.0,3.0,0.0,179.0,vitimas
-2026,2026-04-01,PE,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-04-01,PE,Mortes no trânsito,22.0,0.0,2.0,20.0,0.0,0.0,22.0,vitimas
 2026,2026-04-01,PE,Pessoa Desaparecida,217.0,0.0,59.0,145.0,13.0,0.0,217.0,vitimas
 2026,2026-04-01,PE,Pessoa Localizada,71.0,0.0,26.0,40.0,5.0,0.0,71.0,vitimas
 2026,2026-04-01,PE,Realização de vistorias,0.0,4930.0,0.0,0.0,0.0,0.0,4930.0,ocorrencias
@@ -3024,7 +3024,7 @@
 2026,2026-04-01,PI,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
 2026,2026-04-01,PI,Morte por intervenção de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
 2026,2026-04-01,PI,Mortes a esclarecer (sem indício de crime),11.0,0.0,2.0,9.0,0.0,0.0,11.0,vitimas
-2026,2026-04-01,PI,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-04-01,PI,Mortes no trânsito,23.0,0.0,5.0,18.0,0.0,0.0,23.0,vitimas
 2026,2026-04-01,PI,Pessoa Desaparecida,51.0,0.0,8.0,40.0,3.0,0.0,51.0,vitimas
 2026,2026-04-01,PI,Pessoa Localizada,11.0,0.0,3.0,8.0,0.0,0.0,11.0,vitimas
 2026,2026-04-01,PI,Realização de vistorias,0.0,685.0,0.0,0.0,0.0,0.0,685.0,ocorrencias
@@ -3055,7 +3055,7 @@
 2026,2026-04-01,PR,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),71.0,0.0,16.0,54.0,1.0,0.0,71.0,vitimas
 2026,2026-04-01,PR,Morte por intervenção de Agente do Estado,26.0,0.0,2.0,23.0,1.0,0.0,26.0,vitimas
 2026,2026-04-01,PR,Mortes a esclarecer (sem indício de crime),5.0,0.0,0.0,4.0,1.0,0.0,5.0,vitimas
-2026,2026-04-01,PR,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-04-01,PR,Mortes no trânsito,50.0,0.0,9.0,41.0,0.0,0.0,50.0,vitimas
 2026,2026-04-01,PR,Pessoa Desaparecida,489.0,0.0,201.0,288.0,0.0,0.0,489.0,vitimas
 2026,2026-04-01,PR,Pessoa Localizada,379.0,0.0,164.0,215.0,0.0,0.0,379.0,vitimas
 2026,2026-04-01,PR,Realização de vistorias,0.0,815.0,0.0,0.0,0.0,0.0,815.0,ocorrencias
@@ -3086,7 +3086,7 @@
 2026,2026-04-01,RJ,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),226.0,0.0,42.0,178.0,6.0,0.0,226.0,vitimas
 2026,2026-04-01,RJ,Morte por intervenção de Agente do Estado,48.0,0.0,1.0,46.0,1.0,0.0,48.0,vitimas
 2026,2026-04-01,RJ,Mortes a esclarecer (sem indício de crime),234.0,0.0,70.0,163.0,1.0,0.0,234.0,vitimas
-2026,2026-04-01,RJ,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-04-01,RJ,Mortes no trânsito,36.0,0.0,6.0,30.0,0.0,0.0,36.0,vitimas
 2026,2026-04-01,RJ,Pessoa Desaparecida,589.0,0.0,202.0,385.0,2.0,0.0,589.0,vitimas
 2026,2026-04-01,RJ,Pessoa Localizada,256.0,0.0,0.0,8.0,248.0,0.0,256.0,vitimas
 2026,2026-04-01,RJ,Realização de vistorias,0.0,273.0,0.0,0.0,0.0,0.0,273.0,ocorrencias
@@ -3117,7 +3117,7 @@
 2026,2026-04-01,RN,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),51.0,0.0,13.0,38.0,0.0,0.0,51.0,vitimas
 2026,2026-04-01,RN,Morte por intervenção de Agente do Estado,21.0,0.0,1.0,20.0,0.0,0.0,21.0,vitimas
 2026,2026-04-01,RN,Mortes a esclarecer (sem indício de crime),60.0,0.0,18.0,40.0,2.0,0.0,60.0,vitimas
-2026,2026-04-01,RN,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-04-01,RN,Mortes no trânsito,9.0,0.0,1.0,8.0,0.0,0.0,9.0,vitimas
 2026,2026-04-01,RN,Pessoa Desaparecida,61.0,0.0,19.0,41.0,1.0,0.0,61.0,vitimas
 2026,2026-04-01,RN,Pessoa Localizada,21.0,0.0,2.0,18.0,1.0,0.0,21.0,vitimas
 2026,2026-04-01,RN,Realização de vistorias,0.0,437.0,0.0,0.0,0.0,0.0,437.0,ocorrencias
@@ -3148,7 +3148,7 @@
 2026,2026-04-01,RO,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),27.0,0.0,4.0,22.0,1.0,0.0,27.0,vitimas
 2026,2026-04-01,RO,Morte por intervenção de Agente do Estado,3.0,0.0,0.0,3.0,0.0,0.0,3.0,vitimas
 2026,2026-04-01,RO,Mortes a esclarecer (sem indício de crime),25.0,0.0,4.0,21.0,0.0,0.0,25.0,vitimas
-2026,2026-04-01,RO,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-04-01,RO,Mortes no trânsito,6.0,0.0,1.0,5.0,0.0,0.0,6.0,vitimas
 2026,2026-04-01,RO,Pessoa Desaparecida,69.0,0.0,31.0,38.0,0.0,0.0,69.0,vitimas
 2026,2026-04-01,RO,Pessoa Localizada,4.0,0.0,2.0,2.0,0.0,0.0,4.0,vitimas
 2026,2026-04-01,RO,Realização de vistorias,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
@@ -3179,7 +3179,7 @@
 2026,2026-04-01,RR,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),1.0,0.0,0.0,1.0,0.0,0.0,1.0,vitimas
 2026,2026-04-01,RR,Morte por intervenção de Agente do Estado,1.0,0.0,0.0,1.0,0.0,0.0,1.0,vitimas
 2026,2026-04-01,RR,Mortes a esclarecer (sem indício de crime),18.0,0.0,5.0,13.0,0.0,0.0,18.0,vitimas
-2026,2026-04-01,RR,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-04-01,RR,Mortes no trânsito,2.0,0.0,0.0,2.0,0.0,0.0,2.0,vitimas
 2026,2026-04-01,RR,Pessoa Desaparecida,32.0,0.0,16.0,16.0,0.0,0.0,32.0,vitimas
 2026,2026-04-01,RR,Pessoa Localizada,29.0,0.0,14.0,15.0,0.0,0.0,29.0,vitimas
 2026,2026-04-01,RR,Realização de vistorias,0.0,48.0,0.0,0.0,0.0,0.0,48.0,ocorrencias
@@ -3210,7 +3210,7 @@
 2026,2026-04-01,RS,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),91.0,0.0,23.0,68.0,0.0,0.0,91.0,vitimas
 2026,2026-04-01,RS,Morte por intervenção de Agente do Estado,7.0,0.0,0.0,7.0,0.0,0.0,7.0,vitimas
 2026,2026-04-01,RS,Mortes a esclarecer (sem indício de crime),96.0,0.0,29.0,67.0,0.0,0.0,96.0,vitimas
-2026,2026-04-01,RS,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-04-01,RS,Mortes no trânsito,32.0,0.0,8.0,24.0,0.0,0.0,32.0,vitimas
 2026,2026-04-01,RS,Pessoa Desaparecida,606.0,0.0,228.0,378.0,0.0,0.0,606.0,vitimas
 2026,2026-04-01,RS,Pessoa Localizada,593.0,0.0,223.0,370.0,0.0,0.0,593.0,vitimas
 2026,2026-04-01,RS,Realização de vistorias,0.0,2145.0,0.0,0.0,0.0,0.0,2145.0,ocorrencias
@@ -3241,7 +3241,7 @@
 2026,2026-04-01,SC,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),48.0,0.0,11.0,37.0,0.0,0.0,48.0,vitimas
 2026,2026-04-01,SC,Morte por intervenção de Agente do Estado,11.0,0.0,0.0,11.0,0.0,0.0,11.0,vitimas
 2026,2026-04-01,SC,Mortes a esclarecer (sem indício de crime),0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2026,2026-04-01,SC,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-04-01,SC,Mortes no trânsito,33.0,0.0,8.0,25.0,0.0,0.0,33.0,vitimas
 2026,2026-04-01,SC,Pessoa Desaparecida,400.0,0.0,172.0,227.0,1.0,0.0,400.0,vitimas
 2026,2026-04-01,SC,Pessoa Localizada,332.0,0.0,153.0,179.0,0.0,0.0,332.0,vitimas
 2026,2026-04-01,SC,Realização de vistorias,0.0,4862.0,0.0,0.0,0.0,0.0,4862.0,ocorrencias
@@ -3272,7 +3272,7 @@
 2026,2026-04-01,SE,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),17.0,0.0,4.0,12.0,1.0,0.0,17.0,vitimas
 2026,2026-04-01,SE,Morte por intervenção de Agente do Estado,21.0,0.0,0.0,21.0,0.0,0.0,21.0,vitimas
 2026,2026-04-01,SE,Mortes a esclarecer (sem indício de crime),36.0,0.0,9.0,26.0,1.0,0.0,36.0,vitimas
-2026,2026-04-01,SE,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-04-01,SE,Mortes no trânsito,2.0,0.0,0.0,2.0,0.0,0.0,2.0,vitimas
 2026,2026-04-01,SE,Pessoa Desaparecida,19.0,0.0,8.0,11.0,0.0,0.0,19.0,vitimas
 2026,2026-04-01,SE,Pessoa Localizada,10.0,0.0,5.0,5.0,0.0,0.0,10.0,vitimas
 2026,2026-04-01,SE,Realização de vistorias,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
@@ -3303,7 +3303,7 @@
 2026,2026-04-01,SP,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),367.0,0.0,88.0,278.0,1.0,0.0,367.0,vitimas
 2026,2026-04-01,SP,Morte por intervenção de Agente do Estado,62.0,0.0,2.0,59.0,1.0,0.0,62.0,vitimas
 2026,2026-04-01,SP,Mortes a esclarecer (sem indício de crime),313.0,0.0,54.0,246.0,13.0,0.0,313.0,vitimas
-2026,2026-04-01,SP,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-04-01,SP,Mortes no trânsito,12.0,0.0,1.0,11.0,0.0,0.0,12.0,vitimas
 2026,2026-04-01,SP,Pessoa Desaparecida,1735.0,0.0,622.0,1109.0,4.0,0.0,1735.0,vitimas
 2026,2026-04-01,SP,Pessoa Localizada,1210.0,0.0,485.0,722.0,3.0,0.0,1210.0,vitimas
 2026,2026-04-01,SP,Realização de vistorias,0.0,9043.0,0.0,0.0,0.0,0.0,9043.0,ocorrencias
@@ -3334,7 +3334,7 @@
 2026,2026-04-01,TO,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),39.0,0.0,7.0,32.0,0.0,0.0,39.0,vitimas
 2026,2026-04-01,TO,Morte por intervenção de Agente do Estado,1.0,0.0,0.0,0.0,1.0,0.0,1.0,vitimas
 2026,2026-04-01,TO,Mortes a esclarecer (sem indício de crime),29.0,0.0,5.0,22.0,2.0,0.0,29.0,vitimas
-2026,2026-04-01,TO,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-04-01,TO,Mortes no trânsito,5.0,0.0,0.0,5.0,0.0,0.0,5.0,vitimas
 2026,2026-04-01,TO,Pessoa Desaparecida,48.0,0.0,11.0,37.0,0.0,0.0,48.0,vitimas
 2026,2026-04-01,TO,Pessoa Localizada,24.0,0.0,7.0,17.0,0.0,0.0,24.0,vitimas
 2026,2026-04-01,TO,Realização de vistorias,0.0,346.0,0.0,0.0,0.0,0.0,346.0,ocorrencias
@@ -3365,7 +3365,7 @@
 2026,2026-05-01,AC,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),10.0,0.0,2.0,8.0,0.0,0.0,10.0,vitimas
 2026,2026-05-01,AC,Morte por intervenção de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
 2026,2026-05-01,AC,Mortes a esclarecer (sem indício de crime),5.0,0.0,2.0,3.0,0.0,0.0,5.0,vitimas
-2026,2026-05-01,AC,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-05-01,AC,Mortes no trânsito,1.0,0.0,0.0,1.0,0.0,0.0,1.0,vitimas
 2026,2026-05-01,AC,Pessoa Desaparecida,44.0,0.0,14.0,28.0,2.0,0.0,44.0,vitimas
 2026,2026-05-01,AC,Pessoa Localizada,32.0,0.0,9.0,21.0,2.0,0.0,32.0,vitimas
 2026,2026-05-01,AC,Realização de vistorias,0.0,732.0,0.0,0.0,0.0,0.0,732.0,ocorrencias
@@ -3396,7 +3396,7 @@
 2026,2026-05-01,AL,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),34.0,0.0,4.0,25.0,5.0,0.0,34.0,vitimas
 2026,2026-05-01,AL,Morte por intervenção de Agente do Estado,8.0,0.0,0.0,8.0,0.0,0.0,8.0,vitimas
 2026,2026-05-01,AL,Mortes a esclarecer (sem indício de crime),73.0,0.0,19.0,43.0,11.0,0.0,73.0,vitimas
-2026,2026-05-01,AL,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-05-01,AL,Mortes no trânsito,8.0,0.0,2.0,6.0,0.0,0.0,8.0,vitimas
 2026,2026-05-01,AL,Pessoa Desaparecida,85.0,0.0,28.0,57.0,0.0,0.0,85.0,vitimas
 2026,2026-05-01,AL,Pessoa Localizada,74.0,0.0,28.0,46.0,0.0,0.0,74.0,vitimas
 2026,2026-05-01,AL,Realização de vistorias,0.0,859.0,0.0,0.0,0.0,0.0,859.0,ocorrencias
@@ -3427,7 +3427,7 @@
 2026,2026-05-01,AM,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),13.0,0.0,2.0,11.0,0.0,0.0,13.0,vitimas
 2026,2026-05-01,AM,Morte por intervenção de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
 2026,2026-05-01,AM,Mortes a esclarecer (sem indício de crime),0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2026,2026-05-01,AM,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-05-01,AM,Mortes no trânsito,4.0,0.0,1.0,3.0,0.0,0.0,4.0,vitimas
 2026,2026-05-01,AM,Pessoa Desaparecida,93.0,0.0,41.0,52.0,0.0,0.0,93.0,vitimas
 2026,2026-05-01,AM,Pessoa Localizada,77.0,0.0,38.0,39.0,0.0,0.0,77.0,vitimas
 2026,2026-05-01,AM,Realização de vistorias,0.0,470.0,0.0,0.0,0.0,0.0,470.0,ocorrencias
@@ -3440,8 +3440,8 @@
 2026,2026-05-01,AM,Tentativa de feminicídio,17.0,0.0,17.0,0.0,0.0,0.0,17.0,vitimas
 2026,2026-05-01,AM,Tentativa de homicídio,64.0,0.0,6.0,57.0,1.0,0.0,64.0,vitimas
 2026,2026-05-01,AM,Tráfico de drogas,0.0,315.0,0.0,0.0,0.0,0.0,315.0,ocorrencias
-2026,2026-05-01,AP,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,4405.0,4405.0,kg
-2026,2026-05-01,AP,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,1517.0,1517.0,kg
+2026,2026-05-01,AP,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,4458.0,4458.0,kg
+2026,2026-05-01,AP,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,1544.0,1544.0,kg
 2026,2026-05-01,AP,Arma de Fogo Apreendida,0.0,40.0,0.0,0.0,0.0,0.0,40.0,ocorrencias
 2026,2026-05-01,AP,Atendimento pré-hospitalar,0.0,896.0,0.0,0.0,0.0,0.0,896.0,ocorrencias
 2026,2026-05-01,AP,Busca e salvamento,0.0,226.0,0.0,0.0,0.0,0.0,226.0,ocorrencias
@@ -3489,7 +3489,7 @@
 2026,2026-05-01,BA,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),84.0,0.0,14.0,66.0,4.0,0.0,84.0,vitimas
 2026,2026-05-01,BA,Morte por intervenção de Agente do Estado,117.0,0.0,0.0,117.0,0.0,0.0,117.0,vitimas
 2026,2026-05-01,BA,Mortes a esclarecer (sem indício de crime),79.0,0.0,22.0,49.0,8.0,0.0,79.0,vitimas
-2026,2026-05-01,BA,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-05-01,BA,Mortes no trânsito,73.0,0.0,21.0,52.0,0.0,0.0,73.0,vitimas
 2026,2026-05-01,BA,Pessoa Desaparecida,341.0,0.0,110.0,224.0,7.0,0.0,341.0,vitimas
 2026,2026-05-01,BA,Pessoa Localizada,72.0,0.0,29.0,41.0,2.0,0.0,72.0,vitimas
 2026,2026-05-01,BA,Realização de vistorias,0.0,1073.0,0.0,0.0,0.0,0.0,1073.0,ocorrencias
@@ -3520,7 +3520,7 @@
 2026,2026-05-01,CE,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),144.0,0.0,17.0,127.0,0.0,0.0,144.0,vitimas
 2026,2026-05-01,CE,Morte por intervenção de Agente do Estado,18.0,0.0,0.0,18.0,0.0,0.0,18.0,vitimas
 2026,2026-05-01,CE,Mortes a esclarecer (sem indício de crime),25.0,0.0,3.0,22.0,0.0,0.0,25.0,vitimas
-2026,2026-05-01,CE,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-05-01,CE,Mortes no trânsito,18.0,0.0,3.0,15.0,0.0,0.0,18.0,vitimas
 2026,2026-05-01,CE,Pessoa Desaparecida,213.0,0.0,51.0,162.0,0.0,0.0,213.0,vitimas
 2026,2026-05-01,CE,Pessoa Localizada,132.0,0.0,31.0,101.0,0.0,0.0,132.0,vitimas
 2026,2026-05-01,CE,Realização de vistorias,0.0,4596.0,0.0,0.0,0.0,0.0,4596.0,ocorrencias
@@ -3551,7 +3551,7 @@
 2026,2026-05-01,DF,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),24.0,0.0,4.0,20.0,0.0,0.0,24.0,vitimas
 2026,2026-05-01,DF,Morte por intervenção de Agente do Estado,3.0,0.0,0.0,3.0,0.0,0.0,3.0,vitimas
 2026,2026-05-01,DF,Mortes a esclarecer (sem indício de crime),0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2026,2026-05-01,DF,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-05-01,DF,Mortes no trânsito,5.0,0.0,2.0,3.0,0.0,0.0,5.0,vitimas
 2026,2026-05-01,DF,Pessoa Desaparecida,197.0,0.0,73.0,124.0,0.0,0.0,197.0,vitimas
 2026,2026-05-01,DF,Pessoa Localizada,191.0,0.0,71.0,120.0,0.0,0.0,191.0,vitimas
 2026,2026-05-01,DF,Realização de vistorias,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
@@ -3582,7 +3582,7 @@
 2026,2026-05-01,ES,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),100.0,0.0,21.0,78.0,1.0,0.0,100.0,vitimas
 2026,2026-05-01,ES,Morte por intervenção de Agente do Estado,3.0,0.0,0.0,3.0,0.0,0.0,3.0,vitimas
 2026,2026-05-01,ES,Mortes a esclarecer (sem indício de crime),11.0,0.0,1.0,10.0,0.0,0.0,11.0,vitimas
-2026,2026-05-01,ES,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-05-01,ES,Mortes no trânsito,18.0,0.0,4.0,14.0,0.0,0.0,18.0,vitimas
 2026,2026-05-01,ES,Pessoa Desaparecida,223.0,0.0,81.0,129.0,13.0,0.0,223.0,vitimas
 2026,2026-05-01,ES,Pessoa Localizada,41.0,0.0,14.0,25.0,2.0,0.0,41.0,vitimas
 2026,2026-05-01,ES,Realização de vistorias,0.0,3778.0,0.0,0.0,0.0,0.0,3778.0,ocorrencias
@@ -3613,7 +3613,7 @@
 2026,2026-05-01,GO,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),68.0,0.0,21.0,43.0,4.0,0.0,68.0,vitimas
 2026,2026-05-01,GO,Morte por intervenção de Agente do Estado,34.0,0.0,0.0,29.0,5.0,0.0,34.0,vitimas
 2026,2026-05-01,GO,Mortes a esclarecer (sem indício de crime),27.0,0.0,5.0,17.0,5.0,0.0,27.0,vitimas
-2026,2026-05-01,GO,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-05-01,GO,Mortes no trânsito,37.0,0.0,5.0,32.0,0.0,0.0,37.0,vitimas
 2026,2026-05-01,GO,Pessoa Desaparecida,300.0,0.0,121.0,176.0,3.0,0.0,300.0,vitimas
 2026,2026-05-01,GO,Pessoa Localizada,146.0,0.0,53.0,93.0,0.0,0.0,146.0,vitimas
 2026,2026-05-01,GO,Realização de vistorias,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
@@ -3644,7 +3644,7 @@
 2026,2026-05-01,MA,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),83.0,0.0,9.0,74.0,0.0,0.0,83.0,vitimas
 2026,2026-05-01,MA,Morte por intervenção de Agente do Estado,12.0,0.0,0.0,12.0,0.0,0.0,12.0,vitimas
 2026,2026-05-01,MA,Mortes a esclarecer (sem indício de crime),12.0,0.0,1.0,11.0,0.0,0.0,12.0,vitimas
-2026,2026-05-01,MA,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-05-01,MA,Mortes no trânsito,13.0,0.0,1.0,12.0,0.0,0.0,13.0,vitimas
 2026,2026-05-01,MA,Pessoa Desaparecida,134.0,0.0,42.0,76.0,16.0,0.0,134.0,vitimas
 2026,2026-05-01,MA,Pessoa Localizada,40.0,0.0,13.0,25.0,2.0,0.0,40.0,vitimas
 2026,2026-05-01,MA,Realização de vistorias,0.0,343.0,0.0,0.0,0.0,0.0,343.0,ocorrencias
@@ -3675,7 +3675,7 @@
 2026,2026-05-01,MG,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),191.0,0.0,37.0,153.0,1.0,0.0,191.0,vitimas
 2026,2026-05-01,MG,Morte por intervenção de Agente do Estado,18.0,0.0,0.0,18.0,0.0,0.0,18.0,vitimas
 2026,2026-05-01,MG,Mortes a esclarecer (sem indício de crime),0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2026,2026-05-01,MG,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-05-01,MG,Mortes no trânsito,60.0,0.0,5.0,46.0,9.0,0.0,60.0,vitimas
 2026,2026-05-01,MG,Pessoa Desaparecida,885.0,0.0,309.0,576.0,0.0,0.0,885.0,vitimas
 2026,2026-05-01,MG,Pessoa Localizada,563.0,0.0,224.0,339.0,0.0,0.0,563.0,vitimas
 2026,2026-05-01,MG,Realização de vistorias,0.0,3656.0,0.0,0.0,0.0,0.0,3656.0,ocorrencias
@@ -3706,7 +3706,7 @@
 2026,2026-05-01,MS,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),30.0,0.0,3.0,27.0,0.0,0.0,30.0,vitimas
 2026,2026-05-01,MS,Morte por intervenção de Agente do Estado,13.0,0.0,1.0,12.0,0.0,0.0,13.0,vitimas
 2026,2026-05-01,MS,Mortes a esclarecer (sem indício de crime),21.0,0.0,6.0,13.0,2.0,0.0,21.0,vitimas
-2026,2026-05-01,MS,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-05-01,MS,Mortes no trânsito,15.0,0.0,1.0,14.0,0.0,0.0,15.0,vitimas
 2026,2026-05-01,MS,Pessoa Desaparecida,81.0,0.0,21.0,59.0,1.0,0.0,81.0,vitimas
 2026,2026-05-01,MS,Pessoa Localizada,106.0,0.0,38.0,66.0,2.0,0.0,106.0,vitimas
 2026,2026-05-01,MS,Realização de vistorias,0.0,4504.0,0.0,0.0,0.0,0.0,4504.0,ocorrencias
@@ -3737,7 +3737,7 @@
 2026,2026-05-01,MT,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),86.0,0.0,13.0,73.0,0.0,0.0,86.0,vitimas
 2026,2026-05-01,MT,Morte por intervenção de Agente do Estado,22.0,0.0,0.0,22.0,0.0,0.0,22.0,vitimas
 2026,2026-05-01,MT,Mortes a esclarecer (sem indício de crime),44.0,0.0,6.0,38.0,0.0,0.0,44.0,vitimas
-2026,2026-05-01,MT,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-05-01,MT,Mortes no trânsito,14.0,0.0,2.0,12.0,0.0,0.0,14.0,vitimas
 2026,2026-05-01,MT,Pessoa Desaparecida,208.0,0.0,69.0,139.0,0.0,0.0,208.0,vitimas
 2026,2026-05-01,MT,Pessoa Localizada,97.0,0.0,38.0,59.0,0.0,0.0,97.0,vitimas
 2026,2026-05-01,MT,Realização de vistorias,0.0,1899.0,0.0,0.0,0.0,0.0,1899.0,ocorrencias
@@ -3768,7 +3768,7 @@
 2026,2026-05-01,PA,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),101.0,0.0,14.0,87.0,0.0,0.0,101.0,vitimas
 2026,2026-05-01,PA,Morte por intervenção de Agente do Estado,66.0,0.0,2.0,64.0,0.0,0.0,66.0,vitimas
 2026,2026-05-01,PA,Mortes a esclarecer (sem indício de crime),34.0,0.0,5.0,26.0,3.0,0.0,34.0,vitimas
-2026,2026-05-01,PA,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-05-01,PA,Mortes no trânsito,18.0,0.0,2.0,16.0,0.0,0.0,18.0,vitimas
 2026,2026-05-01,PA,Pessoa Desaparecida,138.0,0.0,48.0,90.0,0.0,0.0,138.0,vitimas
 2026,2026-05-01,PA,Pessoa Localizada,60.0,0.0,18.0,42.0,0.0,0.0,60.0,vitimas
 2026,2026-05-01,PA,Realização de vistorias,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
@@ -3799,7 +3799,7 @@
 2026,2026-05-01,PB,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),80.0,0.0,12.0,68.0,0.0,0.0,80.0,vitimas
 2026,2026-05-01,PB,Morte por intervenção de Agente do Estado,4.0,0.0,0.0,4.0,0.0,0.0,4.0,vitimas
 2026,2026-05-01,PB,Mortes a esclarecer (sem indício de crime),0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2026,2026-05-01,PB,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-05-01,PB,Mortes no trânsito,12.0,0.0,1.0,11.0,0.0,0.0,12.0,vitimas
 2026,2026-05-01,PB,Pessoa Desaparecida,80.0,0.0,21.0,59.0,0.0,0.0,80.0,vitimas
 2026,2026-05-01,PB,Pessoa Localizada,65.0,0.0,18.0,47.0,0.0,0.0,65.0,vitimas
 2026,2026-05-01,PB,Realização de vistorias,0.0,1141.0,0.0,0.0,0.0,0.0,1141.0,ocorrencias
@@ -3830,7 +3830,7 @@
 2026,2026-05-01,PE,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),132.0,0.0,18.0,114.0,0.0,0.0,132.0,vitimas
 2026,2026-05-01,PE,Morte por intervenção de Agente do Estado,11.0,0.0,0.0,11.0,0.0,0.0,11.0,vitimas
 2026,2026-05-01,PE,Mortes a esclarecer (sem indício de crime),11.0,0.0,0.0,11.0,0.0,0.0,11.0,vitimas
-2026,2026-05-01,PE,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-05-01,PE,Mortes no trânsito,30.0,0.0,5.0,25.0,0.0,0.0,30.0,vitimas
 2026,2026-05-01,PE,Pessoa Desaparecida,237.0,0.0,72.0,156.0,9.0,0.0,237.0,vitimas
 2026,2026-05-01,PE,Pessoa Localizada,105.0,0.0,35.0,66.0,4.0,0.0,105.0,vitimas
 2026,2026-05-01,PE,Realização de vistorias,0.0,4281.0,0.0,0.0,0.0,0.0,4281.0,ocorrencias
@@ -3861,7 +3861,7 @@
 2026,2026-05-01,PI,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),31.0,0.0,11.0,20.0,0.0,0.0,31.0,vitimas
 2026,2026-05-01,PI,Morte por intervenção de Agente do Estado,4.0,0.0,0.0,4.0,0.0,0.0,4.0,vitimas
 2026,2026-05-01,PI,Mortes a esclarecer (sem indício de crime),24.0,0.0,7.0,17.0,0.0,0.0,24.0,vitimas
-2026,2026-05-01,PI,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-05-01,PI,Mortes no trânsito,15.0,0.0,3.0,12.0,0.0,0.0,15.0,vitimas
 2026,2026-05-01,PI,Pessoa Desaparecida,72.0,0.0,21.0,48.0,3.0,0.0,72.0,vitimas
 2026,2026-05-01,PI,Pessoa Localizada,32.0,0.0,8.0,24.0,0.0,0.0,32.0,vitimas
 2026,2026-05-01,PI,Realização de vistorias,0.0,626.0,0.0,0.0,0.0,0.0,626.0,ocorrencias
@@ -3892,7 +3892,7 @@
 2026,2026-05-01,PR,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),69.0,0.0,18.0,50.0,1.0,0.0,69.0,vitimas
 2026,2026-05-01,PR,Morte por intervenção de Agente do Estado,47.0,0.0,0.0,47.0,0.0,0.0,47.0,vitimas
 2026,2026-05-01,PR,Mortes a esclarecer (sem indício de crime),4.0,0.0,1.0,3.0,0.0,0.0,4.0,vitimas
-2026,2026-05-01,PR,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-05-01,PR,Mortes no trânsito,34.0,0.0,6.0,28.0,0.0,0.0,34.0,vitimas
 2026,2026-05-01,PR,Pessoa Desaparecida,479.0,0.0,188.0,291.0,0.0,0.0,479.0,vitimas
 2026,2026-05-01,PR,Pessoa Localizada,334.0,0.0,151.0,183.0,0.0,0.0,334.0,vitimas
 2026,2026-05-01,PR,Realização de vistorias,0.0,655.0,0.0,0.0,0.0,0.0,655.0,ocorrencias
@@ -3921,9 +3921,9 @@
 2026,2026-05-01,RJ,Mandado de prisão cumprido,0.0,1132.0,0.0,0.0,0.0,0.0,1132.0,ocorrencias
 2026,2026-05-01,RJ,Morte de Agente do Estado,2.0,0.0,0.0,2.0,0.0,0.0,2.0,vitimas
 2026,2026-05-01,RJ,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),190.0,0.0,60.0,127.0,3.0,0.0,190.0,vitimas
-2026,2026-05-01,RJ,Morte por intervenção de Agente do Estado,56.0,0.0,0.0,55.0,1.0,0.0,56.0,vitimas
+2026,2026-05-01,RJ,Morte por intervenção de Agente do Estado,57.0,0.0,0.0,56.0,1.0,0.0,57.0,vitimas
 2026,2026-05-01,RJ,Mortes a esclarecer (sem indício de crime),259.0,0.0,71.0,183.0,5.0,0.0,259.0,vitimas
-2026,2026-05-01,RJ,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-05-01,RJ,Mortes no trânsito,23.0,0.0,9.0,14.0,0.0,0.0,23.0,vitimas
 2026,2026-05-01,RJ,Pessoa Desaparecida,547.0,0.0,189.0,357.0,1.0,0.0,547.0,vitimas
 2026,2026-05-01,RJ,Pessoa Localizada,236.0,0.0,2.0,9.0,225.0,0.0,236.0,vitimas
 2026,2026-05-01,RJ,Realização de vistorias,0.0,307.0,0.0,0.0,0.0,0.0,307.0,ocorrencias
@@ -3954,7 +3954,7 @@
 2026,2026-05-01,RN,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),44.0,0.0,3.0,41.0,0.0,0.0,44.0,vitimas
 2026,2026-05-01,RN,Morte por intervenção de Agente do Estado,14.0,0.0,0.0,14.0,0.0,0.0,14.0,vitimas
 2026,2026-05-01,RN,Mortes a esclarecer (sem indício de crime),55.0,0.0,16.0,39.0,0.0,0.0,55.0,vitimas
-2026,2026-05-01,RN,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-05-01,RN,Mortes no trânsito,5.0,0.0,0.0,5.0,0.0,0.0,5.0,vitimas
 2026,2026-05-01,RN,Pessoa Desaparecida,61.0,0.0,18.0,43.0,0.0,0.0,61.0,vitimas
 2026,2026-05-01,RN,Pessoa Localizada,64.0,0.0,20.0,42.0,2.0,0.0,64.0,vitimas
 2026,2026-05-01,RN,Realização de vistorias,0.0,441.0,0.0,0.0,0.0,0.0,441.0,ocorrencias
@@ -3985,7 +3985,7 @@
 2026,2026-05-01,RO,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),42.0,0.0,6.0,36.0,0.0,0.0,42.0,vitimas
 2026,2026-05-01,RO,Morte por intervenção de Agente do Estado,4.0,0.0,0.0,4.0,0.0,0.0,4.0,vitimas
 2026,2026-05-01,RO,Mortes a esclarecer (sem indício de crime),38.0,0.0,13.0,25.0,0.0,0.0,38.0,vitimas
-2026,2026-05-01,RO,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-05-01,RO,Mortes no trânsito,13.0,0.0,2.0,11.0,0.0,0.0,13.0,vitimas
 2026,2026-05-01,RO,Pessoa Desaparecida,73.0,0.0,25.0,46.0,2.0,0.0,73.0,vitimas
 2026,2026-05-01,RO,Pessoa Localizada,7.0,0.0,5.0,2.0,0.0,0.0,7.0,vitimas
 2026,2026-05-01,RO,Realização de vistorias,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
@@ -4047,7 +4047,7 @@
 2026,2026-05-01,RS,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),117.0,0.0,17.0,100.0,0.0,0.0,117.0,vitimas
 2026,2026-05-01,RS,Morte por intervenção de Agente do Estado,7.0,0.0,0.0,7.0,0.0,0.0,7.0,vitimas
 2026,2026-05-01,RS,Mortes a esclarecer (sem indício de crime),99.0,0.0,22.0,77.0,0.0,0.0,99.0,vitimas
-2026,2026-05-01,RS,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-05-01,RS,Mortes no trânsito,31.0,0.0,5.0,26.0,0.0,0.0,31.0,vitimas
 2026,2026-05-01,RS,Pessoa Desaparecida,636.0,0.0,227.0,409.0,0.0,0.0,636.0,vitimas
 2026,2026-05-01,RS,Pessoa Localizada,629.0,0.0,260.0,369.0,0.0,0.0,629.0,vitimas
 2026,2026-05-01,RS,Realização de vistorias,0.0,2252.0,0.0,0.0,0.0,0.0,2252.0,ocorrencias
@@ -4078,7 +4078,7 @@
 2026,2026-05-01,SC,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),28.0,0.0,6.0,22.0,0.0,0.0,28.0,vitimas
 2026,2026-05-01,SC,Morte por intervenção de Agente do Estado,6.0,0.0,0.0,6.0,0.0,0.0,6.0,vitimas
 2026,2026-05-01,SC,Mortes a esclarecer (sem indício de crime),0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2026,2026-05-01,SC,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-05-01,SC,Mortes no trânsito,28.0,0.0,3.0,25.0,0.0,0.0,28.0,vitimas
 2026,2026-05-01,SC,Pessoa Desaparecida,367.0,0.0,135.0,232.0,0.0,0.0,367.0,vitimas
 2026,2026-05-01,SC,Pessoa Localizada,482.0,0.0,176.0,306.0,0.0,0.0,482.0,vitimas
 2026,2026-05-01,SC,Realização de vistorias,0.0,4710.0,0.0,0.0,0.0,0.0,4710.0,ocorrencias
@@ -4109,7 +4109,7 @@
 2026,2026-05-01,SE,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),15.0,0.0,3.0,12.0,0.0,0.0,15.0,vitimas
 2026,2026-05-01,SE,Morte por intervenção de Agente do Estado,13.0,0.0,0.0,13.0,0.0,0.0,13.0,vitimas
 2026,2026-05-01,SE,Mortes a esclarecer (sem indício de crime),31.0,0.0,8.0,22.0,1.0,0.0,31.0,vitimas
-2026,2026-05-01,SE,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-05-01,SE,Mortes no trânsito,6.0,0.0,1.0,5.0,0.0,0.0,6.0,vitimas
 2026,2026-05-01,SE,Pessoa Desaparecida,62.0,0.0,23.0,39.0,0.0,0.0,62.0,vitimas
 2026,2026-05-01,SE,Pessoa Localizada,52.0,0.0,19.0,33.0,0.0,0.0,52.0,vitimas
 2026,2026-05-01,SE,Realização de vistorias,0.0,282.0,0.0,0.0,0.0,0.0,282.0,ocorrencias
@@ -4140,7 +4140,7 @@
 2026,2026-05-01,SP,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),365.0,0.0,57.0,304.0,4.0,0.0,365.0,vitimas
 2026,2026-05-01,SP,Morte por intervenção de Agente do Estado,59.0,0.0,0.0,58.0,1.0,0.0,59.0,vitimas
 2026,2026-05-01,SP,Mortes a esclarecer (sem indício de crime),243.0,0.0,40.0,190.0,13.0,0.0,243.0,vitimas
-2026,2026-05-01,SP,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-05-01,SP,Mortes no trânsito,19.0,0.0,3.0,16.0,0.0,0.0,19.0,vitimas
 2026,2026-05-01,SP,Pessoa Desaparecida,1769.0,0.0,603.0,1157.0,9.0,0.0,1769.0,vitimas
 2026,2026-05-01,SP,Pessoa Localizada,1243.0,0.0,445.0,798.0,0.0,0.0,1243.0,vitimas
 2026,2026-05-01,SP,Realização de vistorias,0.0,9637.0,0.0,0.0,0.0,0.0,9637.0,ocorrencias
@@ -4171,7 +4171,7 @@
 2026,2026-05-01,TO,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),41.0,0.0,10.0,31.0,0.0,0.0,41.0,vitimas
 2026,2026-05-01,TO,Morte por intervenção de Agente do Estado,2.0,0.0,0.0,1.0,1.0,0.0,2.0,vitimas
 2026,2026-05-01,TO,Mortes a esclarecer (sem indício de crime),26.0,0.0,7.0,19.0,0.0,0.0,26.0,vitimas
-2026,2026-05-01,TO,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-05-01,TO,Mortes no trânsito,9.0,0.0,3.0,6.0,0.0,0.0,9.0,vitimas
 2026,2026-05-01,TO,Pessoa Desaparecida,53.0,0.0,18.0,35.0,0.0,0.0,53.0,vitimas
 2026,2026-05-01,TO,Pessoa Localizada,34.0,0.0,17.0,17.0,0.0,0.0,34.0,vitimas
 2026,2026-05-01,TO,Realização de vistorias,0.0,150.0,0.0,0.0,0.0,0.0,150.0,ocorrencias
@@ -4233,7 +4233,7 @@
 2026,2026-06-01,AL,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),28.0,0.0,2.0,21.0,5.0,0.0,28.0,vitimas
 2026,2026-06-01,AL,Morte por intervenção de Agente do Estado,6.0,0.0,0.0,6.0,0.0,0.0,6.0,vitimas
 2026,2026-06-01,AL,Mortes a esclarecer (sem indício de crime),77.0,0.0,20.0,41.0,16.0,0.0,77.0,vitimas
-2026,2026-06-01,AL,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-06-01,AL,Mortes no trânsito,6.0,0.0,1.0,5.0,0.0,0.0,6.0,vitimas
 2026,2026-06-01,AL,Pessoa Desaparecida,62.0,0.0,20.0,42.0,0.0,0.0,62.0,vitimas
 2026,2026-06-01,AL,Pessoa Localizada,54.0,0.0,17.0,37.0,0.0,0.0,54.0,vitimas
 2026,2026-06-01,AL,Realização de vistorias,0.0,908.0,0.0,0.0,0.0,0.0,908.0,ocorrencias
@@ -4264,7 +4264,7 @@
 2026,2026-06-01,AM,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),13.0,0.0,2.0,11.0,0.0,0.0,13.0,vitimas
 2026,2026-06-01,AM,Morte por intervenção de Agente do Estado,5.0,0.0,0.0,5.0,0.0,0.0,5.0,vitimas
 2026,2026-06-01,AM,Mortes a esclarecer (sem indício de crime),0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2026,2026-06-01,AM,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-06-01,AM,Mortes no trânsito,4.0,0.0,0.0,4.0,0.0,0.0,4.0,vitimas
 2026,2026-06-01,AM,Pessoa Desaparecida,85.0,0.0,33.0,52.0,0.0,0.0,85.0,vitimas
 2026,2026-06-01,AM,Pessoa Localizada,61.0,0.0,24.0,37.0,0.0,0.0,61.0,vitimas
 2026,2026-06-01,AM,Realização de vistorias,0.0,406.0,0.0,0.0,0.0,0.0,406.0,ocorrencias
@@ -4277,13 +4277,13 @@
 2026,2026-06-01,AM,Tentativa de feminicídio,12.0,0.0,12.0,0.0,0.0,0.0,12.0,vitimas
 2026,2026-06-01,AM,Tentativa de homicídio,59.0,0.0,9.0,48.0,2.0,0.0,59.0,vitimas
 2026,2026-06-01,AM,Tráfico de drogas,0.0,340.0,0.0,0.0,0.0,0.0,340.0,ocorrencias
-2026,2026-06-01,AP,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,1076.0,1076.0,kg
-2026,2026-06-01,AP,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,389.0,389.0,kg
+2026,2026-06-01,AP,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,1246.0,1246.0,kg
+2026,2026-06-01,AP,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,504.0,504.0,kg
 2026,2026-06-01,AP,Arma de Fogo Apreendida,0.0,56.0,0.0,0.0,0.0,0.0,56.0,ocorrencias
 2026,2026-06-01,AP,Atendimento pré-hospitalar,0.0,890.0,0.0,0.0,0.0,0.0,890.0,ocorrencias
 2026,2026-06-01,AP,Busca e salvamento,0.0,212.0,0.0,0.0,0.0,0.0,212.0,ocorrencias
 2026,2026-06-01,AP,Combate a incêndios,0.0,94.0,0.0,0.0,0.0,0.0,94.0,ocorrencias
-2026,2026-06-01,AP,Emissão de Alvarás de licença,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
+2026,2026-06-01,AP,Emissão de Alvarás de licença,0.0,290.0,0.0,0.0,0.0,0.0,290.0,ocorrencias
 2026,2026-06-01,AP,Estupro,14.0,0.0,12.0,2.0,0.0,0.0,14.0,vitimas
 2026,2026-06-01,AP,Estupro de vulnerável,38.0,0.0,30.0,8.0,0.0,0.0,38.0,vitimas
 2026,2026-06-01,AP,Feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
@@ -4298,7 +4298,7 @@
 2026,2026-06-01,AP,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
 2026,2026-06-01,AP,Pessoa Desaparecida,47.0,0.0,24.0,23.0,0.0,0.0,47.0,vitimas
 2026,2026-06-01,AP,Pessoa Localizada,42.0,0.0,21.0,21.0,0.0,0.0,42.0,vitimas
-2026,2026-06-01,AP,Realização de vistorias,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
+2026,2026-06-01,AP,Realização de vistorias,0.0,578.0,0.0,0.0,0.0,0.0,578.0,ocorrencias
 2026,2026-06-01,AP,Roubo a instituição financeira,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
 2026,2026-06-01,AP,Roubo de carga,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
 2026,2026-06-01,AP,Roubo de veículo,0.0,6.0,0.0,0.0,0.0,0.0,6.0,ocorrencias
@@ -4326,7 +4326,7 @@
 2026,2026-06-01,BA,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),67.0,0.0,13.0,52.0,2.0,0.0,67.0,vitimas
 2026,2026-06-01,BA,Morte por intervenção de Agente do Estado,112.0,0.0,1.0,111.0,0.0,0.0,112.0,vitimas
 2026,2026-06-01,BA,Mortes a esclarecer (sem indício de crime),82.0,0.0,21.0,55.0,6.0,0.0,82.0,vitimas
-2026,2026-06-01,BA,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-06-01,BA,Mortes no trânsito,58.0,0.0,8.0,50.0,0.0,0.0,58.0,vitimas
 2026,2026-06-01,BA,Pessoa Desaparecida,344.0,0.0,120.0,220.0,4.0,0.0,344.0,vitimas
 2026,2026-06-01,BA,Pessoa Localizada,76.0,0.0,32.0,41.0,3.0,0.0,76.0,vitimas
 2026,2026-06-01,BA,Realização de vistorias,0.0,1164.0,0.0,0.0,0.0,0.0,1164.0,ocorrencias
@@ -4357,7 +4357,7 @@
 2026,2026-06-01,CE,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),152.0,0.0,29.0,122.0,1.0,0.0,152.0,vitimas
 2026,2026-06-01,CE,Morte por intervenção de Agente do Estado,8.0,0.0,0.0,8.0,0.0,0.0,8.0,vitimas
 2026,2026-06-01,CE,Mortes a esclarecer (sem indício de crime),30.0,0.0,6.0,24.0,0.0,0.0,30.0,vitimas
-2026,2026-06-01,CE,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-06-01,CE,Mortes no trânsito,24.0,0.0,9.0,15.0,0.0,0.0,24.0,vitimas
 2026,2026-06-01,CE,Pessoa Desaparecida,197.0,0.0,52.0,144.0,1.0,0.0,197.0,vitimas
 2026,2026-06-01,CE,Pessoa Localizada,117.0,0.0,26.0,90.0,1.0,0.0,117.0,vitimas
 2026,2026-06-01,CE,Realização de vistorias,0.0,4620.0,0.0,0.0,0.0,0.0,4620.0,ocorrencias
@@ -4388,7 +4388,7 @@
 2026,2026-06-01,DF,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),19.0,0.0,3.0,16.0,0.0,0.0,19.0,vitimas
 2026,2026-06-01,DF,Morte por intervenção de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
 2026,2026-06-01,DF,Mortes a esclarecer (sem indício de crime),0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2026,2026-06-01,DF,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-06-01,DF,Mortes no trânsito,4.0,0.0,0.0,4.0,0.0,0.0,4.0,vitimas
 2026,2026-06-01,DF,Pessoa Desaparecida,188.0,0.0,74.0,114.0,0.0,0.0,188.0,vitimas
 2026,2026-06-01,DF,Pessoa Localizada,177.0,0.0,72.0,105.0,0.0,0.0,177.0,vitimas
 2026,2026-06-01,DF,Realização de vistorias,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
@@ -4419,7 +4419,7 @@
 2026,2026-06-01,ES,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),81.0,0.0,9.0,71.0,1.0,0.0,81.0,vitimas
 2026,2026-06-01,ES,Morte por intervenção de Agente do Estado,2.0,0.0,0.0,2.0,0.0,0.0,2.0,vitimas
 2026,2026-06-01,ES,Mortes a esclarecer (sem indício de crime),6.0,0.0,2.0,4.0,0.0,0.0,6.0,vitimas
-2026,2026-06-01,ES,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-06-01,ES,Mortes no trânsito,13.0,0.0,0.0,13.0,0.0,0.0,13.0,vitimas
 2026,2026-06-01,ES,Pessoa Desaparecida,201.0,0.0,69.0,123.0,9.0,0.0,201.0,vitimas
 2026,2026-06-01,ES,Pessoa Localizada,31.0,0.0,6.0,24.0,1.0,0.0,31.0,vitimas
 2026,2026-06-01,ES,Realização de vistorias,0.0,4085.0,0.0,0.0,0.0,0.0,4085.0,ocorrencias
@@ -4450,7 +4450,7 @@
 2026,2026-06-01,GO,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),70.0,0.0,18.0,49.0,3.0,0.0,70.0,vitimas
 2026,2026-06-01,GO,Morte por intervenção de Agente do Estado,25.0,0.0,1.0,21.0,3.0,0.0,25.0,vitimas
 2026,2026-06-01,GO,Mortes a esclarecer (sem indício de crime),42.0,0.0,7.0,28.0,7.0,0.0,42.0,vitimas
-2026,2026-06-01,GO,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-06-01,GO,Mortes no trânsito,21.0,0.0,2.0,19.0,0.0,0.0,21.0,vitimas
 2026,2026-06-01,GO,Pessoa Desaparecida,309.0,0.0,111.0,196.0,2.0,0.0,309.0,vitimas
 2026,2026-06-01,GO,Pessoa Localizada,122.0,0.0,38.0,84.0,0.0,0.0,122.0,vitimas
 2026,2026-06-01,GO,Realização de vistorias,0.0,3817.0,0.0,0.0,0.0,0.0,3817.0,ocorrencias
@@ -4481,7 +4481,7 @@
 2026,2026-06-01,MA,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),101.0,0.0,22.0,79.0,0.0,0.0,101.0,vitimas
 2026,2026-06-01,MA,Morte por intervenção de Agente do Estado,9.0,0.0,0.0,9.0,0.0,0.0,9.0,vitimas
 2026,2026-06-01,MA,Mortes a esclarecer (sem indício de crime),13.0,0.0,3.0,10.0,0.0,0.0,13.0,vitimas
-2026,2026-06-01,MA,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-06-01,MA,Mortes no trânsito,25.0,0.0,5.0,20.0,0.0,0.0,25.0,vitimas
 2026,2026-06-01,MA,Pessoa Desaparecida,148.0,0.0,45.0,97.0,6.0,0.0,148.0,vitimas
 2026,2026-06-01,MA,Pessoa Localizada,62.0,0.0,19.0,41.0,2.0,0.0,62.0,vitimas
 2026,2026-06-01,MA,Realização de vistorias,0.0,349.0,0.0,0.0,0.0,0.0,349.0,ocorrencias
@@ -4512,7 +4512,7 @@
 2026,2026-06-01,MG,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),209.0,0.0,37.0,169.0,3.0,0.0,209.0,vitimas
 2026,2026-06-01,MG,Morte por intervenção de Agente do Estado,19.0,0.0,1.0,18.0,0.0,0.0,19.0,vitimas
 2026,2026-06-01,MG,Mortes a esclarecer (sem indício de crime),0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2026,2026-06-01,MG,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-06-01,MG,Mortes no trânsito,54.0,0.0,6.0,48.0,0.0,0.0,54.0,vitimas
 2026,2026-06-01,MG,Pessoa Desaparecida,726.0,0.0,256.0,470.0,0.0,0.0,726.0,vitimas
 2026,2026-06-01,MG,Pessoa Localizada,548.0,0.0,202.0,346.0,0.0,0.0,548.0,vitimas
 2026,2026-06-01,MG,Realização de vistorias,0.0,3225.0,0.0,0.0,0.0,0.0,3225.0,ocorrencias
@@ -4543,7 +4543,7 @@
 2026,2026-06-01,MS,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),31.0,0.0,8.0,23.0,0.0,0.0,31.0,vitimas
 2026,2026-06-01,MS,Morte por intervenção de Agente do Estado,15.0,0.0,0.0,14.0,1.0,0.0,15.0,vitimas
 2026,2026-06-01,MS,Mortes a esclarecer (sem indício de crime),16.0,0.0,2.0,12.0,2.0,0.0,16.0,vitimas
-2026,2026-06-01,MS,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-06-01,MS,Mortes no trânsito,12.0,0.0,1.0,11.0,0.0,0.0,12.0,vitimas
 2026,2026-06-01,MS,Pessoa Desaparecida,102.0,0.0,43.0,59.0,0.0,0.0,102.0,vitimas
 2026,2026-06-01,MS,Pessoa Localizada,110.0,0.0,45.0,65.0,0.0,0.0,110.0,vitimas
 2026,2026-06-01,MS,Realização de vistorias,0.0,4549.0,0.0,0.0,0.0,0.0,4549.0,ocorrencias
@@ -4574,7 +4574,7 @@
 2026,2026-06-01,MT,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),118.0,0.0,29.0,89.0,0.0,0.0,118.0,vitimas
 2026,2026-06-01,MT,Morte por intervenção de Agente do Estado,20.0,0.0,0.0,20.0,0.0,0.0,20.0,vitimas
 2026,2026-06-01,MT,Mortes a esclarecer (sem indício de crime),24.0,0.0,3.0,21.0,0.0,0.0,24.0,vitimas
-2026,2026-06-01,MT,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-06-01,MT,Mortes no trânsito,29.0,0.0,6.0,23.0,0.0,0.0,29.0,vitimas
 2026,2026-06-01,MT,Pessoa Desaparecida,190.0,0.0,67.0,123.0,0.0,0.0,190.0,vitimas
 2026,2026-06-01,MT,Pessoa Localizada,82.0,0.0,30.0,52.0,0.0,0.0,82.0,vitimas
 2026,2026-06-01,MT,Realização de vistorias,0.0,1204.0,0.0,0.0,0.0,0.0,1204.0,ocorrencias
@@ -4605,7 +4605,7 @@
 2026,2026-06-01,PA,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),97.0,0.0,17.0,78.0,2.0,0.0,97.0,vitimas
 2026,2026-06-01,PA,Morte por intervenção de Agente do Estado,52.0,0.0,1.0,51.0,0.0,0.0,52.0,vitimas
 2026,2026-06-01,PA,Mortes a esclarecer (sem indício de crime),27.0,0.0,2.0,20.0,5.0,0.0,27.0,vitimas
-2026,2026-06-01,PA,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-06-01,PA,Mortes no trânsito,21.0,0.0,4.0,17.0,0.0,0.0,21.0,vitimas
 2026,2026-06-01,PA,Pessoa Desaparecida,147.0,0.0,55.0,90.0,2.0,0.0,147.0,vitimas
 2026,2026-06-01,PA,Pessoa Localizada,60.0,0.0,21.0,35.0,4.0,0.0,60.0,vitimas
 2026,2026-06-01,PA,Realização de vistorias,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
@@ -4636,7 +4636,7 @@
 2026,2026-06-01,PB,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),59.0,0.0,12.0,47.0,0.0,0.0,59.0,vitimas
 2026,2026-06-01,PB,Morte por intervenção de Agente do Estado,3.0,0.0,0.0,3.0,0.0,0.0,3.0,vitimas
 2026,2026-06-01,PB,Mortes a esclarecer (sem indício de crime),0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2026,2026-06-01,PB,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-06-01,PB,Mortes no trânsito,15.0,0.0,1.0,14.0,0.0,0.0,15.0,vitimas
 2026,2026-06-01,PB,Pessoa Desaparecida,106.0,0.0,32.0,74.0,0.0,0.0,106.0,vitimas
 2026,2026-06-01,PB,Pessoa Localizada,87.0,0.0,28.0,59.0,0.0,0.0,87.0,vitimas
 2026,2026-06-01,PB,Realização de vistorias,0.0,1453.0,0.0,0.0,0.0,0.0,1453.0,ocorrencias
@@ -4667,7 +4667,7 @@
 2026,2026-06-01,PE,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),139.0,0.0,15.0,124.0,0.0,0.0,139.0,vitimas
 2026,2026-06-01,PE,Morte por intervenção de Agente do Estado,7.0,0.0,0.0,7.0,0.0,0.0,7.0,vitimas
 2026,2026-06-01,PE,Mortes a esclarecer (sem indício de crime),182.0,0.0,50.0,130.0,2.0,0.0,182.0,vitimas
-2026,2026-06-01,PE,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-06-01,PE,Mortes no trânsito,37.0,0.0,4.0,33.0,0.0,0.0,37.0,vitimas
 2026,2026-06-01,PE,Pessoa Desaparecida,228.0,0.0,68.0,149.0,11.0,0.0,228.0,vitimas
 2026,2026-06-01,PE,Pessoa Localizada,85.0,0.0,30.0,53.0,2.0,0.0,85.0,vitimas
 2026,2026-06-01,PE,Realização de vistorias,0.0,5115.0,0.0,0.0,0.0,0.0,5115.0,ocorrencias
@@ -4698,7 +4698,7 @@
 2026,2026-06-01,PI,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),16.0,0.0,4.0,12.0,0.0,0.0,16.0,vitimas
 2026,2026-06-01,PI,Morte por intervenção de Agente do Estado,2.0,0.0,0.0,2.0,0.0,0.0,2.0,vitimas
 2026,2026-06-01,PI,Mortes a esclarecer (sem indício de crime),20.0,0.0,7.0,13.0,0.0,0.0,20.0,vitimas
-2026,2026-06-01,PI,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-06-01,PI,Mortes no trânsito,16.0,0.0,3.0,13.0,0.0,0.0,16.0,vitimas
 2026,2026-06-01,PI,Pessoa Desaparecida,84.0,0.0,27.0,55.0,2.0,0.0,84.0,vitimas
 2026,2026-06-01,PI,Pessoa Localizada,32.0,0.0,12.0,20.0,0.0,0.0,32.0,vitimas
 2026,2026-06-01,PI,Realização de vistorias,0.0,551.0,0.0,0.0,0.0,0.0,551.0,ocorrencias
@@ -4729,7 +4729,7 @@
 2026,2026-06-01,PR,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),73.0,0.0,14.0,58.0,1.0,0.0,73.0,vitimas
 2026,2026-06-01,PR,Morte por intervenção de Agente do Estado,27.0,0.0,0.0,27.0,0.0,0.0,27.0,vitimas
 2026,2026-06-01,PR,Mortes a esclarecer (sem indício de crime),4.0,0.0,1.0,3.0,0.0,0.0,4.0,vitimas
-2026,2026-06-01,PR,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-06-01,PR,Mortes no trânsito,59.0,0.0,13.0,46.0,0.0,0.0,59.0,vitimas
 2026,2026-06-01,PR,Pessoa Desaparecida,507.0,0.0,203.0,304.0,0.0,0.0,507.0,vitimas
 2026,2026-06-01,PR,Pessoa Localizada,401.0,0.0,172.0,229.0,0.0,0.0,401.0,vitimas
 2026,2026-06-01,PR,Realização de vistorias,0.0,4119.0,0.0,0.0,0.0,0.0,4119.0,ocorrencias
@@ -4760,7 +4760,7 @@
 2026,2026-06-01,RJ,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),193.0,0.0,46.0,143.0,4.0,0.0,193.0,vitimas
 2026,2026-06-01,RJ,Morte por intervenção de Agente do Estado,29.0,0.0,0.0,29.0,0.0,0.0,29.0,vitimas
 2026,2026-06-01,RJ,Mortes a esclarecer (sem indício de crime),297.0,0.0,97.0,196.0,4.0,0.0,297.0,vitimas
-2026,2026-06-01,RJ,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-06-01,RJ,Mortes no trânsito,26.0,0.0,6.0,20.0,0.0,0.0,26.0,vitimas
 2026,2026-06-01,RJ,Pessoa Desaparecida,474.0,0.0,157.0,315.0,2.0,0.0,474.0,vitimas
 2026,2026-06-01,RJ,Pessoa Localizada,240.0,0.0,1.0,14.0,225.0,0.0,240.0,vitimas
 2026,2026-06-01,RJ,Realização de vistorias,0.0,363.0,0.0,0.0,0.0,0.0,363.0,ocorrencias
@@ -4791,7 +4791,7 @@
 2026,2026-06-01,RN,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),42.0,0.0,7.0,35.0,0.0,0.0,42.0,vitimas
 2026,2026-06-01,RN,Morte por intervenção de Agente do Estado,15.0,0.0,0.0,15.0,0.0,0.0,15.0,vitimas
 2026,2026-06-01,RN,Mortes a esclarecer (sem indício de crime),59.0,0.0,12.0,43.0,4.0,0.0,59.0,vitimas
-2026,2026-06-01,RN,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-06-01,RN,Mortes no trânsito,8.0,0.0,3.0,5.0,0.0,0.0,8.0,vitimas
 2026,2026-06-01,RN,Pessoa Desaparecida,89.0,0.0,32.0,55.0,2.0,0.0,89.0,vitimas
 2026,2026-06-01,RN,Pessoa Localizada,52.0,0.0,19.0,33.0,0.0,0.0,52.0,vitimas
 2026,2026-06-01,RN,Realização de vistorias,0.0,383.0,0.0,0.0,0.0,0.0,383.0,ocorrencias
@@ -4822,7 +4822,7 @@
 2026,2026-06-01,RO,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),38.0,0.0,7.0,31.0,0.0,0.0,38.0,vitimas
 2026,2026-06-01,RO,Morte por intervenção de Agente do Estado,2.0,0.0,0.0,2.0,0.0,0.0,2.0,vitimas
 2026,2026-06-01,RO,Mortes a esclarecer (sem indício de crime),41.0,0.0,11.0,30.0,0.0,0.0,41.0,vitimas
-2026,2026-06-01,RO,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-06-01,RO,Mortes no trânsito,9.0,0.0,3.0,6.0,0.0,0.0,9.0,vitimas
 2026,2026-06-01,RO,Pessoa Desaparecida,83.0,0.0,34.0,49.0,0.0,0.0,83.0,vitimas
 2026,2026-06-01,RO,Pessoa Localizada,13.0,0.0,9.0,4.0,0.0,0.0,13.0,vitimas
 2026,2026-06-01,RO,Realização de vistorias,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
@@ -4853,7 +4853,7 @@
 2026,2026-06-01,RR,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),6.0,0.0,0.0,6.0,0.0,0.0,6.0,vitimas
 2026,2026-06-01,RR,Morte por intervenção de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
 2026,2026-06-01,RR,Mortes a esclarecer (sem indício de crime),18.0,0.0,5.0,13.0,0.0,0.0,18.0,vitimas
-2026,2026-06-01,RR,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-06-01,RR,Mortes no trânsito,1.0,0.0,0.0,1.0,0.0,0.0,1.0,vitimas
 2026,2026-06-01,RR,Pessoa Desaparecida,43.0,0.0,21.0,22.0,0.0,0.0,43.0,vitimas
 2026,2026-06-01,RR,Pessoa Localizada,7.0,0.0,2.0,5.0,0.0,0.0,7.0,vitimas
 2026,2026-06-01,RR,Realização de vistorias,0.0,45.0,0.0,0.0,0.0,0.0,45.0,ocorrencias
@@ -4884,7 +4884,7 @@
 2026,2026-06-01,RS,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),106.0,0.0,30.0,76.0,0.0,0.0,106.0,vitimas
 2026,2026-06-01,RS,Morte por intervenção de Agente do Estado,5.0,0.0,0.0,5.0,0.0,0.0,5.0,vitimas
 2026,2026-06-01,RS,Mortes a esclarecer (sem indício de crime),86.0,0.0,26.0,60.0,0.0,0.0,86.0,vitimas
-2026,2026-06-01,RS,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-06-01,RS,Mortes no trânsito,29.0,0.0,10.0,19.0,0.0,0.0,29.0,vitimas
 2026,2026-06-01,RS,Pessoa Desaparecida,633.0,0.0,241.0,392.0,0.0,0.0,633.0,vitimas
 2026,2026-06-01,RS,Pessoa Localizada,692.0,0.0,277.0,415.0,0.0,0.0,692.0,vitimas
 2026,2026-06-01,RS,Realização de vistorias,0.0,1956.0,0.0,0.0,0.0,0.0,1956.0,ocorrencias
@@ -4913,9 +4913,9 @@
 2026,2026-06-01,SC,Mandado de prisão cumprido,0.0,1860.0,0.0,0.0,0.0,0.0,1860.0,ocorrencias
 2026,2026-06-01,SC,Morte de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
 2026,2026-06-01,SC,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),40.0,0.0,14.0,26.0,0.0,0.0,40.0,vitimas
-2026,2026-06-01,SC,Morte por intervenção de Agente do Estado,7.0,0.0,0.0,7.0,0.0,0.0,7.0,vitimas
+2026,2026-06-01,SC,Morte por intervenção de Agente do Estado,8.0,0.0,0.0,7.0,1.0,0.0,8.0,vitimas
 2026,2026-06-01,SC,Mortes a esclarecer (sem indício de crime),0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2026,2026-06-01,SC,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-06-01,SC,Mortes no trânsito,37.0,0.0,9.0,28.0,0.0,0.0,37.0,vitimas
 2026,2026-06-01,SC,Pessoa Desaparecida,329.0,0.0,130.0,198.0,1.0,0.0,329.0,vitimas
 2026,2026-06-01,SC,Pessoa Localizada,441.0,0.0,182.0,258.0,1.0,0.0,441.0,vitimas
 2026,2026-06-01,SC,Realização de vistorias,0.0,4984.0,0.0,0.0,0.0,0.0,4984.0,ocorrencias
@@ -4946,7 +4946,7 @@
 2026,2026-06-01,SE,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),19.0,0.0,6.0,13.0,0.0,0.0,19.0,vitimas
 2026,2026-06-01,SE,Morte por intervenção de Agente do Estado,13.0,0.0,0.0,13.0,0.0,0.0,13.0,vitimas
 2026,2026-06-01,SE,Mortes a esclarecer (sem indício de crime),33.0,0.0,9.0,24.0,0.0,0.0,33.0,vitimas
-2026,2026-06-01,SE,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-06-01,SE,Mortes no trânsito,7.0,0.0,2.0,5.0,0.0,0.0,7.0,vitimas
 2026,2026-06-01,SE,Pessoa Desaparecida,55.0,0.0,21.0,34.0,0.0,0.0,55.0,vitimas
 2026,2026-06-01,SE,Pessoa Localizada,36.0,0.0,10.0,26.0,0.0,0.0,36.0,vitimas
 2026,2026-06-01,SE,Realização de vistorias,0.0,365.0,0.0,0.0,0.0,0.0,365.0,ocorrencias
@@ -4977,7 +4977,7 @@
 2026,2026-06-01,SP,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),324.0,0.0,65.0,256.0,3.0,0.0,324.0,vitimas
 2026,2026-06-01,SP,Morte por intervenção de Agente do Estado,58.0,0.0,0.0,58.0,0.0,0.0,58.0,vitimas
 2026,2026-06-01,SP,Mortes a esclarecer (sem indício de crime),272.0,0.0,48.0,216.0,8.0,0.0,272.0,vitimas
-2026,2026-06-01,SP,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-06-01,SP,Mortes no trânsito,19.0,0.0,1.0,18.0,0.0,0.0,19.0,vitimas
 2026,2026-06-01,SP,Pessoa Desaparecida,1782.0,0.0,572.0,1205.0,5.0,0.0,1782.0,vitimas
 2026,2026-06-01,SP,Pessoa Localizada,1216.0,0.0,439.0,774.0,3.0,0.0,1216.0,vitimas
 2026,2026-06-01,SP,Realização de vistorias,0.0,9505.0,0.0,0.0,0.0,0.0,9505.0,ocorrencias
@@ -5008,7 +5008,7 @@
 2026,2026-06-01,TO,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),45.0,0.0,13.0,30.0,2.0,0.0,45.0,vitimas
 2026,2026-06-01,TO,Morte por intervenção de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
 2026,2026-06-01,TO,Mortes a esclarecer (sem indício de crime),24.0,0.0,6.0,18.0,0.0,0.0,24.0,vitimas
-2026,2026-06-01,TO,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-06-01,TO,Mortes no trânsito,8.0,0.0,1.0,6.0,1.0,0.0,8.0,vitimas
 2026,2026-06-01,TO,Pessoa Desaparecida,62.0,0.0,13.0,49.0,0.0,0.0,62.0,vitimas
 2026,2026-06-01,TO,Pessoa Localizada,33.0,0.0,15.0,18.0,0.0,0.0,33.0,vitimas
 2026,2026-06-01,TO,Realização de vistorias,0.0,467.0,0.0,0.0,0.0,0.0,467.0,ocorrencias
@@ -5039,7 +5039,7 @@
 2026,2026-07-01,AC,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),9.0,0.0,2.0,7.0,0.0,0.0,9.0,vitimas
 2026,2026-07-01,AC,Morte por intervenção de Agente do Estado,3.0,0.0,0.0,3.0,0.0,0.0,3.0,vitimas
 2026,2026-07-01,AC,Mortes a esclarecer (sem indício de crime),4.0,0.0,1.0,2.0,1.0,0.0,4.0,vitimas
-2026,2026-07-01,AC,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-07-01,AC,Mortes no trânsito,2.0,0.0,2.0,0.0,0.0,0.0,2.0,vitimas
 2026,2026-07-01,AC,Pessoa Desaparecida,41.0,0.0,15.0,24.0,2.0,0.0,41.0,vitimas
 2026,2026-07-01,AC,Pessoa Localizada,22.0,0.0,10.0,11.0,1.0,0.0,22.0,vitimas
 2026,2026-07-01,AC,Realização de vistorias,0.0,864.0,0.0,0.0,0.0,0.0,864.0,ocorrencias
@@ -5070,7 +5070,7 @@
 2026,2026-07-01,AL,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),33.0,0.0,3.0,23.0,7.0,0.0,33.0,vitimas
 2026,2026-07-01,AL,Morte por intervenção de Agente do Estado,6.0,0.0,0.0,6.0,0.0,0.0,6.0,vitimas
 2026,2026-07-01,AL,Mortes a esclarecer (sem indício de crime),100.0,0.0,27.0,53.0,20.0,0.0,100.0,vitimas
-2026,2026-07-01,AL,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-07-01,AL,Mortes no trânsito,8.0,0.0,1.0,7.0,0.0,0.0,8.0,vitimas
 2026,2026-07-01,AL,Pessoa Desaparecida,79.0,0.0,30.0,49.0,0.0,0.0,79.0,vitimas
 2026,2026-07-01,AL,Pessoa Localizada,74.0,0.0,25.0,49.0,0.0,0.0,74.0,vitimas
 2026,2026-07-01,AL,Realização de vistorias,0.0,1315.0,0.0,0.0,0.0,0.0,1315.0,ocorrencias
@@ -5101,7 +5101,7 @@
 2026,2026-07-01,AM,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),16.0,0.0,3.0,13.0,0.0,0.0,16.0,vitimas
 2026,2026-07-01,AM,Morte por intervenção de Agente do Estado,3.0,0.0,0.0,3.0,0.0,0.0,3.0,vitimas
 2026,2026-07-01,AM,Mortes a esclarecer (sem indício de crime),0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2026,2026-07-01,AM,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-07-01,AM,Mortes no trânsito,4.0,0.0,2.0,2.0,0.0,0.0,4.0,vitimas
 2026,2026-07-01,AM,Pessoa Desaparecida,111.0,0.0,45.0,66.0,0.0,0.0,111.0,vitimas
 2026,2026-07-01,AM,Pessoa Localizada,83.0,0.0,39.0,44.0,0.0,0.0,83.0,vitimas
 2026,2026-07-01,AM,Realização de vistorias,0.0,508.0,0.0,0.0,0.0,0.0,508.0,ocorrencias
@@ -5115,12 +5115,12 @@
 2026,2026-07-01,AM,Tentativa de homicídio,52.0,0.0,7.0,44.0,1.0,0.0,52.0,vitimas
 2026,2026-07-01,AM,Tráfico de drogas,0.0,314.0,0.0,0.0,0.0,0.0,314.0,ocorrencias
 2026,2026-07-01,AP,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,263.0,263.0,kg
-2026,2026-07-01,AP,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,603.0,603.0,kg
+2026,2026-07-01,AP,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,629.0,629.0,kg
 2026,2026-07-01,AP,Arma de Fogo Apreendida,0.0,26.0,0.0,0.0,0.0,0.0,26.0,ocorrencias
 2026,2026-07-01,AP,Atendimento pré-hospitalar,0.0,840.0,0.0,0.0,0.0,0.0,840.0,ocorrencias
 2026,2026-07-01,AP,Busca e salvamento,0.0,242.0,0.0,0.0,0.0,0.0,242.0,ocorrencias
 2026,2026-07-01,AP,Combate a incêndios,0.0,114.0,0.0,0.0,0.0,0.0,114.0,ocorrencias
-2026,2026-07-01,AP,Emissão de Alvarás de licença,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
+2026,2026-07-01,AP,Emissão de Alvarás de licença,0.0,266.0,0.0,0.0,0.0,0.0,266.0,ocorrencias
 2026,2026-07-01,AP,Estupro,14.0,0.0,13.0,1.0,0.0,0.0,14.0,vitimas
 2026,2026-07-01,AP,Estupro de vulnerável,43.0,0.0,38.0,3.0,2.0,0.0,43.0,vitimas
 2026,2026-07-01,AP,Feminicídio,2.0,0.0,2.0,0.0,0.0,0.0,2.0,vitimas
@@ -5132,10 +5132,10 @@
 2026,2026-07-01,AP,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),13.0,0.0,2.0,11.0,0.0,0.0,13.0,vitimas
 2026,2026-07-01,AP,Morte por intervenção de Agente do Estado,10.0,0.0,0.0,10.0,0.0,0.0,10.0,vitimas
 2026,2026-07-01,AP,Mortes a esclarecer (sem indício de crime),0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2026,2026-07-01,AP,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-07-01,AP,Mortes no trânsito,1.0,0.0,1.0,0.0,0.0,0.0,1.0,vitimas
 2026,2026-07-01,AP,Pessoa Desaparecida,47.0,0.0,20.0,27.0,0.0,0.0,47.0,vitimas
 2026,2026-07-01,AP,Pessoa Localizada,36.0,0.0,16.0,20.0,0.0,0.0,36.0,vitimas
-2026,2026-07-01,AP,Realização de vistorias,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
+2026,2026-07-01,AP,Realização de vistorias,0.0,752.0,0.0,0.0,0.0,0.0,752.0,ocorrencias
 2026,2026-07-01,AP,Roubo a instituição financeira,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
 2026,2026-07-01,AP,Roubo de carga,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
 2026,2026-07-01,AP,Roubo de veículo,0.0,8.0,0.0,0.0,0.0,0.0,8.0,ocorrencias
@@ -5163,7 +5163,7 @@
 2026,2026-07-01,BA,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),37.0,0.0,7.0,27.0,3.0,0.0,37.0,vitimas
 2026,2026-07-01,BA,Morte por intervenção de Agente do Estado,119.0,0.0,1.0,118.0,0.0,0.0,119.0,vitimas
 2026,2026-07-01,BA,Mortes a esclarecer (sem indício de crime),80.0,0.0,25.0,54.0,1.0,0.0,80.0,vitimas
-2026,2026-07-01,BA,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-07-01,BA,Mortes no trânsito,52.0,0.0,8.0,44.0,0.0,0.0,52.0,vitimas
 2026,2026-07-01,BA,Pessoa Desaparecida,345.0,0.0,121.0,216.0,8.0,0.0,345.0,vitimas
 2026,2026-07-01,BA,Pessoa Localizada,89.0,0.0,38.0,50.0,1.0,0.0,89.0,vitimas
 2026,2026-07-01,BA,Realização de vistorias,0.0,1138.0,0.0,0.0,0.0,0.0,1138.0,ocorrencias
@@ -5194,7 +5194,7 @@
 2026,2026-07-01,CE,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),152.0,0.0,28.0,124.0,0.0,0.0,152.0,vitimas
 2026,2026-07-01,CE,Morte por intervenção de Agente do Estado,13.0,0.0,0.0,13.0,0.0,0.0,13.0,vitimas
 2026,2026-07-01,CE,Mortes a esclarecer (sem indício de crime),25.0,0.0,8.0,17.0,0.0,0.0,25.0,vitimas
-2026,2026-07-01,CE,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-07-01,CE,Mortes no trânsito,19.0,0.0,4.0,14.0,1.0,0.0,19.0,vitimas
 2026,2026-07-01,CE,Pessoa Desaparecida,183.0,0.0,45.0,138.0,0.0,0.0,183.0,vitimas
 2026,2026-07-01,CE,Pessoa Localizada,97.0,0.0,25.0,72.0,0.0,0.0,97.0,vitimas
 2026,2026-07-01,CE,Realização de vistorias,0.0,6152.0,0.0,0.0,0.0,0.0,6152.0,ocorrencias
@@ -5225,7 +5225,7 @@
 2026,2026-07-01,DF,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),22.0,0.0,4.0,18.0,0.0,0.0,22.0,vitimas
 2026,2026-07-01,DF,Morte por intervenção de Agente do Estado,1.0,0.0,0.0,1.0,0.0,0.0,1.0,vitimas
 2026,2026-07-01,DF,Mortes a esclarecer (sem indício de crime),0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2026,2026-07-01,DF,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-07-01,DF,Mortes no trânsito,5.0,0.0,2.0,3.0,0.0,0.0,5.0,vitimas
 2026,2026-07-01,DF,Pessoa Desaparecida,200.0,0.0,63.0,137.0,0.0,0.0,200.0,vitimas
 2026,2026-07-01,DF,Pessoa Localizada,182.0,0.0,59.0,123.0,0.0,0.0,182.0,vitimas
 2026,2026-07-01,DF,Realização de vistorias,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
@@ -5256,7 +5256,7 @@
 2026,2026-07-01,ES,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),91.0,0.0,14.0,77.0,0.0,0.0,91.0,vitimas
 2026,2026-07-01,ES,Morte por intervenção de Agente do Estado,1.0,0.0,0.0,1.0,0.0,0.0,1.0,vitimas
 2026,2026-07-01,ES,Mortes a esclarecer (sem indício de crime),3.0,0.0,0.0,3.0,0.0,0.0,3.0,vitimas
-2026,2026-07-01,ES,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-07-01,ES,Mortes no trânsito,18.0,0.0,2.0,16.0,0.0,0.0,18.0,vitimas
 2026,2026-07-01,ES,Pessoa Desaparecida,185.0,0.0,69.0,102.0,14.0,0.0,185.0,vitimas
 2026,2026-07-01,ES,Pessoa Localizada,34.0,0.0,12.0,20.0,2.0,0.0,34.0,vitimas
 2026,2026-07-01,ES,Realização de vistorias,0.0,4645.0,0.0,0.0,0.0,0.0,4645.0,ocorrencias
@@ -5287,7 +5287,7 @@
 2026,2026-07-01,GO,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),64.0,0.0,7.0,57.0,0.0,0.0,64.0,vitimas
 2026,2026-07-01,GO,Morte por intervenção de Agente do Estado,15.0,0.0,0.0,11.0,4.0,0.0,15.0,vitimas
 2026,2026-07-01,GO,Mortes a esclarecer (sem indício de crime),33.0,0.0,5.0,24.0,4.0,0.0,33.0,vitimas
-2026,2026-07-01,GO,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-07-01,GO,Mortes no trânsito,24.0,0.0,3.0,21.0,0.0,0.0,24.0,vitimas
 2026,2026-07-01,GO,Pessoa Desaparecida,336.0,0.0,113.0,218.0,5.0,0.0,336.0,vitimas
 2026,2026-07-01,GO,Pessoa Localizada,176.0,0.0,61.0,112.0,3.0,0.0,176.0,vitimas
 2026,2026-07-01,GO,Realização de vistorias,0.0,3827.0,0.0,0.0,0.0,0.0,3827.0,ocorrencias
@@ -5318,7 +5318,7 @@
 2026,2026-07-01,MA,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),99.0,0.0,26.0,73.0,0.0,0.0,99.0,vitimas
 2026,2026-07-01,MA,Morte por intervenção de Agente do Estado,19.0,0.0,0.0,19.0,0.0,0.0,19.0,vitimas
 2026,2026-07-01,MA,Mortes a esclarecer (sem indício de crime),7.0,0.0,0.0,7.0,0.0,0.0,7.0,vitimas
-2026,2026-07-01,MA,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-07-01,MA,Mortes no trânsito,27.0,0.0,8.0,19.0,0.0,0.0,27.0,vitimas
 2026,2026-07-01,MA,Pessoa Desaparecida,120.0,0.0,33.0,77.0,10.0,0.0,120.0,vitimas
 2026,2026-07-01,MA,Pessoa Localizada,17.0,0.0,7.0,10.0,0.0,0.0,17.0,vitimas
 2026,2026-07-01,MA,Realização de vistorias,0.0,369.0,0.0,0.0,0.0,0.0,369.0,ocorrencias
@@ -5349,7 +5349,7 @@
 2026,2026-07-01,MG,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),233.0,0.0,40.0,193.0,0.0,0.0,233.0,vitimas
 2026,2026-07-01,MG,Morte por intervenção de Agente do Estado,11.0,0.0,0.0,11.0,0.0,0.0,11.0,vitimas
 2026,2026-07-01,MG,Mortes a esclarecer (sem indício de crime),0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2026,2026-07-01,MG,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-07-01,MG,Mortes no trânsito,70.0,0.0,15.0,55.0,0.0,0.0,70.0,vitimas
 2026,2026-07-01,MG,Pessoa Desaparecida,862.0,0.0,300.0,560.0,2.0,0.0,862.0,vitimas
 2026,2026-07-01,MG,Pessoa Localizada,603.0,0.0,232.0,371.0,0.0,0.0,603.0,vitimas
 2026,2026-07-01,MG,Realização de vistorias,0.0,2930.0,0.0,0.0,0.0,0.0,2930.0,ocorrencias
@@ -5380,7 +5380,7 @@
 2026,2026-07-01,MS,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),37.0,0.0,12.0,25.0,0.0,0.0,37.0,vitimas
 2026,2026-07-01,MS,Morte por intervenção de Agente do Estado,22.0,0.0,0.0,20.0,2.0,0.0,22.0,vitimas
 2026,2026-07-01,MS,Mortes a esclarecer (sem indício de crime),22.0,0.0,2.0,20.0,0.0,0.0,22.0,vitimas
-2026,2026-07-01,MS,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-07-01,MS,Mortes no trânsito,13.0,0.0,3.0,10.0,0.0,0.0,13.0,vitimas
 2026,2026-07-01,MS,Pessoa Desaparecida,101.0,0.0,27.0,73.0,1.0,0.0,101.0,vitimas
 2026,2026-07-01,MS,Pessoa Localizada,104.0,0.0,41.0,62.0,1.0,0.0,104.0,vitimas
 2026,2026-07-01,MS,Realização de vistorias,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
@@ -5411,7 +5411,7 @@
 2026,2026-07-01,MT,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),99.0,0.0,20.0,79.0,0.0,0.0,99.0,vitimas
 2026,2026-07-01,MT,Morte por intervenção de Agente do Estado,13.0,0.0,0.0,13.0,0.0,0.0,13.0,vitimas
 2026,2026-07-01,MT,Mortes a esclarecer (sem indício de crime),39.0,0.0,5.0,34.0,0.0,0.0,39.0,vitimas
-2026,2026-07-01,MT,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-07-01,MT,Mortes no trânsito,22.0,0.0,2.0,20.0,0.0,0.0,22.0,vitimas
 2026,2026-07-01,MT,Pessoa Desaparecida,201.0,0.0,77.0,124.0,0.0,0.0,201.0,vitimas
 2026,2026-07-01,MT,Pessoa Localizada,114.0,0.0,42.0,72.0,0.0,0.0,114.0,vitimas
 2026,2026-07-01,MT,Realização de vistorias,0.0,1262.0,0.0,0.0,0.0,0.0,1262.0,ocorrencias
@@ -5442,7 +5442,7 @@
 2026,2026-07-01,PA,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),108.0,0.0,27.0,77.0,4.0,0.0,108.0,vitimas
 2026,2026-07-01,PA,Morte por intervenção de Agente do Estado,45.0,0.0,0.0,45.0,0.0,0.0,45.0,vitimas
 2026,2026-07-01,PA,Mortes a esclarecer (sem indício de crime),42.0,0.0,8.0,30.0,4.0,0.0,42.0,vitimas
-2026,2026-07-01,PA,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-07-01,PA,Mortes no trânsito,24.0,0.0,6.0,18.0,0.0,0.0,24.0,vitimas
 2026,2026-07-01,PA,Pessoa Desaparecida,135.0,0.0,45.0,90.0,0.0,0.0,135.0,vitimas
 2026,2026-07-01,PA,Pessoa Localizada,79.0,0.0,31.0,48.0,0.0,0.0,79.0,vitimas
 2026,2026-07-01,PA,Realização de vistorias,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
@@ -5473,7 +5473,7 @@
 2026,2026-07-01,PB,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),78.0,0.0,18.0,60.0,0.0,0.0,78.0,vitimas
 2026,2026-07-01,PB,Morte por intervenção de Agente do Estado,3.0,0.0,0.0,3.0,0.0,0.0,3.0,vitimas
 2026,2026-07-01,PB,Mortes a esclarecer (sem indício de crime),0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2026,2026-07-01,PB,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-07-01,PB,Mortes no trânsito,15.0,0.0,4.0,11.0,0.0,0.0,15.0,vitimas
 2026,2026-07-01,PB,Pessoa Desaparecida,105.0,0.0,35.0,70.0,0.0,0.0,105.0,vitimas
 2026,2026-07-01,PB,Pessoa Localizada,70.0,0.0,25.0,45.0,0.0,0.0,70.0,vitimas
 2026,2026-07-01,PB,Realização de vistorias,0.0,1435.0,0.0,0.0,0.0,0.0,1435.0,ocorrencias
@@ -5504,7 +5504,7 @@
 2026,2026-07-01,PE,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),157.0,0.0,35.0,122.0,0.0,0.0,157.0,vitimas
 2026,2026-07-01,PE,Morte por intervenção de Agente do Estado,8.0,0.0,0.0,8.0,0.0,0.0,8.0,vitimas
 2026,2026-07-01,PE,Mortes a esclarecer (sem indício de crime),145.0,0.0,0.0,139.0,6.0,0.0,145.0,vitimas
-2026,2026-07-01,PE,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-07-01,PE,Mortes no trânsito,41.0,0.0,11.0,30.0,0.0,0.0,41.0,vitimas
 2026,2026-07-01,PE,Pessoa Desaparecida,262.0,0.0,96.0,149.0,17.0,0.0,262.0,vitimas
 2026,2026-07-01,PE,Pessoa Localizada,100.0,0.0,43.0,50.0,7.0,0.0,100.0,vitimas
 2026,2026-07-01,PE,Realização de vistorias,0.0,4332.0,0.0,0.0,0.0,0.0,4332.0,ocorrencias
@@ -5535,7 +5535,7 @@
 2026,2026-07-01,PI,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),15.0,0.0,5.0,10.0,0.0,0.0,15.0,vitimas
 2026,2026-07-01,PI,Morte por intervenção de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
 2026,2026-07-01,PI,Mortes a esclarecer (sem indício de crime),24.0,0.0,6.0,17.0,1.0,0.0,24.0,vitimas
-2026,2026-07-01,PI,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-07-01,PI,Mortes no trânsito,16.0,0.0,1.0,15.0,0.0,0.0,16.0,vitimas
 2026,2026-07-01,PI,Pessoa Desaparecida,92.0,0.0,29.0,60.0,3.0,0.0,92.0,vitimas
 2026,2026-07-01,PI,Pessoa Localizada,30.0,0.0,8.0,21.0,1.0,0.0,30.0,vitimas
 2026,2026-07-01,PI,Realização de vistorias,0.0,603.0,0.0,0.0,0.0,0.0,603.0,ocorrencias
@@ -5566,7 +5566,7 @@
 2026,2026-07-01,PR,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),80.0,0.0,22.0,58.0,0.0,0.0,80.0,vitimas
 2026,2026-07-01,PR,Morte por intervenção de Agente do Estado,35.0,0.0,1.0,34.0,0.0,0.0,35.0,vitimas
 2026,2026-07-01,PR,Mortes a esclarecer (sem indício de crime),2.0,0.0,2.0,0.0,0.0,0.0,2.0,vitimas
-2026,2026-07-01,PR,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-07-01,PR,Mortes no trânsito,53.0,0.0,17.0,36.0,0.0,0.0,53.0,vitimas
 2026,2026-07-01,PR,Pessoa Desaparecida,555.0,0.0,212.0,343.0,0.0,0.0,555.0,vitimas
 2026,2026-07-01,PR,Pessoa Localizada,407.0,0.0,170.0,237.0,0.0,0.0,407.0,vitimas
 2026,2026-07-01,PR,Realização de vistorias,0.0,4617.0,0.0,0.0,0.0,0.0,4617.0,ocorrencias
@@ -5597,7 +5597,7 @@
 2026,2026-07-01,RJ,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),182.0,0.0,31.0,146.0,5.0,0.0,182.0,vitimas
 2026,2026-07-01,RJ,Morte por intervenção de Agente do Estado,68.0,0.0,0.0,67.0,1.0,0.0,68.0,vitimas
 2026,2026-07-01,RJ,Mortes a esclarecer (sem indício de crime),239.0,0.0,66.0,169.0,4.0,0.0,239.0,vitimas
-2026,2026-07-01,RJ,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-07-01,RJ,Mortes no trânsito,26.0,0.0,5.0,21.0,0.0,0.0,26.0,vitimas
 2026,2026-07-01,RJ,Pessoa Desaparecida,539.0,0.0,186.0,352.0,1.0,0.0,539.0,vitimas
 2026,2026-07-01,RJ,Pessoa Localizada,205.0,0.0,1.0,9.0,195.0,0.0,205.0,vitimas
 2026,2026-07-01,RJ,Realização de vistorias,0.0,404.0,0.0,0.0,0.0,0.0,404.0,ocorrencias
@@ -5628,7 +5628,7 @@
 2026,2026-07-01,RN,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),38.0,0.0,5.0,33.0,0.0,0.0,38.0,vitimas
 2026,2026-07-01,RN,Morte por intervenção de Agente do Estado,8.0,0.0,0.0,8.0,0.0,0.0,8.0,vitimas
 2026,2026-07-01,RN,Mortes a esclarecer (sem indício de crime),63.0,0.0,26.0,37.0,0.0,0.0,63.0,vitimas
-2026,2026-07-01,RN,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-07-01,RN,Mortes no trânsito,7.0,0.0,0.0,7.0,0.0,0.0,7.0,vitimas
 2026,2026-07-01,RN,Pessoa Desaparecida,85.0,0.0,24.0,61.0,0.0,0.0,85.0,vitimas
 2026,2026-07-01,RN,Pessoa Localizada,52.0,0.0,14.0,38.0,0.0,0.0,52.0,vitimas
 2026,2026-07-01,RN,Realização de vistorias,0.0,398.0,0.0,0.0,0.0,0.0,398.0,ocorrencias
@@ -5659,7 +5659,7 @@
 2026,2026-07-01,RO,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),43.0,0.0,12.0,31.0,0.0,0.0,43.0,vitimas
 2026,2026-07-01,RO,Morte por intervenção de Agente do Estado,4.0,0.0,0.0,4.0,0.0,0.0,4.0,vitimas
 2026,2026-07-01,RO,Mortes a esclarecer (sem indício de crime),37.0,0.0,5.0,32.0,0.0,0.0,37.0,vitimas
-2026,2026-07-01,RO,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-07-01,RO,Mortes no trânsito,8.0,0.0,2.0,6.0,0.0,0.0,8.0,vitimas
 2026,2026-07-01,RO,Pessoa Desaparecida,69.0,0.0,24.0,45.0,0.0,0.0,69.0,vitimas
 2026,2026-07-01,RO,Pessoa Localizada,2.0,0.0,0.0,2.0,0.0,0.0,2.0,vitimas
 2026,2026-07-01,RO,Realização de vistorias,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
@@ -5721,7 +5721,7 @@
 2026,2026-07-01,RS,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),86.0,0.0,16.0,70.0,0.0,0.0,86.0,vitimas
 2026,2026-07-01,RS,Morte por intervenção de Agente do Estado,3.0,0.0,0.0,3.0,0.0,0.0,3.0,vitimas
 2026,2026-07-01,RS,Mortes a esclarecer (sem indício de crime),109.0,0.0,26.0,83.0,0.0,0.0,109.0,vitimas
-2026,2026-07-01,RS,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-07-01,RS,Mortes no trânsito,14.0,0.0,2.0,12.0,0.0,0.0,14.0,vitimas
 2026,2026-07-01,RS,Pessoa Desaparecida,666.0,0.0,255.0,411.0,0.0,0.0,666.0,vitimas
 2026,2026-07-01,RS,Pessoa Localizada,690.0,0.0,270.0,420.0,0.0,0.0,690.0,vitimas
 2026,2026-07-01,RS,Realização de vistorias,0.0,2182.0,0.0,0.0,0.0,0.0,2182.0,ocorrencias
@@ -5752,7 +5752,7 @@
 2026,2026-07-01,SC,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),37.0,0.0,6.0,31.0,0.0,0.0,37.0,vitimas
 2026,2026-07-01,SC,Morte por intervenção de Agente do Estado,15.0,0.0,0.0,15.0,0.0,0.0,15.0,vitimas
 2026,2026-07-01,SC,Mortes a esclarecer (sem indício de crime),0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2026,2026-07-01,SC,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-07-01,SC,Mortes no trânsito,39.0,0.0,8.0,31.0,0.0,0.0,39.0,vitimas
 2026,2026-07-01,SC,Pessoa Desaparecida,352.0,0.0,134.0,217.0,1.0,0.0,352.0,vitimas
 2026,2026-07-01,SC,Pessoa Localizada,321.0,0.0,111.0,209.0,1.0,0.0,321.0,vitimas
 2026,2026-07-01,SC,Realização de vistorias,0.0,4806.0,0.0,0.0,0.0,0.0,4806.0,ocorrencias
@@ -5783,7 +5783,7 @@
 2026,2026-07-01,SE,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),14.0,0.0,4.0,10.0,0.0,0.0,14.0,vitimas
 2026,2026-07-01,SE,Morte por intervenção de Agente do Estado,20.0,0.0,0.0,20.0,0.0,0.0,20.0,vitimas
 2026,2026-07-01,SE,Mortes a esclarecer (sem indício de crime),35.0,0.0,8.0,23.0,4.0,0.0,35.0,vitimas
-2026,2026-07-01,SE,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-07-01,SE,Mortes no trânsito,5.0,0.0,2.0,3.0,0.0,0.0,5.0,vitimas
 2026,2026-07-01,SE,Pessoa Desaparecida,62.0,0.0,17.0,45.0,0.0,0.0,62.0,vitimas
 2026,2026-07-01,SE,Pessoa Localizada,44.0,0.0,13.0,31.0,0.0,0.0,44.0,vitimas
 2026,2026-07-01,SE,Realização de vistorias,0.0,363.0,0.0,0.0,0.0,0.0,363.0,ocorrencias
@@ -5814,7 +5814,7 @@
 2026,2026-07-01,SP,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),344.0,0.0,89.0,254.0,1.0,0.0,344.0,vitimas
 2026,2026-07-01,SP,Morte por intervenção de Agente do Estado,66.0,0.0,0.0,66.0,0.0,0.0,66.0,vitimas
 2026,2026-07-01,SP,Mortes a esclarecer (sem indício de crime),278.0,0.0,46.0,217.0,15.0,0.0,278.0,vitimas
-2026,2026-07-01,SP,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-07-01,SP,Mortes no trânsito,19.0,0.0,1.0,18.0,0.0,0.0,19.0,vitimas
 2026,2026-07-01,SP,Pessoa Desaparecida,1759.0,0.0,583.0,1172.0,4.0,0.0,1759.0,vitimas
 2026,2026-07-01,SP,Pessoa Localizada,1299.0,0.0,479.0,819.0,1.0,0.0,1299.0,vitimas
 2026,2026-07-01,SP,Realização de vistorias,0.0,18596.0,0.0,0.0,0.0,0.0,18596.0,ocorrencias
@@ -5845,7 +5845,7 @@
 2026,2026-07-01,TO,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),47.0,0.0,14.0,30.0,3.0,0.0,47.0,vitimas
 2026,2026-07-01,TO,Morte por intervenção de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
 2026,2026-07-01,TO,Mortes a esclarecer (sem indício de crime),29.0,0.0,3.0,25.0,1.0,0.0,29.0,vitimas
-2026,2026-07-01,TO,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-07-01,TO,Mortes no trânsito,10.0,0.0,1.0,9.0,0.0,0.0,10.0,vitimas
 2026,2026-07-01,TO,Pessoa Desaparecida,57.0,0.0,26.0,31.0,0.0,0.0,57.0,vitimas
 2026,2026-07-01,TO,Pessoa Localizada,28.0,0.0,12.0,16.0,0.0,0.0,28.0,vitimas
 2026,2026-07-01,TO,Realização de vistorias,0.0,359.0,0.0,0.0,0.0,0.0,359.0,ocorrencias
@@ -5876,6 +5876,7 @@
 2026,2026-08-01,AC,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),15.0,0.0,3.0,12.0,0.0,0.0,15.0,vitimas
 2026,2026-08-01,AC,Morte por intervenção de Agente do Estado,2.0,0.0,0.0,2.0,0.0,0.0,2.0,vitimas
 2026,2026-08-01,AC,Mortes a esclarecer (sem indício de crime),0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-08-01,AC,Mortes no trânsito,5.0,0.0,1.0,3.0,1.0,0.0,5.0,vitimas
 2026,2026-08-01,AC,Pessoa Desaparecida,43.0,0.0,21.0,18.0,4.0,0.0,43.0,vitimas
 2026,2026-08-01,AC,Pessoa Localizada,13.0,0.0,9.0,4.0,0.0,0.0,13.0,vitimas
 2026,2026-08-01,AC,Realização de vistorias,0.0,662.0,0.0,0.0,0.0,0.0,662.0,ocorrencias
@@ -5906,6 +5907,7 @@
 2026,2026-08-01,AL,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),47.0,0.0,5.0,30.0,12.0,0.0,47.0,vitimas
 2026,2026-08-01,AL,Morte por intervenção de Agente do Estado,22.0,0.0,0.0,22.0,0.0,0.0,22.0,vitimas
 2026,2026-08-01,AL,Mortes a esclarecer (sem indício de crime),93.0,0.0,34.0,49.0,10.0,0.0,93.0,vitimas
+2026,2026-08-01,AL,Mortes no trânsito,7.0,0.0,0.0,7.0,0.0,0.0,7.0,vitimas
 2026,2026-08-01,AL,Pessoa Desaparecida,56.0,0.0,15.0,41.0,0.0,0.0,56.0,vitimas
 2026,2026-08-01,AL,Pessoa Localizada,38.0,0.0,7.0,31.0,0.0,0.0,38.0,vitimas
 2026,2026-08-01,AL,Realização de vistorias,0.0,1009.0,0.0,0.0,0.0,0.0,1009.0,ocorrencias
@@ -5936,6 +5938,7 @@
 2026,2026-08-01,AM,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),16.0,0.0,3.0,13.0,0.0,0.0,16.0,vitimas
 2026,2026-08-01,AM,Morte por intervenção de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
 2026,2026-08-01,AM,Mortes a esclarecer (sem indício de crime),0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-08-01,AM,Mortes no trânsito,3.0,0.0,1.0,2.0,0.0,0.0,3.0,vitimas
 2026,2026-08-01,AM,Pessoa Desaparecida,100.0,0.0,49.0,51.0,0.0,0.0,100.0,vitimas
 2026,2026-08-01,AM,Pessoa Localizada,76.0,0.0,40.0,36.0,0.0,0.0,76.0,vitimas
 2026,2026-08-01,AM,Realização de vistorias,0.0,517.0,0.0,0.0,0.0,0.0,517.0,ocorrencias
@@ -5948,13 +5951,13 @@
 2026,2026-08-01,AM,Tentativa de feminicídio,8.0,0.0,8.0,0.0,0.0,0.0,8.0,vitimas
 2026,2026-08-01,AM,Tentativa de homicídio,63.0,0.0,9.0,52.0,2.0,0.0,63.0,vitimas
 2026,2026-08-01,AM,Tráfico de drogas,0.0,273.0,0.0,0.0,0.0,0.0,273.0,ocorrencias
-2026,2026-08-01,AP,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,919.0,919.0,kg
-2026,2026-08-01,AP,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,2951.0,2951.0,kg
+2026,2026-08-01,AP,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,104.0,104.0,kg
+2026,2026-08-01,AP,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,2979.0,2979.0,kg
 2026,2026-08-01,AP,Arma de Fogo Apreendida,0.0,30.0,0.0,0.0,0.0,0.0,30.0,ocorrencias
 2026,2026-08-01,AP,Atendimento pré-hospitalar,0.0,1201.0,0.0,0.0,0.0,0.0,1201.0,ocorrencias
 2026,2026-08-01,AP,Busca e salvamento,0.0,300.0,0.0,0.0,0.0,0.0,300.0,ocorrencias
 2026,2026-08-01,AP,Combate a incêndios,0.0,234.0,0.0,0.0,0.0,0.0,234.0,ocorrencias
-2026,2026-08-01,AP,Emissão de Alvarás de licença,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
+2026,2026-08-01,AP,Emissão de Alvarás de licença,0.0,236.0,0.0,0.0,0.0,0.0,236.0,ocorrencias
 2026,2026-08-01,AP,Estupro,10.0,0.0,10.0,0.0,0.0,0.0,10.0,vitimas
 2026,2026-08-01,AP,Estupro de vulnerável,43.0,0.0,40.0,2.0,1.0,0.0,43.0,vitimas
 2026,2026-08-01,AP,Feminicídio,1.0,0.0,1.0,0.0,0.0,0.0,1.0,vitimas
@@ -5966,9 +5969,10 @@
 2026,2026-08-01,AP,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),12.0,0.0,5.0,7.0,0.0,0.0,12.0,vitimas
 2026,2026-08-01,AP,Morte por intervenção de Agente do Estado,2.0,0.0,0.0,2.0,0.0,0.0,2.0,vitimas
 2026,2026-08-01,AP,Mortes a esclarecer (sem indício de crime),0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-08-01,AP,Mortes no trânsito,5.0,0.0,1.0,4.0,0.0,0.0,5.0,vitimas
 2026,2026-08-01,AP,Pessoa Desaparecida,55.0,0.0,24.0,31.0,0.0,0.0,55.0,vitimas
 2026,2026-08-01,AP,Pessoa Localizada,43.0,0.0,18.0,25.0,0.0,0.0,43.0,vitimas
-2026,2026-08-01,AP,Realização de vistorias,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
+2026,2026-08-01,AP,Realização de vistorias,0.0,579.0,0.0,0.0,0.0,0.0,579.0,ocorrencias
 2026,2026-08-01,AP,Roubo a instituição financeira,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
 2026,2026-08-01,AP,Roubo de carga,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
 2026,2026-08-01,AP,Roubo de veículo,0.0,8.0,0.0,0.0,0.0,0.0,8.0,ocorrencias
@@ -5996,6 +6000,7 @@
 2026,2026-08-01,BA,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),58.0,0.0,15.0,42.0,1.0,0.0,58.0,vitimas
 2026,2026-08-01,BA,Morte por intervenção de Agente do Estado,88.0,0.0,1.0,87.0,0.0,0.0,88.0,vitimas
 2026,2026-08-01,BA,Mortes a esclarecer (sem indício de crime),79.0,0.0,14.0,59.0,6.0,0.0,79.0,vitimas
+2026,2026-08-01,BA,Mortes no trânsito,40.0,0.0,10.0,30.0,0.0,0.0,40.0,vitimas
 2026,2026-08-01,BA,Pessoa Desaparecida,404.0,0.0,127.0,265.0,12.0,0.0,404.0,vitimas
 2026,2026-08-01,BA,Pessoa Localizada,98.0,0.0,33.0,64.0,1.0,0.0,98.0,vitimas
 2026,2026-08-01,BA,Realização de vistorias,0.0,1100.0,0.0,0.0,0.0,0.0,1100.0,ocorrencias
@@ -6026,6 +6031,7 @@
 2026,2026-08-01,CE,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),186.0,0.0,27.0,159.0,0.0,0.0,186.0,vitimas
 2026,2026-08-01,CE,Morte por intervenção de Agente do Estado,27.0,0.0,0.0,27.0,0.0,0.0,27.0,vitimas
 2026,2026-08-01,CE,Mortes a esclarecer (sem indício de crime),32.0,0.0,10.0,22.0,0.0,0.0,32.0,vitimas
+2026,2026-08-01,CE,Mortes no trânsito,12.0,0.0,2.0,10.0,0.0,0.0,12.0,vitimas
 2026,2026-08-01,CE,Pessoa Desaparecida,210.0,0.0,54.0,151.0,5.0,0.0,210.0,vitimas
 2026,2026-08-01,CE,Pessoa Localizada,119.0,0.0,31.0,88.0,0.0,0.0,119.0,vitimas
 2026,2026-08-01,CE,Realização de vistorias,0.0,6085.0,0.0,0.0,0.0,0.0,6085.0,ocorrencias
@@ -6056,6 +6062,7 @@
 2026,2026-08-01,DF,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),21.0,0.0,2.0,18.0,1.0,0.0,21.0,vitimas
 2026,2026-08-01,DF,Morte por intervenção de Agente do Estado,2.0,0.0,0.0,2.0,0.0,0.0,2.0,vitimas
 2026,2026-08-01,DF,Mortes a esclarecer (sem indício de crime),0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-08-01,DF,Mortes no trânsito,4.0,0.0,1.0,3.0,0.0,0.0,4.0,vitimas
 2026,2026-08-01,DF,Pessoa Desaparecida,216.0,0.0,93.0,122.0,1.0,0.0,216.0,vitimas
 2026,2026-08-01,DF,Pessoa Localizada,163.0,0.0,81.0,81.0,1.0,0.0,163.0,vitimas
 2026,2026-08-01,DF,Realização de vistorias,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
@@ -6086,6 +6093,7 @@
 2026,2026-08-01,ES,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),82.0,0.0,14.0,68.0,0.0,0.0,82.0,vitimas
 2026,2026-08-01,ES,Morte por intervenção de Agente do Estado,9.0,0.0,0.0,9.0,0.0,0.0,9.0,vitimas
 2026,2026-08-01,ES,Mortes a esclarecer (sem indício de crime),2.0,0.0,0.0,2.0,0.0,0.0,2.0,vitimas
+2026,2026-08-01,ES,Mortes no trânsito,15.0,0.0,1.0,14.0,0.0,0.0,15.0,vitimas
 2026,2026-08-01,ES,Pessoa Desaparecida,194.0,0.0,71.0,109.0,14.0,0.0,194.0,vitimas
 2026,2026-08-01,ES,Pessoa Localizada,42.0,0.0,12.0,27.0,3.0,0.0,42.0,vitimas
 2026,2026-08-01,ES,Realização de vistorias,0.0,4436.0,0.0,0.0,0.0,0.0,4436.0,ocorrencias
@@ -6116,6 +6124,7 @@
 2026,2026-08-01,GO,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),71.0,0.0,16.0,45.0,10.0,0.0,71.0,vitimas
 2026,2026-08-01,GO,Morte por intervenção de Agente do Estado,29.0,0.0,0.0,27.0,2.0,0.0,29.0,vitimas
 2026,2026-08-01,GO,Mortes a esclarecer (sem indício de crime),45.0,0.0,5.0,33.0,7.0,0.0,45.0,vitimas
+2026,2026-08-01,GO,Mortes no trânsito,23.0,0.0,4.0,19.0,0.0,0.0,23.0,vitimas
 2026,2026-08-01,GO,Pessoa Desaparecida,370.0,0.0,146.0,222.0,2.0,0.0,370.0,vitimas
 2026,2026-08-01,GO,Pessoa Localizada,195.0,0.0,77.0,117.0,1.0,0.0,195.0,vitimas
 2026,2026-08-01,GO,Realização de vistorias,0.0,3445.0,0.0,0.0,0.0,0.0,3445.0,ocorrencias
@@ -6146,6 +6155,7 @@
 2026,2026-08-01,MA,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),123.0,0.0,18.0,105.0,0.0,0.0,123.0,vitimas
 2026,2026-08-01,MA,Morte por intervenção de Agente do Estado,13.0,0.0,0.0,13.0,0.0,0.0,13.0,vitimas
 2026,2026-08-01,MA,Mortes a esclarecer (sem indício de crime),1.0,0.0,0.0,1.0,0.0,0.0,1.0,vitimas
+2026,2026-08-01,MA,Mortes no trânsito,33.0,0.0,3.0,30.0,0.0,0.0,33.0,vitimas
 2026,2026-08-01,MA,Pessoa Desaparecida,112.0,0.0,37.0,64.0,11.0,0.0,112.0,vitimas
 2026,2026-08-01,MA,Pessoa Localizada,11.0,0.0,6.0,5.0,0.0,0.0,11.0,vitimas
 2026,2026-08-01,MA,Realização de vistorias,0.0,276.0,0.0,0.0,0.0,0.0,276.0,ocorrencias
@@ -6176,6 +6186,7 @@
 2026,2026-08-01,MG,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),208.0,0.0,40.0,166.0,2.0,0.0,208.0,vitimas
 2026,2026-08-01,MG,Morte por intervenção de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
 2026,2026-08-01,MG,Mortes a esclarecer (sem indício de crime),0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-08-01,MG,Mortes no trânsito,82.0,0.0,14.0,68.0,0.0,0.0,82.0,vitimas
 2026,2026-08-01,MG,Pessoa Desaparecida,816.0,0.0,299.0,517.0,0.0,0.0,816.0,vitimas
 2026,2026-08-01,MG,Pessoa Localizada,567.0,0.0,224.0,343.0,0.0,0.0,567.0,vitimas
 2026,2026-08-01,MG,Realização de vistorias,0.0,3600.0,0.0,0.0,0.0,0.0,3600.0,ocorrencias
@@ -6206,6 +6217,7 @@
 2026,2026-08-01,MS,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),54.0,0.0,16.0,33.0,5.0,0.0,54.0,vitimas
 2026,2026-08-01,MS,Morte por intervenção de Agente do Estado,30.0,0.0,2.0,24.0,4.0,0.0,30.0,vitimas
 2026,2026-08-01,MS,Mortes a esclarecer (sem indício de crime),19.0,0.0,5.0,12.0,2.0,0.0,19.0,vitimas
+2026,2026-08-01,MS,Mortes no trânsito,17.0,0.0,4.0,13.0,0.0,0.0,17.0,vitimas
 2026,2026-08-01,MS,Pessoa Desaparecida,83.0,0.0,30.0,53.0,0.0,0.0,83.0,vitimas
 2026,2026-08-01,MS,Pessoa Localizada,68.0,0.0,28.0,40.0,0.0,0.0,68.0,vitimas
 2026,2026-08-01,MS,Realização de vistorias,0.0,4547.0,0.0,0.0,0.0,0.0,4547.0,ocorrencias
@@ -6236,6 +6248,7 @@
 2026,2026-08-01,MT,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),107.0,0.0,18.0,89.0,0.0,0.0,107.0,vitimas
 2026,2026-08-01,MT,Morte por intervenção de Agente do Estado,15.0,0.0,0.0,15.0,0.0,0.0,15.0,vitimas
 2026,2026-08-01,MT,Mortes a esclarecer (sem indício de crime),37.0,0.0,8.0,29.0,0.0,0.0,37.0,vitimas
+2026,2026-08-01,MT,Mortes no trânsito,17.0,0.0,5.0,12.0,0.0,0.0,17.0,vitimas
 2026,2026-08-01,MT,Pessoa Desaparecida,226.0,0.0,68.0,158.0,0.0,0.0,226.0,vitimas
 2026,2026-08-01,MT,Pessoa Localizada,189.0,0.0,61.0,128.0,0.0,0.0,189.0,vitimas
 2026,2026-08-01,MT,Realização de vistorias,0.0,1175.0,0.0,0.0,0.0,0.0,1175.0,ocorrencias
@@ -6266,6 +6279,7 @@
 2026,2026-08-01,PA,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),119.0,0.0,16.0,99.0,4.0,0.0,119.0,vitimas
 2026,2026-08-01,PA,Morte por intervenção de Agente do Estado,62.0,0.0,1.0,61.0,0.0,0.0,62.0,vitimas
 2026,2026-08-01,PA,Mortes a esclarecer (sem indício de crime),43.0,0.0,9.0,30.0,4.0,0.0,43.0,vitimas
+2026,2026-08-01,PA,Mortes no trânsito,23.0,0.0,5.0,18.0,0.0,0.0,23.0,vitimas
 2026,2026-08-01,PA,Pessoa Desaparecida,122.0,0.0,50.0,72.0,0.0,0.0,122.0,vitimas
 2026,2026-08-01,PA,Pessoa Localizada,49.0,0.0,20.0,29.0,0.0,0.0,49.0,vitimas
 2026,2026-08-01,PA,Realização de vistorias,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
@@ -6296,6 +6310,7 @@
 2026,2026-08-01,PB,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),96.0,0.0,16.0,80.0,0.0,0.0,96.0,vitimas
 2026,2026-08-01,PB,Morte por intervenção de Agente do Estado,8.0,0.0,0.0,8.0,0.0,0.0,8.0,vitimas
 2026,2026-08-01,PB,Mortes a esclarecer (sem indício de crime),0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-08-01,PB,Mortes no trânsito,23.0,0.0,5.0,18.0,0.0,0.0,23.0,vitimas
 2026,2026-08-01,PB,Pessoa Desaparecida,103.0,0.0,28.0,75.0,0.0,0.0,103.0,vitimas
 2026,2026-08-01,PB,Pessoa Localizada,74.0,0.0,22.0,52.0,0.0,0.0,74.0,vitimas
 2026,2026-08-01,PB,Realização de vistorias,0.0,2098.0,0.0,0.0,0.0,0.0,2098.0,ocorrencias
@@ -6326,6 +6341,7 @@
 2026,2026-08-01,PE,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),148.0,0.0,18.0,130.0,0.0,0.0,148.0,vitimas
 2026,2026-08-01,PE,Morte por intervenção de Agente do Estado,4.0,0.0,0.0,4.0,0.0,0.0,4.0,vitimas
 2026,2026-08-01,PE,Mortes a esclarecer (sem indício de crime),228.0,0.0,68.0,154.0,6.0,0.0,228.0,vitimas
+2026,2026-08-01,PE,Mortes no trânsito,41.0,0.0,4.0,37.0,0.0,0.0,41.0,vitimas
 2026,2026-08-01,PE,Pessoa Desaparecida,252.0,0.0,73.0,162.0,17.0,0.0,252.0,vitimas
 2026,2026-08-01,PE,Pessoa Localizada,103.0,0.0,37.0,61.0,5.0,0.0,103.0,vitimas
 2026,2026-08-01,PE,Realização de vistorias,0.0,4120.0,0.0,0.0,0.0,0.0,4120.0,ocorrencias
@@ -6356,6 +6372,7 @@
 2026,2026-08-01,PI,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),6.0,0.0,1.0,5.0,0.0,0.0,6.0,vitimas
 2026,2026-08-01,PI,Morte por intervenção de Agente do Estado,6.0,0.0,0.0,6.0,0.0,0.0,6.0,vitimas
 2026,2026-08-01,PI,Mortes a esclarecer (sem indício de crime),20.0,0.0,4.0,16.0,0.0,0.0,20.0,vitimas
+2026,2026-08-01,PI,Mortes no trânsito,9.0,0.0,1.0,8.0,0.0,0.0,9.0,vitimas
 2026,2026-08-01,PI,Pessoa Desaparecida,72.0,0.0,24.0,45.0,3.0,0.0,72.0,vitimas
 2026,2026-08-01,PI,Pessoa Localizada,42.0,0.0,12.0,26.0,4.0,0.0,42.0,vitimas
 2026,2026-08-01,PI,Realização de vistorias,0.0,530.0,0.0,0.0,0.0,0.0,530.0,ocorrencias
@@ -6386,6 +6403,7 @@
 2026,2026-08-01,PR,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),50.0,0.0,15.0,33.0,2.0,0.0,50.0,vitimas
 2026,2026-08-01,PR,Morte por intervenção de Agente do Estado,31.0,0.0,0.0,31.0,0.0,0.0,31.0,vitimas
 2026,2026-08-01,PR,Mortes a esclarecer (sem indício de crime),0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-08-01,PR,Mortes no trânsito,63.0,0.0,25.0,38.0,0.0,0.0,63.0,vitimas
 2026,2026-08-01,PR,Pessoa Desaparecida,578.0,0.0,246.0,332.0,0.0,0.0,578.0,vitimas
 2026,2026-08-01,PR,Pessoa Localizada,379.0,0.0,170.0,209.0,0.0,0.0,379.0,vitimas
 2026,2026-08-01,PR,Realização de vistorias,0.0,5037.0,0.0,0.0,0.0,0.0,5037.0,ocorrencias
@@ -6416,6 +6434,7 @@
 2026,2026-08-01,RJ,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),198.0,0.0,55.0,142.0,1.0,0.0,198.0,vitimas
 2026,2026-08-01,RJ,Morte por intervenção de Agente do Estado,66.0,0.0,1.0,65.0,0.0,0.0,66.0,vitimas
 2026,2026-08-01,RJ,Mortes a esclarecer (sem indício de crime),291.0,0.0,79.0,204.0,8.0,0.0,291.0,vitimas
+2026,2026-08-01,RJ,Mortes no trânsito,35.0,0.0,16.0,19.0,0.0,0.0,35.0,vitimas
 2026,2026-08-01,RJ,Pessoa Desaparecida,558.0,0.0,196.0,359.0,3.0,0.0,558.0,vitimas
 2026,2026-08-01,RJ,Pessoa Localizada,206.0,0.0,0.0,3.0,203.0,0.0,206.0,vitimas
 2026,2026-08-01,RJ,Realização de vistorias,0.0,317.0,0.0,0.0,0.0,0.0,317.0,ocorrencias
@@ -6446,6 +6465,7 @@
 2026,2026-08-01,RN,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),49.0,0.0,7.0,42.0,0.0,0.0,49.0,vitimas
 2026,2026-08-01,RN,Morte por intervenção de Agente do Estado,11.0,0.0,0.0,11.0,0.0,0.0,11.0,vitimas
 2026,2026-08-01,RN,Mortes a esclarecer (sem indício de crime),54.0,0.0,17.0,35.0,2.0,0.0,54.0,vitimas
+2026,2026-08-01,RN,Mortes no trânsito,12.0,0.0,2.0,10.0,0.0,0.0,12.0,vitimas
 2026,2026-08-01,RN,Pessoa Desaparecida,68.0,0.0,25.0,42.0,1.0,0.0,68.0,vitimas
 2026,2026-08-01,RN,Pessoa Localizada,29.0,0.0,13.0,16.0,0.0,0.0,29.0,vitimas
 2026,2026-08-01,RN,Realização de vistorias,0.0,466.0,0.0,0.0,0.0,0.0,466.0,ocorrencias
@@ -6476,6 +6496,7 @@
 2026,2026-08-01,RO,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),48.0,0.0,16.0,32.0,0.0,0.0,48.0,vitimas
 2026,2026-08-01,RO,Morte por intervenção de Agente do Estado,1.0,0.0,0.0,1.0,0.0,0.0,1.0,vitimas
 2026,2026-08-01,RO,Mortes a esclarecer (sem indício de crime),41.0,0.0,12.0,28.0,1.0,0.0,41.0,vitimas
+2026,2026-08-01,RO,Mortes no trânsito,24.0,0.0,10.0,14.0,0.0,0.0,24.0,vitimas
 2026,2026-08-01,RO,Pessoa Desaparecida,89.0,0.0,26.0,63.0,0.0,0.0,89.0,vitimas
 2026,2026-08-01,RO,Pessoa Localizada,8.0,0.0,4.0,4.0,0.0,0.0,8.0,vitimas
 2026,2026-08-01,RO,Realização de vistorias,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
@@ -6506,6 +6527,7 @@
 2026,2026-08-01,RR,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),5.0,0.0,0.0,5.0,0.0,0.0,5.0,vitimas
 2026,2026-08-01,RR,Morte por intervenção de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
 2026,2026-08-01,RR,Mortes a esclarecer (sem indício de crime),15.0,0.0,5.0,10.0,0.0,0.0,15.0,vitimas
+2026,2026-08-01,RR,Mortes no trânsito,1.0,0.0,0.0,1.0,0.0,0.0,1.0,vitimas
 2026,2026-08-01,RR,Pessoa Desaparecida,42.0,0.0,20.0,21.0,1.0,0.0,42.0,vitimas
 2026,2026-08-01,RR,Pessoa Localizada,7.0,0.0,3.0,4.0,0.0,0.0,7.0,vitimas
 2026,2026-08-01,RR,Realização de vistorias,0.0,81.0,0.0,0.0,0.0,0.0,81.0,ocorrencias
@@ -6536,6 +6558,7 @@
 2026,2026-08-01,RS,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),100.0,0.0,16.0,84.0,0.0,0.0,100.0,vitimas
 2026,2026-08-01,RS,Morte por intervenção de Agente do Estado,6.0,0.0,0.0,6.0,0.0,0.0,6.0,vitimas
 2026,2026-08-01,RS,Mortes a esclarecer (sem indício de crime),97.0,0.0,26.0,71.0,0.0,0.0,97.0,vitimas
+2026,2026-08-01,RS,Mortes no trânsito,36.0,0.0,4.0,32.0,0.0,0.0,36.0,vitimas
 2026,2026-08-01,RS,Pessoa Desaparecida,619.0,0.0,219.0,400.0,0.0,0.0,619.0,vitimas
 2026,2026-08-01,RS,Pessoa Localizada,624.0,0.0,224.0,400.0,0.0,0.0,624.0,vitimas
 2026,2026-08-01,RS,Realização de vistorias,0.0,2455.0,0.0,0.0,0.0,0.0,2455.0,ocorrencias
@@ -6566,6 +6589,7 @@
 2026,2026-08-01,SC,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),34.0,0.0,7.0,27.0,0.0,0.0,34.0,vitimas
 2026,2026-08-01,SC,Morte por intervenção de Agente do Estado,15.0,0.0,0.0,15.0,0.0,0.0,15.0,vitimas
 2026,2026-08-01,SC,Mortes a esclarecer (sem indício de crime),0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-08-01,SC,Mortes no trânsito,37.0,0.0,9.0,28.0,0.0,0.0,37.0,vitimas
 2026,2026-08-01,SC,Pessoa Desaparecida,379.0,0.0,171.0,207.0,1.0,0.0,379.0,vitimas
 2026,2026-08-01,SC,Pessoa Localizada,510.0,0.0,221.0,289.0,0.0,0.0,510.0,vitimas
 2026,2026-08-01,SC,Realização de vistorias,0.0,4994.0,0.0,0.0,0.0,0.0,4994.0,ocorrencias
@@ -6596,6 +6620,7 @@
 2026,2026-08-01,SE,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),6.0,0.0,2.0,4.0,0.0,0.0,6.0,vitimas
 2026,2026-08-01,SE,Morte por intervenção de Agente do Estado,17.0,0.0,0.0,17.0,0.0,0.0,17.0,vitimas
 2026,2026-08-01,SE,Mortes a esclarecer (sem indício de crime),31.0,0.0,5.0,26.0,0.0,0.0,31.0,vitimas
+2026,2026-08-01,SE,Mortes no trânsito,6.0,0.0,1.0,5.0,0.0,0.0,6.0,vitimas
 2026,2026-08-01,SE,Pessoa Desaparecida,46.0,0.0,25.0,21.0,0.0,0.0,46.0,vitimas
 2026,2026-08-01,SE,Pessoa Localizada,23.0,0.0,10.0,13.0,0.0,0.0,23.0,vitimas
 2026,2026-08-01,SE,Realização de vistorias,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
@@ -6608,35 +6633,36 @@
 2026,2026-08-01,SE,Tentativa de feminicídio,13.0,0.0,13.0,0.0,0.0,0.0,13.0,vitimas
 2026,2026-08-01,SE,Tentativa de homicídio,96.0,0.0,15.0,81.0,0.0,0.0,96.0,vitimas
 2026,2026-08-01,SE,Tráfico de drogas,0.0,134.0,0.0,0.0,0.0,0.0,134.0,ocorrencias
-2026,2026-08-01,SP,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,4276263.0,4276263.0,kg
-2026,2026-08-01,SP,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,14675062.0,14675062.0,kg
-2026,2026-08-01,SP,Arma de Fogo Apreendida,0.0,1070.0,0.0,0.0,0.0,0.0,1070.0,ocorrencias
+2026,2026-08-01,SP,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,6046856.0,6046856.0,kg
+2026,2026-08-01,SP,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,15913086.0,15913086.0,kg
+2026,2026-08-01,SP,Arma de Fogo Apreendida,0.0,1071.0,0.0,0.0,0.0,0.0,1071.0,ocorrencias
 2026,2026-08-01,SP,Atendimento pré-hospitalar,0.0,18279.0,0.0,0.0,0.0,0.0,18279.0,ocorrencias
 2026,2026-08-01,SP,Busca e salvamento,0.0,5165.0,0.0,0.0,0.0,0.0,5165.0,ocorrencias
 2026,2026-08-01,SP,Combate a incêndios,0.0,5514.0,0.0,0.0,0.0,0.0,5514.0,ocorrencias
 2026,2026-08-01,SP,Emissão de Alvarás de licença,0.0,23626.0,0.0,0.0,0.0,0.0,23626.0,ocorrencias
-2026,2026-08-01,SP,Estupro,366.0,0.0,334.0,31.0,1.0,0.0,366.0,vitimas
-2026,2026-08-01,SP,Estupro de vulnerável,1181.0,0.0,962.0,212.0,7.0,0.0,1181.0,vitimas
+2026,2026-08-01,SP,Estupro,326.0,0.0,304.0,22.0,0.0,0.0,326.0,vitimas
+2026,2026-08-01,SP,Estupro de vulnerável,1111.0,0.0,914.0,194.0,3.0,0.0,1111.0,vitimas
 2026,2026-08-01,SP,Feminicídio,19.0,0.0,19.0,0.0,0.0,0.0,19.0,vitimas
-2026,2026-08-01,SP,Furto de veículo,0.0,6871.0,0.0,0.0,0.0,0.0,6871.0,ocorrencias
-2026,2026-08-01,SP,Homicídio doloso,186.0,0.0,14.0,167.0,5.0,0.0,186.0,vitimas
-2026,2026-08-01,SP,Lesão corporal seguida de morte,8.0,0.0,2.0,6.0,0.0,0.0,8.0,vitimas
-2026,2026-08-01,SP,Mandado de prisão cumprido,0.0,7496.0,0.0,0.0,0.0,0.0,7496.0,ocorrencias
-2026,2026-08-01,SP,Morte de Agente do Estado,1.0,0.0,0.0,1.0,0.0,0.0,1.0,vitimas
+2026,2026-08-01,SP,Furto de veículo,0.0,6855.0,0.0,0.0,0.0,0.0,6855.0,ocorrencias
+2026,2026-08-01,SP,Homicídio doloso,181.0,0.0,14.0,163.0,4.0,0.0,181.0,vitimas
+2026,2026-08-01,SP,Lesão corporal seguida de morte,7.0,0.0,1.0,6.0,0.0,0.0,7.0,vitimas
+2026,2026-08-01,SP,Mandado de prisão cumprido,0.0,7488.0,0.0,0.0,0.0,0.0,7488.0,ocorrencias
+2026,2026-08-01,SP,Morte de Agente do Estado,2.0,0.0,0.0,2.0,0.0,0.0,2.0,vitimas
 2026,2026-08-01,SP,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),359.0,0.0,75.0,281.0,3.0,0.0,359.0,vitimas
-2026,2026-08-01,SP,Morte por intervenção de Agente do Estado,57.0,0.0,0.0,57.0,0.0,0.0,57.0,vitimas
-2026,2026-08-01,SP,Mortes a esclarecer (sem indício de crime),294.0,0.0,40.0,233.0,21.0,0.0,294.0,vitimas
-2026,2026-08-01,SP,Pessoa Desaparecida,2023.0,0.0,706.0,1307.0,10.0,0.0,2023.0,vitimas
-2026,2026-08-01,SP,Pessoa Localizada,1419.0,0.0,539.0,870.0,10.0,0.0,1419.0,vitimas
+2026,2026-08-01,SP,Morte por intervenção de Agente do Estado,58.0,0.0,0.0,58.0,0.0,0.0,58.0,vitimas
+2026,2026-08-01,SP,Mortes a esclarecer (sem indício de crime),295.0,0.0,41.0,233.0,21.0,0.0,295.0,vitimas
+2026,2026-08-01,SP,Mortes no trânsito,26.0,0.0,8.0,18.0,0.0,0.0,26.0,vitimas
+2026,2026-08-01,SP,Pessoa Desaparecida,1955.0,0.0,680.0,1269.0,6.0,0.0,1955.0,vitimas
+2026,2026-08-01,SP,Pessoa Localizada,1338.0,0.0,507.0,828.0,3.0,0.0,1338.0,vitimas
 2026,2026-08-01,SP,Realização de vistorias,0.0,10024.0,0.0,0.0,0.0,0.0,10024.0,ocorrencias
 2026,2026-08-01,SP,Roubo a instituição financeira,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
-2026,2026-08-01,SP,Roubo de carga,0.0,182.0,0.0,0.0,0.0,0.0,182.0,ocorrencias
-2026,2026-08-01,SP,Roubo de veículo,0.0,1398.0,0.0,0.0,0.0,0.0,1398.0,ocorrencias
+2026,2026-08-01,SP,Roubo de carga,0.0,184.0,0.0,0.0,0.0,0.0,184.0,ocorrencias
+2026,2026-08-01,SP,Roubo de veículo,0.0,1395.0,0.0,0.0,0.0,0.0,1395.0,ocorrencias
 2026,2026-08-01,SP,Roubo seguido de morte (latrocínio),12.0,0.0,2.0,10.0,0.0,0.0,12.0,vitimas
 2026,2026-08-01,SP,Suicídio,216.0,0.0,53.0,163.0,0.0,0.0,216.0,vitimas
 2026,2026-08-01,SP,Suicídio de Agente do Estado,1.0,0.0,0.0,1.0,0.0,0.0,1.0,vitimas
 2026,2026-08-01,SP,Tentativa de feminicídio,58.0,0.0,58.0,0.0,0.0,0.0,58.0,vitimas
-2026,2026-08-01,SP,Tentativa de homicídio,329.0,0.0,56.0,272.0,1.0,0.0,329.0,vitimas
+2026,2026-08-01,SP,Tentativa de homicídio,326.0,0.0,53.0,272.0,1.0,0.0,326.0,vitimas
 2026,2026-08-01,SP,Tráfico de drogas,0.0,4339.0,0.0,0.0,0.0,0.0,4339.0,ocorrencias
 2026,2026-08-01,TO,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,2748.0,2748.0,kg
 2026,2026-08-01,TO,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,1388.0,1388.0,kg
@@ -6656,6 +6682,7 @@
 2026,2026-08-01,TO,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),64.0,0.0,10.0,52.0,2.0,0.0,64.0,vitimas
 2026,2026-08-01,TO,Morte por intervenção de Agente do Estado,2.0,0.0,0.0,1.0,1.0,0.0,2.0,vitimas
 2026,2026-08-01,TO,Mortes a esclarecer (sem indício de crime),25.0,0.0,3.0,22.0,0.0,0.0,25.0,vitimas
+2026,2026-08-01,TO,Mortes no trânsito,8.0,0.0,1.0,7.0,0.0,0.0,8.0,vitimas
 2026,2026-08-01,TO,Pessoa Desaparecida,53.0,0.0,21.0,32.0,0.0,0.0,53.0,vitimas
 2026,2026-08-01,TO,Pessoa Localizada,29.0,0.0,10.0,19.0,0.0,0.0,29.0,vitimas
 2026,2026-08-01,TO,Realização de vistorias,0.0,366.0,0.0,0.0,0.0,0.0,366.0,ocorrencias

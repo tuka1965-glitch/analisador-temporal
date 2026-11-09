@@ -2056,7 +2056,7 @@
 2026,2026-03-01,MT,Estupro de vulnerável,116.0,0.0,97.0,18.0,1.0,0.0,116.0,vitimas
 2026,2026-03-01,MT,Feminicídio,7.0,0.0,7.0,0.0,0.0,0.0,7.0,vitimas
 2026,2026-03-01,MT,Furto de veículo,0.0,163.0,0.0,0.0,0.0,0.0,163.0,ocorrencias
-2026,2026-03-01,MT,Homicídio doloso,63.0,0.0,5.0,58.0,0.0,0.0,63.0,vitimas
+2026,2026-03-01,MT,Homicídio doloso,64.0,0.0,5.0,59.0,0.0,0.0,64.0,vitimas
 2026,2026-03-01,MT,Lesão corporal seguida de morte,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
 2026,2026-03-01,MT,Mandado de prisão cumprido,0.0,974.0,0.0,0.0,0.0,0.0,974.0,ocorrencias
 2026,2026-03-01,MT,Morte de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
@@ -2271,9 +2271,9 @@
 2026,2026-03-01,RN,Emissão de Alvarás de licença,0.0,378.0,0.0,0.0,0.0,0.0,378.0,ocorrencias
 2026,2026-03-01,RN,Estupro,18.0,0.0,16.0,2.0,0.0,0.0,18.0,vitimas
 2026,2026-03-01,RN,Estupro de vulnerável,65.0,0.0,50.0,15.0,0.0,0.0,65.0,vitimas
-2026,2026-03-01,RN,Feminicídio,3.0,0.0,3.0,0.0,0.0,0.0,3.0,vitimas
+2026,2026-03-01,RN,Feminicídio,4.0,0.0,4.0,0.0,0.0,0.0,4.0,vitimas
 2026,2026-03-01,RN,Furto de veículo,0.0,101.0,0.0,0.0,0.0,0.0,101.0,ocorrencias
-2026,2026-03-01,RN,Homicídio doloso,89.0,0.0,8.0,80.0,1.0,0.0,89.0,vitimas
+2026,2026-03-01,RN,Homicídio doloso,88.0,0.0,7.0,80.0,1.0,0.0,88.0,vitimas
 2026,2026-03-01,RN,Lesão corporal seguida de morte,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
 2026,2026-03-01,RN,Mandado de prisão cumprido,0.0,383.0,0.0,0.0,0.0,0.0,383.0,ocorrencias
 2026,2026-03-01,RN,Morte de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
@@ -4203,7 +4203,7 @@
 2026,2026-06-01,AC,Morte por intervenção de Agente do Estado,1.0,0.0,0.0,1.0,0.0,0.0,1.0,vitimas
 2026,2026-06-01,AC,Mortes a esclarecer (sem indício de crime),5.0,0.0,4.0,1.0,0.0,0.0,5.0,vitimas
 2026,2026-06-01,AC,Mortes no trânsito,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2026,2026-06-01,AC,Pessoa Desaparecida,36.0,0.0,15.0,21.0,0.0,0.0,36.0,vitimas
+2026,2026-06-01,AC,Pessoa Desaparecida,37.0,0.0,15.0,22.0,0.0,0.0,37.0,vitimas
 2026,2026-06-01,AC,Pessoa Localizada,18.0,0.0,8.0,10.0,0.0,0.0,18.0,vitimas
 2026,2026-06-01,AC,Realização de vistorias,0.0,832.0,0.0,0.0,0.0,0.0,832.0,ocorrencias
 2026,2026-06-01,AC,Roubo a instituição financeira,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
@@ -4590,9 +4590,9 @@
 2026,2026-06-01,PA,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,75642.0,75642.0,kg
 2026,2026-06-01,PA,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,619399.0,619399.0,kg
 2026,2026-06-01,PA,Arma de Fogo Apreendida,0.0,187.0,0.0,0.0,0.0,0.0,187.0,ocorrencias
-2026,2026-06-01,PA,Atendimento pré-hospitalar,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
-2026,2026-06-01,PA,Busca e salvamento,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
-2026,2026-06-01,PA,Combate a incêndios,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
+2026,2026-06-01,PA,Atendimento pré-hospitalar,0.0,1449.0,0.0,0.0,0.0,0.0,1449.0,ocorrencias
+2026,2026-06-01,PA,Busca e salvamento,0.0,361.0,0.0,0.0,0.0,0.0,361.0,ocorrencias
+2026,2026-06-01,PA,Combate a incêndios,0.0,223.0,0.0,0.0,0.0,0.0,223.0,ocorrencias
 2026,2026-06-01,PA,Emissão de Alvarás de licença,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
 2026,2026-06-01,PA,Estupro,59.0,0.0,58.0,1.0,0.0,0.0,59.0,vitimas
 2026,2026-06-01,PA,Estupro de vulnerável,425.0,0.0,389.0,32.0,4.0,0.0,425.0,vitimas
@@ -5427,9 +5427,9 @@
 2026,2026-07-01,PA,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,1967147.0,1967147.0,kg
 2026,2026-07-01,PA,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,428057.0,428057.0,kg
 2026,2026-07-01,PA,Arma de Fogo Apreendida,0.0,147.0,0.0,0.0,0.0,0.0,147.0,ocorrencias
-2026,2026-07-01,PA,Atendimento pré-hospitalar,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
-2026,2026-07-01,PA,Busca e salvamento,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
-2026,2026-07-01,PA,Combate a incêndios,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
+2026,2026-07-01,PA,Atendimento pré-hospitalar,0.0,1732.0,0.0,0.0,0.0,0.0,1732.0,ocorrencias
+2026,2026-07-01,PA,Busca e salvamento,0.0,422.0,0.0,0.0,0.0,0.0,422.0,ocorrencias
+2026,2026-07-01,PA,Combate a incêndios,0.0,339.0,0.0,0.0,0.0,0.0,339.0,ocorrencias
 2026,2026-07-01,PA,Emissão de Alvarás de licença,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
 2026,2026-07-01,PA,Estupro,61.0,0.0,52.0,9.0,0.0,0.0,61.0,vitimas
 2026,2026-07-01,PA,Estupro de vulnerável,318.0,0.0,277.0,38.0,3.0,0.0,318.0,vitimas
@@ -6178,7 +6178,7 @@
 2026,2026-08-01,MG,Estupro,124.0,0.0,110.0,13.0,1.0,0.0,124.0,vitimas
 2026,2026-08-01,MG,Estupro de vulnerável,421.0,0.0,361.0,54.0,6.0,0.0,421.0,vitimas
 2026,2026-08-01,MG,Feminicídio,14.0,0.0,14.0,0.0,0.0,0.0,14.0,vitimas
-2026,2026-08-01,MG,Furto de veículo,0.0,1748.0,0.0,0.0,0.0,0.0,1748.0,ocorrencias
+2026,2026-08-01,MG,Furto de veículo,0.0,1747.0,0.0,0.0,0.0,0.0,1747.0,ocorrencias
 2026,2026-08-01,MG,Homicídio doloso,158.0,0.0,11.0,147.0,0.0,0.0,158.0,vitimas
 2026,2026-08-01,MG,Lesão corporal seguida de morte,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
 2026,2026-08-01,MG,Mandado de prisão cumprido,0.0,3478.0,0.0,0.0,0.0,0.0,3478.0,ocorrencias
@@ -6198,7 +6198,7 @@
 2026,2026-08-01,MG,Suicídio de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
 2026,2026-08-01,MG,Tentativa de feminicídio,10.0,0.0,10.0,0.0,0.0,0.0,10.0,vitimas
 2026,2026-08-01,MG,Tentativa de homicídio,158.0,0.0,11.0,147.0,0.0,0.0,158.0,vitimas
-2026,2026-08-01,MG,Tráfico de drogas,0.0,3471.0,0.0,0.0,0.0,0.0,3471.0,ocorrencias
+2026,2026-08-01,MG,Tráfico de drogas,0.0,3473.0,0.0,0.0,0.0,0.0,3473.0,ocorrencias
 2026,2026-08-01,MS,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,1454819.0,1454819.0,kg
 2026,2026-08-01,MS,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,47859011.0,47859011.0,kg
 2026,2026-08-01,MS,Arma de Fogo Apreendida,0.0,165.0,0.0,0.0,0.0,0.0,165.0,ocorrencias
@@ -6264,9 +6264,9 @@
 2026,2026-08-01,PA,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,566214.0,566214.0,kg
 2026,2026-08-01,PA,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,672464.0,672464.0,kg
 2026,2026-08-01,PA,Arma de Fogo Apreendida,0.0,161.0,0.0,0.0,0.0,0.0,161.0,ocorrencias
-2026,2026-08-01,PA,Atendimento pré-hospitalar,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
-2026,2026-08-01,PA,Busca e salvamento,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
-2026,2026-08-01,PA,Combate a incêndios,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
+2026,2026-08-01,PA,Atendimento pré-hospitalar,0.0,1517.0,0.0,0.0,0.0,0.0,1517.0,ocorrencias
+2026,2026-08-01,PA,Busca e salvamento,0.0,405.0,0.0,0.0,0.0,0.0,405.0,ocorrencias
+2026,2026-08-01,PA,Combate a incêndios,0.0,601.0,0.0,0.0,0.0,0.0,601.0,ocorrencias
 2026,2026-08-01,PA,Emissão de Alvarás de licença,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
 2026,2026-08-01,PA,Estupro,53.0,0.0,49.0,4.0,0.0,0.0,53.0,vitimas
 2026,2026-08-01,PA,Estupro de vulnerável,332.0,0.0,271.0,50.0,11.0,0.0,332.0,vitimas
@@ -6458,7 +6458,7 @@
 2026,2026-08-01,RN,Estupro de vulnerável,71.0,0.0,52.0,12.0,7.0,0.0,71.0,vitimas
 2026,2026-08-01,RN,Feminicídio,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
 2026,2026-08-01,RN,Furto de veículo,0.0,106.0,0.0,0.0,0.0,0.0,106.0,ocorrencias
-2026,2026-08-01,RN,Homicídio doloso,70.0,0.0,4.0,66.0,0.0,0.0,70.0,vitimas
+2026,2026-08-01,RN,Homicídio doloso,71.0,0.0,4.0,67.0,0.0,0.0,71.0,vitimas
 2026,2026-08-01,RN,Lesão corporal seguida de morte,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
 2026,2026-08-01,RN,Mandado de prisão cumprido,0.0,417.0,0.0,0.0,0.0,0.0,417.0,ocorrencias
 2026,2026-08-01,RN,Morte de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
@@ -6714,7 +6714,7 @@
 2026,2026-09-01,AC,Morte por intervenção de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
 2026,2026-09-01,AC,Mortes a esclarecer (sem indício de crime),3.0,0.0,1.0,2.0,0.0,0.0,3.0,vitimas
 2026,2026-09-01,AC,Pessoa Desaparecida,33.0,0.0,11.0,22.0,0.0,0.0,33.0,vitimas
-2026,2026-09-01,AC,Pessoa Localizada,14.0,0.0,3.0,11.0,0.0,0.0,14.0,vitimas
+2026,2026-09-01,AC,Pessoa Localizada,16.0,0.0,5.0,11.0,0.0,0.0,16.0,vitimas
 2026,2026-09-01,AC,Realização de vistorias,0.0,321.0,0.0,0.0,0.0,0.0,321.0,ocorrencias
 2026,2026-09-01,AC,Roubo a instituição financeira,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
 2026,2026-09-01,AC,Roubo de carga,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
@@ -6911,7 +6911,7 @@
 2026,2026-09-01,ES,Atendimento pré-hospitalar,0.0,528.0,0.0,0.0,0.0,0.0,528.0,ocorrencias
 2026,2026-09-01,ES,Busca e salvamento,0.0,251.0,0.0,0.0,0.0,0.0,251.0,ocorrencias
 2026,2026-09-01,ES,Combate a incêndios,0.0,322.0,0.0,0.0,0.0,0.0,322.0,ocorrencias
-2026,2026-09-01,ES,Emissão de Alvarás de licença,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
+2026,2026-09-01,ES,Emissão de Alvarás de licença,0.0,3903.0,0.0,0.0,0.0,0.0,3903.0,ocorrencias
 2026,2026-09-01,ES,Estupro,23.0,0.0,19.0,1.0,3.0,0.0,23.0,vitimas
 2026,2026-09-01,ES,Estupro de vulnerável,68.0,0.0,40.0,20.0,8.0,0.0,68.0,vitimas
 2026,2026-09-01,ES,Feminicídio,6.0,0.0,6.0,0.0,0.0,0.0,6.0,vitimas
@@ -6925,7 +6925,7 @@
 2026,2026-09-01,ES,Mortes a esclarecer (sem indício de crime),0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
 2026,2026-09-01,ES,Pessoa Desaparecida,174.0,0.0,63.0,100.0,11.0,0.0,174.0,vitimas
 2026,2026-09-01,ES,Pessoa Localizada,25.0,0.0,11.0,13.0,1.0,0.0,25.0,vitimas
-2026,2026-09-01,ES,Realização de vistorias,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
+2026,2026-09-01,ES,Realização de vistorias,0.0,4378.0,0.0,0.0,0.0,0.0,4378.0,ocorrencias
 2026,2026-09-01,ES,Roubo a instituição financeira,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
 2026,2026-09-01,ES,Roubo de carga,0.0,4.0,0.0,0.0,0.0,0.0,4.0,ocorrencias
 2026,2026-09-01,ES,Roubo de veículo,0.0,75.0,0.0,0.0,0.0,0.0,75.0,ocorrencias
@@ -6976,7 +6976,7 @@
 2026,2026-09-01,MA,Estupro de vulnerável,138.0,0.0,129.0,9.0,0.0,0.0,138.0,vitimas
 2026,2026-09-01,MA,Feminicídio,2.0,0.0,2.0,0.0,0.0,0.0,2.0,vitimas
 2026,2026-09-01,MA,Furto de veículo,0.0,192.0,0.0,0.0,0.0,0.0,192.0,ocorrencias
-2026,2026-09-01,MA,Homicídio doloso,118.0,0.0,6.0,112.0,0.0,0.0,118.0,vitimas
+2026,2026-09-01,MA,Homicídio doloso,120.0,0.0,6.0,114.0,0.0,0.0,120.0,vitimas
 2026,2026-09-01,MA,Lesão corporal seguida de morte,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
 2026,2026-09-01,MA,Mandado de prisão cumprido,0.0,500.0,0.0,0.0,0.0,0.0,500.0,ocorrencias
 2026,2026-09-01,MA,Morte de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
@@ -6997,7 +6997,7 @@
 2026,2026-09-01,MA,Tráfico de drogas,0.0,189.0,0.0,0.0,0.0,0.0,189.0,ocorrencias
 2026,2026-09-01,MG,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,1189.0,1189.0,kg
 2026,2026-09-01,MG,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,993455.0,993455.0,kg
-2026,2026-09-01,MG,Arma de Fogo Apreendida,0.0,1070.0,0.0,0.0,0.0,0.0,1070.0,ocorrencias
+2026,2026-09-01,MG,Arma de Fogo Apreendida,0.0,1077.0,0.0,0.0,0.0,0.0,1077.0,ocorrencias
 2026,2026-09-01,MG,Atendimento pré-hospitalar,0.0,5540.0,0.0,0.0,0.0,0.0,5540.0,ocorrencias
 2026,2026-09-01,MG,Busca e salvamento,0.0,6073.0,0.0,0.0,0.0,0.0,6073.0,ocorrencias
 2026,2026-09-01,MG,Combate a incêndios,0.0,2790.0,0.0,0.0,0.0,0.0,2790.0,ocorrencias
@@ -7005,7 +7005,7 @@
 2026,2026-09-01,MG,Estupro,91.0,0.0,86.0,4.0,1.0,0.0,91.0,vitimas
 2026,2026-09-01,MG,Estupro de vulnerável,321.0,0.0,260.0,58.0,3.0,0.0,321.0,vitimas
 2026,2026-09-01,MG,Feminicídio,5.0,0.0,5.0,0.0,0.0,0.0,5.0,vitimas
-2026,2026-09-01,MG,Furto de veículo,0.0,1707.0,0.0,0.0,0.0,0.0,1707.0,ocorrencias
+2026,2026-09-01,MG,Furto de veículo,0.0,1734.0,0.0,0.0,0.0,0.0,1734.0,ocorrencias
 2026,2026-09-01,MG,Homicídio doloso,169.0,0.0,7.0,162.0,0.0,0.0,169.0,vitimas
 2026,2026-09-01,MG,Lesão corporal seguida de morte,1.0,0.0,0.0,1.0,0.0,0.0,1.0,vitimas
 2026,2026-09-01,MG,Mandado de prisão cumprido,0.0,3131.0,0.0,0.0,0.0,0.0,3131.0,ocorrencias
@@ -7018,13 +7018,13 @@
 2026,2026-09-01,MG,Realização de vistorias,0.0,3433.0,0.0,0.0,0.0,0.0,3433.0,ocorrencias
 2026,2026-09-01,MG,Roubo a instituição financeira,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
 2026,2026-09-01,MG,Roubo de carga,0.0,10.0,0.0,0.0,0.0,0.0,10.0,ocorrencias
-2026,2026-09-01,MG,Roubo de veículo,0.0,144.0,0.0,0.0,0.0,0.0,144.0,ocorrencias
+2026,2026-09-01,MG,Roubo de veículo,0.0,145.0,0.0,0.0,0.0,0.0,145.0,ocorrencias
 2026,2026-09-01,MG,Roubo seguido de morte (latrocínio),1.0,0.0,0.0,0.0,1.0,0.0,1.0,vitimas
 2026,2026-09-01,MG,Suicídio,159.0,0.0,33.0,126.0,0.0,0.0,159.0,vitimas
 2026,2026-09-01,MG,Suicídio de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
 2026,2026-09-01,MG,Tentativa de feminicídio,25.0,0.0,25.0,0.0,0.0,0.0,25.0,vitimas
 2026,2026-09-01,MG,Tentativa de homicídio,168.0,0.0,19.0,149.0,0.0,0.0,168.0,vitimas
-2026,2026-09-01,MG,Tráfico de drogas,0.0,3061.0,0.0,0.0,0.0,0.0,3061.0,ocorrencias
+2026,2026-09-01,MG,Tráfico de drogas,0.0,3074.0,0.0,0.0,0.0,0.0,3074.0,ocorrencias
 2026,2026-09-01,MS,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,892141.0,892141.0,kg
 2026,2026-09-01,MS,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,48912211.0,48912211.0,kg
 2026,2026-09-01,MS,Arma de Fogo Apreendida,0.0,152.0,0.0,0.0,0.0,0.0,152.0,ocorrencias
@@ -7088,9 +7088,9 @@
 2026,2026-09-01,PA,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,106347.0,106347.0,kg
 2026,2026-09-01,PA,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,19137383.0,19137383.0,kg
 2026,2026-09-01,PA,Arma de Fogo Apreendida,0.0,207.0,0.0,0.0,0.0,0.0,207.0,ocorrencias
-2026,2026-09-01,PA,Atendimento pré-hospitalar,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
-2026,2026-09-01,PA,Busca e salvamento,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
-2026,2026-09-01,PA,Combate a incêndios,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
+2026,2026-09-01,PA,Atendimento pré-hospitalar,0.0,1478.0,0.0,0.0,0.0,0.0,1478.0,ocorrencias
+2026,2026-09-01,PA,Busca e salvamento,0.0,423.0,0.0,0.0,0.0,0.0,423.0,ocorrencias
+2026,2026-09-01,PA,Combate a incêndios,0.0,866.0,0.0,0.0,0.0,0.0,866.0,ocorrencias
 2026,2026-09-01,PA,Emissão de Alvarás de licença,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
 2026,2026-09-01,PA,Estupro,65.0,0.0,51.0,14.0,0.0,0.0,65.0,vitimas
 2026,2026-09-01,PA,Estupro de vulnerável,321.0,0.0,239.0,80.0,2.0,0.0,321.0,vitimas
@@ -7358,9 +7358,9 @@
 2026,2026-09-01,RS,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,221208.0,221208.0,kg
 2026,2026-09-01,RS,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,3819922.0,3819922.0,kg
 2026,2026-09-01,RS,Arma de Fogo Apreendida,0.0,652.0,0.0,0.0,0.0,0.0,652.0,ocorrencias
-2026,2026-09-01,RS,Atendimento pré-hospitalar,0.0,23307.0,0.0,0.0,0.0,0.0,23307.0,ocorrencias
-2026,2026-09-01,RS,Busca e salvamento,0.0,10416.0,0.0,0.0,0.0,0.0,10416.0,ocorrencias
-2026,2026-09-01,RS,Combate a incêndios,0.0,15751.0,0.0,0.0,0.0,0.0,15751.0,ocorrencias
+2026,2026-09-01,RS,Atendimento pré-hospitalar,0.0,2707.0,0.0,0.0,0.0,0.0,2707.0,ocorrencias
+2026,2026-09-01,RS,Busca e salvamento,0.0,1184.0,0.0,0.0,0.0,0.0,1184.0,ocorrencias
+2026,2026-09-01,RS,Combate a incêndios,0.0,1390.0,0.0,0.0,0.0,0.0,1390.0,ocorrencias
 2026,2026-09-01,RS,Emissão de Alvarás de licença,0.0,3501.0,0.0,0.0,0.0,0.0,3501.0,ocorrencias
 2026,2026-09-01,RS,Estupro,85.0,0.0,75.0,10.0,0.0,0.0,85.0,vitimas
 2026,2026-09-01,RS,Estupro de vulnerável,287.0,0.0,245.0,42.0,0.0,0.0,287.0,vitimas
@@ -7385,8 +7385,8 @@
 2026,2026-09-01,RS,Tentativa de feminicídio,25.0,0.0,25.0,0.0,0.0,0.0,25.0,vitimas
 2026,2026-09-01,RS,Tentativa de homicídio,122.0,0.0,10.0,112.0,0.0,0.0,122.0,vitimas
 2026,2026-09-01,RS,Tráfico de drogas,0.0,1313.0,0.0,0.0,0.0,0.0,1313.0,ocorrencias
-2026,2026-09-01,SC,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,205868.0,205868.0,kg
-2026,2026-09-01,SC,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,8684791.0,8684791.0,kg
+2026,2026-09-01,SC,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,205897.0,205897.0,kg
+2026,2026-09-01,SC,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,1141894.0,1141894.0,kg
 2026,2026-09-01,SC,Arma de Fogo Apreendida,0.0,188.0,0.0,0.0,0.0,0.0,188.0,ocorrencias
 2026,2026-09-01,SC,Atendimento pré-hospitalar,0.0,13005.0,0.0,0.0,0.0,0.0,13005.0,ocorrencias
 2026,2026-09-01,SC,Busca e salvamento,0.0,1058.0,0.0,0.0,0.0,0.0,1058.0,ocorrencias
@@ -7445,36 +7445,36 @@
 2026,2026-09-01,SE,Tentativa de feminicídio,14.0,0.0,14.0,0.0,0.0,0.0,14.0,vitimas
 2026,2026-09-01,SE,Tentativa de homicídio,42.0,0.0,2.0,40.0,0.0,0.0,42.0,vitimas
 2026,2026-09-01,SE,Tráfico de drogas,0.0,131.0,0.0,0.0,0.0,0.0,131.0,ocorrencias
-2026,2026-09-01,SP,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,5614211.0,5614211.0,kg
-2026,2026-09-01,SP,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,25573957.0,25573957.0,kg
-2026,2026-09-01,SP,Arma de Fogo Apreendida,0.0,1120.0,0.0,0.0,0.0,0.0,1120.0,ocorrencias
+2026,2026-09-01,SP,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,1541508.0,1541508.0,kg
+2026,2026-09-01,SP,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,26184414.0,26184414.0,kg
+2026,2026-09-01,SP,Arma de Fogo Apreendida,0.0,1130.0,0.0,0.0,0.0,0.0,1130.0,ocorrencias
 2026,2026-09-01,SP,Atendimento pré-hospitalar,0.0,17155.0,0.0,0.0,0.0,0.0,17155.0,ocorrencias
 2026,2026-09-01,SP,Busca e salvamento,0.0,6604.0,0.0,0.0,0.0,0.0,6604.0,ocorrencias
 2026,2026-09-01,SP,Combate a incêndios,0.0,1949.0,0.0,0.0,0.0,0.0,1949.0,ocorrencias
 2026,2026-09-01,SP,Emissão de Alvarás de licença,0.0,22653.0,0.0,0.0,0.0,0.0,22653.0,ocorrencias
-2026,2026-09-01,SP,Estupro,341.0,0.0,302.0,35.0,4.0,0.0,341.0,vitimas
-2026,2026-09-01,SP,Estupro de vulnerável,1174.0,0.0,971.0,194.0,9.0,0.0,1174.0,vitimas
+2026,2026-09-01,SP,Estupro,302.0,0.0,278.0,24.0,0.0,0.0,302.0,vitimas
+2026,2026-09-01,SP,Estupro de vulnerável,1102.0,0.0,916.0,181.0,5.0,0.0,1102.0,vitimas
 2026,2026-09-01,SP,Feminicídio,18.0,0.0,18.0,0.0,0.0,0.0,18.0,vitimas
-2026,2026-09-01,SP,Furto de veículo,0.0,7067.0,0.0,0.0,0.0,0.0,7067.0,ocorrencias
-2026,2026-09-01,SP,Homicídio doloso,179.0,0.0,21.0,153.0,5.0,0.0,179.0,vitimas
+2026,2026-09-01,SP,Furto de veículo,0.0,7072.0,0.0,0.0,0.0,0.0,7072.0,ocorrencias
+2026,2026-09-01,SP,Homicídio doloso,181.0,0.0,22.0,153.0,6.0,0.0,181.0,vitimas
 2026,2026-09-01,SP,Lesão corporal seguida de morte,11.0,0.0,0.0,11.0,0.0,0.0,11.0,vitimas
-2026,2026-09-01,SP,Mandado de prisão cumprido,0.0,6907.0,0.0,0.0,0.0,0.0,6907.0,ocorrencias
+2026,2026-09-01,SP,Mandado de prisão cumprido,0.0,6869.0,0.0,0.0,0.0,0.0,6869.0,ocorrencias
 2026,2026-09-01,SP,Morte de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
-2026,2026-09-01,SP,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),354.0,0.0,79.0,272.0,3.0,0.0,354.0,vitimas
+2026,2026-09-01,SP,Morte no trânsito ou em decorrência dele (exceto homicídio doloso),353.0,0.0,77.0,273.0,3.0,0.0,353.0,vitimas
 2026,2026-09-01,SP,Morte por intervenção de Agente do Estado,48.0,0.0,0.0,48.0,0.0,0.0,48.0,vitimas
-2026,2026-09-01,SP,Mortes a esclarecer (sem indício de crime),278.0,0.0,45.0,214.0,19.0,0.0,278.0,vitimas
-2026,2026-09-01,SP,Pessoa Desaparecida,1962.0,0.0,651.0,1305.0,6.0,0.0,1962.0,vitimas
-2026,2026-09-01,SP,Pessoa Localizada,1275.0,0.0,519.0,751.0,5.0,0.0,1275.0,vitimas
+2026,2026-09-01,SP,Mortes a esclarecer (sem indício de crime),275.0,0.0,44.0,212.0,19.0,0.0,275.0,vitimas
+2026,2026-09-01,SP,Pessoa Desaparecida,1873.0,0.0,621.0,1248.0,4.0,0.0,1873.0,vitimas
+2026,2026-09-01,SP,Pessoa Localizada,1257.0,0.0,517.0,738.0,2.0,0.0,1257.0,vitimas
 2026,2026-09-01,SP,Realização de vistorias,0.0,10019.0,0.0,0.0,0.0,0.0,10019.0,ocorrencias
 2026,2026-09-01,SP,Roubo a instituição financeira,0.0,0.0,0.0,0.0,0.0,0.0,0.0,ocorrencias
-2026,2026-09-01,SP,Roubo de carga,0.0,157.0,0.0,0.0,0.0,0.0,157.0,ocorrencias
-2026,2026-09-01,SP,Roubo de veículo,0.0,1335.0,0.0,0.0,0.0,0.0,1335.0,ocorrencias
+2026,2026-09-01,SP,Roubo de carga,0.0,160.0,0.0,0.0,0.0,0.0,160.0,ocorrencias
+2026,2026-09-01,SP,Roubo de veículo,0.0,1360.0,0.0,0.0,0.0,0.0,1360.0,ocorrencias
 2026,2026-09-01,SP,Roubo seguido de morte (latrocínio),8.0,0.0,1.0,7.0,0.0,0.0,8.0,vitimas
 2026,2026-09-01,SP,Suicídio,200.0,0.0,47.0,153.0,0.0,0.0,200.0,vitimas
-2026,2026-09-01,SP,Suicídio de Agente do Estado,0.0,0.0,0.0,0.0,0.0,0.0,0.0,vitimas
+2026,2026-09-01,SP,Suicídio de Agente do Estado,1.0,0.0,0.0,1.0,0.0,0.0,1.0,vitimas
 2026,2026-09-01,SP,Tentativa de feminicídio,87.0,0.0,84.0,3.0,0.0,0.0,87.0,vitimas
-2026,2026-09-01,SP,Tentativa de homicídio,251.0,0.0,32.0,218.0,1.0,0.0,251.0,vitimas
-2026,2026-09-01,SP,Tráfico de drogas,0.0,3926.0,0.0,0.0,0.0,0.0,3926.0,ocorrencias
+2026,2026-09-01,SP,Tentativa de homicídio,269.0,0.0,31.0,237.0,1.0,0.0,269.0,vitimas
+2026,2026-09-01,SP,Tráfico de drogas,0.0,3928.0,0.0,0.0,0.0,0.0,3928.0,ocorrencias
 2026,2026-09-01,TO,Apreensão de Cocaína,0.0,0.0,0.0,0.0,0.0,17844.0,17844.0,kg
 2026,2026-09-01,TO,Apreensão de Maconha,0.0,0.0,0.0,0.0,0.0,58088.0,58088.0,kg
 2026,2026-09-01,TO,Arma de Fogo Apreendida,0.0,70.0,0.0,0.0,0.0,0.0,70.0,ocorrencias
